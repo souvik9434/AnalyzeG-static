@@ -191,3 +191,58 @@ document.addEventListener('DOMContentLoaded', function() {
     disable: prefersReducedMotion
   });
 });
+
+// Mobile Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  const nav = document.querySelector('#main-nav');
+  
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function() {
+      menuBtn.classList.toggle('active');
+      nav.classList.toggle('active');
+      
+      // Update ARIA attributes
+      const expanded = menuBtn.classList.contains('active');
+      menuBtn.setAttribute('aria-expanded', expanded);
+    });
+  }
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (nav.classList.contains('active') && 
+        !nav.contains(event.target) && 
+        !menuBtn.contains(event.target)) {
+      menuBtn.classList.remove('active');
+      nav.classList.remove('active');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+  
+  // Initialize any interactive elements
+  initRippleEffect();
+});
+
+// Add ripple effect to buttons and interactive elements
+function initRippleEffect() {
+  const interactiveElements = document.querySelectorAll('.btn-primary, .feature');
+  
+  interactiveElements.forEach(element => {
+    element.addEventListener('click', function(e) {
+      const rect = element.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple');
+      ripple.style.left = x + 'px';
+      ripple.style.top = y + 'px';
+      
+      element.appendChild(ripple);
+      
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  });
+}
