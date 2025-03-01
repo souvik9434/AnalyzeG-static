@@ -1,18 +1,20 @@
-// Optional: Add custom JS here for extra interactivity or animations
+// Main Navigation and Functionality
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile Menu Toggle with Keyboard Support
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  const nav = document.querySelector('nav');
+  const nav = document.getElementById('main-nav');
   const navLinks = document.querySelectorAll('nav ul li a');
   const menuItems = document.querySelectorAll('nav ul li');
   
-  mobileMenuBtn.addEventListener('click', toggleMenu);
-  mobileMenuBtn.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      toggleMenu();
-    }
-  });
+  if (mobileMenuBtn && nav) {
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+    mobileMenuBtn.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleMenu();
+      }
+    });
+  }
 
   function toggleMenu() {
     const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
@@ -77,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (nav.classList.contains('active') && 
         !nav.contains(e.target) && 
         !mobileMenuBtn.contains(e.target)) {
-      mobileMenuBtn.click();
+      toggleMenu();
     }
   });
 
@@ -183,43 +185,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { passive: true });
 
   // Initialize AOS with reduced motion support
-  AOS.init({
-    duration: prefersReducedMotion ? 0 : 800,
-    easing: 'ease-in-out',
-    once: true,
-    mirror: false,
-    disable: prefersReducedMotion
-  });
-});
-
-// Mobile Menu Functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const menuBtn = document.querySelector('.mobile-menu-btn');
-  const nav = document.querySelector('#main-nav');
-  
-  if (menuBtn && nav) {
-    menuBtn.addEventListener('click', function() {
-      menuBtn.classList.toggle('active');
-      nav.classList.toggle('active');
-      
-      // Update ARIA attributes
-      const expanded = menuBtn.classList.contains('active');
-      menuBtn.setAttribute('aria-expanded', expanded);
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: prefersReducedMotion ? 0 : 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+      disable: prefersReducedMotion
     });
   }
-  
-  // Close menu when clicking outside
-  document.addEventListener('click', function(event) {
-    if (nav.classList.contains('active') && 
-        !nav.contains(event.target) && 
-        !menuBtn.contains(event.target)) {
-      menuBtn.classList.remove('active');
-      nav.classList.remove('active');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }
-  });
-  
-  // Initialize any interactive elements
+
+  // Initialize ripple effect
   initRippleEffect();
 });
 
