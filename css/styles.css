@@ -217,7 +217,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)); /* Less blue tint */
 }
 
 .hero-content {
@@ -334,30 +334,106 @@ body {
   overflow: hidden;
 }
 
-/* New animated gradient background */
+/* New Header Animation Styles - Replace the current bg-gradient-animated */
 .bg-gradient-animated {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 1;  
-  background: linear-gradient(270deg, #1E3A8A, #2563EB, #3B82F6);
-  background-size: 600% 600%;
-  animation: bgGradientShift 18s ease infinite;
-  opacity: 0.9;
+  background: linear-gradient(135deg, #6366f1, #3b82f6, #2dd4bf, #8b5cf6);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  opacity: 0.85;
 }
 
-@keyframes bgGradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes gradientFlow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
 }
 
+/* Add animated particles */
+.particle-container {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.particle {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  opacity: 0.6;
+  z-index: 2;
+  filter: blur(1px);
+}
+
+.particle:nth-child(1) {
+  width: 15px; height: 15px;
+  background: #fff;
+  top: 20%; left: 10%;
+  border-radius: 50%;
+  animation: float-up-right 15s ease-in-out infinite alternate;
+}
+
+.particle:nth-child(2) {
+  width: 20px; height: 20px;
+  background: #f0abfc;
+  top: 60%; left: 80%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation: float-up-left 18s ease-in-out infinite alternate;
+}
+
+.particle:nth-child(3) {
+  width: 25px; height: 25px;
+  background: #fcd34d;
+  top: 30%; left: 50%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  animation: float-circle 25s linear infinite;
+}
+
+.particle:nth-child(4) {
+  width: 12px; height: 12px;
+  background: #a7f3d0;
+  top: 70%; left: 30%;
+  border-radius: 2px;
+  animation: float-up-right 20s ease-in-out infinite alternate-reverse;
+}
+
+.particle:nth-child(5) {
+  width: 18px; height: 18px;
+  background: #fde68a;
+  top: 40%; left: 70%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(45deg);
+  animation: float-up-left 22s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes float-up-right {
+  0% { transform: translateY(30vh) translateX(-10vw) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.6; }
+  100% { transform: translateY(-30vh) translateX(10vw) rotate(360deg); opacity: 0; }
+}
+
+@keyframes float-up-left {
+  0% { transform: translateY(20vh) translateX(10vw) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.7; }
+  80% { opacity: 0.7; }
+  100% { transform: translateY(-20vh) translateX(-15vw) rotate(-360deg); opacity: 0; }
+}
+
+@keyframes float-circle {
+  0% { transform: translateY(0) translateX(0) rotate(0deg); }
+  25% { transform: translateY(-20vh) translateX(15vw) rotate(90deg); }
+  50% { transform: translateY(0) translateX(30vw) rotate(180deg); }
+  75% { transform: translateY(20vh) translateX(15vw) rotate(270deg); }
+  100% { transform: translateY(0) translateX(0) rotate(360deg); }
+}
+
+/* Keep transparent bg-pattern for subtle texture */
 .bg-pattern {
+  opacity: 0.2; /* Reduce opacity to make less dominant */
   position: absolute;
   top: 0;
   left: 0;
@@ -369,12 +445,12 @@ body {
   background-position: 0 0, 0 0, 40px 70px, 40px 70px;
   z-index: 1;
   animation: bgPattern 60s linear infinite;
-  opacity: 0.4;
 }
 
+/* Ensure header content stays above animations */
 .page-header .container {
   position: relative;
-  z-index: 3;
+  z-index: 5;
 }
 
 .page-header h1 {
@@ -761,6 +837,27 @@ img {
   .menu-open {
     overflow: hidden;
   }
+  
+  /* Simplify animations on mobile */
+  .particle:nth-child(4),
+  .particle:nth-child(5) {
+    display: none; /* Hide some particles on mobile for better performance */
+  }
+  
+  @keyframes float-up-right {
+    0% { transform: translateY(30vh) translateX(-5vw) rotate(0deg); }
+    100% { transform: translateY(-30vh) translateX(5vw) rotate(360deg); }
+  }
+  
+  @keyframes float-up-left {
+    0% { transform: translateY(20vh) translateX(5vw) rotate(0deg); }
+    100% { transform: translateY(-20vh) translateX(-5vw) rotate(-360deg); }
+  }
+  
+  @keyframes float-circle {
+    0% { transform: translateY(0) translateX(0) rotate(0deg); }
+    100% { transform: translateY(0) translateX(0) rotate(360deg); }
+  }
 }
 
 /* Add animation delays for nav items */
@@ -810,7 +907,9 @@ nav ul li:nth-child(5) { --i: 5; }
 }
 
 .feature-item {
-  background: #fff;
+  position: relative;
+  z-index: 1;
+  background: #fff; /* Ensure white background */
   padding: 2.5rem 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -843,10 +942,12 @@ nav ul li:nth-child(5) { --i: 5; }
 .feature-item img {
   width: 80px;
   height: 80px;
-  margin-bottom: 1.5rem;
-  filter: none;
   object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: none; /* Remove any filters */
   transition: transform 0.3s ease;
+  position: relative;
+  z-index: 5; /* Ensure image is above any overlays */
 }
 
 .feature-item:hover img {

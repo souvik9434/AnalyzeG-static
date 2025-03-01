@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Scroll-based Parallax Effect for Headers
+  // Fixed Parallax Effect for Headers - Improved to handle different background position formats
   let lastScrollY = window.scrollY;
   const parallaxElements = document.querySelectorAll('.page-header, .about-header, .hero');
   
@@ -175,10 +175,23 @@ document.addEventListener('DOMContentLoaded', function() {
     parallaxElements.forEach(element => {
       const speed = 0.5;
       const yOffset = (currentScrollY - lastScrollY) * speed;
-      const currentBg = window.getComputedStyle(element).backgroundPosition;
-      const [xPos, yPos] = currentBg.split(' ').map(pos => parseInt(pos));
       
-      element.style.backgroundPositionY = `calc(${yPos}px + ${yOffset}px)`;
+      try {
+        const currentBg = window.getComputedStyle(element).backgroundPosition;
+        const values = currentBg.split(' ');
+        
+        // Handle different format possibilities (px, %, etc)
+        let yPos = 0;
+        if (values.length > 1) {
+          const yValue = values[1];
+          yPos = parseInt(yValue) || 0; // Default to 0 if parsing fails
+        }
+        
+        element.style.backgroundPositionY = `calc(${yPos}px + ${yOffset}px)`;
+      } catch (e) {
+        // Fallback if there's an error parsing background position
+        element.style.backgroundPositionY = `calc(${yOffset}px)`;
+      }
     });
     
     lastScrollY = currentScrollY;
