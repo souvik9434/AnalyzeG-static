@@ -5,41 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;">
   <title>About – AnalyzeG</title>
+  
   <!-- SEO Meta Tags -->
   <meta name="description" content="Learn about AnalyzeG's mission to revolutionize video reviews with blockchain technology, user rewards, and data-driven insights.">
   <meta name="keywords" content="about AnalyzeG, blockchain review platform, video review company, authentic reviews">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="About AnalyzeG - Building Trust Through Authentic Reviews">
+  <meta property="og:description" content="Learn about AnalyzeG's mission to revolutionize video reviews with blockchain technology, user rewards, and data-driven insights.">
+  <meta property="og:image" content="https://analyzeg.shop/assets/optimized/about-bg.jpg">
+  <meta property="og:url" content="https://analyzeg.shop/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AnalyzeG">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About AnalyzeG - Building Trust Through Authentic Reviews">
+  <meta name="twitter:description" content="Learn about AnalyzeG's mission to revolutionize video reviews with blockchain technology, user rewards, and data-driven insights.">
+  <meta name="twitter:image" content="https://analyzeg.shop/assets/optimized/about-bg.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://analyzeg.shop/about.html">
+  
+  <!-- Preconnect to External Resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/optimized/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/optimized/logo.png">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="assets/optimized/about-bg.jpg" as="image">
+  <link rel="preload" href="assets/optimized/logo.png" as="image">
 </head>
 <body>
   <!-- Navigation Bar -->
-  <header class="navbar">
+  <header class="navbar" role="banner">
     <div class="container">
       <div class="logo-container">
         <a href="index.html" class="logo">
-          <img src="assets/logo.png" alt="AnalyzeG Logo" width="40" height="40">
+          <img src="assets/optimized/logo.png" alt="AnalyzeG Logo" width="40" height="40">
           <span class="logo-text">AnalyzeG</span>
         </a>
       </div>
       <button class="mobile-menu-btn" 
-              aria-label="Toggle menu" 
+              aria-label="Toggle navigation menu" 
               aria-expanded="false"
-              aria-controls="main-nav">
+              aria-controls="main-nav"
+              aria-haspopup="true">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav id="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="about.html" class="active" aria-current="page">About</a></li>
-          <li><a href="earn-money-reviews.html">Earn Money</a></li>
-          <li><a href="analyzeg-faq.html">FAQ</a></li>
+      <nav id="main-nav" 
+           aria-label="Main navigation"
+           role="navigation"
+           aria-hidden="true">
+        <ul role="menubar">
+          <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+          <li role="none"><a href="features.html" role="menuitem">Features</a></li>
+          <li role="none"><a href="about.html" class="active" role="menuitem" aria-current="page">About</a></li>
+          <li role="none"><a href="earn-money-reviews.html" role="menuitem">Earn Money</a></li>
+          <li role="none"><a href="analyzeg-faq.html" role="menuitem">FAQ</a></li>
         </ul>
       </nav>
     </div>
@@ -49,6 +82,14 @@
   <section class="page-header about-header" data-aos="fade-in">
     <div class="bg-overlay"></div>
     <div class="light-rays"></div>
+    <div class="animated-objects">
+      <div class="bg-object hexagon" style="--moveX: 15vw; --moveY: -25vh; animation-delay: 0.2s; background: #4F46E5;"></div>
+      <div class="bg-object circle" style="--moveX: -20vw; --moveY: 20vh; animation-delay: 0.7s; background: #EC4899;"></div>
+      <div class="bg-object triangle" style="--moveX: 25vw; --moveY: 15vh; animation-delay: 1.2s; background: #06B6D4;"></div>
+      <div class="bg-object hexagon" style="--moveX: -10vw; --moveY: -15vh; animation-delay: 1.7s; background: #8B5CF6;"></div>
+      <div class="bg-object circle" style="--moveX: 20vw; --moveY: 10vh; animation-delay: 2.2s; background: #F59E0B;"></div>
+      <div class="bg-object triangle" style="--moveX: -25vw; --moveY: -20vh; animation-delay: 2.7s; background: #10B981;"></div>
+    </div>
     <div class="container">
       <h1 data-aos="zoom-in" data-aos-delay="200">About AnalyzeG</h1>
       <p data-aos="fade-up" data-aos-delay="400">Building Trust Through Authentic Reviews & Advanced Technology.</p>
@@ -91,13 +132,6 @@
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/scripts.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    });
-  </script>
   
   <!-- Schema Markup for SEO -->
   <script type="application/ld+json">

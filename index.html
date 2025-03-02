@@ -4,1161 +4,254 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;">
-  <title>AnalyzeG - Official Blockchain Video Review Platform | For Reviewers & Brands</title>
-  <!-- Enhanced SEO Meta Tags -->
-  <meta name="description" content="AnalyzeG offers a dual-value platform: earn rewards for authentic video reviews as a reviewer, or access verified consumer insights as a brand. All secured by blockchain technology.">
-  <meta name="keywords" content="AnalyzeG, blockchain reviews, video review platform, earn money reviews, consumer insights, authentic reviews, video testimonials">
-  <!-- Brand signals -->
-  <link rel="canonical" href="https://analyzeg.shop/" />
-  <!-- Social meta tags -->
-  <meta property="og:title" content="AnalyzeG - Earn Money With Reviews | Get Authentic Consumer Insights">
-  <meta property="og:description" content="AnalyzeG offers blockchain-verified video reviews with rewards for reviewers and actionable insights for brands.">
+  <title>AnalyzeG - Blockchain-Verified Video Reviews</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Transform your review experience with AnalyzeG. Earn rewards for authentic video reviews or access verified consumer insights for your brand.">
+  <meta name="keywords" content="video reviews, blockchain verification, review rewards, consumer insights, authentic reviews">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="AnalyzeG - The Future of Video Reviews">
+  <meta property="og:description" content="Join the future of authentic video reviews with blockchain verification and instant rewards.">
+  <meta property="og:image" content="https://analyzeg.shop/assets/optimized/hero-bg.jpg">
+  <meta property="og:url" content="https://analyzeg.shop">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://analyzeg.shop/">
-  <meta property="og:image" content="https://analyzeg.shop/assets/og-image.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <style>
-    /* Dual-View Toggle Styles - Updated for better visibility */
-    .audience-toggle-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 0;
-      position: relative;
-      z-index: 10;
-      background: transparent; /* Removed gradient */
-    }
-    
-    .audience-toggle {
-      display: flex;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 30px;
-      padding: 6px;
-      position: relative;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      backdrop-filter: blur(10px);
-      border: 2px solid rgba(255, 255, 255, 0.8);
-      min-width: 340px;
-      max-width: 460px;
-      width: 90%;
-    }
-    
-    .audience-toggle-option {
-      flex: 1;
-      padding: 12px 24px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      z-index: 2;
-      color: #64748b;
-      text-align: center;
-      white-space: nowrap;
-      user-select: none;
-    }
-    
-    .audience-toggle-option.active {
-      color: #000; /* Changed from #2563EB to black */
-      font-weight: 700;
-    }
-    
-    .audience-toggle-slider {
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      background: linear-gradient(135deg, #ffffff, #f8fafc);
-      border-radius: 25px;
-      height: calc(100% - 12px);
-      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-      z-index: 1;
-      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
-    }
-
-    /* Dual content sections */
-    .audience-section {
-      display: none;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    
-    .audience-section.active {
-      display: block;
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .brand-highlight {
-      color: #2563EB;
-      position: relative;
-      display: inline-block;
-      margin: 0 3px;
-    }
-
-    .brand-highlight:after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: #2563EB;
-      border-radius: 2px;
-    }
-
-    /* Additional hero styles */
-    .hero-subtitle {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 1s 0.3s forwards;
-      opacity: 0;
-    }
-
-    .hero-tagline {
-      max-width: 800px;
-      margin: 0 auto 2.5rem;
-      animation: fadeIn 1s 0.5s forwards;
-      opacity: 0;
-    }
-
-    .cta-group {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      flex-wrap: wrap;
-      animation: fadeIn 1s 0.7s forwards;
-      opacity: 0;
-    }
-
-    .btn-secondary-outline {
-      display: inline-block;
-      padding: 0.875rem 2rem;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      border: 2px solid rgba(255, 255, 255, 0.7);
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .btn-secondary-outline:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-3px);
-    }
-
-    /* How It Works Section Styles */
-    .how-it-works {
-      padding: 80px 0;
-      background: linear-gradient(to bottom, #f5f7fa, #ffffff);
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 0.5rem;
-      color: #1a202c;
-    }
-
-    .section-subtitle {
-      font-size: 1.2rem;
-      text-align: center;
-      color: #4b5563;
-      margin-bottom: 4rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .process-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 3.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .process-steps::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 20px;
-      width: 2px;
-      background: linear-gradient(to bottom, transparent, #e2e8f0, #e2e8f0, transparent);
-      z-index: 0;
-    }
-
-    .process-step {
-      display: flex;
-      gap: 2rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .step-icon {
-      flex-shrink: 0;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: #2563EB;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.1);
-      position: relative;
-    }
-
-    .step-icon svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    .step-content {
-      flex: 1;
-      padding-top: 4px;
-    }
-
-    .step-content h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.8rem;
-      color: #1a202c;
-    }
-
-    .audience-specific div {
-      display: none;
-    }
-
-    body[data-audience="reviewer"] .audience-specific .for-reviewer,
-    body[data-audience="brand"] .audience-specific .for-brand {
-      display: block;
-    }
-
-    .audience-specific p {
-      margin-bottom: 1rem;
-      color: #4b5563;
-    }
-
-    .audience-specific ul {
-      list-style-type: none;
-      padding: 0;
-      margin-bottom: 1.5rem;
-    }
-
-    .audience-specific li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #4b5563;
-    }
-
-    .audience-specific li:before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: #2563EB;
-      font-weight: bold;
-    }
-
-    /* Technology & Security Section Styles */
-    .tech-security {
-      padding: 80px 0;
-      background-color: #f8fafc;
-    }
-
-    .two-column-layout {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .content-column {
-      flex: 1;
-    }
-
-    .visual-column {
-      flex: 1;
-      position: relative;
-    }
-
-    .tech-security-points {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .tech-security-points li {
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 1.5rem;
-      color: #4b5563;
-    }
-
-    .tech-security-points li:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 6px;
-      width: 16px;
-      height: 16px;
-      background: rgba(37, 99, 235, 0.2);
-      border-radius: 50%;
-      border: 2px solid #2563EB;
-    }
-
-    .flowchart-container {
-      position: relative;
-      height: 400px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      overflow: hidden;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    /* Media queries for responsiveness */
-    @media (max-width: 768px) {
-      .process-step {
-        flex-direction: column;
-        gap: 1rem;
-      }
-      
-      .process-steps::before {
-        left: 20px;
-      }
-      
-      .two-column-layout {
-        flex-direction: column;
-      }
-      
-      .flowchart-container {
-        height: 300px;
-      }
-    }
-
-    /* Flowchart Styles */
-    .flowchart-animation {
-      width: 100%;
-      height: 85%;
-      position: relative;
-    }
-    
-    .flowchart-legend {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 10px;
-      flex-wrap: wrap;
-    }
-    
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.85rem;
-    }
-    
-    .legend-color {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      border-radius: 3px;
-    }
-    
-    .flow-node {
-      fill: #ffffff;
-      stroke-width: 2px;
-      transition: all 0.5s ease;
-      filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.1));
-    }
-    
-    #user-node {
-      stroke: #2563EB;
-      fill: rgba(37, 99, 235, 0.15);
-    }
-    
-    #review-node {
-      stroke: #2563EB;
-      fill: rgba(37, 99, 235, 0.15);
-    }
-    
-    #verify-node {
-      stroke: #10B981;
-      fill: rgba(16, 185, 129, 0.15);
-    }
-    
-    #blockchain-node {
-      stroke: #8B5CF6;
-      fill: rgba(139, 92, 246, 0.15);
-    }
-    
-    #brand-node {
-      stroke: #F59E0B;
-      fill: rgba(245, 158, 11, 0.15);
-    }
-    
-    .flow-arrow {
-      stroke: #94a3b8;
-      stroke-width: 2;
-      fill: none;
-      stroke-dasharray: 400;
-      stroke-dashoffset: 400;
-      animation: dash 2s linear forwards;
-      marker-end: url(#arrowhead);
-    }
-    
-    .flow-text {
-      fill: #1e293b;
-      font-size: 12px;
-      font-weight: 500;
-      pointer-events: none;
-    }
-    
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        transform: scale(1.05);
-        opacity: 0.8;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    /* Hero Section - Updated */
-    .hero {
-      position: relative;
-      background: url('assets/hero-bg.jpg') no-repeat center center/cover;
-      color: #fff;
-      padding: 140px 0 100px;
-      margin-top: 0;
-      text-align: center;
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-    }
-    
-    /* Dual-View Toggle Styles - Improved */
-    .audience-toggle-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 0;
-      position: relative;
-      z-index: 10;
-      background: transparent; /* Removed gradient */
-    }
-    
-    .audience-toggle {
-      display: flex;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 30px;
-      padding: 6px;
-      position: relative;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-      backdrop-filter: blur(10px);
-      border: 2px solid rgba(255, 255, 255, 0.8);
-      min-width: 320px;
-    }
-    
-    .audience-toggle-option {
-      flex: 1;
-      padding: 12px 24px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      position: relative;
-      z-index: 2;
-      color: #64748b;
-      text-align: center;
-      white-space: nowrap;
-      user-select: none;
-    }
-    
-    .audience-toggle-option.active {
-      color: #000; /* Changed from #2563EB to black */
-    }
-    
-    .audience-toggle-slider {
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      background: #fff;
-      border-radius: 25px;
-      height: calc(100% - 12px);
-      width: calc(50% - 6px);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      z-index: 1;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-      background: linear-gradient(135deg, #ffffff, #f8fafc);
-    }
-
-    /* Dual content sections - Updated */
-    .audience-section {
-      display: none;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.5s ease;
-    }
-    
-    .audience-section.active {
-      display: block;
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    .brand-highlight {
-      color: #2563EB;
-      position: relative;
-      display: inline-block;
-      margin: 0 3px;
-    }
-
-    .brand-highlight:after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: #2563EB;
-      border-radius: 2px;
-    }
-
-    /* Additional hero styles */
-    .hero-subtitle {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 1s 0.3s forwards;
-      opacity: 0;
-    }
-
-    .hero-tagline {
-      max-width: 800px;
-      margin: 0 auto 2.5rem;
-      animation: fadeIn 1s 0.5s forwards;
-      opacity: 0;
-    }
-
-    .cta-group {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      flex-wrap: wrap;
-      animation: fadeIn 1s 0.7s forwards;
-      opacity: 0;
-    }
-
-    .btn-secondary-outline {
-      display: inline-block;
-      padding: 0.875rem 2rem;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      border: 2px solid rgba(255, 255, 255, 0.7);
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .btn-secondary-outline:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-3px);
-    }
-
-    /* How It Works Section Styles */
-    .how-it-works {
-      padding: 80px 0;
-      background: linear-gradient(to bottom, #f5f7fa, #ffffff);
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 0.5rem;
-      color: #1a202c;
-    }
-
-    .section-subtitle {
-      font-size: 1.2rem;
-      text-align: center;
-      color: #4b5563;
-      margin-bottom: 4rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .process-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 3.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .process-steps::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 20px;
-      width: 2px;
-      background: linear-gradient(to bottom, transparent, #e2e8f0, #e2e8f0, transparent);
-      z-index: 0;
-    }
-
-    .process-step {
-      display: flex;
-      gap: 2rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .step-icon {
-      flex-shrink: 0;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: #2563EB;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.1);
-      position: relative;
-    }
-
-    .step-icon svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    .step-content {
-      flex: 1;
-      padding-top: 4px;
-    }
-
-    .step-content h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.8rem;
-      color: #1a202c;
-    }
-
-    .audience-specific div {
-      display: none;
-    }
-
-    body[data-audience="reviewer"] .audience-specific .for-reviewer,
-    body[data-audience="brand"] .audience-specific .for-brand {
-      display: block;
-    }
-
-    .audience-specific p {
-      margin-bottom: 1rem;
-      color: #4b5563;
-    }
-
-    .audience-specific ul {
-      list-style-type: none;
-      padding: 0;
-      margin-bottom: 1.5rem;
-    }
-
-    .audience-specific li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #4b5563;
-    }
-
-    .audience-specific li:before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: #2563EB;
-      font-weight: bold;
-    }
-
-    /* Technology & Security Section Styles */
-    .tech-security {
-      padding: 80px 0;
-      background-color: #f8fafc;
-    }
-
-    .two-column-layout {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .content-column {
-      flex: 1;
-    }
-
-    .visual-column {
-      flex: 1;
-      position: relative;
-    }
-
-    .tech-security-points {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .tech-security-points li {
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 1.5rem;
-      color: #4b5563;
-    }
-
-    .tech-security-points li:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 6px;
-      width: 16px;
-      height: 16px;
-      background: rgba(37, 99, 235, 0.2);
-      border-radius: 50%;
-      border: 2px solid #2563EB;
-    }
-
-    .flowchart-container {
-      position: relative;
-      height: 400px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      overflow: hidden;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    /* Media queries for responsive design */
-    @media (max-width: 768px) {
-      .hero {
-        padding: 120px 0 80px;
-      }
-      
-      .audience-toggle {
-        min-width: 280px;
-      }
-      
-      .audience-toggle-option {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-      }
-      
-      .hero-title {
-        font-size: 2.2rem;
-      }
-      
-      .hero-subtitle {
-        font-size: 1.4rem;
-      }
-      
-      .process-step {
-        flex-direction: column;
-        gap: 1rem;
-      }
-    }
-    
-    /* Shimmer effect for toggle */
-    .audience-toggle::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      transform: translateX(-100%);
-      animation: shimmer 3s infinite;
-      pointer-events: none;
-      border-radius: 30px;
-    }
-    
-    @keyframes shimmer {
-      0% { transform: translateX(-100%); }
-      20% { transform: translateX(100%); }
-      100% { transform: translateX(100%); }
-    }
-    
-    /* Floating animation for particles */
-
-    /* Toggle button active state enhancer */
-    .audience-toggle-option.active::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 30%;
-      height: 3px;
-      background: #000; /* Changed from #2563EB to black */
-      border-radius: 3px;
-      opacity: 0;
-      animation: fadeIn 0.4s forwards 0.2s;
-    }
-  </style>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/optimized/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/optimized/logo.png">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header class="navbar">
+  <!-- Navigation -->
+  <header class="navbar" role="banner">
     <div class="container">
       <div class="logo-container">
         <a href="index.html" class="logo">
-          <img src="assets/logo.png" alt="AnalyzeG Logo" width="40" height="40">
+          <img src="assets/optimized/logo.png" alt="AnalyzeG Logo" width="40" height="40">
           <span class="logo-text">AnalyzeG</span>
         </a>
       </div>
       <button class="mobile-menu-btn" 
-              aria-label="Toggle menu" 
+              aria-label="Toggle navigation menu" 
               aria-expanded="false"
-              aria-controls="main-nav">
+              aria-controls="main-nav"
+              aria-haspopup="true">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav id="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="earn-money-reviews.html">Earn Money</a></li>
-          <li><a href="analyzeg-faq.html">FAQ</a></li>
+      <nav id="main-nav" 
+           aria-label="Main navigation"
+           role="navigation"
+           aria-hidden="true">
+        <ul role="menubar">
+          <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Home</a></li>
+          <li role="none"><a href="features.html" role="menuitem">Features</a></li>
+          <li role="none"><a href="about.html" role="menuitem">About</a></li>
+          <li role="none"><a href="earn-money-reviews.html" role="menuitem">Earn Money</a></li>
+          <li role="none"><a href="analyzeg-faq.html" role="menuitem">FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section - Reviewer View -->
-  <section id="reviewer-content" class="hero audience-section active" data-aos="fade-in">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="hero-overlay"></div>
-    <div class="particle-container">
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
+    <div class="animated-objects">
+      <div class="bg-object hexagon" style="--moveX: 20vw; --moveY: -30vh; animation-delay: 0.2s; background: #F59E0B;"></div>
+      <div class="bg-object circle" style="--moveX: -25vw; --moveY: 25vh; animation-delay: 0.7s; background: #8B5CF6;"></div>
+      <div class="bg-object triangle" style="--moveX: 30vw; --moveY: 20vh; animation-delay: 1.2s; background: #10B981;"></div>
+      <div class="bg-object hexagon" style="--moveX: -15vw; --moveY: -20vh; animation-delay: 1.7s; background: #EC4899;"></div>
+      <div class="bg-object circle" style="--moveX: 25vw; --moveY: 15vh; animation-delay: 2.2s; background: #06B6D4;"></div>
+      <div class="bg-object triangle" style="--moveX: -30vw; --moveY: -25vh; animation-delay: 2.7s; background: #4F46E5;"></div>
     </div>
-    <div class="container hero-content">
-      <h1 class="hero-title">Earn Money. Share Your Voice. Shape the Future.</h1>
-      <h2 class="hero-subtitle">Join our community of genuine reviewers and start earning rewards for your honest feedback.</h2>
-      <p class="hero-tagline">AnalyzeG offers blockchain-verified, incentivized video reviews that give you a platform to influence brands while earning valuable rewards. Your trusted review platform is coming soon.</p>
-      <div class="cta-group">
-        <a href="earn-money-reviews.html" class="btn-primary">Join as a Reviewer</a>
-        <a href="features.html" class="btn-secondary-outline">Learn How AnalyzeG Works</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hero Section - Brand View -->
-  <section id="brand-content" class="hero audience-section" data-aos="fade-in">
-    <div class="hero-overlay"></div>
-    <div class="particle-container">
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-    </div>
-    <div class="container hero-content">
-      <h1 class="hero-title">Unlock Authentic Consumer Insights in 24 Hours</h1>
-      <h2 class="hero-subtitle">Access verified, actionable review data – including video testimonials – to power your marketing and product decisions.</h2>
-      <p class="hero-tagline">AnalyzeG delivers blockchain-verified video reviews with powerful analytics tools, demographic filtering, and sentiment analysis to drive better business outcomes.</p>
-      <div class="cta-group">
-        <a href="#" class="btn-primary" id="request-demo-btn" aria-label="Request a product demonstration">Request a Demo</a>
-        <a href="features.html" class="btn-secondary-outline">Explore Platform Features</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dual-View Toggle - Moved below hero -->
-  <div class="audience-toggle-container" data-aos="fade-up">
-    <div class="audience-toggle" role="tablist" aria-label="Choose audience view">
-      <div id="reviewer-option" 
-           class="audience-toggle-option active" 
-           role="tab" 
-           aria-selected="true" 
-           tabindex="0" 
-           aria-controls="reviewer-content">
-        For Reviewers
-      </div>
-      <div id="brand-option" 
-           class="audience-toggle-option" 
-           role="tab" 
-           aria-selected="false" 
-           tabindex="0" 
-           aria-controls="brand-content">
-        For Brands
-      </div>
-      <div class="audience-toggle-slider"></div>
-    </div>
-  </div>
-
-  <!-- Features Preview Section -->
-  <section class="features-preview" data-aos="fade-up">
     <div class="container">
-      <h2 id="features-title">Platform Highlights</h2>
-      <div class="feature-grid" role="list" aria-labelledby="features-title">
-        <div class="feature-item" role="listitem" tabindex="0">
-          <img src="assets/feature1.png" alt="Verified Reviews Icon" width="80" height="80" loading="eager">
-          <h3>Verified Reviews</h3>
-          <p>Every review is authenticated and recorded on blockchain for integrity.</p>
+      <div class="audience-toggle-container" data-aos="fade-up">
+        <div class="audience-toggle" role="tablist" aria-label="Choose Audience View">
+          <div id="reviewer-option" class="audience-toggle-option active" role="tab" aria-selected="true" tabindex="0" aria-controls="reviewer-content">For Reviewers</div>
+          <div id="brand-option" class="audience-toggle-option" role="tab" aria-selected="false" tabindex="0" aria-controls="brand-content">For Brands</div>
+          <div class="audience-toggle-slider"></div>
         </div>
-        <div class="feature-item" role="listitem" tabindex="0" data-aos="fade-up" data-aos-delay="100">
-          <img src="assets/feature2.png" alt="Incentivized Engagement Icon" width="80" height="80" loading="eager">
-          <h3>Incentivized Engagement</h3>
-          <p>Earn rewards for honest feedback and track your earnings in real-time.</p>
+      </div>
+
+      <!-- Reviewer Content -->
+      <div id="reviewer-content" class="audience-section active">
+        <div class="hero-content" data-aos="fade-up">
+          <h1>Earn Money. Share Your Voice. Shape the Future.</h1>
+          <p class="hero-tagline">Join our community of genuine reviewers and start earning rewards for your honest feedback.</p>
+          <div class="hero-cta">
+            <a href="earn-money-reviews.html" class="btn-primary">Start Earning</a>
+            <a href="features.html" class="btn-secondary">Learn How</a>
+          </div>
         </div>
-        <div class="feature-item" role="listitem" tabindex="0" data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/feature3.png" alt="Advanced Insights Icon" width="80" height="80" loading="eager">
-          <h3>Advanced Insights</h3>
-          <p>Brands get precise, geo-demographic data for targeted marketing decisions.</p>
+      </div>
+
+      <!-- Brand Content -->
+      <div id="brand-content" class="audience-section">
+        <div class="hero-content" data-aos="fade-up">
+          <h1>Unlock Authentic Consumer Insights in 24 Hours</h1>
+          <p class="hero-tagline">Access verified, actionable review data to power your marketing decisions.</p>
+          <div class="hero-cta">
+            <a href="#" class="btn-primary">Request Demo</a>
+            <a href="features.html" class="btn-secondary">View Features</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- How It Works Section -->
-  <section class="how-it-works" data-aos="fade-up">
+  <section class="how-it-works" id="how-it-works" role="region" aria-labelledby="how-it-works-title">
     <div class="container">
-      <h2 class="section-title">How AnalyzeG Works</h2>
-      <p class="section-subtitle">Our innovative platform connects genuine reviewers with brands seeking authentic insights</p>
+      <h2 id="how-it-works-title" class="section-title" data-aos="fade-up">How AnalyzeG Works</h2>
       
-      <!-- Process Steps -->
-      <div class="process-steps">
-        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
-          <div class="step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-video">
-              <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-              <line x1="10" y1="8" x2="14" y2="12"></line>
-              <line x1="14" y1="8" x2="10" y2="12"></line>
-            </svg>
-          </div>
-          <div class="step-content">
-            <h3>Seamless Review Submission</h3>
-            <div class="audience-specific">
-              <div class="for-reviewer">
-                <p>Record your honest opinions about products in a short video review and complete a quick survey. Our intuitive interface makes submitting reviews simple and fast.</p>
-                <ul>
-                  <li>Use any smartphone or camera to record</li>
-                  <li>Simple upload process takes less than 5 minutes</li>
-                  <li>Answer targeted questions for better insights</li>
-                </ul>
-              </div>
-              <div class="for-brand">
-                <p>Specify the exact products, demographics, and insights you need from reviewers to gather the most relevant feedback for your business.</p>
-                <ul>
-                  <li>Customize review parameters</li>
-                  <li>Target specific demographics</li>
-                  <li>Formulate precise questions</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="process-step" data-aos="fade-right" data-aos-delay="200">
-          <div class="step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-shield">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <div class="step-content">
-            <h3>Intelligent Data Processing</h3>
-            <div class="audience-specific">
-              <div class="for-reviewer">
-                <p>Our advanced blockchain technology verifies your review's authenticity and securely records it, ensuring your feedback is protected and valued.</p>
-                <ul>
-                  <li>Blockchain verification ensures review integrity</li>
-                  <li>Cryptographic hashing protects your content</li>
-                  <li>Fraud detection eliminates fake reviews</li>
-                </ul>
-              </div>
-              <div class="for-brand">
-                <p>Our system processes, validates, and analyzes every review to provide you with actionable insights and eliminates fraudulent or low-quality feedback.</p>
-                <ul>
-                  <li>90-95% authenticity rate through verification</li>
-                  <li>AI-powered sentiment analysis</li>
-                  <li>Real-time quality control measures</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="process-step" data-aos="fade-right" data-aos-delay="300">
-          <div class="step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-chart">
-              <line x1="12" y1="20" x2="12" y2="10"></line>
-              <line x1="18" y1="20" x2="18" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="16"></line>
-            </svg>
-          </div>
-          <div class="step-content">
-            <h3>Instant Insight Delivery</h3>
-            <div class="audience-specific">
-              <div class="for-reviewer">
-                <p>Once your review is verified, you'll receive compensation through our transparent reward system with fair, consistent payments based on review quality.</p>
-                <ul>
-                  <li>Earn ₹100-₹500 per approved review</li>
-                  <li>Transparent earnings tracking</li>
-                  <li>Quick payment processing</li>
-                </ul>
-              </div>
-              <div class="for-brand">
-                <p>Within 24 hours, you'll receive comprehensive insights including video testimonials, analytics dashboard, and detailed reporting on customer sentiment.</p>
-                <ul>
-                  <li>Complete insights within 24 hours</li>
-                  <li>Interactive analytics dashboard</li>
-                  <li>Demographic filtering and segmentation</li>
-                  <li>Raw video access for marketing content</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <!-- Audience Toggle -->
+      <div class="audience-toggle-container" data-aos="fade-up">
+        <div class="audience-toggle" role="tablist" aria-label="Choose Audience View">
+          <div id="reviewer-option" class="audience-toggle-option active" role="tab" aria-selected="true" tabindex="0" aria-controls="reviewer-process">For Reviewers</div>
+          <div id="brand-option" class="audience-toggle-option" role="tab" aria-selected="false" tabindex="0" aria-controls="brand-process">For Brands</div>
+          <div class="audience-toggle-slider"></div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Technology & Security Section -->
-  <section class="tech-security" data-aos="fade-up">
-    <div class="container">
-      <h2 class="section-title">Cutting-Edge Technology for Unmatched Authenticity</h2>
-      <p class="section-subtitle">Our proprietary technology ensures trust, transparency and data integrity</p>
       
-      <div class="two-column-layout">
-        <div class="content-column">
-          <ul class="tech-security-points">
-            <li data-aos="fade-right" data-aos-delay="100">
-              <strong>Blockchain Verification:</strong> Smart contracts and distributed ledger technology ensure immutable records of every review, providing a tamper-proof history and authenticity guarantee.
-            </li>
-            <li data-aos="fade-right" data-aos-delay="200">
-              <strong>Cryptographic Hashing:</strong> Advanced encryption ensures a 90-95% authenticity rate by detecting manipulated or synthetic content before it enters our system.
-            </li>
-            <li data-aos="fade-right" data-aos-delay="300">
-              <strong>AI-Powered Analytics:</strong> Machine learning algorithms transform raw reviews into actionable insights through sentiment analysis, keyword extraction, and demographic correlation.
-            </li>
-            <li data-aos="fade-right" data-aos-delay="400">
-              <strong>End-to-End Encryption:</strong> All user data and video content are protected with bank-level security standards using AES-256 encryption and secure storage protocols.
-            </li>
-          </ul>
-        </div>
-        
-        <div class="visual-column" data-aos="zoom-in">
-          <div class="flowchart-container" id="tech-flowchart">
-            <div class="flowchart-animation">
-              <!-- SVG flowchart will be inserted by JS -->
-              <svg id="flow-svg" width="100%" height="100%" viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
-                <!-- Nodes -->
-                <g class="flow-nodes">
-                  <!-- User Node -->
-                  <circle cx="75" cy="60" r="30" class="flow-node" id="user-node" />
-                  <text x="75" y="65" text-anchor="middle" class="flow-text">User</text>
-                  
-                  <!-- Review Node -->
-                  <rect x="165" y="40" width="70" height="40" rx="5" class="flow-node" id="review-node" />
-                  <text x="200" y="65" text-anchor="middle" class="flow-text">Review</text>
-                  
-                  <!-- Verification Node -->
-                  <rect x="165" y="140" width="70" height="40" rx="5" class="flow-node" id="verify-node" />
-                  <text x="200" y="165" text-anchor="middle" class="flow-text">Verify</text>
-                  
-                  <!-- Blockchain Node -->
-                  <polygon points="200,240 235,270 200,300 165,270" class="flow-node" id="blockchain-node" />
-                  <text x="200" y="275" text-anchor="middle" class="flow-text">Blockchain</text>
-                  
-                  <!-- Brand Node -->
-                  <circle cx="325" cy="270" r="30" class="flow-node" id="brand-node" />
-                  <text x="325" y="275" text-anchor="middle" class="flow-text">Brand</text>
-                </g>
-                
-                <!-- Arrows -->
-                <g class="flow-arrows">
-                  <path d="M105,60 L165,60" class="flow-arrow" id="arrow1" />
-                  <path d="M200,80 L200,140" class="flow-arrow" id="arrow2" />
-                  <path d="M200,180 L200,240" class="flow-arrow" id="arrow3" />
-                  <path d="M235,270 L295,270" class="flow-arrow" id="arrow4" />
-                </g>
+      <!-- Reviewer Process -->
+      <div id="reviewer-process" class="audience-section active" data-audience="reviewer" role="tabpanel" aria-labelledby="reviewer-option">
+        <div class="process-steps">
+          <div class="process-step" data-aos="fade-up">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </div>
-            
-            <div class="flowchart-legend">
-              <div class="legend-item">
-                <span class="legend-color" style="background:#2563EB"></span>
-                <span class="legend-text">User Input</span>
-              </div>
-              <div class="legend-item">
-                <span class="legend-color" style="background:#10B981"></span>
-                <span class="legend-text">Advanced Verification</span>
-              </div>
-              <div class="legend-item">
-                <span class="legend-color" style="background:#8B5CF6"></span>
-                <span class="legend-text">Blockchain Storage</span>
-              </div>
-              <div class="legend-item">
-                <span class="legend-color" style="background:#F59E0B"></span>
-                <span class="legend-text">Data Delivery</span>
-              </div>
+            <div class="step-content">
+              <h3>1. Create Your Profile</h3>
+              <p>Sign up and complete profile verification to start earning.</p>
+              <ul>
+                <li>Quick registration process</li>
+                <li>Secure identity verification</li>
+                <li>Set up payment preferences</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="step-content">
+              <h3>2. Record Reviews</h3>
+              <p>Create authentic video reviews following our guidelines.</p>
+              <ul>
+                <li>Choose review opportunities</li>
+                <li>Follow provided guidelines</li>
+                <li>Submit quality content</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="step-content">
+              <h3>3. Get Rewarded</h3>
+              <p>Earn instant rewards for verified reviews.</p>
+              <ul>
+                <li>Automatic verification</li>
+                <li>24-hour payments</li>
+                <li>Multiple payment options</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand Process -->
+      <div id="brand-process" class="audience-section" data-audience="brand" role="tabpanel" aria-labelledby="brand-option">
+        <div class="process-steps">
+          <div class="process-step" data-aos="fade-up">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="step-content">
+              <h3>1. Seamless Review Collection</h3>
+              <p>Collect authentic video reviews through our intuitive platform.</p>
+              <ul>
+                <li>High-quality video submissions</li>
+                <li>Structured survey responses</li>
+                <li>Real-time collection system</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+              </svg>
+            </div>
+            <div class="step-content">
+              <h3>2. Advanced Verification</h3>
+              <p>Blockchain-powered verification ensures authenticity.</p>
+              <ul>
+                <li>Blockchain verification</li>
+                <li>Cryptographic hashing</li>
+                <li>Tamper-proof records</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path>
+                <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                <line x1="12" y1="22" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div class="step-content">
+              <h3>3. AI-Powered Analysis</h3>
+              <p>Extract valuable insights through advanced analytics.</p>
+              <ul>
+                <li>Sentiment analysis</li>
+                <li>Pattern recognition</li>
+                <li>Demographic insights</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="step-content">
+              <h3>4. Instant Insights</h3>
+              <p>Access comprehensive data within 24 hours.</p>
+              <ul>
+                <li>Real-time dashboard</li>
+                <li>Customizable reports</li>
+                <li>Actionable insights</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1166,11 +259,74 @@
     </div>
   </section>
 
-  <!-- Call to Action Section -->
-  <section class="cta" data-aos="zoom-in">
+  <!-- Features Preview -->
+  <section class="features-preview">
     <div class="container">
-      <h2>Revolutionary Review Platform Coming Soon</h2>
-      <p>Get ready to experience the future of authentic video reviews.</p>
+      <h2 class="section-title" data-aos="fade-up">Why Choose AnalyzeG?</h2>
+      <div class="feature-grid">
+        <!-- Reviewer Features -->
+        <div class="feature-item" data-aos="fade-up">
+          <img src="assets/optimized/feature1.png" alt="Blockchain Verification Icon" width="80" height="80">
+          <h3>Blockchain Verification</h3>
+          <p>Every review is cryptographically signed and permanently recorded for maximum trust.</p>
+        </div>
+        
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/optimized/feature2.png" alt="Instant Rewards Icon" width="80" height="80">
+          <h3>Instant Rewards</h3>
+          <p>Get paid within 24 hours of your review verification. Multiple payment options available.</p>
+        </div>
+        
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/optimized/feature3.png" alt="AI Analytics Icon" width="80" height="80">
+          <h3>AI-Powered Analytics</h3>
+          <p>Advanced insights and sentiment analysis for data-driven decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech & Security -->
+  <section class="tech-security">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Advanced Technology</h2>
+      <div class="two-column-layout">
+        <div class="text-column" data-aos="fade-right">
+          <div class="tech-security-points">
+            <h3>Blockchain Verification</h3>
+            <p>Every review is cryptographically signed and permanently recorded.</p>
+            
+            <h3>AI Analysis</h3>
+            <p>Machine learning algorithms provide deep insights and trends.</p>
+            
+            <h3>Secure Platform</h3>
+            <p>Enterprise-grade security protects your data and privacy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div id="reviewer-cta" class="audience-section active" data-aos="fade-up">
+        <h2>Ready to Start Earning?</h2>
+        <p>Join our community and start earning rewards for your honest reviews.</p>
+        <div class="cta-buttons">
+          <a href="earn-money-reviews.html" class="btn-primary">Join Waitlist</a>
+          <a href="analyzeg-faq.html" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div id="brand-cta" class="audience-section" data-aos="fade-up">
+        <h2>Transform Your Customer Insights</h2>
+        <p>Get started with verified video reviews and actionable analytics.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-primary">Request Demo</a>
+          <a href="features.html" class="btn-secondary">View Features</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1184,169 +340,5 @@
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/scripts.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({
-          duration: 800,
-          easing: 'ease-in-out',
-          once: true
-        });
-      }
-      
-      // Audience toggle functionality 
-      const reviewerOption = document.getElementById('reviewer-option');
-      const brandOption = document.getElementById('brand-option');
-      const reviewerContent = document.getElementById('reviewer-content');
-      const brandContent = document.getElementById('brand-content');
-      const slider = document.querySelector('.audience-toggle-slider');
-      
-      // Set slider width based on the active option width
-      function updateSliderWidth() {
-        if (reviewerOption.classList.contains('active')) {
-          slider.style.width = `${reviewerOption.offsetWidth}px`;
-        } else {
-          slider.style.width = `${brandOption.offsetWidth}px`;
-        }
-      }
-      
-      // Initialize slider width
-      updateSliderWidth();
-      
-      // Update slider width on window resize
-      window.addEventListener('resize', updateSliderWidth);
-      
-      // Set default audience
-      document.body.setAttribute('data-audience', 'reviewer');
-      
-      reviewerOption.addEventListener('click', function() {
-        setActiveAudience('reviewer');
-      });
-      
-      brandOption.addEventListener('click', function() {
-        setActiveAudience('brand');
-      });
-      
-      // Keyboard support for toggle
-      reviewerOption.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          setActiveAudience('reviewer');
-        }
-      });
-      
-      brandOption.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          setActiveAudience('brand');
-        }
-      });
-      
-      function setActiveAudience(audience) {
-        // Update toggle state
-        if (audience === 'reviewer') {
-          reviewerOption.classList.add('active');
-          brandOption.classList.remove('active');
-          reviewerOption.setAttribute('aria-selected', 'true');
-          brandOption.setAttribute('aria-selected', 'false');
-          slider.style.transform = 'translateX(0)';
-          slider.style.width = `${reviewerOption.offsetWidth}px`;
-          
-          // Show reviewer content
-          reviewerContent.classList.add('active');
-          brandContent.classList.remove('active');
-          
-          // Update body attribute for audience-specific content
-          document.body.setAttribute('data-audience', 'reviewer');
-        } else {
-          reviewerOption.classList.remove('active');
-          brandOption.classList.add('active');
-          reviewerOption.setAttribute('aria-selected', 'false');
-          brandOption.setAttribute('aria-selected', 'true');
-          slider.style.transform = `translateX(${reviewerOption.offsetWidth}px)`;
-          slider.style.width = `${brandOption.offsetWidth}px`;
-          
-          // Show brand content
-          reviewerContent.classList.remove('active');
-          brandContent.classList.add('active');
-          
-          // Update body attribute for audience-specific content
-          document.body.setAttribute('data-audience', 'brand');
-        }
-        
-        // Update audience-specific content in all sections
-        updateAudienceContent(audience);
-      }
-      
-      function updateAudienceContent(audience) {
-        const audienceBlocks = document.querySelectorAll('.audience-specific');
-        audienceBlocks.forEach(block => {
-          // Hide all audience-specific content first
-          block.querySelectorAll('div').forEach(div => {
-            div.style.display = 'none';
-          });
-          
-          // Show content for current audience
-          const contentToShow = block.querySelector(`.for-${audience}`);
-          if (contentToShow) {
-            contentToShow.style.display = 'block';
-          }
-        });
-      }
-      
-      // Initialize audience-specific content
-      updateAudienceContent('reviewer');
-      
-      // Flowchart animation
-      const flowchart = document.getElementById('tech-flowchart');
-      if (flowchart) {
-        const nodes = flowchart.querySelectorAll('.flow-node');
-        
-        // Add pulsing animation to nodes
-        nodes.forEach((node, index) => {
-          // Stagger animation start
-          setTimeout(() => {
-            node.style.animation = 'pulse 3s infinite';
-          }, index * 300);
-          
-          // Add hover interaction
-          node.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.1)';
-            this.style.filter = 'drop-shadow(0px 6px 8px rgba(0,0,0,0.2))';
-          });
-          
-          node.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-            this.style.filter = 'drop-shadow(0px 3px 3px rgba(0,0,0,0.1))';
-          });
-        });
-      }
-      
-      // Demo request modal
-      const demoBtn = document.getElementById('request-demo-btn');
-      if (demoBtn) {
-        demoBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          alert('Thank you for your interest! The demo request feature will be available soon. Please check back later.');
-        });
-      }
-    });
-  </script>
-  
-  <!-- Schema Markup for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "AnalyzeG",
-    "url": "https://analyzeg.shop",
-    "description": "Blockchain-verified platform for authentic video reviews with rewards for reviewers and actionable insights for brands",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://analyzeg.shop/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
 </body>
 </html>

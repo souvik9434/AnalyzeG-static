@@ -1,9 +1,21 @@
-# Allow all robots full access
+# Robots.txt for analyzeg.shop
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
+Allow: /blog/
+Allow: /features.html
+Allow: /about.html
+Allow: /earn-money-reviews.html
+Allow: /analyzeg-faq.html
 
-# Point to sitemap
+# Optimize crawling rate
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://analyzeg.shop/sitemap.xml
 
-# Optimize crawling
-Crawl-delay: 1
+# Block access to development/admin areas if they exist
+Disallow: /admin/
+Disallow: /dev/
+Disallow: /temp/
+Disallow: /test/
