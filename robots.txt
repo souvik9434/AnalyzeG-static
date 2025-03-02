@@ -1,4 +1,9 @@
+# Allow all robots full access
 User-agent: *
 Allow: /
-Disallow: /assets/
+
+# Point to sitemap
 Sitemap: https://analyzeg.shop/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
