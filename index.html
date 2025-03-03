@@ -17,7 +17,7 @@
   <meta property="og:url" content="https://analyzeg.shop">
   <meta property="og:type" content="website">
   
-  <!-- Stylesheets -->
+  <!-- Fonts & Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,6 +25,8 @@
   <!-- Favicon -->
   <link rel="icon" href="assets/optimized/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="assets/optimized/logo.png">
+  
+  <!-- Inline Critical CSS (if applicable) can remain -->
 </head>
 <body>
   <!-- Navigation -->
@@ -45,10 +47,7 @@
         <span></span>
         <span></span>
       </button>
-      <nav id="main-nav" 
-           aria-label="Main navigation"
-           role="navigation"
-           aria-hidden="true">
+      <nav id="main-nav" aria-label="Main navigation" role="navigation" aria-hidden="true">
         <ul role="menubar">
           <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Home</a></li>
           <li role="none"><a href="features.html" role="menuitem">Features</a></li>
@@ -62,8 +61,10 @@
 
   <!-- Hero Section -->
   <section class="hero">
+    <!-- Background overlay and animated objects -->
     <div class="hero-overlay"></div>
     <div class="animated-objects">
+      <!-- Example animated objects; adjust as needed -->
       <div class="bg-object hexagon" style="--moveX: 20vw; --moveY: -30vh; animation-delay: 0.2s; background: #F59E0B;"></div>
       <div class="bg-object circle" style="--moveX: -25vw; --moveY: 25vh; animation-delay: 0.7s; background: #8B5CF6;"></div>
       <div class="bg-object triangle" style="--moveX: 30vw; --moveY: 20vh; animation-delay: 1.2s; background: #10B981;"></div>
@@ -71,7 +72,9 @@
       <div class="bg-object circle" style="--moveX: 25vw; --moveY: 15vh; animation-delay: 2.2s; background: #06B6D4;"></div>
       <div class="bg-object triangle" style="--moveX: -30vw; --moveY: -25vh; animation-delay: 2.7s; background: #4F46E5;"></div>
     </div>
+    
     <div class="container">
+      <!-- Audience Toggle for Dual Views -->
       <div class="audience-toggle-container" data-aos="fade-up">
         <div class="audience-toggle" role="tablist" aria-label="Choose Audience View">
           <div id="reviewer-option" class="audience-toggle-option active" role="tab" aria-selected="true" tabindex="0" aria-controls="reviewer-content">For Reviewers</div>
@@ -79,11 +82,11 @@
           <div class="audience-toggle-slider"></div>
         </div>
       </div>
-
-      <!-- Reviewer Content -->
+      
+      <!-- Reviewer Content (Default) -->
       <div id="reviewer-content" class="audience-section active">
         <div class="hero-content" data-aos="fade-up">
-          <h1>Earn Money. Share Your Voice. Shape the Future.</h1>
+          <h1 class="hero-title">Earn Money. Share Your Voice. Shape the Future.</h1>
           <p class="hero-tagline">Join our community of genuine reviewers and start earning rewards for your honest feedback.</p>
           <div class="hero-cta">
             <a href="earn-money-reviews.html" class="btn-primary">Start Earning</a>
@@ -91,11 +94,11 @@
           </div>
         </div>
       </div>
-
+      
       <!-- Brand Content -->
       <div id="brand-content" class="audience-section">
         <div class="hero-content" data-aos="fade-up">
-          <h1>Unlock Authentic Consumer Insights in 24 Hours</h1>
+          <h1 class="hero-title">Unlock Authentic Consumer Insights in 24 Hours</h1>
           <p class="hero-tagline">Access verified, actionable review data to power your marketing decisions.</p>
           <div class="hero-cta">
             <a href="#" class="btn-primary">Request Demo</a>
@@ -106,25 +109,30 @@
     </div>
   </section>
 
-  <!-- How It Works Section -->
-  <section class="how-it-works" id="how-it-works" role="region" aria-labelledby="how-it-works-title">
+  <!-- How AnalyzeG Works Section -->
+  <section class="how-it-works" id="how-it-works" role="region" aria-labelledby="how-it-works-title" data-aos="fade-up">
     <div class="container">
       <h2 id="how-it-works-title" class="section-title" data-aos="fade-up">How AnalyzeG Works</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Experience the process like data transferring through a processor—dynamic, seamless, and visually engaging.
+      </p>
       
-      <!-- Audience Toggle -->
+      <!-- Audience Toggle for Process Steps -->
       <div class="audience-toggle-container" data-aos="fade-up">
-        <div class="audience-toggle" role="tablist" aria-label="Choose Audience View">
-          <div id="reviewer-option" class="audience-toggle-option active" role="tab" aria-selected="true" tabindex="0" aria-controls="reviewer-process">For Reviewers</div>
-          <div id="brand-option" class="audience-toggle-option" role="tab" aria-selected="false" tabindex="0" aria-controls="brand-process">For Brands</div>
+        <div class="audience-toggle" role="tablist" aria-label="Choose Process View">
+          <div id="reviewer-process-toggle" class="audience-toggle-option active" role="tab" aria-selected="true" tabindex="0" aria-controls="reviewer-process">For Reviewers</div>
+          <div id="brand-process-toggle" class="audience-toggle-option" role="tab" aria-selected="false" tabindex="0" aria-controls="brand-process">For Brands</div>
           <div class="audience-toggle-slider"></div>
         </div>
       </div>
       
-      <!-- Reviewer Process -->
-      <div id="reviewer-process" class="audience-section active" data-audience="reviewer" role="tabpanel" aria-labelledby="reviewer-option">
+      <!-- Process Steps for Reviewers -->
+      <div id="reviewer-process" class="audience-section active" data-audience="reviewer" role="tabpanel" aria-labelledby="reviewer-process-toggle">
         <div class="process-steps">
+          <!-- Step 1: Create Your Profile -->
           <div class="process-step" data-aos="fade-up">
             <div class="step-icon">
+              <!-- SVG icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
@@ -140,9 +148,10 @@
               </ul>
             </div>
           </div>
-          
+          <!-- Step 2: Record Reviews -->
           <div class="process-step" data-aos="fade-up" data-aos-delay="100">
             <div class="step-icon">
+              <!-- SVG icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="3" width="20" height="14" rx="2"></rect>
                 <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -153,15 +162,16 @@
               <h3>2. Record Reviews</h3>
               <p>Create authentic video reviews following our guidelines.</p>
               <ul>
-                <li>Choose review opportunities</li>
+                <li>Choose available review opportunities</li>
                 <li>Follow provided guidelines</li>
                 <li>Submit quality content</li>
               </ul>
             </div>
           </div>
-          
+          <!-- Step 3: Get Rewarded -->
           <div class="process-step" data-aos="fade-up" data-aos-delay="200">
             <div class="step-icon">
+              <!-- SVG icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
@@ -170,20 +180,22 @@
               <h3>3. Get Rewarded</h3>
               <p>Earn instant rewards for verified reviews.</p>
               <ul>
-                <li>Automatic verification</li>
-                <li>24-hour payments</li>
-                <li>Multiple payment options</li>
+                <li>Automatic blockchain verification</li>
+                <li>24-hour payment processing</li>
+                <li>Multiple payout options</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Brand Process -->
-      <div id="brand-process" class="audience-section" data-audience="brand" role="tabpanel" aria-labelledby="brand-option">
+      
+      <!-- Process Steps for Brands -->
+      <div id="brand-process" class="audience-section" data-audience="brand" role="tabpanel" aria-labelledby="brand-process-toggle">
         <div class="process-steps">
+          <!-- Step 1: Seamless Review Collection -->
           <div class="process-step" data-aos="fade-up">
             <div class="step-icon">
+              <!-- SVG icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="3" width="20" height="14" rx="2"></rect>
                 <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -200,26 +212,28 @@
               </ul>
             </div>
           </div>
-
+          <!-- Step 2: Advanced Verification -->
           <div class="process-step" data-aos="fade-up" data-aos-delay="100">
             <div class="step-icon">
+              <!-- SVG icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3"></path>
               </svg>
             </div>
             <div class="step-content">
               <h3>2. Advanced Verification</h3>
-              <p>Blockchain-powered verification ensures authenticity.</p>
+              <p>Ensure authenticity with blockchain-powered verification and cryptographic hashing.</p>
               <ul>
-                <li>Blockchain verification</li>
-                <li>Cryptographic hashing</li>
-                <li>Tamper-proof records</li>
+                <li>Blockchain-based record keeping</li>
+                <li>Automated fraud detection</li>
+                <li>Tamper-proof reviews</li>
               </ul>
             </div>
           </div>
-
+          <!-- Step 3: AI-Powered Analysis -->
           <div class="process-step" data-aos="fade-up" data-aos-delay="200">
             <div class="step-icon">
+              <!-- SVG icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path>
                 <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -228,57 +242,60 @@
             </div>
             <div class="step-content">
               <h3>3. AI-Powered Analysis</h3>
-              <p>Extract valuable insights through advanced analytics.</p>
+              <p>Extract insights through advanced machine learning and data mining.</p>
               <ul>
                 <li>Sentiment analysis</li>
-                <li>Pattern recognition</li>
+                <li>Trend detection</li>
                 <li>Demographic insights</li>
               </ul>
             </div>
           </div>
-
+          <!-- Step 4: Instant Insights Delivery -->
           <div class="process-step" data-aos="fade-up" data-aos-delay="300">
             <div class="step-icon">
+              <!-- SVG icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
             </div>
             <div class="step-content">
-              <h3>4. Instant Insights</h3>
-              <p>Access comprehensive data within 24 hours.</p>
+              <h3>4. Instant Insights Delivery</h3>
+              <p>Receive actionable insights and complete data reports within 24 hours.</p>
               <ul>
-                <li>Real-time dashboard</li>
+                <li>Real-time dashboards</li>
                 <li>Customizable reports</li>
-                <li>Actionable insights</li>
+                <li>Data export options</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      
+      <!-- Data Transfer Animation Effect -->
+      <div class="data-transfer-animation" data-aos="fade-up" data-aos-delay="400">
+        <div class="data-wire"></div>
+      </div>
     </div>
   </section>
 
-  <!-- Features Preview -->
+  <!-- Features Preview Section -->
   <section class="features-preview">
     <div class="container">
       <h2 class="section-title" data-aos="fade-up">Why Choose AnalyzeG?</h2>
       <div class="feature-grid">
-        <!-- Reviewer Features -->
         <div class="feature-item" data-aos="fade-up">
           <img src="assets/optimized/feature1.png" alt="Blockchain Verification Icon" width="80" height="80">
           <h3>Blockchain Verification</h3>
           <p>Every review is cryptographically signed and permanently recorded for maximum trust.</p>
         </div>
-        
         <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
           <img src="assets/optimized/feature2.png" alt="Instant Rewards Icon" width="80" height="80">
           <h3>Instant Rewards</h3>
           <p>Get paid within 24 hours of your review verification. Multiple payment options available.</p>
         </div>
-        
         <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/optimized/feature3.png" alt="AI Analytics Icon" width="80" height="80">
+          <img src="assets/optimized/feature3.png" alt="AI-Powered Analytics Icon" width="80" height="80">
           <h3>AI-Powered Analytics</h3>
           <p>Advanced insights and sentiment analysis for data-driven decisions.</p>
         </div>
@@ -286,7 +303,7 @@
     </div>
   </section>
 
-  <!-- Tech & Security -->
+  <!-- Tech & Security Section -->
   <section class="tech-security">
     <div class="container">
       <h2 class="section-title" data-aos="fade-up">Advanced Technology</h2>
@@ -294,11 +311,9 @@
         <div class="text-column" data-aos="fade-right">
           <div class="tech-security-points">
             <h3>Blockchain Verification</h3>
-            <p>Every review is cryptographically signed and permanently recorded.</p>
-            
+            <p>Every review is cryptographically signed and permanently recorded on blockchain.</p>
             <h3>AI Analysis</h3>
             <p>Machine learning algorithms provide deep insights and trends.</p>
-            
             <h3>Secure Platform</h3>
             <p>Enterprise-grade security protects your data and privacy.</p>
           </div>
@@ -318,10 +333,9 @@
           <a href="analyzeg-faq.html" class="btn-secondary">Learn More</a>
         </div>
       </div>
-
       <div id="brand-cta" class="audience-section" data-aos="fade-up">
         <h2>Transform Your Customer Insights</h2>
-        <p>Get started with verified video reviews and actionable analytics.</p>
+        <p>Access verified video reviews and actionable data to drive your marketing decisions.</p>
         <div class="cta-buttons">
           <a href="#" class="btn-primary">Request Demo</a>
           <a href="features.html" class="btn-secondary">View Features</a>
@@ -338,7 +352,15 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
 </html>
