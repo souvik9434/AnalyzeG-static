@@ -3836,3 +3836,26 @@ section {
     animation: none;
   }
 }
+
+/* Data Transfer Animation */
+.data-transfer-animation {
+  margin-top: 2rem;
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.data-wire {
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  background-size: 200% 100%;
+  animation: dataTransfer var(--data-transfer-duration, 3s) linear infinite;
+}
+
+@keyframes dataTransfer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
