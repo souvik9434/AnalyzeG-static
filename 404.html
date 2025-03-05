@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;">
+  <title>Page Not Found - AnalyzeG</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="The page you requested could not be found. Navigate back to AnalyzeG's main site to explore our video review platform.">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Page Not Found - AnalyzeG">
+  <meta property="og:description" content="The page you requested could not be found. Navigate back to AnalyzeG's main site.">
+  <meta property="og:image" content="https://analyzeg.shop/assets/optimized/hero-bg.jpg">
+  <meta property="og:url" content="https://analyzeg.shop/404.html">
+  <meta property="og:type" content="website">
+  
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/optimized/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/optimized/logo.png">
+  
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 70px;
+    }
+    
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      margin: 0;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+    }
+    
+    .error-message {
+      font-size: 2rem;
+      margin: 1rem 0 2rem;
+      color: #1a1a1a;
+    }
+    
+    .error-description {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #4b5563;
+    }
+    
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 6rem;
+      }
+      
+      .error-message {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <img src="assets/optimized/logo.png" alt="AnalyzeG Logo" width="40" height="40">
+          <span class="logo-text">AnalyzeG</span>
+        </a>
+      </div>
+      <button class="mobile-menu-btn" 
+              aria-label="Toggle navigation menu" 
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-haspopup="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" 
+           aria-label="Main navigation"
+           role="navigation"
+           aria-hidden="true">
+        <ul role="menubar">
+          <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+          <li role="none"><a href="features.html" role="menuitem">Features</a></li>
+          <li role="none"><a href="about.html" role="menuitem">About</a></li>
+          <li role="none"><a href="earn-money-reviews.html" role="menuitem">Earn Money</a></li>
+          <li role="none"><a href="analyzeg-faq.html" role="menuitem">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Error Content -->
+  <main class="error-container">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-message">Page Not Found</h2>
+    <p class="error-description">The page you're looking for doesn't exist or has been moved. Please check the URL or navigate back to our home page.</p>
+    <div class="error-actions">
+      <a href="index.html" class="btn-primary">Go to Homepage</a>
+      <a href="analyzeg-faq.html" class="btn-secondary">Visit FAQ</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 AnalyzeG. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

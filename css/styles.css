@@ -18,9 +18,6 @@
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --data-transfer-duration: 4s;
-  --data-transfer-color: #2563EB;
-  --data-pulse-color: rgba(37, 99, 235, 0.2);
 }
 
 /* Reset and Base Styles */
@@ -237,6 +234,12 @@ body {
   transform: rotate(-45deg);
 }
 
+/* Add focus style for accessibility */
+.mobile-menu-btn:focus {
+  outline: 2px solid var(--accent-color); /* Use your accent color */
+  outline-offset: 2px;
+}
+
 /* Improved Audience Toggle Styles */
 .audience-toggle-container {
   display: flex;
@@ -267,7 +270,7 @@ body {
 
 .audience-toggle-option {
   flex: 1;
-  padding: 12px 24px;
+  padding: 0.75rem 1.25rem; /* Increased padding */
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
@@ -553,6 +556,13 @@ body {
 .particle:nth-child(4) {
   width: 12px; height: 12px;
   background: #a7f3d0;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  animation: float-circle 25s linear infinite;
+}
+
+.particle:nth-child(4) {
+  width: 12px; height: 12px;
+  background: #a7f3d0;
   top: 70%; left: 30%;
   border-radius: 2px;
   animation: float-up-right 20s ease-in-out infinite alternate-reverse;
@@ -829,11 +839,46 @@ body {
 
 /* Footer */
 .footer {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 2rem 0;
+  background: linear-gradient(180deg, #1a1a1a, #2d2d2d);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+}
+
+.footer .container {
   position: relative;
   z-index: 2;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
 }
 
 .footer .container {
@@ -1067,6 +1112,42 @@ img {
   .footer-links {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  /* Adjustments for smaller screens */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Fix header overlap on mobile */
+  .hero {
+    padding-top: calc(60px + 1rem); /* Adjust 60px to match your navbar height */
+  }
+
+  .hero-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    text-align: center;
+  }
+
+  .two-column-layout {
+    flex-direction: column;
+  }
+
+  .text-column {
+    margin-bottom: 2rem;
   }
 }
 
@@ -1323,14 +1404,16 @@ section {
 
 /* Vertical line connector */
 .process-steps::before {
-  content: '';
+  display: none; /* Hide the vertical line that was causing issues */
+  /* Original properties remain below but won't be applied due to display: none */
+  content: "";
   position: absolute;
-  left: 50%;
   top: 0;
   bottom: 0;
+  left: 24px; /* Aligned with the center of step icons */
   width: 2px;
-  background: linear-gradient(to bottom, transparent, #2563EB 5%, #2563EB 95%, transparent);
-  transform: translateX(-50%);
+  background: linear-gradient(to bottom, rgba(37, 99, 235, 0.2), rgba(124, 58, 237, 0.2));
+  z-index: 0;
 }
 
 .process-step {
@@ -2296,7 +2379,7 @@ section {
   padding: 2rem;
   margin-bottom: 2rem;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
+  border-radius: 1rem;
   backdrop-filter: blur(10px);
   transform: translateY(30px);
   opacity: 0;
@@ -2591,7 +2674,6 @@ section {
   position: absolute;
   opacity: 0.15;
   filter: blur(2px);
-  transform: translate(0, 0);
   animation: floatObject 15s ease-in-out infinite;
 }
 
@@ -3313,333 +3395,11 @@ section {
 /* Process Steps Animation */
 .process-steps {
   position: relative;
-  display: grid;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.process-step {
   display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: stepReveal 0.8s ease-out forwards;
-}
-
-@keyframes stepReveal {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.process-step:nth-child(1) { animation-delay: 0.2s; }
-.process-step:nth-child(2) { animation-delay: 0.4s; }
-.process-step:nth-child(3) { animation-delay: 0.6s; }
-.process-step:nth-child(4) { animation-delay: 0.8s; }
-
-.step-icon {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(37, 99, 235, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #2563EB;
-  transition: all 0.3s ease;
-}
-
-.process-step:hover .step-icon {
-  transform: scale(1.1);
-  background: #2563EB;
-  color: white;
-}
-
-/* Add hover effect to steps */
-.step-content {
-  position: relative;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.process-step:hover .step-content {
-  transform: translateX(10px);
-}
-
-/* Audience Toggle Enhancements */
-.audience-toggle {
-  transition: all 0.3s ease-in-out;
-}
-
-/* Process Section Enhancements */
-#brand-process,
-#reviewer-process {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-}
-
-#brand-process.active,
-#reviewer-process.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  position: relative;
-}
-
-.process-steps {
-  position: relative;
-}
-
-.process-step {
-  position: relative;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* Step Icons and Content */
-.step-icon {
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.step-content {
-  transition: transform 0.3s ease;
-}
-
-/* Step Hover Effects */
-.process-step:hover .step-icon {
-  transform: scale(1.1);
-  background: var(--primary-color);
-  color: white;
-}
-
-.process-step:hover .step-content {
-  transform: translateX(10px);
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .process-steps {
-    grid-template-columns: 1fr;
-  }
-  
-  .process-step {
-    margin-bottom: 2rem;
-  }
-  
-  .step-content {
-    padding: 1rem 0;
-  }
-}
-
-/* Enhanced Accessibility */
-.process-step:focus-within {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 4px;
-  border-radius: 0.5rem;
-}
-
-/* Print Styles */
-@media print {
-  .process-step {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-}
-
-/* Process Steps Container */
-.process-steps {
-  position: relative;
-  padding: 2rem 0;
-}
-
-/* Data Transfer Animation Variables */
-:root {
-  --data-transfer-duration: 3s;
-  --data-transfer-color: #2563EB;
-  --data-pulse-color: rgba(37, 99, 235, 0.2);
-}
-
-/* Process Step with Enhanced Connection Lines */
-.process-step {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease;
-}
-
-/* Data Transfer Line */
-.process-step::before {
-  content: '';
-  position: absolute;
-  left: 40px;
-  top: 100%;
-  width: 2px;
-  height: 4rem;
-  background: linear-gradient(to bottom, var(--data-transfer-color), transparent);
-  transform-origin: top;
-  opacity: 0.3;
-}
-
-/* Animated Data Pulse Effect */
-.process-step::after {
-  content: '';
-  position: absolute;
-  left: 39px;
-  top: calc(100% - 2px);
-  width: 4px;
-  height: 12px;
-  background: var(--data-transfer-color);
-  border-radius: 4px;
-  animation: dataTransfer var(--data-transfer-duration) infinite;
-  transform-origin: top;
-  opacity: 0;
-}
-
-/* Data Transfer Animation */
-@keyframes dataTransfer {
-  0% {
-    transform: scaleY(0);
-    opacity: 1;
-    background: var(--data-transfer-color);
-  }
-  50% {
-    transform: scaleY(25);
-    opacity: 0.8;
-    background: var(--data-pulse-color);
-  }
-  100% {
-    transform: scaleY(50);
-    opacity: 0;
-    background: transparent;
-  }
-}
-
-/* Step Icon Enhancement */
-.step-icon {
-  position: relative;
-  z-index: 2;
-}
-
-/* Data Glow Effect */
-.step-icon::before {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  background: radial-gradient(circle at center, var(--data-pulse-color) 0%, transparent 70%);
-  border-radius: 50%;
-  opacity: 0;
-  animation: pulseGlow 2s infinite;
-}
-
-@keyframes pulseGlow {
-  0% {
-    transform: scale(1);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-/* Connecting Lines Between Steps */
-.process-steps::after {
-  content: '';
-  position: absolute;
-  left: 40px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, 
-    transparent,
-    var(--data-transfer-color) 10%,
-    var(--data-transfer-color) 90%,
-    transparent
-  );
-  opacity: 0.2;
-  z-index: 1;
-}
-
-/* Active Step Highlight */
-.process-step:hover {
-  transform: translateX(10px);
-}
-
-.process-step:hover::after {
-  animation-duration: calc(var(--data-transfer-duration) * 0.7);
-}
-
-/* Mobile Optimization */
-@media (max-width: 768px) {
-  .process-step {
-    margin-bottom: 3rem;
-  }
-
-  .process-step::before {
-    left: 30px;
-    height: 3rem;
-  }
-
-  .process-step::after {
-    left: 29px;
-  }
-
-  .process-steps::after {
-    left: 30px;
-  }
-
-  /* Reduce animation intensity on mobile */
-  :root {
-    --data-transfer-duration: 4s;
-  }
-
-  @keyframes dataTransfer {
-    0% {
-      transform: scaleY(0);
-      opacity: 0.8;
-    }
-    50% {
-      transform: scaleY(20);
-      opacity: 0.6;
-    }
-    100% {
-      transform: scaleY(40);
-      opacity: 0;
-    }
-  }
-}
-
-/* High Performance Mode */
-@media (prefers-reduced-motion: reduce) {
-  .process-step::after,
-  .step-icon::before {
-    animation: none;
-  }
-  
-  .process-step:hover {
-    transform: none;
-  }
-}
-
-/* Process Steps Animation Enhancement */
-.process-steps {
-  position: relative;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem 0;
 }
 
@@ -3647,54 +3407,42 @@ section {
 .process-steps::before {
   content: '';
   position: absolute;
+  left: 30px;
   top: 0;
   bottom: 0;
-  left: 29px;
-  width: 4px;
-  background: linear-gradient(to bottom, rgba(79, 70, 229, 0.1), rgba(79, 70, 229, 0.3));
-  border-radius: 4px;
+  width: 3px;
+  background: #e4e4e7;
   z-index: 1;
-  overflow: hidden;
 }
 
 /* Animated data transfer effect */
 .process-steps::after {
   content: '';
   position: absolute;
+  left: 30px;
   top: 0;
-  bottom: 0;
-  left: 29px;
-  width: 4px;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #4F46E5 50%,
-    #7C3AED 60%,
-    transparent 100%
-  );
-  border-radius: 4px;
+  width: 3px;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(37, 99, 235, 0), #2563EB, rgba(37, 99, 235, 0));
   z-index: 2;
-  transform: translateY(-100%);
-  animation: dataTransferVertical 3s linear infinite;
-  will-change: transform;
+  animation: dataTransferVertical 3s infinite linear;
 }
 
 /* Individual process step styling */
 .process-step {
   display: flex;
   align-items: flex-start;
+  gap: 2rem;
   position: relative;
-  margin-bottom: 2.5rem;
-  z-index: 3;
   opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
 }
 
 /* Show steps when section is active */
 .audience-section.active .process-step {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 /* Step animation delays */
@@ -3705,31 +3453,33 @@ section {
 
 /* Step icon with pulse effect */
 .step-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px; /* Prevent icon shrinking */
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #2563EB;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 50%;
-  margin-right: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 5;
-  border: 3px solid rgba(79, 70, 229, 0.2);
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
 }
 
 /* Animated pulse around step icons */
 .step-icon::before {
   content: '';
   position: absolute;
-  inset: -5px;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
   border-radius: 50%;
-  background: rgba(79, 70, 229, 0.2);
+  border: 2px solid #2563EB;
   opacity: 0;
-  transform: scale(0.8);
-  animation: pulse 3s infinite;
   z-index: -1;
+  animation: pulse 2s infinite;
 }
 
 /* Horizontal data transfer between icon and content */
@@ -3739,15 +3489,9 @@ section {
   top: 30px;
   left: 60px;
   height: 3px;
-  width: 30px;
-  background: linear-gradient(
-    to right,
-    rgba(79, 70, 229, 0.1),
-    rgba(79, 70, 229, 0.3)
-  );
-  border-radius: 3px;
-  z-index: 1;
-  overflow: hidden;
+  width: 2rem;
+  background: #e4e4e7;
+  z-index: 0;
 }
 
 /* Animated data flowing through horizontal connector */
@@ -3757,105 +3501,359 @@ section {
   top: 30px;
   left: 60px;
   height: 3px;
-  width: 30px;
-  border-radius: 3px;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    white 40%,
-    #4F46E5 50%,
-    #7C3AED 60%,
-    transparent 100%
-  );
-  transform: translateX(-100%);
-  animation: dataTransferHorizontal 3s linear infinite;
-  z-index: 2;
-  will-change: transform;
+  width: 0;
+  background: linear-gradient(to right, rgba(37, 99, 235, 0), #2563EB, rgba(37, 99, 235, 0));
+  animation: dataTransferHorizontal 3s infinite linear;
+  z-index: 1;
+}
+
+/* Step content styling - FIXED FOR SCALING */
+.step-content {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  flex: 1;
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-content h3 {
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: #4b5563;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.step-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #2563EB;
 }
 
 /* Animation keyframes */
 @keyframes dataTransferVertical {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100%); }
+  0% {
+    top: 0;
+    height: 0;
+    opacity: 0.8;
+  }
+  50% {
+    height: 20%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    height: 0;
+    opacity: 0.8;
+  }
 }
 
 @keyframes dataTransferHorizontal {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    width: 0;
+    left: 60px;
+    opacity: 0.8;
+  }
+  50% {
+    width: 2rem;
+    left: 60px;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    left: calc(60px + 2rem);
+    opacity: 0.8;
+  }
 }
 
 @keyframes pulse {
-  0% { transform: scale(0.95); opacity: 0.5; }
-  50% { transform: scale(1.05); opacity: 0.8; }
-  100% { transform: scale(0.95); opacity: 0.5; }
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
-/* Audience toggle enhancement */
-.audience-section {
-  display: none;
+/* Mobile responsiveness for process steps */
+@media (max-width: 768px) {
+  .process-step {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .step-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .process-steps::before {
+    left: 30px;
+  }
+
+  .process-steps::after {
+    left: 30px;
+  }
+
+  .process-step::after,
+  .process-step::before {
+    display: none;
+  }
+
+  .step-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .step-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .step-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Process Steps Animation Enhancement */
+.process-steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Vertical connecting line with animated data transfer */
+.process-steps::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #e4e4e7;
+  z-index: 1;
+}
+
+/* Animated data transfer effect */
+.process-steps::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 3px;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(37, 99, 235, 0), #2563EB, rgba(37, 99, 235, 0));
+  z-index: 2;
+  animation: dataTransferVertical 3s infinite linear;
+}
+
+/* Individual process step styling */
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: all 0.5s ease-out;
 }
 
-.audience-section.active {
-  display: block;
+/* Show steps when section is active */
+.audience-section.active .process-step {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Mobile responsiveness */
+/* Step animation delays */
+.process-step:nth-child(1) { transition-delay: 0.1s; }
+.process-step:nth-child(2) { transition-delay: 0.2s; }
+.process-step:nth-child(3) { transition-delay: 0.3s; }
+.process-step:nth-child(4) { transition-delay: 0.4s; }
+
+/* Step icon with pulse effect */
+.step-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px; /* Prevent icon shrinking */
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #2563EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+/* Animated pulse around step icons */
+.step-icon::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 50%;
+  border: 2px solid #2563EB;
+  opacity: 0;
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+/* Horizontal data transfer between icon and content */
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  height: 3px;
+  width: 2rem;
+  background: #e4e4e7;
+  z-index: 0;
+}
+
+/* Animated data flowing through horizontal connector */
+.process-step::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(to right, rgba(37, 99, 235, 0), #2563EB, rgba(37, 99, 235, 0));
+  animation: dataTransferHorizontal 3s infinite linear;
+  z-index: 1;
+}
+
+/* Step content styling - FIXED FOR SCALING */
+.step-content {
+  flex: 1;  /* Allow content to take up all remaining space */
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;  /* Set minimum height */
+}
+
+.step-content h3 {
+  color: #1E40AF;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-content p {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  flex-grow: 1;  /* Allow text to grow and fill available space */
+}
+
+/* Improved hover effect that scales text properly */
+.step-content:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+  background-color: #f8fafc;
+}
+
+.step-content:hover h3 {
+  color: var(--primary-color);
+}
+
+.step-content:hover p {
+  color: var(--text-color);
+}
+
+/* Animation keyframes */
+@keyframes dataTransferVertical {
+  0% { height: 0; top: 0; }
+  50% { height: 100%; top: 0; }
+  50.001% { height: 0; top: 100%; }
+  100% { height: 0; top: 100%; }
+}
+
+@keyframes dataTransferHorizontal {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 0.4; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Mobile responsiveness for process steps */
 @media (max-width: 768px) {
   .process-steps::before,
   .process-steps::after {
-    left: 25px;
-    width: 3px;
+    left: 1.5rem;
   }
   
   .step-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
   }
   
-  .process-step::before,
+  .process-step {
+    gap: 1rem;
+  }
+  
   .process-step::after {
-    top: 25px;
-    left: 50px;
-    width: 20px;
-    height: 2px;
+    left: 2.9rem;
+    top: 1.5rem;
+    width: 1rem;
+  }
+  
+  .process-step::before {
+    left: 2.9rem;
+    top: 1.5rem;
+  }
+  
+  .step-content {
+    padding: 1rem;
+    min-height: 100px;
+  }
+  
+  .step-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .step-content p {
+    font-size: 0.9rem;
   }
 }
 
-/* Reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  .process-step::before,
-  .process-step::after,
-  .process-steps::after,
-  .step-icon::before {
-    animation: none;
-  }
-}
-
-/* Data Transfer Animation */
-.data-transfer-animation {
-  margin-top: 2rem;
-  height: 4px;
-  overflow: hidden;
-  position: relative;
-}
-.data-wire {
-  height: 100%;
-  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
-  background-size: 200% 100%;
-  animation: dataTransfer var(--data-transfer-duration, 3s) linear infinite;
-}
-
-@keyframes dataTransfer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
+/* ...existing code... */

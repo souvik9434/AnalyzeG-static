@@ -1,18 +1,20 @@
 # Robots.txt for analyzeg.shop
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
-Allow: /blog/
-Allow: /features.html
-Allow: /about.html
-Allow: /earn-money-reviews.html
-Allow: /analyzeg-faq.html
+Disallow: /assets/
+Disallow: /.htaccess
+Disallow: /generate-favicons.bat
+Disallow: /optimize-images.bat
+
+# Allow Google to crawl everything
+User-agent: Googlebot
+Allow: /
 
 # Optimize crawling rate
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://analyzeg.shop/sitemap.xml
+Sitemap: https://www.analyzeg.shop/sitemap.xml
 
 # Block access to development/admin areas if they exist
 Disallow: /admin/
