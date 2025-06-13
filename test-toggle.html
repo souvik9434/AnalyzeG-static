@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnalyzeG Toggle Test</title>
+    <style>
+        .audience-section {
+            display: none;
+            padding: 20px;
+            border: 2px solid #ccc;
+            margin: 10px 0;
+        }
+        .audience-section.active {
+            display: block;
+            border-color: #2563EB;
+        }
+        .audience-toggle {
+            display: flex;
+            background: white;
+            border-radius: 30px;
+            padding: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .audience-toggle-option {
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .audience-toggle-option.active {
+            background: #2563EB;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>AnalyzeG Toggle Test</h1>
+    
+    <div class="audience-toggle" role="tablist">
+        <div id="reviewer-option" class="audience-toggle-option active" role="tab">For Reviewers</div>
+        <div id="brand-option" class="audience-toggle-option" role="tab">For Brands</div>
+    </div>
+
+    <!-- Reviewer Content -->
+    <div id="reviewer-content" class="audience-section active" data-audience="reviewer">
+        <h2>For Reviewers: Earn Money. Share Your Voice.</h2>
+        <p>Join our community of genuine reviewers and start earning rewards.</p>
+        <button>Start Earning</button>
+    </div>
+
+    <!-- Brand Content -->
+    <div id="brand-content" class="audience-section" data-audience="brand">
+        <h2>For Brands: Transform Customer Data Into Business Growth</h2>
+        <p>Leverage verified video reviews and AI-powered insights to make strategic decisions.</p>
+        <button>Request Demo</button>
+    </div>
+
+    <script>
+        // Initialize audience toggle functionality
+        function initializeAudienceToggle() {
+            const reviewerOption = document.getElementById('reviewer-option');
+            const brandOption = document.getElementById('brand-option');
+            
+            if (reviewerOption && brandOption) {
+                reviewerOption.addEventListener('click', () => setActiveAudience('reviewer'));
+                brandOption.addEventListener('click', () => setActiveAudience('brand'));
+            }
+        }
+
+        // Set active audience and update content
+        function setActiveAudience(audience) {
+            const reviewerOption = document.getElementById('reviewer-option');
+            const brandOption = document.getElementById('brand-option');
+            
+            // Update toggle states
+            if (audience === 'reviewer') {
+                reviewerOption.classList.add('active');
+                brandOption.classList.remove('active');
+            } else {
+                reviewerOption.classList.remove('active');
+                brandOption.classList.add('active');
+            }
+            
+            // Toggle content sections
+            document.querySelectorAll('[data-audience]').forEach(section => {
+                if (section.getAttribute('data-audience') === audience) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', initializeAudienceToggle);
+    </script>
+</body>
+</html>

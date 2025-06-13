@@ -1,17 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize AOS animations
+  // Initialize AOS animations with improved configuration
   AOS.init({
     duration: 800,
     easing: 'ease-in-out',
-    once: true,
-    mirror: false
+    once: false, // Changed to false to allow animations to occur every time element scrolls into view
+    mirror: false,
+    disable: 'mobile', // Disable animations on mobile for better performance
+    startEvent: 'DOMContentLoaded',
+    offset: 120 // Trigger animations earlier
   });
+  
+  // Add scroll event listener to refresh AOS on scroll
+  window.addEventListener('scroll', function() {
+    setTimeout(function() {
+      AOS.refresh();
+    }, 200);
+  }, { passive: true });
 
   // Initialize mobile menu with improved accessibility
   initializeMobileMenu();
-  
-  // Initialize audience toggle
+    // Initialize audience toggle
   initializeAudienceToggle();
+  
+  // Load saved audience preference
+  const savedAudience = localStorage.getItem('selectedAudience');
+  if (savedAudience && (savedAudience === 'reviewer' || savedAudience === 'brand')) {
+    setTimeout(() => {
+      setActiveAudience(savedAudience);
+    }, 100);
+  }
   
   // Add smooth scrolling functionality
   initializeSmoothScroll();
@@ -178,15 +195,34 @@ function setActiveAudience(audience) {
       }, 50);
     }
   });
-  
-  // Toggle visibility of audience-specific content sections
+    // Toggle visibility of audience-specific content sections
   document.querySelectorAll('[data-audience]').forEach(section => {
     if (section.getAttribute('data-audience') === audience) {
       section.classList.add('active');
+      
+      // Add a slight delay before refreshing AOS to ensure elements are visible
+      setTimeout(() => {
+        // Refresh AOS to animate newly visible elements
+        if (typeof AOS !== 'undefined') {
+          AOS.refresh();
+        }
+      }, 100);
     } else {
       section.classList.remove('active');
     }
   });
+  
+  // Also handle sections without data-audience but with IDs (legacy support)
+  const reviewerSections = document.querySelectorAll('#reviewer-content, #reviewer-cta, #reviewer-process');
+  const brandSections = document.querySelectorAll('#brand-content, #brand-cta, #brand-process');
+  
+  if (audience === 'reviewer') {
+    reviewerSections.forEach(section => section.classList.add('active'));
+    brandSections.forEach(section => section.classList.remove('active'));
+  } else {
+    reviewerSections.forEach(section => section.classList.remove('active'));
+    brandSections.forEach(section => section.classList.add('active'));
+  }
   
   // Store audience preference
   localStorage.setItem('selectedAudience', audience);
@@ -272,3 +308,56 @@ function initializeSmoothScroll() {
     });
   });
 }
+
+// Function to handle animation completion and layout recalculation
+function handleAnimationCompletion() {
+  // Observer for animation completion events
+  const animatedElements = document.querySelectorAll('[data-aos]');
+  
+  // If IntersectionObserver is available
+  if ('IntersectionObserver' in window) {
+    const animationObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Once element is visible and animation started
+          entry.target.addEventListener('transitionend', () => {
+            // Force a reflow after animation completes
+            requestAnimationFrame(() => {
+              // Refresh AOS to ensure proper layout
+              AOS.refresh();
+            });
+          }, { once: true });
+          
+          // Stop observing after first intersection
+          animationObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    // Start observing all animated elements
+    animatedElements.forEach(el => animationObserver.observe(el));
+  }
+  
+  // Fallback for browsers without IntersectionObserver support
+  else {
+    window.addEventListener('scroll', debounce(() => {
+      AOS.refresh();
+    }, 200), { passive: true });
+  }
+}
+
+// Debounce helper function to limit how often a function can run
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+// Initialize animation completion handler
+handleAnimationCompletion();

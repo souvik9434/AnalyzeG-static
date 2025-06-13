@@ -1,12 +1,13 @@
-# Robots.txt for analyzeg.shop
+# Robots.txt for AnalyzeG - Get Reviews Instantly & Earn 50% Revenue
 User-agent: *
 Allow: /
 Disallow: /assets/
 Disallow: /.htaccess
 Disallow: /generate-favicons.bat
 Disallow: /optimize-images.bat
+Disallow: /temp_outputs/
 
-# Allow Google to crawl everything
+# Allow Google to crawl everything for AnalyzeG brand recognition
 User-agent: Googlebot
 Allow: /
 

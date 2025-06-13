@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<ht  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-enhancements.css">  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;">
-  <title>Platform Features - AnalyzeG</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;">  <title>AnalyzeG Features - Get Reviews Instantly & Earn 50% Revenue</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Discover AnalyzeG's innovative features including blockchain verification, instant rewards, and AI-powered analytics. Transform how you handle video reviews.">
-  <meta name="keywords" content="blockchain reviews, video reviews, review analytics, review verification, review rewards">
+  <meta name="description" content="AnalyzeG features: Get competitor reviews instantly (B2B), earn 50% revenue for authentic reviews (B2C). Video analytics, instant payments, verified reviews.">
+  <meta name="keywords" content="AnalyzeG, competitor reviews, earn money reviews, video analytics, instant payments, B2B reviews, B2C platform">
   
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="AnalyzeG Features - Transform Your Review Experience">
-  <meta property="og:description" content="Experience innovative features like blockchain verification, instant rewards, and AI-powered analytics.">
+  <meta property="og:title" content="AnalyzeG Features - Get Reviews Instantly & Earn 50% Revenue">
+  <meta property="og:description" content="Get competitor reviews instantly (B2B) or earn 50% revenue for authentic reviews (B2C). Discover AnalyzeG's powerful features.">
   <meta property="og:image" content="https://analyzeg.shop/assets/optimized/hero-bg.jpg">
   <meta property="og:url" content="https://analyzeg.shop/features.html">
   <meta property="og:type" content="website">
@@ -63,13 +65,12 @@
   <!-- Features Header -->
   <section class="page-header" data-aos="fade-in">
     <div class="bg-gradient-animated"></div>
-    <div class="animated-objects">
-      <div class="bg-object hexagon" style="--moveX: 20vw; --moveY: -30vh; animation-delay: 0s;"></div>
-      <div class="bg-object circle" style="--moveX: -25vw; --moveY: 25vh; animation-delay: 0.5s;"></div>
-      <div class="bg-object triangle" style="--moveX: 30vw; --moveY: 20vh; animation-delay: 1s;"></div>
-      <div class="bg-object hexagon" style="--moveX: -15vw; --moveY: -20vh; animation-delay: 1.5s;"></div>
-      <div class="bg-object circle" style="--moveX: 25vw; --moveY: 15vh; animation-delay: 2s;"></div>
-      <div class="bg-object triangle" style="--moveX: -30vw; --moveY: -25vh; animation-delay: 2.5s;"></div>
+    <div class="animated-objects">      <div class="bg-object hexagon" style="top: 15%; left: 10%; --moveX: 18vw; --moveY: -25vh; animation-delay: 0s;"></div>
+      <div class="bg-object circle" style="top: 55%; left: 85%; --moveX: -20vw; --moveY: 20vh; animation-delay: 0.5s;"></div>
+      <div class="bg-object triangle" style="top: 70%; left: 20%; --moveX: 15vw; --moveY: 15vh; animation-delay: 1s;"></div>
+      <div class="bg-object hexagon" style="top: 5%; left: 60%; --moveX: -12vw; --moveY: -18vh; animation-delay: 1.5s;"></div>
+      <div class="bg-object circle" style="top: 80%; left: 50%; --moveX: 10vw; --moveY: 12vh; animation-delay: 2s;"></div>
+      <div class="bg-object triangle" style="top: 30%; left: 5%; --moveX: -18vw; --moveY: -22vh; animation-delay: 2.5s;"></div>
     </div>
     <div class="container">
       <h1 data-aos="zoom-in">Platform Features</h1>
@@ -267,15 +268,26 @@
       </div>
     </div>
   </section>
-
   <!-- CTA Section -->
   <section class="cta" data-aos="fade-up">
     <div class="container">
-      <h2>Ready to Transform Your Review Experience?</h2>
-      <p>Join our platform and be part of the future of authentic video reviews.</p>
-      <div class="cta-buttons">
-        <a href="earn-money-reviews.html" class="btn-primary">Start Earning</a>
-        <a href="about.html" class="btn-secondary">Learn More</a>
+      <!-- Reviewer CTA -->
+      <div id="reviewer-cta" class="audience-section active" data-audience="reviewer">
+        <h2>Ready to Start Earning?</h2>
+        <p>Join our platform and start earning rewards for your authentic video reviews.</p>
+        <div class="cta-buttons">
+          <a href="earn-money-reviews.html" class="btn-primary">Start Earning</a>
+          <a href="about.html" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <!-- Brand CTA -->
+      <div id="brand-cta" class="audience-section" data-audience="brand">
+        <h2>Ready to Transform Your Customer Insights?</h2>
+        <p>Get access to verified video reviews and AI-powered analytics for your brand.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-primary">Request Demo</a>
+          <a href="about.html" class="btn-secondary">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
