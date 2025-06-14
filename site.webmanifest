@@ -1,7 +1,7 @@
 {
-  "name": "AnalyzeG - Video Review Platform",
+  "name": "AnalyzeG - Leading Video Review Platform",
   "short_name": "AnalyzeG",
-  "description": "The premier platform for authentic video reviews and market insights.",
+  "description": "The premier platform for video review intelligence and authentic reviewer earnings.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
