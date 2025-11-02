@@ -1504,6 +1504,14 @@ section {
 }
 
 /* Audience Section Enhancements */
+.audience-section {
+  display: none;
+}
+
+.audience-section.active {
+  display: block;
+}
+
 .audience-section .hero-content,
 .audience-section .process-steps,
 .audience-section .cta-buttons {
@@ -1520,14 +1528,6 @@ section {
 }
 
 /* Ensure both B2C and B2B sections have consistent spacing */
-#reviewer-content,
-#brand-content {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
 #reviewer-content .hero-content,
 #brand-content .hero-content {
   margin-top: 3rem;
