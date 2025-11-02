@@ -1508,6 +1508,8 @@ section {
 .audience-section .cta-buttons {
   opacity: 0;
   transform: translateY(20px);
+  min-height: 0 !important;
+  height: auto !important;
 }
 
 .audience-section.active .hero-content,
@@ -1516,6 +1518,18 @@ section {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.5s ease-out 0.2s, transform 0.5s ease-out 0.2s;
+}
+
+/* Fix B2B hero spacing - ensure no extra height */
+#brand-content {
+  min-height: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+
+#brand-content .hero-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* Flowchart Animation Styles */
