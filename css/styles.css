@@ -74,8 +74,8 @@ body {
 }
 
 .logo img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: block;
   object-fit: contain;
 }
@@ -165,13 +165,13 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 60px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-decoration: none;
   transition: transform 0.3s ease;
   line-height: 1;
@@ -182,18 +182,19 @@ body {
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   display: block;
+  object-fit: contain;
 }
 
 .logo-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #000;
   letter-spacing: -0.5px;
-  line-height: 40px;
+  line-height: 60px;
   display: flex;
   align-items: center;
 }
@@ -1508,8 +1509,6 @@ section {
 .audience-section .cta-buttons {
   opacity: 0;
   transform: translateY(20px);
-  min-height: 0 !important;
-  height: auto !important;
 }
 
 .audience-section.active .hero-content,
@@ -1520,16 +1519,18 @@ section {
   transition: opacity 0.5s ease-out 0.2s, transform 0.5s ease-out 0.2s;
 }
 
-/* Fix B2B hero spacing - ensure no extra height */
+/* Ensure both B2C and B2B sections have consistent spacing */
+#reviewer-content,
 #brand-content {
-  min-height: auto !important;
-  height: auto !important;
-  padding: 0 !important;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
+#reviewer-content .hero-content,
 #brand-content .hero-content {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin-top: 3rem;
 }
 
 /* Flowchart Animation Styles */
