@@ -1,11 +1,14 @@
 # Robots.txt for AnalyzeG - Get Reviews Instantly & Earn 50% Revenue
 User-agent: *
 Allow: /
-Disallow: /assets/
+Allow: /assets/optimized/logo-512.png
+Allow: /assets/optimized/*.png
+Disallow: /assets/optimized/*.jpg
 Disallow: /.htaccess
 Disallow: /generate-favicons.bat
 Disallow: /optimize-images.bat
 Disallow: /temp_outputs/
+Disallow: /resize_logo.bat
 
 # Allow Google to crawl everything for AnalyzeG brand recognition
 User-agent: Googlebot
@@ -15,7 +18,7 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://www.analyzeg.shop/sitemap.xml
+Sitemap: https://analyzeg.co.in/sitemap.xml
 
 # Block access to development/admin areas if they exist
 Disallow: /admin/

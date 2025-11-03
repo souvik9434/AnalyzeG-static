@@ -74,8 +74,8 @@ body {
 }
 
 .logo img {
-  width: 60px;
-  height: 60px;
+  width: 150px;
+  height: 150px;
   display: block;
   object-fit: contain;
 }
@@ -182,8 +182,8 @@ body {
 }
 
 .logo img {
-  height: 60px;
-  width: 60px;
+  height: 150px;
+  width: 150px;
   display: block;
   object-fit: contain;
 }
@@ -2691,4 +2691,32 @@ section {
   visibility: visible;
   pointer-events: auto;
   min-height: auto;
+}
+
+/* Mobile spacing fixes for earn money page */
+@media (max-width: 768px) {
+  .section-title {
+    margin-bottom: 1rem !important;
+    font-size: 1.8rem;
+  }
+  
+  .section-intro {
+    margin-bottom: 1.5rem !important;
+    font-size: 1rem;
+  }
+  
+  .process-step {
+    margin-bottom: 1.5rem !important;
+    padding: 1.5rem !important;
+  }
+  
+  .step-connectors {
+    display: none !important;
+  }
+  
+  .earnings-info,
+  .how-it-works,
+  .faq-section {
+    padding: 2rem 0 !important;
+  }
 }
