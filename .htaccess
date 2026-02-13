@@ -90,11 +90,11 @@
     Header set Content-Security-Policy "default-src 'self' https: data:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data: blob:; font-src 'self' https: data:; frame-ancestors 'none'; upgrade-insecure-requests;"
 </IfModule>
 
-# Redirect non-www to www
+# Redirect old domain to new domain
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{HTTP_HOST} ^analyzeg\.shop$ [NC]
-    RewriteRule ^(.*)$ https://www.analyzeg.shop/$1 [L,R=301]
+    RewriteCond %{HTTP_HOST} ^(www\.)?analyzeg\.shop$ [NC]
+    RewriteRule ^(.*)$ https://analyzeg.co.in/$1 [L,R=301]
 </IfModule>
 
 # Error documents
