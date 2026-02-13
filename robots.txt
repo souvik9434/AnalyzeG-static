@@ -1,9 +1,6 @@
-# Robots.txt for AnalyzeG - Get Reviews Instantly & Earn 50% Revenue
+# Robots.txt for AnalyzeG - Video Review Intelligence Platform
 User-agent: *
 Allow: /
-Allow: /assets/optimized/logo-512.png
-Allow: /assets/optimized/*.png
-Disallow: /assets/optimized/*.jpg
 Disallow: /.htaccess
 Disallow: /generate-favicons.bat
 Disallow: /optimize-images.bat
