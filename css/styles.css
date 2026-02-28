@@ -2761,3 +2761,167 @@ section {
     padding: 1.25rem;
   }
 }
+
+/* ========================================================================== */
+/* Final Stability Layer (source-of-truth overrides)                          */
+/* ========================================================================== */
+
+:root {
+  --primary-rgb: 37, 99, 235;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
+}
+
+/* Canonical navbar/logo sizing to avoid duplicate-rule drift */
+.logo img {
+  width: clamp(84px, 11vw, 150px);
+  height: clamp(84px, 11vw, 150px);
+}
+
+.logo-text {
+  line-height: 1.1;
+}
+
+/* Keep menu drawer behavior stable on mobile */
+@media (max-width: 768px) {
+  #main-nav {
+    width: min(82vw, 360px);
+  }
+
+  .hero,
+  .page-header,
+  .about-header {
+    padding-top: max(110px, calc(70px + 1.25rem));
+  }
+
+  section {
+    padding: 56px 0;
+  }
+}
+
+/* Canonical audience-section visibility model */
+.audience-section {
+  display: none;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.audience-section.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Prevent height-pop and overlap in hero/cta audience variants */
+.hero .audience-section,
+.cta .audience-section {
+  overflow: hidden;
+}
+
+.hero .audience-section.active,
+.cta .audience-section.active {
+  overflow: visible;
+}
+
+/* Canonical process-step layout (applies last to override prior duplicates) */
+.process-steps {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0.5rem 0;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transform: none;
+}
+
+.process-step:hover {
+  transform: translateY(-2px);
+}
+
+.step-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+.step-content {
+  min-height: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+
+.step-content:hover {
+  transform: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Canonical flowchart sizing */
+.flowchart-container {
+  max-width: 920px;
+  margin: 1.5rem auto 0;
+}
+
+.flowchart-animation svg {
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+}
+
+/* Keep CTA spacing deterministic */
+.cta {
+  padding: 72px 0;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Accessibility + performance: predictable motion model */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .particle,
+  .bg-object,
+  .animated-objects,
+  .light-rays {
+    display: none !important;
+  }
+
+  [data-aos],
+  .flow-node,
+  .flow-text,
+  .flow-arrows path {
+    opacity: 1 !important;
+    transform: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}
+

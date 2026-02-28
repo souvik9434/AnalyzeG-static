@@ -13,6 +13,16 @@ window.addEventListener("unhandledrejection", function (event) {
 
 document.addEventListener("DOMContentLoaded", function () {
   try {
+    const refreshAOSSafe = debounce(() => {
+      try {
+        if (typeof AOS !== "undefined") {
+          AOS.refreshHard();
+        }
+      } catch (error) {
+        console.error("Error refreshing AOS:", error);
+      }
+    }, 180);
+
     // Initialize AOS animations with improved configuration
     if (typeof AOS !== "undefined") {
       AOS.init({
@@ -20,27 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
         easing: "ease-in-out",
         once: false,
         mirror: false,
-        disable: "mobile",
+        disable: () =>
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches,
         startEvent: "DOMContentLoaded",
         offset: 120,
       });
 
-      // Add scroll event listener to refresh AOS on scroll
-      window.addEventListener(
-        "scroll",
-        function () {
-          try {
-            setTimeout(function () {
-              if (typeof AOS !== "undefined") {
-                AOS.refresh();
-              }
-            }, 200);
-          } catch (error) {
-            console.error("Error refreshing AOS:", error);
-          }
-        },
-        { passive: true },
-      );
+      // Refresh only on true layout changes; avoid per-scroll refresh thrash.
+      window.addEventListener("resize", refreshAOSSafe, { passive: true });
+      window.addEventListener("orientationchange", refreshAOSSafe, {
+        passive: true,
+      });
     }
 
     // Initialize mobile menu with improved accessibility
@@ -348,7 +348,7 @@ function setActiveAudience(audience) {
               try {
                 // Refresh AOS to animate newly visible elements
                 if (typeof AOS !== "undefined") {
-                  AOS.refresh();
+                  AOS.refreshHard();
                 }
               } catch (error) {
                 console.error("Error refreshing AOS:", error);
