@@ -2720,3 +2720,44 @@ section {
     padding: 2rem 0 !important;
   }
 }
+
+/* Earnings page stabilization overrides */
+.earnings-grid,
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.earnings-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.faq-section {
+  padding-bottom: 2rem !important;
+}
+
+.faq-section + .cta {
+  margin-top: 0 !important;
+}
+
+.how-it-works .process-steps {
+  margin: 2rem auto;
+}
+
+@media (max-width: 768px) {
+  .earnings-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .earnings-card {
+    padding: 1.25rem;
+  }
+}
