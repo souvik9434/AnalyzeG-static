@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;">  <title>About AnalyzeG - Live Verified Review Platform</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; upgrade-insecure-requests;">  <title>About AnalyzeG - Live Verified Review Platform</title>
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="About AnalyzeG: a live verified review platform where people share honest video reviews and earn through a dual-stage payout model.">
@@ -48,7 +48,6 @@
   
   <!-- Preload Critical Resources -->
   <link rel="preload" href="assets/optimized/about-bg.jpg" as="image">
-  <link rel="preload" href="assets/optimized/logo_nontext_backgrounless.png" as="image">
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="48x48" href="/assets/optimized/favicon-search-48.png" />
@@ -58,6 +57,7 @@
         <link rel="manifest" href="/site.webmanifest" />
     </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white; padding: 10px 0; text-align: center; position: relative; z-index: 10;">
     <div class="container">
       <span style="font-weight: 600; font-size: 0.95rem;">Platform Live Now</span>
@@ -97,7 +97,7 @@
   </header>
 
   <!-- About Page Header with Background Image -->
-  <section class="page-header about-header" data-aos="fade-in">
+  <section id="main-content" class="page-header about-header" data-aos="fade-in">
     <div class="bg-overlay"></div>
     <div class="light-rays"></div>
     <div class="animated-objects">      <div class="bg-object hexagon" style="top: 20%; left: 25%; --moveX: 15vw; --moveY: -25vh; animation-delay: 0.2s; background: #4F46E5;"></div>

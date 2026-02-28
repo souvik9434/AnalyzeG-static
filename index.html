@@ -9,7 +9,7 @@
         <meta name="theme-color" content="#2563EB" />
         <meta
             http-equiv="Content-Security-Policy"
-            content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;"
+            content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; upgrade-insecure-requests;"
         />
         <title>AnalyzeG - Verified Video Review Platform | Live Now</title>
         <!-- SEO Meta Tags -->
@@ -190,6 +190,7 @@
         <link rel="manifest" href="/site.webmanifest" />
     </head>
     <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
         <!-- Platform Status Banner -->
         <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white; padding: 12px 0; text-align: center; position: relative; z-index: 10; box-shadow: 0 4px 20px rgba(37,99,235,0.3);">
             <div class="container" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem;">
@@ -256,7 +257,7 @@
             </div>
         </header>
         <!-- Hero Section -->
-        <section class="hero">
+        <section id="main-content" class="hero">
             <div class="hero-overlay" aria-hidden="true"></div>
             <div class="animated-objects" aria-hidden="true">
                 <div
