@@ -46,9 +46,9 @@ body {
 .navbar {
   background: rgba(255, 255, 255, 0.98);
   padding: 15px 0;
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 0;
+  top: auto;
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -2780,8 +2780,8 @@ body {
 
 /* Canonical navbar/logo sizing to avoid duplicate-rule drift */
 .logo img {
-  width: clamp(110px, 15vw, 176px);
-  height: clamp(110px, 15vw, 176px);
+  width: clamp(88px, 10vw, 132px);
+  height: clamp(88px, 10vw, 132px);
 }
 
 .logo-text {
@@ -2794,7 +2794,7 @@ body {
 }
 
 .navbar .container {
-  min-height: 72px;
+  min-height: 64px;
 }
 
 /* Keep menu drawer behavior stable on mobile */
@@ -2804,22 +2804,16 @@ body {
   }
 
   .navbar .container {
-    min-height: 68px;
+    min-height: 60px;
   }
 
   .logo-container {
-    min-height: 68px;
+    min-height: 60px;
   }
 
   .logo img {
-    width: 124px;
-    height: 124px;
-  }
-
-  .hero,
-  .page-header,
-  .about-header {
-    padding-top: max(110px, calc(70px + 1.25rem));
+    width: 96px;
+    height: 96px;
   }
 
   section {
