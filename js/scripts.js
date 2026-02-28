@@ -1,3 +1,15 @@
+/**
+ * AnalyzeG App URL Configuration
+ * ─────────────────────────────────────────────────
+ * CURRENT:  https://analyzeg.netlify.app  (Netlify free domain)
+ * FUTURE:   https://app.analyzeg.co.in    (custom subdomain)
+ *
+ * When the subdomain is activated, change ONLY the line below.
+ * All nav CTA, hero buttons, footer links, and CTA sections
+ * reference this constant via data-app-href attributes.
+ */
+const ANALYZEG_APP_BASE = "https://analyzeg.netlify.app";
+
 // Global error handler for production
 window.addEventListener("error", function (event) {
   console.error("Global error caught:", event.error);
@@ -664,3 +676,22 @@ try {
 } catch (error) {
   console.error("Error initializing animation completion handler:", error);
 }
+
+/**
+ * App URL Resolver
+ * Finds all elements with data-app-href and sets their href
+ * to ANALYZEG_APP_BASE + the path in data-app-href.
+ * This ensures a ONE-LINE change when switching to app.analyzeg.co.in.
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  try {
+    document.querySelectorAll("[data-app-href]").forEach(function (el) {
+      var path = el.getAttribute("data-app-href");
+      if (path && typeof ANALYZEG_APP_BASE !== "undefined") {
+        el.setAttribute("href", ANALYZEG_APP_BASE + path);
+      }
+    });
+  } catch (error) {
+    console.error("Error resolving app URLs:", error);
+  }
+});
