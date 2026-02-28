@@ -224,7 +224,13 @@ function initializeAudienceToggle() {
           // Initialize slider width and position with error handling
           setTimeout(() => {
             try {
-              slider.style.width = `${reviewerOption.offsetWidth}px`;
+              const reviewerWidth = Math.round(
+                reviewerOption.getBoundingClientRect().width,
+              );
+              const maxSliderWidth = Math.max(40, toggle.clientWidth - 12);
+              slider.style.width = `${Math.min(reviewerWidth, maxSliderWidth)}px`;
+              slider.style.maxWidth = "calc(100% - 12px)";
+              slider.style.transform = "translateX(0)";
             } catch (error) {
               console.error("Error setting slider width:", error);
             }
@@ -281,60 +287,58 @@ function initializeAudienceToggle() {
 // Set active audience and update content
 function setActiveAudience(audience) {
   try {
-    const reviewerOption = document.getElementById("reviewer-option");
-    const brandOption = document.getElementById("brand-option");
-    const sliders = document.querySelectorAll(".audience-toggle-slider");
+    const audienceToggles = document.querySelectorAll(".audience-toggle");
 
-    // Update toggle states
-    if (reviewerOption && brandOption) {
-      if (audience === "reviewer") {
-        reviewerOption.classList.add("active");
-        brandOption.classList.remove("active");
-        reviewerOption.setAttribute("aria-selected", "true");
-        brandOption.setAttribute("aria-selected", "false");
-      } else {
-        reviewerOption.classList.remove("active");
-        brandOption.classList.add("active");
-        reviewerOption.setAttribute("aria-selected", "false");
-        brandOption.setAttribute("aria-selected", "true");
-
-        // FIX: Auto-scroll to top when switching to B2B to prevent content being cut off
-        // B2B has 4 process steps vs B2C's 3 steps, causing extra height
-        try {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } catch (error) {
-          // Fallback for older browsers
-          window.scrollTo(0, 0);
-        }
-      }
-    }
-
-    // Update slider positions with animation
-    sliders.forEach((slider) => {
+    audienceToggles.forEach((toggle) => {
       try {
+        const reviewerOption = toggle.querySelector("#reviewer-option");
+        const brandOption = toggle.querySelector("#brand-option");
+        const slider = toggle.querySelector(".audience-toggle-slider");
+
+        if (!reviewerOption || !brandOption || !slider) {
+          return;
+        }
+
+        if (audience === "reviewer") {
+          reviewerOption.classList.add("active");
+          brandOption.classList.remove("active");
+          reviewerOption.setAttribute("aria-selected", "true");
+          brandOption.setAttribute("aria-selected", "false");
+        } else {
+          reviewerOption.classList.remove("active");
+          brandOption.classList.add("active");
+          reviewerOption.setAttribute("aria-selected", "false");
+          brandOption.setAttribute("aria-selected", "true");
+        }
+
+        const reviewerWidth = Math.round(
+          reviewerOption.getBoundingClientRect().width,
+        );
+        const brandWidth = Math.round(brandOption.getBoundingClientRect().width);
+        const maxSliderWidth = Math.max(40, toggle.clientWidth - 12);
+
         if (audience === "reviewer") {
           slider.style.transform = "translateX(0)";
-          setTimeout(() => {
-            try {
-              slider.style.width = `${reviewerOption.offsetWidth}px`;
-            } catch (error) {
-              console.error("Error setting slider width:", error);
-            }
-          }, 50);
+          slider.style.width = `${Math.min(reviewerWidth, maxSliderWidth)}px`;
         } else {
-          slider.style.transform = `translateX(${reviewerOption.offsetWidth}px)`;
-          setTimeout(() => {
-            try {
-              slider.style.width = `${brandOption.offsetWidth}px`;
-            } catch (error) {
-              console.error("Error setting slider width:", error);
-            }
-          }, 50);
+          slider.style.transform = `translateX(${Math.min(reviewerWidth, maxSliderWidth)}px)`;
+          slider.style.width = `${Math.min(brandWidth, maxSliderWidth)}px`;
         }
+
+        slider.style.maxWidth = "calc(100% - 12px)";
       } catch (error) {
-        console.error("Error updating slider position:", error);
+        console.error("Error updating toggle state:", error);
       }
     });
+
+    // Auto-scroll to top when switching to B2B to prevent content clipping.
+    if (audience === "brand") {
+      try {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } catch (error) {
+        window.scrollTo(0, 0);
+      }
+    }
 
     // Toggle visibility of audience-specific content sections
     try {

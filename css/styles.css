@@ -2772,10 +2772,30 @@ section {
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: clip;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+.audience-toggle {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.audience-toggle-option {
+  min-width: 0;
 }
 
 /* Canonical navbar/logo sizing to avoid duplicate-rule drift */
@@ -2803,6 +2823,25 @@ body {
     width: min(82vw, 360px);
   }
 
+  .audience-toggle-container {
+    width: 100%;
+    padding: 24px 12px;
+    margin-top: 20px;
+  }
+
+  .audience-toggle {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .audience-toggle-option {
+    white-space: normal;
+    padding: 0.625rem 0.5rem;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+  }
+
   .navbar .container {
     min-height: 60px;
   }
@@ -2818,6 +2857,22 @@ body {
 
   section {
     padding: 56px 0;
+  }
+
+  .hero-cta,
+  .cta-buttons {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-cta .btn-primary,
+  .hero-cta .btn-secondary,
+  .cta-buttons .btn-primary,
+  .cta-buttons .btn-secondary {
+    width: 100%;
+    min-width: 0;
+    max-width: 320px;
   }
 }
 
