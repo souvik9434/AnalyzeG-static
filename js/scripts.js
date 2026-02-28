@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       AOS.init({
         duration: 800,
         easing: "ease-in-out",
-        once: false,
+        once: true,
         mirror: false,
         disable: () =>
           window.matchMedia("(prefers-reduced-motion: reduce)").matches,

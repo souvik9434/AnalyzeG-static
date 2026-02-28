@@ -2997,3 +2997,16 @@ iframe {
   }
 }
 
+/* MOBILE ANIMATION SAFETY NET
+   Prevents AOS from leaving content invisible on mobile when viewport
+   is too small for offset-based scroll triggers to fire.
+   This is the industry-standard "kill switch" — content > animation. */
+@media only screen and (max-width: 768px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    visibility: visible !important;
+  }
+}
+
