@@ -2780,18 +2780,40 @@ body {
 
 /* Canonical navbar/logo sizing to avoid duplicate-rule drift */
 .logo img {
-  width: clamp(84px, 11vw, 150px);
-  height: clamp(84px, 11vw, 150px);
+  width: clamp(110px, 15vw, 176px);
+  height: clamp(110px, 15vw, 176px);
 }
 
 .logo-text {
   line-height: 1.1;
 }
 
+.logo-container {
+  height: auto;
+  min-height: 72px;
+}
+
+.navbar .container {
+  min-height: 72px;
+}
+
 /* Keep menu drawer behavior stable on mobile */
 @media (max-width: 768px) {
   #main-nav {
     width: min(82vw, 360px);
+  }
+
+  .navbar .container {
+    min-height: 68px;
+  }
+
+  .logo-container {
+    min-height: 68px;
+  }
+
+  .logo img {
+    width: 124px;
+    height: 124px;
   }
 
   .hero,
