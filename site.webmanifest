@@ -12,13 +12,13 @@
       "src": "/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "/assets/optimized/favicon-search-512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
