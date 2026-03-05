@@ -68,7 +68,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-TileColor" content="#2563EB" />
-        <meta name="msapplication-TileImage" content="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.png" />
+        <meta name="msapplication-TileImage" content="https://analyzeg.co.in/assets/optimized/favicon-search-512.png" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <!-- Geo and Language Meta Tags -->
         <meta name="geo.region" content="IN" />
@@ -96,15 +96,17 @@
             {
                 "@context": "https://schema.org",
                 "@type": "Organization",
-                "url": "https://analyzeg.co.in",
+                "@id": "https://analyzeg.co.in/#organization",
+                "url": "https://analyzeg.co.in/",
                 "logo": {
                     "@type": "ImageObject",
+                    "@id": "https://analyzeg.co.in/#logo",
                     "url": "https://analyzeg.co.in/assets/optimized/favicon-search-512.png",
                     "width": 512,
                     "height": 512,
                     "contentUrl": "https://analyzeg.co.in/assets/optimized/favicon-search-512.png",
                     "encodingFormat": "image/png",
-                    "caption": "AnalyzeG - Leading Video Review Platform"
+                    "caption": "AnalyzeG - Verified Video Review Platform"
                 },
                 "image": {
                     "@type": "ImageObject",
@@ -112,18 +114,17 @@
                     "width": 512,
                     "height": 512
                 },
-                "name": "AnalyzeG - Leading Video Review Platform",
-                "alternateName": "AnalyzeG",
+                "name": "AnalyzeG",
                 "legalName": "AnalyzeG Technologies",
+                "alternateName": ["AnalyzeG", "Analyze G", "AnalyzeG Platform"],
                 "brand": {
                     "@type": "Brand",
                     "name": "AnalyzeG"
                 },
                 "description": "AnalyzeG is a verified video review platform. Reviewers can get up to Rs 40 after verification and receive the remaining payout from their 50% share when a review is sold.",
                 "sameAs": [
-                    "https://twitter.com/analyzeg",
-                    "https://facebook.com/analyzeg",
-                    "https://linkedin.com/company/analyzeg"
+                    "https://www.linkedin.com/company/analyzeg",
+                    "https://github.com/souvik9434"
                 ],
                 "founder": {
                     "@type": "Person",
@@ -175,13 +176,25 @@
                     "query-input": "required name=search_term_string"
                 },
                 "sameAs": [
-                    "https://twitter.com/analyzeg",
-                    "https://facebook.com/analyzeg",
-                    "https://linkedin.com/company/analyzeg"
+                    "https://www.linkedin.com/company/analyzeg",
+                    "https://github.com/souvik9434"
                 ]
             }
         </script>
     
+        <!-- BreadcrumbList Schema for Homepage -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "AnalyzeG",
+                    "item": "https://analyzeg.co.in"
+                }]
+            }
+        </script>
         <link rel="icon" type="image/svg+xml" href="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" />
         <link rel="icon" type="image/png" sizes="192x192" href="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/assets/optimized/favicon-search-512.png" />

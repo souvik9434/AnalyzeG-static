@@ -6,6 +6,9 @@ Disallow: /generate-favicons.bat
 Disallow: /optimize-images.bat
 Disallow: /temp_outputs/
 Disallow: /resize_logo.bat
+Disallow: /404.html
+Disallow: /500.html
+Disallow: /test-toggle.html
 
 # Allow Google to crawl everything for AnalyzeG brand recognition
 User-agent: Googlebot
