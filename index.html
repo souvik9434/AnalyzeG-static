@@ -79,16 +79,19 @@
         <link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/" />
 
         <!-- Stylesheets -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <!-- Preconnect reduces one DNS+TLS round-trip for Google Fonts CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Non-blocking Google Fonts: onload swap prevents render-blocking; display=swap handles FOUT -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" /></noscript>
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/mobile-enhancements.css" />
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
+        <!-- Non-blocking AOS CSS: only affects below-fold scroll animations — safe to defer -->
+        <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /></noscript>
+        <!-- Preload hero background: fixes 18.6s LCP — browser starts fetch during HTML parse, not after CSS parse -->
+        <link rel="preload" href="assets/optimized/hero-bg.jpg" as="image" fetchpriority="high" />
         <!-- Favicon -->
         <link rel="canonical" href="https://analyzeg.co.in" />
         <!-- Enhanced JSON-LD structured data for Google Search with optimized logo parameters -->
@@ -277,8 +280,9 @@
                 </nav>
             </div>
         </header>
+        <main id="main-content">
         <!-- Hero Section -->
-        <section id="main-content" class="hero">
+        <section class="hero">
             <div class="hero-overlay" aria-hidden="true"></div>
             <div class="animated-objects" aria-hidden="true">
                 <div
@@ -1188,6 +1192,7 @@
                 </div>
             </div>
         </section>
+        </main>
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
@@ -1197,7 +1202,7 @@
                         <p>India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.</p>
                     </div>
                     <div class="footer-links">
-                        <h4>Quick Links</h4>
+                        <h3>Quick Links</h3>
                         <ul>
                             <li><a href="features.html">Features</a></li>
                             <li><a href="about.html">About</a></li>
@@ -1207,7 +1212,7 @@
                         </ul>
                     </div>
                     <div class="footer-app">
-                        <h4>Get Started</h4>
+                        <h3>Get Started</h3>
                         <p style="font-size:0.9rem;color:#9CA3AF;margin-bottom:1rem;">Join as a reviewer or register your brand.</p>
                         <a href="https://analyzeg.netlify.app/b2c-auth" data-app-href="/b2c-auth" class="footer-app-btn" rel="noopener" style="margin-bottom:0.75rem;display:inline-flex;">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -1228,8 +1233,5 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/scripts.js"></script>
         
-        <!-- DEV ONLY: Element Grabber for debugging with Copilot -->
-        <!-- Remove this line before production deployment -->
-        <script src="js/dev-element-grabber.js"></script>
     </body>
 </html>

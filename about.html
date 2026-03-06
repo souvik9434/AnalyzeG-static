@@ -39,10 +39,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Stylesheets -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Non-blocking Google Fonts: onload swap prevents render-blocking; display=swap handles FOUT -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/mobile-enhancements.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Non-blocking AOS CSS: below-fold animations only — safe to defer -->
+  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
   
   <!-- Favicon -->
   
@@ -102,9 +106,9 @@
       </nav>
     </div>
   </header>
-
+  <main id="main-content">
   <!-- About Page Header with Background Image -->
-  <section id="main-content" class="page-header about-header" data-aos="fade-in">
+  <section class="page-header about-header" data-aos="fade-in">
     <div class="bg-overlay"></div>
     <div class="light-rays"></div>
     <div class="animated-objects">      <div class="bg-object hexagon" style="top: 20%; left: 25%; --moveX: 15vw; --moveY: -25vh; animation-delay: 0.2s; background: #4F46E5;"></div>
@@ -145,7 +149,7 @@
       </article>
     </div>
   </section>
-
+  </main>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -155,7 +159,7 @@
           <p>India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.</p>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="features.html">Features</a></li>
@@ -165,7 +169,7 @@
           </ul>
         </div>
         <div class="footer-app">
-          <h4>Get Started</h4>
+          <h3>Get Started</h3>
           <p style="font-size:0.9rem;color:#9CA3AF;margin-bottom:1rem;">Join as a reviewer or register your brand.</p>
           <a href="https://analyzeg.netlify.app/b2c-auth" data-app-href="/b2c-auth" class="footer-app-btn" rel="noopener" style="margin-bottom:0.75rem;display:inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Sign Up as Reviewer</a><br>
           <a href="https://analyzeg.netlify.app/b2b-auth" data-app-href="/b2b-auth" class="footer-app-btn" rel="noopener" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9);"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Register Your Brand</a>
