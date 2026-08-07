@@ -446,7 +446,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(10px);
   border: none;
-  min-width: 340px;
   max-width: 460px;
   width: 90%;
   transition: all 0.3s ease-in-out;
@@ -568,19 +567,6 @@ body {
   margin-top: 2rem;
 }
 
-.btn-primary,
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 160px;
-  height: 48px;
-  padding: 0 1.5rem;
-  border-radius: 24px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
 .feature-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
@@ -659,21 +645,6 @@ body {
   width: 250px;
   border: none;
   border-radius: 5px;
-}
-
-.btn-secondary {
-  padding: 10px 20px;
-  background: #2563EB;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.btn-secondary:hover {
-  background: #1e50b3;
 }
 
 /* Enhanced Page Headers */
@@ -1027,78 +998,9 @@ body {
   margin: 20px 0;
 }
 
-/* Footer */
-.footer {
-  background: linear-gradient(180deg, #1a1a1a, #2d2d2d);
-  color: rgba(255, 255, 255, 0.9);
-  padding: 2.5rem 0;
-  position: relative;
-  overflow: hidden;
-  margin-top: 3rem;
-}
-
-.footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, 
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-}
-
-.footer .container {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  opacity: 0.9;
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 2rem 0;
-    margin-top: 2rem;
-  }
-}
-
-.footer .container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem 1rem;
-}
-
-.footer-links {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.footer-links a:hover {
-  opacity: 1;
-}
-
-/* SEO Optimizations */
+/* SEO Optimizations + Typography Consistency */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
   margin-top: 0;
 }
 
@@ -1564,77 +1466,10 @@ section {
   opacity: 1;
 }
 
-.flow-node {
-  fill: #fff;
-  stroke: #2563EB;
-  stroke-width: 2;
-  transition: all 0.3s ease;
-}
-
 .flow-arrow {
   stroke: #2563EB;
   stroke-width: 2;
   fill: none;
-}
-
-.flow-text {
-  font-size: 12px;
-  fill: #1a1a1a;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600;
-}
-
-/* Process Steps - Restored Vertical Design */
-.process-steps {
-  position: relative;
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 20px 0;
-}
-
-/* Vertical line connector */
-.process-steps::before {
-  display: none; /* Hide the vertical line that was causing issues */
-  /* Original properties remain below but won't be applied due to display: none */
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 24px; /* Aligned with the center of step icons */
-  width: 2px;
-  background: linear-gradient(to bottom, rgba(37, 99, 235, 0.2), rgba(124, 58, 237, 0.2));
-  z-index: 0;
-}
-
-.process-step {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  margin-bottom: 60px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
-}
-
-.process-step.aos-animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.step-icon {
-  flex-shrink: 0;
-  width: 80px;
-  height: 80px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 2px solid #2563EB;
-  position: relative;
-  z-index: 2;
 }
 
 .step-icon svg {
@@ -1646,21 +1481,6 @@ section {
 
 .process-step:hover .step-icon svg {
   transform: scale(1.1);
-}
-
-.step-content {
-  flex: 1;
-  background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(0);
-  transition: all 0.3s ease;
-}
-
-.step-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .step-content h3 {
@@ -1716,86 +1536,6 @@ section {
 #reviewer-content .hero-content,
 #brand-content .hero-content {
   margin-top: 3rem;
-}
-
-/* Flowchart Animation Styles */
-.flowchart-container {
-  margin-top: 40px;
-}
-
-.flowchart-animation {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.flowchart-animation svg {
-  width: 100%;
-  height: auto;
-  overflow: visible;
-}
-
-/* Flow node animations */
-.flow-node {
-  opacity: 0;
-  transform: translateY(20px) scale(0.9);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-}
-
-.flow-node.animate {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.flow-node circle,
-.flow-node rect {
-  fill: #ffffff;
-  stroke: #2563EB;
-  stroke-width: 2;
-  transition: all 0.3s ease;
-}
-
-.flow-node:hover circle,
-.flow-node:hover rect {
-  filter: drop-shadow(0 8px 16px rgba(37, 99, 235, 0.2));
-  transform: translateY(-2px);
-}
-
-/* Flow arrow animations */
-.flow-arrows path {
-  stroke: #2563EB;
-  stroke-width: 2;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
-  animation: none;
-  opacity: 0.6;
-}
-
-.flow-arrows path.animate {
-  animation: drawArrow 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-/* Flow text styles */
-.flow-text {
-  font-size: 14px;
-  font-weight: 600;
-  fill: #1a1a1a;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s ease;
-}
-
-.flow-text.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes drawArrow {
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 /* Even-odd layout for process steps */
@@ -1870,47 +1610,6 @@ section {
   opacity: 0.3;
 }
 
-.flowchart-container {
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px 0;
-  z-index: 2;
-}
-
-.flowchart-animation svg {
-  width: 100%;
-  height: auto;
-  overflow: visible;
-}
-
-/* Flow node animations */
-.flow-node {
-  opacity: 0;
-  transform: translateY(20px) scale(0.9);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-}
-
-.flow-node.animate {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.flow-node circle,
-.flow-node rect {
-  fill: #ffffff;
-  stroke: #2563EB;
-  stroke-width: 2;
-  transition: all 0.3s ease;
-}
-
-.flow-node:hover circle,
-.flow-node:hover rect {
-  filter: drop-shadow(0 8px 16px rgba(37, 99, 235, 0.2));
-  transform: translateY(-2px);
-}
-
 /* Flow arrow animations */
 .flow-arrows path {
   stroke: #2563EB;
@@ -1923,21 +1622,6 @@ section {
 
 .flow-arrows path.animate {
   animation: drawArrow 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-/* Flow text styles */
-.flow-text {
-  font-size: 14px;
-  font-weight: 600;
-  fill: #1a1a1a;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s ease;
-}
-
-.flow-text.animate {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 @keyframes drawArrow {
@@ -1968,28 +1652,6 @@ section {
   .flow-text {
     font-size: 12px;
   }
-}
-
-.flowchart-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-}
-
-.flowchart-animation svg {
-  width: 100%;
-  height: auto;
-  min-height: 400px;
-  display: block;
-}
-
-/* Improve node spacing and alignment */
-.flow-node {
-  transform-origin: center;
 }
 
 .flow-arrows path {
@@ -2283,136 +1945,6 @@ section {
   transform: translateY(-50%);
 }
 
-.step-content {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  flex: 1;
-  position: relative;
-  z-index: 1;
-}
-
-.step-content::before {
-  content: '';
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background: #2563EB;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.step-content::after {
-  content: '';
-  position: absolute;
-  left: -12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-/* Animated background objects */
-.animated-objects {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.bg-object {
-  position: absolute;
-  opacity: 0.5;
-  animation: float 20s infinite ease-in-out;
-}
-
-.bg-object.hexagon {
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-
-.bg-object.circle {
-  border-radius: 50%;
-}
-
-.bg-object.triangle {
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-}
-
-@keyframes float {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 0.6;
-  }
-  25% {
-    transform: translate(var(--moveX), var(--moveY)) rotate(90deg);
-    opacity: 0.8;
-  }
-  50% {
-    transform: translate(calc(var(--moveX) * -0.5), calc(var(--moveY) * -0.5)) rotate(180deg);
-    opacity: 0.6;
-  }
-  75% {
-    transform: translate(calc(var(--moveX) * 0.5), calc(var(--moveY) * 0.5)) rotate(270deg);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translate(0, 0) rotate(360deg);
-    opacity: 0.6;
-  }
-}
-
-/* Process steps animation */
-.process-steps {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-.process-step {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 1rem;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.process-step:hover {
-  transform: translateX(10px);
-}
-
-.step-icon {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.3);
-}
-
-.step-content {
-  flex-grow: 1;
-}
-
 /* Footer button highlight */
 .footer .btn-primary {
   background: linear-gradient(135deg, #3B82F6, #2563EB);
@@ -2441,112 +1973,6 @@ section {
   gap: 2rem;
 }
 
-/* Animated Background Objects */
-.animated-objects {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.bg-object {
-  position: absolute;
-  opacity: 0.15;
-  animation: float 15s infinite;
-  filter: blur(2px);
-}
-
-.bg-object.hexagon {
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  width: 100px;
-  height: 100px;
-}
-
-.bg-object.circle {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-}
-
-.bg-object.triangle {
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-  width: 90px;
-  height: 90px;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(var(--moveX), var(--moveY)) rotate(90deg);
-  }
-  50% {
-    transform: translate(calc(var(--moveX) * -0.5), calc(var(--moveY) * -0.5)) rotate(180deg);
-  }
-  75% {
-    transform: translate(calc(var(--moveX) * 0.5), calc(var(--moveY) * 0.5)) rotate(270deg);
-  }
-}
-
-/* Step Animation */
-.process-steps {
-  position: relative;
-  padding: 2rem 0;
-}
-
-.process-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease;
-}
-
-.process-step:hover {
-  transform: translateX(10px);
-}
-
-.step-icon {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.3);
-}
-
-.step-content {
-  flex-grow: 1;
-}
-
-/* Connecting lines between steps */
-.process-step::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 40px;
-  width: 2px;
-  height: 2rem;
-  background: linear-gradient(to bottom, var(--primary-color), transparent);
-  transform: translateX(-50%);
-}
-
-.process-step:last-child::before {
-  display: none;
-}
-
 /* Animated background objects */
 .animated-objects {
   position: absolute;
@@ -2597,167 +2023,6 @@ section {
   75% {
     transform: translate(calc(var(--moveX) * 0.5), calc(var(--moveY) * 0.5)) rotate(270deg);
   }
-}
-
-/* Process Steps Animation Enhancement */
-.process-steps {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-/* Vertical connecting line with animated data transfer */
-.process-steps::before {
-  content: '';
-  position: absolute;
-  left: 30px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: #e4e4e7;
-  z-index: 1;
-}
-
-/* Animated data transfer effect */
-.process-steps::after {
-  content: '';
-  position: absolute;
-  left: 30px;
-  top: 0;
-  width: 3px;
-  height: 20%;
-  background: linear-gradient(to bottom, rgba(37, 99, 235, 0), #2563EB, rgba(37, 99, 235, 0));
-  z-index: 2;
-  animation: dataTransferVertical 3s infinite linear;
-}
-
-/* Individual process step styling */
-.process-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  position: relative;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.5s ease-out;
-}
-
-/* Show steps when section is active */
-.audience-section.active .process-step {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Step animation delays */
-.process-step:nth-child(1) { transition-delay: 0.1s; }
-.process-step:nth-child(2) { transition-delay: 0.2s; }
-.process-step:nth-child(3) { transition-delay: 0.3s; }
-.process-step:nth-child(4) { transition-delay: 0.4s; }
-
-/* Step icon with pulse effect */
-.step-icon {
-  width: 60px;
-  height: 60px;
-  min-width: 60px; /* Prevent icon shrinking */
-  border-radius: 50%;
-  background: #ffffff;
-  border: 2px solid #2563EB;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 3;
-  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
-}
-
-/* Animated pulse around step icons */
-.step-icon::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-  border-radius: 50%;
-  border: 2px solid #2563EB;
-  opacity: 0;
-  z-index: -1;
-  animation: pulse 2s infinite;
-}
-
-/* Horizontal data transfer between icon and content */
-.process-step::after {
-  content: '';
-  position: absolute;
-  top: 30px;
-  left: 60px;
-  height: 3px;
-  width: 2rem;
-  background: #e4e4e7;
-  z-index: 0;
-}
-
-/* Animated data flowing through horizontal connector */
-.process-step::before {
-  content: '';
-  position: absolute;
-  top: 30px;
-  left: 60px;
-  height: 3px;
-  width: 0;
-  background: linear-gradient(to right, rgba(37, 99, 235, 0), #2563EB, rgba(37, 99, 235, 0));
-  animation: dataTransferHorizontal 3s infinite linear;
-  z-index: 1;
-}
-
-/* Step content styling - FIXED FOR SCALING */
-.step-content {
-  flex: 1;  /* Allow content to take up all remaining space */
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: var(--shadow-md);
-  position: relative;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  min-height: 160px;  /* Set minimum height */
-}
-
-.step-content h3 {
-  color: #1E40AF;
-  margin-bottom: 0.75rem;
-  font-size: 1.4rem;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.step-content p {
-  color: var(--text-light);
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-  flex-grow: 1;  /* Allow text to grow and fill available space */
-}
-
-/* Improved hover effect that scales text properly */
-.step-content:hover {
-  transform: scale(1.05);
-
-  box-shadow: var(--shadow-lg);
-  background-color: #f8fafc;
-}
-
-.step-content:hover h3 {
-  color: var(--primary-color);
-}
-
-.step-content:hover p {
-  color: var(--text-color);
 }
 
 /* Animation keyframes */

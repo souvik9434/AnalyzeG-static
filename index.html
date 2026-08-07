@@ -87,9 +87,8 @@
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" /></noscript>
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/mobile-enhancements.css" />
-        <!-- Non-blocking AOS CSS: only affects below-fold scroll animations — safe to defer -->
-        <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /></noscript>
+        <!-- AOS CSS (self-hosted) -->
+        <link rel="stylesheet" href="css/aos.css" />
         <!-- Preload hero background: fixes 18.6s LCP — browser starts fetch during HTML parse, not after CSS parse -->
         <link rel="preload" href="assets/optimized/hero-bg.jpg" as="image" fetchpriority="high" />
         <!-- Favicon -->
@@ -210,7 +209,7 @@
     <body>
         <a href="#main-content" class="skip-link">Skip to main content</a>
         <!-- Platform Status Banner -->
-        <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white; padding: 12px 0; text-align: center; position: relative; z-index: 10; box-shadow: 0 4px 20px rgba(37,99,235,0.3);">
+        <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white;         padding: 10px 0; text-align: center; position: relative; z-index: 10; box-shadow: 0 4px 20px rgba(37,99,235,0.3);">
             <div class="container" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem;">
                 <span style="font-weight: 600; font-size: 1rem;">Platform Live Now</span>
                 <a href="https://analyzeg.netlify.app/" data-app-href="/" rel="noopener" style="color:#fff;text-decoration:underline;font-weight:600;font-size:0.95rem;margin-left:0.5rem;">Open App &rarr;</a>
@@ -284,7 +283,7 @@
         </header>
         <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" style="background-color: #1a1a2e;">
             <div class="hero-overlay" aria-hidden="true"></div>
             <div class="animated-objects" aria-hidden="true">
                 <div
@@ -320,39 +319,7 @@
                         background: #10b981;
                     "
                 ></div>
-                <div
-                    class="bg-object hexagon"
-                    style="
-                        top: 75%;
-                        left: 70%;
-                        --moveX: -10vw;
-                        --moveY: -15vh;
-                        animation-delay: 1.7s;
-                        background: #ec4899;
-                    "
-                ></div>
-                <div
-                    class="bg-object circle"
-                    style="
-                        top: 15%;
-                        left: 45%;
-                        --moveX: 12vw;
-                        --moveY: 10vh;
-                        animation-delay: 2.2s;
-                        background: #06b6d4;
-                    "
-                ></div>
-                <div
-                    class="bg-object triangle"
-                    style="
-                        top: 50%;
-                        left: 90%;
-                        --moveX: -15vw;
-                        --moveY: -10vh;
-                        animation-delay: 2.7s;
-                        background: #4f46e5;
-                    "
-                ></div>
+
             </div>
             <div class="container">
                 <div class="audience-toggle-container" data-aos="fade-up">
@@ -396,10 +363,7 @@
                     <div class="hero-content" data-aos="fade-up">
                         <h1>AnalyzeG – Authentic Video Review Intelligence Platform</h1>
                         <p class="hero-tagline">
-                            Share authentic video reviews. Limited-time model:
-                            get up to Rs 40 after verification, then get the
-                            remaining payout from your 50% share when your
-                            review is sold.
+                            Record video reviews. Earn up to Rs 40 instantly + 50% revenue share when sold.
                         </p>
                         <div class="hero-cta">
                             <a
@@ -423,7 +387,7 @@
                     data-audience="brand"
                 >
                     <div class="hero-content" data-aos="fade-up">
-                        <h2>Buy Real Customer Video Reviews with AnalyzeG Analytics</h2>
+                        <h1>Buy Real Customer Video Reviews with AnalyzeG Analytics</h1>
                         <p class="hero-tagline">
                             30-second in-hand product videos • State & age filtering • Power BI dashboard • Raw data included • Licensed for advertising (main brands) • Delivered in 2min-24hrs
                         </p>
@@ -499,7 +463,6 @@
                                 width="80"
                                 height="100"
                                 viewBox="0 0 80 100"
-                                style="margin-top: 170px"
                             >
                                 <path
                                     d="M40,0 C40,60 40,80 40,100"
@@ -528,7 +491,6 @@
                                 width="80"
                                 height="100"
                                 viewBox="0 0 80 100"
-                                style="margin-top: 340px"
                             >
                                 <path
                                     d="M40,0 C40,60 40,80 40,100"
@@ -741,7 +703,6 @@
                                 width="80"
                                 height="100"
                                 viewBox="0 0 80 100"
-                                style="margin-top: 170px"
                             >
                                 <path
                                     d="M40,0 C40,60 40,80 40,100"
@@ -770,7 +731,6 @@
                                 width="80"
                                 height="100"
                                 viewBox="0 0 80 100"
-                                style="margin-top: 340px"
                             >
                                 <path
                                     d="M40,0 C40,60 40,80 40,100"
@@ -858,13 +818,13 @@
                                 </svg>
                             </div>
                             <div class="step-content">
-                                <h3>2. Video Review Analysis</h3>
+                                <h3>2. AI-Powered Analysis</h3>
                                 <p>
                                     AI-powered analysis extracts insights from 30-second in-hand product videos.
                                 </p>
                                 <ul>
                                     <li>Sentiment analysis & key themes</li>
-                                    <li>Demographic segmentation</li>
+                                    <li>Pattern recognition & trend detection</li>
                                     <li>Competitive comparisons</li>
                                 </ul>
                             </div>
@@ -885,30 +845,37 @@
                                     stroke="currentColor"
                                     stroke-width="2"
                                 >
-                                    <path
-                                        d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"
-                                    ></path>
-                                    <polyline
-                                        points="3.29 7 12 12 20.71 7"
-                                    ></polyline>
+                                    <rect
+                                        x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="2"
+                                        ry="2"
+                                    ></rect>
                                     <line
-                                        x1="12"
-                                        y1="22"
-                                        x2="12"
-                                        y2="12"
+                                        x1="3"
+                                        y1="9"
+                                        x2="21"
+                                        y2="9"
+                                    ></line>
+                                    <line
+                                        x1="9"
+                                        y1="21"
+                                        x2="9"
+                                        y2="9"
                                     ></line>
                                 </svg>
                             </div>
                             <div class="step-content">
-                                <h3>3. AI-Powered Analysis</h3>
+                                <h3>3. Interactive Dashboard</h3>
                                 <p>
-                                    Extract valuable insights through advanced
-                                    analytics.
+                                    Visualize insights with Power BI dashboards and real-time data analytics.
                                 </p>
                                 <ul>
-                                    <li>Sentiment analysis</li>
-                                    <li>Pattern recognition</li>
-                                    <li>Demographic insights</li>
+                                    <li>Power BI integrated dashboards</li>
+                                    <li>Demographic segmentation views</li>
+                                    <li>Exportable reports for teams</li>
                                 </ul>
                             </div>
                         </div>
@@ -1069,12 +1036,10 @@
                 <div class="feature-grid">
                     <!-- Reviewer Features -->
                     <div class="feature-item" data-aos="fade-up">
-                        <img
-                            src="assets/optimized/feature1.png"
-                            alt="Secure Verification Icon"
-                            width="80"
-                            height="80"
-                        />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" aria-label="Secure Verification Icon">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                          <path d="M9 12l2 2 4-4"/>
+                        </svg>
                         <h3>AnalyzeG Secure Verification System</h3>
                         <p>
                             Every review on AnalyzeG is digitally authenticated and
@@ -1086,12 +1051,11 @@
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        <img
-                            src="assets/optimized/feature2.png"
-                            alt="Instant Rewards Icon"
-                            width="80"
-                            height="80"
-                        />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" aria-label="Instant Rewards Icon">
+                          <circle cx="12" cy="12" r="10"/>
+                          <path d="M16 8l-8 8"/>
+                          <path d="M8 8l8 8"/>
+                        </svg>
                         <h3>Dual-Stage Payout</h3>
                         <p>
                             Limited-time flow: get up to Rs 40 after authentic
@@ -1105,12 +1069,11 @@
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
-                        <img
-                            src="assets/optimized/feature3.png"
-                            alt="AI Analytics Icon"
-                            width="80"
-                            height="80"
-                        />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" aria-label="AI Analytics Icon">
+                          <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                          <polyline points="3.29 7 12 12 20.71 7"/>
+                          <line x1="12" y1="22" x2="12" y2="12"/>
+                        </svg>
                         <h3>AI-Powered Analytics</h3>
                         <p>
                             Advanced insights and sentiment analysis for
@@ -1126,27 +1089,23 @@
                 <h2 class="section-title" data-aos="fade-up">
                     AnalyzeG Technology & Security
                 </h2>
-                <div class="two-column-layout">
-                    <div class="text-column" data-aos="fade-right">
-                        <div class="tech-security-points">
-                            <h3>AnalyzeG Multi-Factor Verification</h3>
-                            <p>
-                                Every review on AnalyzeG is digitally authenticated and
-                                securely recorded.
-                            </p>
-                            <h3>AnalyzeG AI Analysis</h3>
-                            <p>
-                                Machine learning algorithms provide deep
-                                insights and trends.
-                            </p>
+                <div class="tech-security-points" data-aos="fade-up" data-aos-delay="100">
+                    <h3>AnalyzeG Multi-Factor Verification</h3>
+                    <p>
+                        Every review on AnalyzeG is digitally authenticated and
+                        securely recorded.
+                    </p>
+                    <h3>AnalyzeG AI Analysis</h3>
+                    <p>
+                        Machine learning algorithms provide deep
+                        insights and trends.
+                    </p>
 
-                            <h3>AnalyzeG Secure Platform</h3>
-                            <p>
-                                Enterprise-grade security protects your data and
-                                privacy.
-                            </p>
-                        </div>
-                    </div>
+                    <h3>AnalyzeG Secure Platform</h3>
+                    <p>
+                        Enterprise-grade security protects your data and
+                        privacy.
+                    </p>
                 </div>
             </div>
         </section>
@@ -1170,7 +1129,7 @@
                             >Sign Up &amp; Start Earning</a
                         >
                         <a href="analyzeg-faq.html" class="btn-secondary"
-                            >See Payment Proof</a
+                            >Learn More</a
                         >
                     </div>
                 </div>
@@ -1227,12 +1186,12 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2025 AnalyzeG Technologies. All rights reserved.</p>
+                    <p>&copy; 2026 AnalyzeG Technologies. All rights reserved.</p>
                 </div>
             </div>
         </footer>
         <!-- Scripts -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/aos.js"></script>
         <script src="js/scripts.js"></script>
         
     </body>

@@ -1,0 +1,131 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - generic [ref=e5]: Platform Live Now
+    - link "Open App →" [ref=e6] [cursor=pointer]:
+      - /url: https://analyzeg.netlify.app/
+  - banner [ref=e7]:
+    - generic [ref=e8]:
+      - link "AnalyzeG AnalyzeG" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "AnalyzeG" [ref=e11]
+        - generic [ref=e12]: AnalyzeG
+      - navigation [ref=e13]:
+        - menubar [ref=e14]:
+          - menuitem [ref=e15] [cursor=pointer]: Home
+          - menuitem [ref=e16] [cursor=pointer]: Features
+          - menuitem [ref=e17] [cursor=pointer]: About
+          - menuitem [ref=e18] [cursor=pointer]: Earn Money
+          - menuitem [ref=e19] [cursor=pointer]: FAQ
+          - menuitem [ref=e20] [cursor=pointer]: Launch App
+  - main [ref=e24]:
+    - generic [ref=e27]:
+      - tablist "Choose Audience View" [ref=e29]:
+        - tab "For Reviewers" [selected] [ref=e30] [cursor=pointer]
+        - tab "For Brands" [ref=e31] [cursor=pointer]
+      - generic [ref=e34]:
+        - heading "AnalyzeG – Authentic Video Review Intelligence Platform" [level=1] [ref=e35]
+        - paragraph [ref=e36]: "Share authentic video reviews. Limited-time model: get up to Rs 40 after verification, then get the remaining payout from your 50% share when your review is sold."
+        - generic [ref=e37]:
+          - link "Start Reviewing on AnalyzeG" [ref=e38] [cursor=pointer]:
+            - /url: https://analyzeg.netlify.app/b2c-auth
+          - link "How It Works" [ref=e39] [cursor=pointer]:
+            - /url: earn-money-reviews.html
+    - region [ref=e40]:
+      - generic [ref=e41]:
+        - heading "How AnalyzeG Works" [level=2] [ref=e42]
+        - tabpanel "For Reviewers" [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e50]:
+              - heading "1. Create Your AnalyzeG Profile" [level=3] [ref=e51]
+              - paragraph [ref=e52]: Sign up on AnalyzeG and complete profile verification to start earning.
+              - list [ref=e53]:
+                - listitem [ref=e54]: Quick registration process
+                - listitem [ref=e55]: Secure identity verification
+                - listitem [ref=e56]: Set up payment preferences
+            - generic [ref=e61]:
+              - heading "2. Record Reviews" [level=3] [ref=e62]
+              - paragraph [ref=e63]: Create authentic video reviews on AnalyzeG following our guidelines.
+              - list [ref=e64]:
+                - listitem [ref=e65]: Choose review opportunities
+                - listitem [ref=e66]: Follow provided guidelines
+                - listitem [ref=e67]: Submit quality content
+            - generic [ref=e72]:
+              - heading "3. Get Rewarded" [level=3] [ref=e73]
+              - paragraph [ref=e74]: Earn instant rewards for verified reviews.
+              - list [ref=e75]:
+                - listitem [ref=e76]: Automatic verification
+                - listitem [ref=e77]: Get up to Rs 40 after verification
+                - listitem [ref=e78]: Multiple payment options
+            - generic [ref=e84]:
+              - heading "4. Track Your Earnings" [level=3] [ref=e85]
+              - paragraph [ref=e86]: Monitor your review performance and earnings in real-time.
+              - list [ref=e87]:
+                - listitem [ref=e88]: Real-time earnings dashboard
+                - listitem [ref=e89]: Payment within 24 hours of purchase
+                - listitem [ref=e90]: Review history & analytics
+    - generic [ref=e92]:
+      - heading "Why Choose AnalyzeG?" [level=2] [ref=e93]
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - img "Secure Verification Icon" [ref=e96]
+          - heading "AnalyzeG Secure Verification System" [level=3] [ref=e97]
+          - paragraph [ref=e98]: Every review on AnalyzeG is digitally authenticated and securely recorded for maximum trust.
+        - generic [ref=e99]:
+          - img "Instant Rewards Icon" [ref=e100]
+          - heading "Dual-Stage Payout" [level=3] [ref=e101]
+          - paragraph [ref=e102]: "Limited-time flow: get up to Rs 40 after authentic verification, then get the remaining payout from your 50% share when your review is sold."
+        - generic [ref=e103]:
+          - img "AI Analytics Icon" [ref=e104]
+          - heading "AI-Powered Analytics" [level=3] [ref=e105]
+          - paragraph [ref=e106]: Advanced insights and sentiment analysis for data-driven decisions.
+    - generic [ref=e108]:
+      - heading "AnalyzeG Technology & Security" [level=2] [ref=e109]
+      - generic [ref=e112]:
+        - heading "AnalyzeG Multi-Factor Verification" [level=3] [ref=e113]
+        - paragraph [ref=e114]: Every review on AnalyzeG is digitally authenticated and securely recorded.
+        - heading "AnalyzeG AI Analysis" [level=3] [ref=e115]
+        - paragraph [ref=e116]: Machine learning algorithms provide deep insights and trends.
+        - heading "AnalyzeG Secure Platform" [level=3] [ref=e117]
+        - paragraph [ref=e118]: Enterprise-grade security protects your data and privacy.
+    - generic [ref=e121]:
+      - heading "Ready to Start Earning?" [level=2] [ref=e122]
+      - paragraph [ref=e123]: "Join reviewers using our limited-time dual-stage payout: up to Rs 40 after verification, then remaining payout from your 50% share when sold."
+      - generic [ref=e124]:
+        - link "Sign Up & Start Earning" [ref=e125] [cursor=pointer]:
+          - /url: https://analyzeg.netlify.app/b2c-auth
+        - link "See Payment Proof" [ref=e126] [cursor=pointer]:
+          - /url: analyzeg-faq.html
+  - contentinfo [ref=e127]:
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - img "AnalyzeG logo" [ref=e131]
+          - paragraph [ref=e132]: India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.
+        - generic [ref=e133]:
+          - heading "Quick Links" [level=3] [ref=e134]
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - link "Features" [ref=e137] [cursor=pointer]:
+                - /url: features.html
+            - listitem [ref=e138]:
+              - link "About" [ref=e139] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e140]:
+              - link "Earn Money" [ref=e141] [cursor=pointer]:
+                - /url: earn-money-reviews.html
+            - listitem [ref=e142]:
+              - link "FAQ" [ref=e143] [cursor=pointer]:
+                - /url: analyzeg-faq.html
+            - listitem [ref=e144]:
+              - link "Blog" [ref=e145] [cursor=pointer]:
+                - /url: blog/how-to-earn-from-video-reviews.html
+        - generic [ref=e146]:
+          - heading "Get Started" [level=3] [ref=e147]
+          - paragraph [ref=e148]: Join as a reviewer or register your brand.
+          - link "Sign Up as Reviewer" [ref=e149] [cursor=pointer]:
+            - /url: https://analyzeg.netlify.app/b2c-auth
+          - link "Register Your Brand" [ref=e153] [cursor=pointer]:
+            - /url: https://analyzeg.netlify.app/b2b-auth
+      - paragraph [ref=e158]: © 2025 AnalyzeG Technologies. All rights reserved.

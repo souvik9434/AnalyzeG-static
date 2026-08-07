@@ -179,6 +179,8 @@ document.addEventListener("DOMContentLoaded", function () {
               const faqItem = question.parentElement;
               if (faqItem) {
                 faqItem.classList.toggle("active");
+                const isExpanded = faqItem.classList.contains("active");
+                question.setAttribute("aria-expanded", isExpanded.toString());
 
                 // Close other FAQ items
                 document

@@ -44,9 +44,8 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/mobile-enhancements.css">
-  <!-- Non-blocking AOS CSS: below-fold animations only — safe to defer -->
-  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+  <!-- AOS CSS (self-hosted) -->
+  <link rel="stylesheet" href="css/aos.css">
   
   <!-- Favicon -->
   
@@ -116,9 +115,6 @@
     <div class="animated-objects">      <div class="bg-object hexagon" style="top: 20%; left: 25%; --moveX: 15vw; --moveY: -25vh; animation-delay: 0.2s; background: #4F46E5;"></div>
       <div class="bg-object circle" style="top: 70%; left: 10%; --moveX: -20vw; --moveY: 20vh; animation-delay: 0.7s; background: #EC4899;"></div>
       <div class="bg-object triangle" style="top: 10%; left: 75%; --moveX: 25vw; --moveY: 15vh; animation-delay: 1.2s; background: #06B6D4;"></div>
-      <div class="bg-object hexagon" style="top: 65%; left: 60%; --moveX: -10vw; --moveY: -15vh; animation-delay: 1.7s; background: #8B5CF6;"></div>
-      <div class="bg-object circle" style="top: 25%; left: 50%; --moveX: 20vw; --moveY: 10vh; animation-delay: 2.2s; background: #F59E0B;"></div>
-      <div class="bg-object triangle" style="top: 45%; left: 30%; --moveX: -25vw; --moveY: -20vh; animation-delay: 2.7s; background: #10B981;"></div>
     </div>
     <div class="container">
       <h1 data-aos="zoom-in" data-aos-delay="200">About AnalyzeG</h1>
@@ -132,22 +128,61 @@
     <div class="container" data-aos="fade-up">
       <article>
         <h2>Our Mission</h2>
-        <p>AnalyzeG helps real people share honest video reviews. Brands use these reviews to make better decisions. We keep the process simple, secure, and fair for everyone.</p>
+        <p>AnalyzeG helps real people share honest video reviews and helps brands make better decisions through verified, AI-powered insights. We believe trust is the foundation of every great product decision — and that trust starts with authentic voices. Our platform keeps the process simple, secure, and fair for everyone involved.</p>
       </article>
-      
-      <article>
-        <h2>Why Choose AnalyzeG?</h2>
+
+      <article data-aos="fade-up">
+        <h2>Our Story</h2>
+        <p>AnalyzeG was born from a simple frustration: market research is slow, expensive, and often unreliable. Traditional surveys and focus groups can't capture the raw honesty of someone holding a product in their hands and sharing their real experience.</p>
+        <p>We built a platform where reviewers record short video reviews of products they genuinely use, and brands get access to unfiltered, verified consumer insights — powered by AI analysis that turns raw video into actionable data. Today, AnalyzeG connects thousands of reviewers with brands across India, creating a win-win ecosystem where authentic voices earn money and businesses make smarter decisions.</p>
+      </article>
+
+      <article data-aos="fade-up">
+        <h2>Our Values</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+          <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #2563EB;">
+            <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: #1e40af;">Integrity</h3>
+            <p style="font-size: 0.95rem; color: #475569; margin: 0;">Every review is verified for authenticity. We never compromise on the truthfulness of the feedback our platform delivers.</p>
+          </div>
+          <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #8B5CF6;">
+            <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: #6D28D9;">Innovation</h3>
+            <p style="font-size: 0.95rem; color: #475569; margin: 0;">AI-powered analysis transforms raw video reviews into structured, actionable insights that traditional methods can't match.</p>
+          </div>
+          <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #10B981;">
+            <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: #059669;">Fairness</h3>
+            <p style="font-size: 0.95rem; color: #475569; margin: 0;">Our dual-stage payout model ensures reviewers are rewarded fairly and transparently for their time and honest feedback.</p>
+          </div>
+          <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #F59E0B;">
+            <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: #D97706;">Transparency</h3>
+            <p style="font-size: 0.95rem; color: #475569; margin: 0;">Clear rules, visible analytics, and open communication — both reviewers and brands always know exactly where they stand.</p>
+          </div>
+        </div>
+      </article>
+
+      <article data-aos="fade-up">
+        <h2>Why Brands Trust AnalyzeG</h2>
         <ul role="list">
-          <li>Secure verification to confirm real reviewers and real reviews</li>
-          <li>Limited-time dual-stage payout for reviewers</li>
-          <li>Clear analytics and filtered insights for brands</li>
-          <li>Simple process with transparent rules and trust checks</li>
+          <li>Multi-factor verification confirms every reviewer and every review is authentic</li>
+          <li>AI-powered sentiment analysis delivers deeper insights than traditional surveys</li>
+          <li>Competitive benchmarking tools let brands compare against industry rivals</li>
+          <li>Enterprise-grade data security protects all review data and brand information</li>
+          <li>Trusted by growing brands across India for real-time consumer intelligence</li>
         </ul>
       </article>
 
-      <article>
+      <article data-aos="fade-up">
         <h2>How Reviewer Payout Works</h2>
         <p>Limited-time model: if your review is verified as authentic, you can get up to Rs 40 instantly. If the review is sold, you get the remaining amount from your 50% share after subtracting that instant payout.</p>
+      </article>
+
+      <article data-aos="fade-up">
+        <h2>Contact &amp; Support</h2>
+        <p>Have questions about AnalyzeG? We're here to help.</p>
+        <ul role="list">
+          <li><strong>Email:</strong> support@analyzeg.co.in</li>
+          <li><strong>Platform:</strong> <a href="https://analyzeg.netlify.app/" rel="noopener">app.analyzeg.co.in</a></li>
+          <li><strong>FAQ:</strong> <a href="analyzeg-faq.html">Frequently Asked Questions</a></li>
+        </ul>
       </article>
     </div>
   </section>
@@ -178,13 +213,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 AnalyzeG Technologies. All rights reserved.</p>
+        <p>&copy; 2026 AnalyzeG Technologies. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/scripts.js"></script>
   
   <!-- Schema Markup for SEO -->

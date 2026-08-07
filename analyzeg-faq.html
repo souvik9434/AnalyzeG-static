@@ -45,9 +45,8 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/mobile-enhancements.css">
-  <!-- Non-blocking AOS CSS: below-fold animations only — safe to defer -->
-  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+  <!-- AOS CSS (self-hosted) -->
+  <link rel="stylesheet" href="css/aos.css">
   
   <!-- Favicon -->
 
@@ -113,9 +112,6 @@
     <div class="animated-objects">      <div class="bg-object hexagon" style="top: 5%; left: 50%; --moveX: 25vw; --moveY: -35vh; animation-delay: 0.3s; background: #8B5CF6;"></div>
       <div class="bg-object circle" style="top: 50%; left: 5%; --moveX: -30vw; --moveY: 30vh; animation-delay: 0.8s; background: #10B981;"></div>
       <div class="bg-object triangle" style="top: 35%; left: 85%; --moveX: 35vw; --moveY: 25vh; animation-delay: 1.3s; background: #F59E0B;"></div>
-      <div class="bg-object hexagon" style="top: 70%; left: 30%; --moveX: -20vw; --moveY: -25vh; animation-delay: 1.8s; background: #06B6D4;"></div>
-      <div class="bg-object circle" style="top: 10%; left: 15%; --moveX: 30vw; --moveY: 20vh; animation-delay: 2.3s; background: #4F46E5;"></div>
-      <div class="bg-object triangle" style="top: 85%; left: 75%; --moveX: -35vw; --moveY: -30vh; animation-delay: 2.8s; background: #EC4899;"></div>
     </div>
     <div class="container">
       <h1 data-aos="zoom-in">AnalyzeG – Frequently Asked Questions</h1>
@@ -140,20 +136,20 @@
           <h2>Getting Started</h2>
           <div class="faq-grid">
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1">
                 How do I start earning money with reviews?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
                 <div class="faq-answer-content">
                   Sign up for our platform, complete your profile verification, and start choosing review opportunities. Once verified, you can begin submitting video reviews and earning rewards.
                 </div>
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2">
                 What equipment do I need?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
                 <div class="faq-answer-content">
                   A smartphone with a decent camera and stable internet connection is all you need. We'll provide guidelines for optimal video quality and review submission.
                 </div>
@@ -166,30 +162,30 @@
           <h2>Earnings & Payments</h2>
           <div class="faq-grid">
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3">
                 How much can I earn per review?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
                 <div class="faq-answer-content">
                   Limited-time model: you can get up to Rs 40 after authentic verification. If your review is sold, you receive the remaining amount from your 50% share after subtracting the instant payout.
                 </div>
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4">
                 When and how do I get paid?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
                 <div class="faq-answer-content">
                   You can receive up to Rs 40 after verification. The remaining payout is processed when your review is sold. Payment options include UPI, bank transfer, and wallet methods.
                 </div>
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5">
                 Is there a minimum payout threshold?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
                 <div class="faq-answer-content">
                   No strict minimum threshold. The instant payout can be up to Rs 40 after verification, and the rest comes after sale based on your 50% share.
                 </div>
@@ -202,20 +198,20 @@
           <h2>Review Process</h2>
           <div class="faq-grid">
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-6" aria-expanded="false" aria-controls="faq-answer-6">
                 How long should my video reviews be?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
                 <div class="faq-answer-content">
                   Videos should be 2-5 minutes long and cover key aspects of the product or service. We provide a checklist of points to cover for each review.
                 </div>
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-7" aria-expanded="false" aria-controls="faq-answer-7">
                 How does verification work?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
                 <div class="faq-answer-content">
                   Our advanced verification system validates your identity and review authenticity automatically through multiple security checks. This ensures fair rewards and maintains platform integrity.
                 </div>
@@ -229,20 +225,20 @@
           <h2>Platform Benefits</h2>
           <div class="faq-grid">
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-8" aria-expanded="false" aria-controls="faq-answer-8">
                 How does AnalyzeG verify review authenticity?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
                 <div class="faq-answer-content">
                   We use advanced multi-factor verification to authenticate reviewer identity and content authenticity. Each review is digitally authenticated and securely recorded.
                 </div>
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-9" aria-expanded="false" aria-controls="faq-answer-9">
                 What insights do we receive?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-9" role="region" aria-labelledby="faq-question-9">
                 <div class="faq-answer-content">
                   Access detailed analytics including sentiment analysis, demographic data, and actionable insights. All data is AI-processed for meaningful trends.
                 </div>
@@ -255,20 +251,20 @@
           <h2>Review Management</h2>
           <div class="faq-grid">
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-10" aria-expanded="false" aria-controls="faq-answer-10">
                 How quickly can we receive reviews?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-10" role="region" aria-labelledby="faq-question-10">
                 <div class="faq-answer-content">
                   Most review requests are fulfilled within 24 hours. You'll receive notifications as reviews are submitted and verified.
                 </div>
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-11" aria-expanded="false" aria-controls="faq-answer-11">
                 Can we specify reviewer demographics?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-11" role="region" aria-labelledby="faq-question-11">
                 <div class="faq-answer-content">
                   Yes, target specific demographics including age, location, and interests. Our platform matches your requirements with verified reviewers.
                 </div>
@@ -281,20 +277,20 @@
           <h2>Data & Security</h2>
           <div class="faq-grid">
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-12" aria-expanded="false" aria-controls="faq-answer-12">
                 How is our data protected?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-12" role="region" aria-labelledby="faq-question-12">
                 <div class="faq-answer-content">
                   All data is encrypted using bank-grade security. Access controls and audit logs ensure complete data privacy and compliance.
                 </div>
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-question" type="button">
+              <button class="faq-question" type="button" id="faq-question-13" aria-expanded="false" aria-controls="faq-answer-13">
                 Can we export review data?
               </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faq-answer-13" role="region" aria-labelledby="faq-question-13">
                 <div class="faq-answer-content">
                   Yes, export data in multiple formats including CSV, JSON, and PDF. Custom API integrations are available for enterprise clients.
                 </div>
@@ -344,7 +340,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 AnalyzeG Technologies. All rights reserved.</p>
+        <p>&copy; 2026 AnalyzeG Technologies. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -372,7 +368,7 @@
   </script>
 
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/scripts.js"></script>
 
   <!-- FAQPage Structured Data for Google Rich Results -->
