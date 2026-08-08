@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { AudienceSwitch } from '../components/AudienceSwitch';
+import { AnimatedTimeline } from '../components/AnimatedTimeline';
 ---
 <BaseLayout>
   <Fragment slot="head">
@@ -327,36 +329,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <div class="container">
                 <div class="audience-toggle-container" data-aos="fade-up">
-                    <div
-                        class="audience-toggle"
-                        role="tablist"
-                        aria-label="Choose Audience View"
-                    >
-                        <div
-                            id="reviewer-option"
-                            class="audience-toggle-option active"
-                            role="tab"
-                            aria-selected="true"
-                            tabindex="0"
-                            aria-controls="reviewer-content"
-                        >
-                            For Reviewers
-                        </div>
-                        <div
-                            id="brand-option"
-                            class="audience-toggle-option"
-                            role="tab"
-                            aria-selected="false"
-                            tabindex="0"
-                            aria-controls="brand-content"
-                        >
-                            For Brands
-                        </div>
-                        <div
-                            class="audience-toggle-slider"
-                            aria-hidden="true"
-                        ></div>
-                    </div>
+                    <AudienceSwitch client:load />
                 </div>
                 <!-- Reviewer Content -->
                 <div
@@ -431,6 +404,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     role="tabpanel"
                     aria-labelledby="reviewer-option"
                 >
+                    <AnimatedTimeline client:only="react">
                     <div class="process-steps">
                         <div class="process-step" data-aos="fade-up">
                             <div class="step-icon">
@@ -573,6 +547,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                             </div>
                         </div>
                     </div>
+                    </AnimatedTimeline>
                 </div>
 
                 <!-- Brand Process - Connects to the hero toggle -->
@@ -583,6 +558,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     role="tabpanel"
                     aria-labelledby="brand-option"
                 >
+                    <AnimatedTimeline client:only="react">
                     <div class="process-steps">
                         <div class="process-step" data-aos="fade-up">
                             <div class="step-icon">
@@ -740,6 +716,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                             </div>
                         </div>
                     </div>
+                    </AnimatedTimeline>
                 </div>
             </div>
         </section>

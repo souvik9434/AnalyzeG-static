@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { AnimatedTimeline } from '../components/AnimatedTimeline';
 ---
 <BaseLayout>
   <Fragment slot="head">
@@ -169,6 +170,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2 class="section-title" data-aos="fade-up">How to Start Earning</h2>
       <p class="section-intro" data-aos="fade-up">Our streamlined process makes it easy to earn rewards for your authentic video reviews. Follow these simple steps:</p>
       
+      <AnimatedTimeline client:only="react">
       <div class="process-steps">
         <div class="process-step" data-aos="fade-up">
           <div class="step-icon">
@@ -244,6 +246,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </div>
       </div>
+      </AnimatedTimeline>
       
       <div class="cta-container" data-aos="fade-up">
         <a href="https://analyzeg.netlify.app/b2c-auth" data-app-href="/b2c-auth" class="btn-primary" rel="noopener">Start Earning Today</a>
