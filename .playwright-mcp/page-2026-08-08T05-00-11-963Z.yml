@@ -1,0 +1,131 @@
+- generic [ref=f2e1]:
+  - link "Skip to main content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f2e4]:
+    - generic [ref=f2e5]: Platform Live Now
+    - link "Open App →" [ref=f2e6] [cursor=pointer]:
+      - /url: https://analyzeg.netlify.app/
+  - banner [ref=f2e7]:
+    - generic [ref=f2e8]:
+      - link "AnalyzeG AnalyzeG" [ref=f2e10] [cursor=pointer]:
+        - /url: /
+        - img "AnalyzeG" [ref=f2e11]
+        - generic [ref=f2e12]: AnalyzeG
+      - navigation [ref=f2e13]:
+        - menubar [ref=f2e14]:
+          - menuitem [ref=f2e15] [cursor=pointer]: Home
+          - menuitem [ref=f2e16] [cursor=pointer]: Features
+          - menuitem [ref=f2e17] [cursor=pointer]: About
+          - menuitem [ref=f2e18] [cursor=pointer]: Earn Money
+          - menuitem [ref=f2e19] [cursor=pointer]: FAQ
+          - menuitem [ref=f2e20] [cursor=pointer]: Launch App
+  - main [ref=f2e24]:
+    - generic [ref=f2e27]:
+      - tablist "Choose Audience View" [ref=f2e29]:
+        - tab "For Reviewers" [ref=f2e30] [cursor=pointer]
+        - tab "For Brands" [active] [selected] [ref=f2e31] [cursor=pointer]
+      - generic [ref=f2e165]:
+        - heading "Buy Real Customer Video Reviews with AnalyzeG Analytics" [level=1] [ref=f2e166]
+        - paragraph [ref=f2e167]: 30-second in-hand product videos • State & age filtering • Power BI dashboard • Raw data included • Licensed for advertising (main brands) • Delivered in 2min-24hrs
+        - generic [ref=f2e168]:
+          - link "Get Started as Brand" [ref=f2e169] [cursor=pointer]:
+            - /url: https://analyzeg.netlify.app/b2b-auth
+          - link "View Pricing" [ref=f2e170] [cursor=pointer]:
+            - /url: "#b2b-pricing"
+    - region [ref=f2e39]:
+      - generic [ref=f2e40]:
+        - heading "How AnalyzeG Works" [level=2] [ref=f2e41]
+        - tabpanel "For Brands" [ref=f2e171]:
+          - generic [ref=f2e172]:
+            - generic [ref=f2e177]:
+              - heading "1. Seamless Review Collection" [level=3] [ref=f2e178]
+              - paragraph [ref=f2e179]: Collect authentic video reviews through our intuitive platform.
+              - list [ref=f2e180]:
+                - listitem [ref=f2e181]: High-quality video submissions
+                - listitem [ref=f2e182]: Structured survey responses
+                - listitem [ref=f2e183]: Real-time collection system
+            - generic [ref=f2e188]:
+              - heading "2. AI-Powered Analysis" [level=3] [ref=f2e189]
+              - paragraph [ref=f2e190]: AI-powered analysis extracts insights from 30-second in-hand product videos.
+              - list [ref=f2e191]:
+                - listitem [ref=f2e192]: Sentiment analysis & key themes
+                - listitem [ref=f2e193]: Pattern recognition & trend detection
+                - listitem [ref=f2e194]: Competitive comparisons
+            - generic [ref=f2e199]:
+              - heading "3. Interactive Dashboard" [level=3] [ref=f2e200]
+              - paragraph [ref=f2e201]: Visualize insights with Power BI dashboards and real-time data analytics.
+              - list [ref=f2e202]:
+                - listitem [ref=f2e203]: Power BI integrated dashboards
+                - listitem [ref=f2e204]: Demographic segmentation views
+                - listitem [ref=f2e205]: Exportable reports for teams
+            - generic [ref=f2e210]:
+              - heading "4. Strategic Implementation" [level=3] [ref=f2e211]
+              - paragraph [ref=f2e212]: Transform insights into actionable business strategies.
+              - list [ref=f2e213]:
+                - listitem [ref=f2e214]: Performance dashboards
+                - listitem [ref=f2e215]: Competitive benchmarking
+                - listitem [ref=f2e216]: Product improvement recommendations
+    - generic [ref=f2e91]:
+      - heading "Why Choose AnalyzeG?" [level=2] [ref=f2e92]
+      - generic [ref=f2e93]:
+        - generic [ref=f2e94]:
+          - img "Secure Verification Icon" [ref=f2e95]
+          - heading "AnalyzeG Secure Verification System" [level=3] [ref=f2e98]
+          - paragraph [ref=f2e99]: Every review on AnalyzeG is digitally authenticated and securely recorded for maximum trust.
+        - generic [ref=f2e100]:
+          - img "Instant Rewards Icon" [ref=f2e101]
+          - heading "Dual-Stage Payout" [level=3] [ref=f2e105]
+          - paragraph [ref=f2e106]: "Limited-time flow: get up to Rs 40 after authentic verification, then get the remaining payout from your 50% share when your review is sold."
+        - generic [ref=f2e107]:
+          - img "AI Analytics Icon" [ref=f2e108]
+          - heading "AI-Powered Analytics" [level=3] [ref=f2e111]
+          - paragraph [ref=f2e112]: Advanced insights and sentiment analysis for data-driven decisions.
+    - generic [ref=f2e114]:
+      - heading "AnalyzeG Technology & Security" [level=2] [ref=f2e115]
+      - generic [ref=f2e116]:
+        - heading "AnalyzeG Multi-Factor Verification" [level=3] [ref=f2e117]
+        - paragraph [ref=f2e118]: Every review on AnalyzeG is digitally authenticated and securely recorded.
+        - heading "AnalyzeG AI Analysis" [level=3] [ref=f2e119]
+        - paragraph [ref=f2e120]: Machine learning algorithms provide deep insights and trends.
+        - heading "AnalyzeG Secure Platform" [level=3] [ref=f2e121]
+        - paragraph [ref=f2e122]: Enterprise-grade security protects your data and privacy.
+    - generic [ref=f2e217]:
+      - heading "Get Your and Competitor Reviews with AnalyzeG Now" [level=2] [ref=f2e218]
+      - paragraph [ref=f2e219]: Access verified reviews and competitor insights instantly on AnalyzeG. Make smarter business decisions today.
+      - generic [ref=f2e220]:
+        - link "Get Instant Access" [ref=f2e221] [cursor=pointer]:
+          - /url: https://analyzeg.netlify.app/b2b-auth
+        - link "View Features" [ref=f2e222] [cursor=pointer]:
+          - /url: features.html
+  - contentinfo [ref=f2e131]:
+    - generic [ref=f2e132]:
+      - generic [ref=f2e133]:
+        - generic [ref=f2e134]:
+          - img "AnalyzeG logo" [ref=f2e135]
+          - paragraph [ref=f2e136]: India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.
+        - generic [ref=f2e137]:
+          - heading "Quick Links" [level=3] [ref=f2e138]
+          - list [ref=f2e139]:
+            - listitem [ref=f2e140]:
+              - link "Features" [ref=f2e141] [cursor=pointer]:
+                - /url: features.html
+            - listitem [ref=f2e142]:
+              - link "About" [ref=f2e143] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=f2e144]:
+              - link "Earn Money" [ref=f2e145] [cursor=pointer]:
+                - /url: earn-money-reviews.html
+            - listitem [ref=f2e146]:
+              - link "FAQ" [ref=f2e147] [cursor=pointer]:
+                - /url: analyzeg-faq.html
+            - listitem [ref=f2e148]:
+              - link "Blog" [ref=f2e149] [cursor=pointer]:
+                - /url: blog/how-to-earn-from-video-reviews.html
+        - generic [ref=f2e150]:
+          - heading "Get Started" [level=3] [ref=f2e151]
+          - paragraph [ref=f2e152]: Join as a reviewer or register your brand.
+          - link "Sign Up as Reviewer" [ref=f2e153] [cursor=pointer]:
+            - /url: https://analyzeg.netlify.app/b2c-auth
+          - link "Register Your Brand" [ref=f2e157] [cursor=pointer]:
+            - /url: https://analyzeg.netlify.app/b2b-auth
+      - paragraph [ref=f2e162]: © 2026 AnalyzeG Technologies. All rights reserved.

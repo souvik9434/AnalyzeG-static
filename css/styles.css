@@ -1538,58 +1538,9 @@ section {
   margin-top: 3rem;
 }
 
-/* Even-odd layout for process steps */
-.process-step:nth-child(odd) .step-content {
-  margin-right: 60px;
-}
+/* Even-odd layout removed for centered gap connector design */
 
-.process-step:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.process-step:nth-child(even) .step-content {
-  margin-left: 60px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .process-steps::before {
-    left: 41px;
-  }
-    .process-step,
-  .process-step:nth-child(even) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    margin-bottom: 25px;
-    border-radius: var(--radius-md);
-    background-color: var(--white);
-  }
-  
-  .step-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 0 15px 0;
-  }
-  
-  .step-icon svg {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .step-content,
-  .process-step:nth-child(odd) .step-content,
-  .process-step:nth-child(even) .step-content {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .step-content h3 {
-    font-size: 1.3rem;
-  }
-}
+/* Responsive adjustments removed to avoid conflicts */
 
 /* Additional styles for flowchart animations and vertical alignment */
 .tech-flow {
@@ -2045,47 +1996,7 @@ section {
   100% { transform: scale(1); opacity: 0.8; }
 }
 
-/* Mobile responsiveness for process steps */
-@media (max-width: 768px) {
-  .process-steps::before,
-  .process-steps::after {
-    left: 1.5rem;
-  }
-  
-  .step-icon {
-    width: 3rem;
-    height: 3rem;
-    min-width: 3rem;
-  }
-  
-  .process-step {
-    gap: 1rem;
-  }
-  
-  .process-step::after {
-    left: 2.9rem;
-    top: 1.5rem;
-    width: 1rem;
-  }
-  
-  .process-step::before {
-    left: 2.9rem;
-    top: 1.5rem;
-  }
-  
-  .step-content {
-    padding: 1rem;
-    min-height: 100px;
-  }
-  
-  .step-content h3 {
-    font-size: 1.2rem;
-  }
-  
-  .step-content p {
-    font-size: 0.9rem;
-  }
-}
+/* Mobile responsiveness for process steps removed to avoid conflicts */
 
 /* Audience Section Enhancements */
 .audience-section .hero-content,
@@ -2158,10 +2069,6 @@ section {
   .process-step {
     margin-bottom: 1.5rem !important;
     padding: 1.5rem !important;
-  }
-  
-  .step-connectors {
-    display: none !important;
   }
   
   .earnings-info,
@@ -2356,28 +2263,34 @@ iframe {
   overflow: visible;
 }
 
-/* Canonical process-step layout (applies last to override prior duplicates) */
+/* Canonical process-step layout (Centered Gap Connector Design) */
 .process-steps {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 48px; /* Large gap for the connector */
+  max-width: 760px;
+  margin: 3rem auto;
+  position: relative;
 }
 
 .process-step {
   display: flex;
   align-items: flex-start;
-  gap: 1.25rem;
-  padding: 1.25rem;
-  margin-bottom: 1rem;
-  border-radius: 14px;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 0 !important; /* Override any existing margin-bottom */
+  border-radius: 16px;
   background: #ffffff;
-  border: 1px solid rgba(17, 24, 39, 0.08);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  transform: none;
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
 }
 
 .process-step:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .step-icon {
@@ -2399,6 +2312,43 @@ iframe {
   transform: none;
   background: transparent;
   box-shadow: none;
+}
+
+/* The Connector Line (in the gap) */
+.process-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 48px; /* Same as gap */
+  background: rgba(37, 99, 235, 0.15);
+  z-index: 1;
+}
+
+/* The Animated RGB Flow */
+@media (prefers-reduced-motion: no-preference) {
+  .process-step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 48px;
+    background: linear-gradient(to bottom, transparent, #3B82F6, #8B5CF6, transparent);
+    background-size: 100% 200%;
+    animation: rgb-flow 1.5s infinite linear;
+    z-index: 2;
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+
+  @keyframes rgb-flow {
+    0% { background-position: 0 -100%; }
+    100% { background-position: 0 100%; }
+  }
 }
 
 /* Canonical flowchart sizing */

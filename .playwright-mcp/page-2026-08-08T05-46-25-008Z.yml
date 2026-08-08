@@ -1,0 +1,237 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - img "Logo" [ref=e5]
+        - heading [level=1] [ref=e6]:
+          - text: Superx Mailer
+          - superscript [ref=e7]: ®
+      - navigation [ref=e8]:
+        - link "Features" [ref=e9] [cursor=pointer]:
+          - /url: "#features"
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: "#services"
+        - link "Pricing" [ref=e11] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Test APIs" [ref=e12] [cursor=pointer]:
+          - /url: test-api.html
+      - button "Access Console" [ref=e14] [cursor=pointer]
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]: Advance Mailing Platfrom
+        - heading "LAND IN THE INBOX NOT IN SPAM" [level=2] [ref=e23]
+        - paragraph [ref=e24]: High-deliverability email marketing with built-in SMTP simulation, real-time spam screening, and client-side end-to-end encryption.
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - button "Get Mailer Licence" [ref=e27] [cursor=pointer]
+            - button "Get Mailer Api key" [ref=e32] [cursor=pointer]
+          - generic [ref=e36]:
+            - button "Get Global Mails" [ref=e37] [cursor=pointer]
+            - button "Book a Call for Demo" [ref=e42] [cursor=pointer]
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: SECURE MAILER PIPELINE
+          - generic [ref=e52]: ACTIVE FLOW
+        - generic [ref=e53]:
+          - generic [ref=e59]:
+            - generic [ref=e65]:
+              - generic [ref=e66]: Outbox Console
+              - generic [ref=e67]: 1. Compile Draft
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - generic [ref=e74]: E2EE Lock
+                - generic [ref=e75]: AES-256
+                - generic [ref=e76]: ✓ Secured
+              - generic [ref=e77]:
+                - generic [ref=e82]: TLS Tunnel
+                - generic [ref=e83]: SMTP Auth
+                - generic [ref=e84]: ✓ Connected
+              - generic [ref=e85]:
+                - generic [ref=e90]: Inboxing
+                - generic [ref=e91]: SPF/DKIM
+                - generic [ref=e92]: ✓ Passed
+            - generic [ref=e98]:
+              - generic [ref=e99]: Secure Inbox
+              - generic [ref=e100]: Delivered 1,846
+          - generic:
+            - generic: Zero-Knowledge Decrypted
+            - generic:
+              - generic: Exclusive proposal compiled!
+              - generic: Verified E2EE · Primary Inbox
+        - generic [ref=e101]:
+          - generic [ref=e102]: "Speed: 0.8s Relay"
+          - generic [ref=e107]: 100% Zero-Leak Guarantee
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - button "Live Sessions" [ref=e115] [cursor=pointer]
+        - button "Overall System" [ref=e118] [cursor=pointer]
+      - generic [ref=e124]:
+        - generic [ref=e125]: 3,295
+        - generic [ref=e126]: Total Outbound Sent
+      - generic [ref=e128]:
+        - generic [ref=e129]: 3,256
+        - generic [ref=e130]: Successful Delivers
+      - generic [ref=e132]:
+        - generic [ref=e133]: 1,284
+        - generic [ref=e134]: Opened Emails
+      - generic [ref=e136]:
+        - generic [ref=e137]: 3,256
+        - generic [ref=e138]: Primary Inbox
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - generic [ref=e141]: All-In-One Solution
+        - heading "Mailer & Consulting Services" [level=3] [ref=e142]
+        - paragraph [ref=e143]: Boost your domain reputation and email conversion rates with help from our professional deliverability consultants.
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - heading "Mail Marketing Builder" [level=4] [ref=e154]
+          - paragraph [ref=e155]: Create campaigns with custom templates and real-time desktop or mobile responsiveness overlays. Support multi-recipient inbox/rev contacts upload.
+        - generic [ref=e156]:
+          - heading "Outbound Mailing Engines" [level=4] [ref=e164]
+          - paragraph [ref=e165]: Integrate secure TLS SMTP nodes directly or simulate campaign sends through an interactive terminal before live dispatching.
+        - generic [ref=e166]:
+          - heading "End-to-End Encryption" [level=4] [ref=e174]
+          - paragraph [ref=e175]: Secure email payloads client-side in the browser. Zero-knowledge transmission ensures that only the recipient with the decryption key can read the content.
+        - generic [ref=e176]:
+          - heading "100% Inbox Triggering" [level=4] [ref=e183]
+          - paragraph [ref=e184]: Integrated real-time spam-word score screening, subject capitalization warnings, and technical SPF/DKIM validation checklist recommendations.
+    - generic [ref=e185]:
+      - generic [ref=e186]:
+        - generic [ref=e187]: Expert Support
+        - heading "Core Mailer Capabilities" [level=3] [ref=e188]
+        - paragraph [ref=e189]: Superx Mailer is packed with advanced deliverability engines and custom buildes designed to supercharge your conversation rates.
+      - generic [ref=e192]:
+        - generic [ref=e193] [cursor=pointer]:
+          - img "Mail Marketing Builder" [ref=e195]
+          - heading "Mail Marketing Builder" [level=4] [ref=e196]
+          - generic:
+            - generic: Campaign Designer
+            - paragraph: Design and compile high-impact, responsive email templates in real-time.
+            - generic: Key Features
+            - list:
+              - listitem: • Drag-and-drop HTML editor
+              - listitem: • Pre-made layout blocks
+              - listitem: • Auto-inline CSS compiler
+        - generic [ref=e197] [cursor=pointer]:
+          - img "Outbound Mailing Engines" [ref=e199]
+          - heading "Outbound Mailing Engines" [level=4] [ref=e200]
+          - generic:
+            - generic: SMTP Dispatch Relay
+            - paragraph: Route campaign emails through dedicated, warmed delivery server nodes.
+            - generic: Key Features
+            - list:
+              - listitem: • Multi-SMTP pooling engine
+              - listitem: • IP warming rotation
+              - listitem: • 50 emails/sec throughput
+        - generic [ref=e201] [cursor=pointer]:
+          - img "End-to-End Encryption" [ref=e203]
+          - heading "End-to-End Encryption" [level=4] [ref=e204]
+          - generic:
+            - generic: Zero-Knowledge Security
+            - paragraph: Secure email contents locally in the browser before SMTP transmission.
+            - generic: Key Features
+            - list:
+              - listitem: • AES-256 client encryption
+              - listitem: • Decryption keys locally stored
+              - listitem: • Protected TLS email tunnels
+        - generic [ref=e205] [cursor=pointer]:
+          - img "100% Inbox Triggering" [ref=e207]
+          - heading "100% Inbox Triggering" [level=4] [ref=e208]
+          - generic:
+            - generic: Deliverability Check
+            - paragraph: Screen messages against ISP spam triggers and email compliance rules.
+            - generic: Key Features
+            - list:
+              - listitem: • SPF/DKIM/DMARC headers
+              - listitem: • Keyword spam detector
+              - listitem: • Primary inbox routing priority
+      - generic [ref=e209]:
+        - generic [ref=e210]: Featured Service
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - heading "Global Mail Database Access" [level=4] [ref=e219]
+            - paragraph [ref=e220]: Get instant access to our continuously updated, verified global email database spreadsheet. Download & integrate high-conversion B2B and B2C marketing lead lists immediately after payment.
+          - generic [ref=e221]:
+            - generic [ref=e222]: 100k+ Verified Leads
+            - generic [ref=e227]: Instant Google Sheet Access
+            - generic [ref=e232]: Global Reach & Compliance
+        - link "Access Mail Database Globally" [ref=e237] [cursor=pointer]:
+          - /url: portal.html?product=mail_database
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - generic [ref=e244]: Flexible Plans
+        - heading "Mailer Pricing Plans" [level=3] [ref=e245]
+        - paragraph [ref=e246]: Choose a plan that fits your business needs. Simple billing, immediate license activation, and premium delivery nodes.
+      - generic [ref=e248]:
+        - button "Mailer Licenses" [ref=e249] [cursor=pointer]
+        - button "Developer APIs" [ref=e250] [cursor=pointer]
+        - button "Mail Database" [ref=e251] [cursor=pointer]
+      - generic [ref=e252]:
+        - generic [ref=e253]:
+          - button "Domestic (INR - ₹)" [ref=e254] [cursor=pointer]
+          - button "International (USD - $)" [ref=e257] [cursor=pointer]
+        - combobox [ref=e261] [cursor=pointer]:
+          - option "All Plans" [selected]
+          - option "Starter"
+          - option "Professional"
+          - option "Business"
+          - option "Enterprise"
+      - paragraph [ref=e265]: Fetching live mailer pricing plans...
+    - contentinfo [ref=e266]:
+      - generic [ref=e267]:
+        - text: ©2026, Superx Mailer
+        - superscript [ref=e268]: ®
+      - generic [ref=e269]:
+        - link "Privacy Policy" [ref=e270] [cursor=pointer]:
+          - /url: privacy.html
+        - generic [ref=e271]: "|"
+        - link "Terms of Service" [ref=e272] [cursor=pointer]:
+          - /url: terms.html
+        - generic [ref=e273]: "|"
+        - link "Refund Policy" [ref=e274] [cursor=pointer]:
+          - /url: refund-policy.html
+        - generic [ref=e275]: "|"
+        - link "Cookies" [ref=e276] [cursor=pointer]:
+          - /url: cookies.html
+      - generic [ref=e277]:
+        - text: Powered by
+        - link "Superx Corporation Private Limited" [ref=e278] [cursor=pointer]:
+          - /url: https://www.superxcorporation.in
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic "Close Booking"
+        - generic: "book-demo@superx: ~"
+        - generic "Close": ×
+      - generic:
+        - generic:
+          - heading "Book a Demo Call" [level=3]
+          - paragraph: Schedule a 15-minute product walk-through with our team
+        - generic:
+          - generic:
+            - generic: Full Name
+            - textbox "Your Name":
+              - /placeholder: " Your Name"
+          - generic:
+            - generic: Work Email
+            - textbox "example@company.com"
+          - generic:
+            - generic: Phone Number
+            - textbox "+91 XXXXX67890"
+          - generic:
+            - generic:
+              - generic: Date
+              - textbox
+            - generic:
+              - generic: Time Slot
+              - combobox:
+                - option "10:00 AM" [selected]
+                - option "11:30 AM"
+                - option "02:00 PM"
+                - option "04:30 PM"
+          - button "Confirm Schedule"
+  - iframe [ref=e281]:
+    - generic [ref=f1e6]:
+      - text: protected by
+      - strong [ref=f1e7]: reCAPTCHA

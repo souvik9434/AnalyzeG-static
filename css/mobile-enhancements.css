@@ -13,33 +13,11 @@
   margin-top: 60px;
 }
 
-/* Step Connectors - Added 2025-05-19 */
-.step-connectors {
-  position: absolute;
-  left: 30px;
-  top: 60px;
-  height: calc(100% - 60px);
-  z-index: 0;
-  pointer-events: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.flow-connector {
-  opacity: 0.5;
-  transform: translateX(-50%);
-}
-
 /* Enhanced Mobile Process Steps - Added 2025-05-19 */
 @media (max-width: 768px) {
   .process-steps {
     margin: 40px auto;
     padding: 10px;
-  }
-  
-  /* Hide connectors on mobile */
-  .step-connectors {
-    display: none;
   }
   
   .process-step {
@@ -89,12 +67,13 @@
     text-align: left;
   }
   
-  /* Hide connecting elements on mobile */
-  .process-steps::before,
-  .process-steps::after,
-  .process-step::before,
-  .process-step::after {
-    display: none;
+  /* Adjust gap connectors for mobile */
+  .process-steps {
+    gap: 32px;
+  }
+  .process-step:not(:last-child)::after,
+  .process-step:not(:last-child)::before {
+    height: 32px;
   }
   
   /* Improved footer button display on mobile */
