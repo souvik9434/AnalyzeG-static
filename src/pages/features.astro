@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+  <Fragment slot="head">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; upgrade-insecure-requests;">  <title>AnalyzeG Features - Live Verified Review Platform</title>
@@ -43,10 +46,10 @@
   <!-- Non-blocking Google Fonts: onload swap prevents render-blocking; display=swap handles FOUT -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"></noscript>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/mobile-enhancements.css">
+  <link is:inline rel="stylesheet" href="/css/styles.css">
+  <link is:inline rel="stylesheet" href="/css/mobile-enhancements.css">
   <!-- AOS CSS (self-hosted) -->
-  <link rel="stylesheet" href="css/aos.css">
+  <link is:inline rel="stylesheet" href="/css/aos.css">
   
   <!-- Favicon -->
 
@@ -63,8 +66,9 @@
         <meta name="apple-mobile-web-app-title" content="AnalyzeG" />
         <meta name="msapplication-TileColor" content="#2563EB" />
         <meta name="msapplication-TileImage" content="https://analyzeg.co.in/assets/optimized/favicon-search-512.png" />
-    </head>
-<body>
+    
+  </Fragment>
+
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white; padding: 10px 0; text-align: center; position: relative; z-index: 10;">
     <div class="container">
@@ -77,7 +81,7 @@
     <div class="container">
       <div class="logo-container">
         <a href="/" class="logo">
-          <img src="assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG" width="40" height="40">
+          <img src="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG" width="40" height="40">
           <span class="logo-text">AnalyzeG</span>
         </a>
       </div>
@@ -338,7 +342,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG logo" width="48" height="48" loading="lazy">
+          <img src="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG logo" width="48" height="48" loading="lazy">
           <p>India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.</p>
         </div>
         <div class="footer-links">
@@ -389,8 +393,8 @@
   </script>
 
   <!-- Scripts -->
-  <script src="js/aos.js"></script>
-  <script src="js/scripts.js"></script>
+  <script is:inline src="/js/aos.js"></script>
+  <script is:inline src="/js/scripts.js"></script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -424,5 +428,5 @@
     }
   }
   </script>
-</body>
-</html>
+
+</BaseLayout>

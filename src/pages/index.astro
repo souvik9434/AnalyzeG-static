@@ -1,6 +1,9 @@
-<!doctype html>
-<html lang="en">
-    <head>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+  <Fragment slot="head">
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -85,12 +88,12 @@
         <!-- Non-blocking Google Fonts: onload swap prevents render-blocking; display=swap handles FOUT -->
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" /></noscript>
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/mobile-enhancements.css" />
+        <link is:inline rel="stylesheet" href="/css/styles.css" />
+        <link is:inline rel="stylesheet" href="/css/mobile-enhancements.css" />
         <!-- AOS CSS (self-hosted) -->
-        <link rel="stylesheet" href="css/aos.css" />
+        <link is:inline rel="stylesheet" href="/css/aos.css" />
         <!-- Preload hero background: fixes 18.6s LCP — browser starts fetch during HTML parse, not after CSS parse -->
-        <link rel="preload" href="assets/optimized/hero-bg.jpg" as="image" fetchpriority="high" />
+        <link rel="preload" href="/assets/optimized/hero-bg.jpg" as="image" fetchpriority="high" />
         <!-- Favicon -->
         <link rel="canonical" href="https://analyzeg.co.in" />
         <!-- Enhanced JSON-LD structured data for Google Search with optimized logo parameters -->
@@ -205,8 +208,9 @@
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
         <link rel="manifest" href="/site.webmanifest" />
-    </head>
-    <body>
+    
+  </Fragment>
+
         <a href="#main-content" class="skip-link">Skip to main content</a>
         <!-- Platform Status Banner -->
         <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white;         padding: 10px 0; text-align: center; position: relative; z-index: 10; box-shadow: 0 4px 20px rgba(37,99,235,0.3);">
@@ -222,7 +226,7 @@
                 <div class="logo-container">
                     <a href="/" class="logo">
                         <img
-                            src="assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg"
+                            src="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg"
                             alt="AnalyzeG"
                             width="40"
                             height="40"
@@ -1011,7 +1015,7 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand">
-                        <img src="assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG logo" width="48" height="48" loading="lazy">
+                        <img src="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG logo" width="48" height="48" loading="lazy">
                         <p>India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.</p>
                     </div>
                     <div class="footer-links">
@@ -1043,8 +1047,8 @@
             </div>
         </footer>
         <!-- Scripts -->
-        <script src="js/aos.js"></script>
-        <script src="js/scripts.js"></script>
+        <script is:inline src="/js/aos.js"></script>
+        <script is:inline src="/js/scripts.js"></script>
         
-    </body>
-</html>
+    
+</BaseLayout>
