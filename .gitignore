@@ -42,3 +42,10 @@ temp_outputs/
 # Backup files
 *.bak
 *.backup
+
+# AI & Testing Artifacts
+.playwright-mcp/
+verify-*.png
+ref-site.png
+*.yml
+*.yaml
