@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
 ---
 <BaseLayout>
   <Fragment slot="head">
@@ -397,35 +398,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG logo" width="48" height="48" loading="lazy">
-          <p>India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="../features.html">Features</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../earn-money-reviews.html">Earn Money</a></li>
-            <li><a href="../analyzeg-faq.html">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-app">
-          <h4>Get Started</h4>
-          <p style="font-size:0.9rem;color:#9CA3AF;margin-bottom:1rem;">Join as a reviewer or register your brand.</p>
-          <a href="https://analyzeg.netlify.app/b2c-auth" data-app-href="/b2c-auth" class="footer-app-btn" rel="noopener" style="margin-bottom:0.75rem;display:inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Sign Up as Reviewer</a><br>
-          <a href="https://analyzeg.netlify.app/b2b-auth" data-app-href="/b2b-auth" class="footer-app-btn" rel="noopener" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9);"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Register Your Brand</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 AnalyzeG Technologies. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <SiteFooter />
 
   <!-- Scripts -->
   <script is:inline src="/js/aos.js"></script>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 ---
 <BaseLayout>
   <Fragment slot="head">
@@ -165,35 +166,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG logo" width="48" height="48" loading="lazy">
-          <p>India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.</p>
-        </div>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="earn-money-reviews.html">Earn Money</a></li>
-            <li><a href="analyzeg-faq.html">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-app">
-          <h3>Get Started</h3>
-          <p>Join AnalyzeG today — earn as a reviewer or access verified insights as a brand.</p>
-          <a href="https://analyzeg.netlify.app/" data-app-href="/" class="btn-primary" rel="noopener">Sign Up Free</a>
-          <a href="https://analyzeg.netlify.app/" data-app-href="/" class="btn-secondary" rel="noopener" style="margin-top:0.5rem;display:inline-block;">Login / Register</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 AnalyzeG. All rights reserved. | <a href="https://analyzeg.netlify.app/" data-app-href="/privacy-policy">Privacy Policy</a> | <a href="https://analyzeg.netlify.app/" data-app-href="/terms">Terms of Service</a></p>
-      </div>
-    </div>
-  </footer>
+  <SiteFooter />
 
   <!-- Scripts -->
   <script is:inline src="/js/scripts.js"></script>

@@ -410,6 +410,190 @@ body {
   color: #6B7280;
 }
 
+/* ---- Footer v2: legal, grievance officer, payment trust strip (app parity) ---- */
+.footer-grid {
+  grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+}
+
+.footer-msme-note {
+  font-size: 0.75rem !important;
+  color: #6B7280 !important;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  color: #6B7280;
+  margin-top: 1rem;
+}
+
+.footer-grievance {
+  font-size: 0.85rem;
+  color: #9CA3AF;
+}
+
+.footer-grievance h4 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-grievance p {
+  margin: 0 0 0.4rem;
+  line-height: 1.5;
+}
+
+.footer-grievance strong {
+  color: #D1D5DB;
+  font-weight: 600;
+}
+
+.footer-grievance a {
+  color: #60A5FA;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-grievance a:hover {
+  color: #93C5FD;
+  text-decoration: underline;
+}
+
+.grievance-meta {
+  font-size: 0.72rem;
+  color: #6B7280;
+  margin-top: 0.5rem;
+}
+
+.footer-doc-versions {
+  font-size: 0.68rem;
+  color: #6B7280;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #374151;
+}
+
+.footer-pay {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid #374151;
+  padding-top: 1.25rem;
+  margin-top: 2rem;
+}
+
+.footer-pay-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-pay-label {
+  font-size: 0.75rem;
+  color: #6B7280;
+  margin-right: 0.25rem;
+}
+
+.pay-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0 8px;
+  height: 32px;
+}
+
+.pay-chip img {
+  width: auto;
+  display: block;
+}
+
+.razorpay-badge {
+  display: inline-flex;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.razorpay-badge:hover {
+  opacity: 1;
+}
+
+.razorpay-badge img {
+  width: auto;
+  display: block;
+}
+
+.footer-pay-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+.footer-pay-right .pay-secure {
+  color: #34D399;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-pay-right .pay-secure svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.footer-bottom-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-top: 1px solid #374151;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.footer-bottom-flex p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+.dpdp-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: rgba(30, 58, 138, 0.4);
+  color: #93C5FD;
+  border: 1px solid rgba(30, 64, 175, 0.6);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-pay-right {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;

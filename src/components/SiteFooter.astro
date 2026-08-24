@@ -1,0 +1,98 @@
+---
+/**
+ * Shared site footer — full parity with the application footer
+ * (src/components/layout/Footer.jsx in reviewmarketplace).
+ * DPDP Act 2023 compliant: legal links, Grievance Officer details,
+ * payment trust strip, MSME registration note.
+ * App links use the data-app-href pattern (rewritten by scripts.js to
+ * ANALYZEG_APP_BASE, so the app domain changes in ONE place).
+ */
+---
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Company Info -->
+            <div class="footer-brand">
+                <img src="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" alt="AnalyzeG logo" width="48" height="48" loading="lazy">
+                <p>India's Premier Video Review Marketplace. Connecting brands with authentic consumer insights.</p>
+                <p class="footer-msme-note">Registered MSME (Udyam), West Bengal, India.</p>
+                <div class="footer-app" style="margin-top:1rem;">
+                    <a href="https://analyzeg.netlify.app/b2c-auth" data-app-href="/b2c-auth" class="footer-app-btn" rel="noopener" style="margin-bottom:0.75rem;display:inline-flex;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        Sign Up as Reviewer
+                    </a><br>
+                    <a href="https://analyzeg.netlify.app/b2b-auth" data-app-href="/b2b-auth" class="footer-app-btn" rel="noopener" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        Register Your Brand
+                    </a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 AnalyzeG. All rights reserved.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/features.html">Features</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/earn-money-reviews.html">Earn Money</a></li>
+                    <li><a href="/analyzeg-faq.html">FAQ</a></li>
+                    <li><a href="/blog/how-to-earn-from-video-reviews.html">Blog</a></li>
+                    <li><a href="https://analyzeg.netlify.app/browse" data-app-href="/browse" rel="noopener">Browse Products</a></li>
+                    <li><a href="https://analyzeg.netlify.app/how-it-works" data-app-href="/how-it-works" rel="noopener">How It Works</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Links (hosted in the application) -->
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="https://analyzeg.netlify.app/terms" data-app-href="/terms" rel="noopener">Terms of Service</a></li>
+                    <li><a href="https://analyzeg.netlify.app/privacy" data-app-href="/privacy" rel="noopener">Privacy Policy</a></li>
+                    <li><a href="https://analyzeg.netlify.app/refund" data-app-href="/refund" rel="noopener">Refund &amp; Cancellation</a></li>
+                    <li><a href="https://analyzeg.netlify.app/disclaimer" data-app-href="/disclaimer" rel="noopener">Disclaimer</a></li>
+                    <li><a href="https://analyzeg.netlify.app/cookies" data-app-href="/cookies" rel="noopener">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Grievance Officer - Mandatory under DPDP Act 2023 -->
+            <div class="footer-grievance">
+                <h4>Grievance Officer</h4>
+                <p><strong>Name:</strong> Souvik Dey</p>
+                <p><strong>Designation:</strong> Data Protection Officer</p>
+                <p><strong>Email:</strong> <a href="mailto:souvikdey@analyzeg.co.in">souvikdey@analyzeg.co.in</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+919734893487">+91-9734893487</a></p>
+                <p class="grievance-meta">Acknowledgment: 48 hours | Resolution: Within 90 days (DPDP Rules 2025)</p>
+                <p class="footer-doc-versions">Document Versions: Terms v1.0_2025-12-20 | Privacy v1.0_2025-12-20 | Cookies v1.0_2025-12-20</p>
+            </div>
+        </div>
+
+        <!-- Trust & Payment Strip -->
+        <div class="footer-pay">
+            <div class="footer-pay-left">
+                <span class="footer-pay-label">Accepted payments:</span>
+                <span class="pay-chip"><img src="/assets/images/payment-logos/upi.png" alt="UPI" style="height:18px;" loading="lazy" draggable="false"></span>
+                <span class="pay-chip"><img src="/assets/images/payment-logos/visa-blue.svg" alt="Visa" style="height:14px;" loading="lazy" draggable="false"></span>
+                <span class="pay-chip"><img src="/assets/images/payment-logos/mastercard.png" alt="Mastercard" style="height:20px;" loading="lazy" draggable="false"></span>
+                <span class="pay-chip"><img src="/assets/images/payment-logos/rupay.png" alt="RuPay" style="height:18px;" loading="lazy" draggable="false"></span>
+                <a href="https://razorpay.com/" target="_blank" rel="noopener noreferrer" aria-label="Razorpay | Payment Gateway | Neobank" class="razorpay-badge">
+                    <img src="https://badges.razorpay.com/badge-light.png" alt="Razorpay | Payment Gateway | Neobank" style="height:38px;" loading="lazy" referrerpolicy="origin">
+                </a>
+            </div>
+            <div class="footer-pay-right">
+                <span class="pay-secure">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
+                    HTTPS/TLS Encrypted
+                </span>
+                <span aria-hidden="true">|</span>
+                <span>Firebase &amp; Cloudflare Infrastructure</span>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom-flex">
+            <p>AnalyzeG is a registered Micro, Small and Medium Enterprise (MSME) under the Udyam Registration scheme, Government of India.</p>
+            <span class="dpdp-badge">DPDP Act 2023 Compliant</span>
+        </div>
+    </div>
+</footer>
