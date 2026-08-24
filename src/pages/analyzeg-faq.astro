@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { AudienceSwitch } from '../components/AudienceSwitch';
+import { FaqAccordion } from '../components/FaqAccordion';
 ---
 <BaseLayout>
   <Fragment slot="head">
@@ -125,184 +127,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <!-- Audience Toggle -->
   <div class="audience-toggle-container" data-aos="fade-up">
-    <div class="audience-toggle" role="tablist" aria-label="Choose Audience View">
-      <div id="reviewer-option" class="audience-toggle-option active" role="tab" aria-selected="true" tabindex="0" aria-controls="reviewer-content">For Reviewers</div>
-      <div id="brand-option" class="audience-toggle-option" role="tab" aria-selected="false" tabindex="0" aria-controls="brand-content">For Brands</div>
-      <div class="audience-toggle-slider"></div>
-    </div>
+    <AudienceSwitch client:load />
   </div>
 
   <!-- FAQ Content -->
   <section class="faq-content">
-    <div class="container">      <!-- Reviewer FAQs -->
+    <div class="container">
+      <!-- Reviewer FAQs -->
       <div id="reviewer-content" class="audience-section active" data-audience="reviewer">
-        <div class="faq-category" data-aos="fade-up">
-          <h2>Getting Started</h2>
-          <div class="faq-grid">
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1">
-                How do I start earning money with reviews?
-              </button>
-              <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-                <div class="faq-answer-content">
-                  Sign up for our platform, complete your profile verification, and start choosing review opportunities. Once verified, you can begin submitting video reviews and earning rewards.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2">
-                What equipment do I need?
-              </button>
-              <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
-                <div class="faq-answer-content">
-                  A smartphone with a decent camera and stable internet connection is all you need. We'll provide guidelines for optimal video quality and review submission.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-category" data-aos="fade-up">
-          <h2>Earnings & Payments</h2>
-          <div class="faq-grid">
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3">
-                How much can I earn per review?
-              </button>
-              <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-                <div class="faq-answer-content">
-                  Limited-time model: you can get up to Rs 40 after authentic verification. If your review is sold, you receive the remaining amount from your 50% share after subtracting the instant payout.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4">
-                When and how do I get paid?
-              </button>
-              <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-                <div class="faq-answer-content">
-                  You can receive up to Rs 40 after verification. The remaining payout is processed when your review is sold. Payment options include UPI, bank transfer, and wallet methods.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5">
-                Is there a minimum payout threshold?
-              </button>
-              <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
-                <div class="faq-answer-content">
-                  No strict minimum threshold. The instant payout can be up to Rs 40 after verification, and the rest comes after sale based on your 50% share.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-category" data-aos="fade-up">
-          <h2>Review Process</h2>
-          <div class="faq-grid">
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-6" aria-expanded="false" aria-controls="faq-answer-6">
-                How long should my video reviews be?
-              </button>
-              <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
-                <div class="faq-answer-content">
-                  Videos should be 2-5 minutes long and cover key aspects of the product or service. We provide a checklist of points to cover for each review.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-7" aria-expanded="false" aria-controls="faq-answer-7">
-                How does verification work?
-              </button>
-              <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
-                <div class="faq-answer-content">
-                  Our advanced verification system validates your identity and review authenticity automatically through multiple security checks. This ensures fair rewards and maintains platform integrity.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>      <!-- Brand FAQs -->
-      <div id="brand-content" class="audience-section" data-audience="brand">
-        <div class="faq-category" data-aos="fade-up">
-          <h2>Platform Benefits</h2>
-          <div class="faq-grid">
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-8" aria-expanded="false" aria-controls="faq-answer-8">
-                How does AnalyzeG verify review authenticity?
-              </button>
-              <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
-                <div class="faq-answer-content">
-                  We use advanced multi-factor verification to authenticate reviewer identity and content authenticity. Each review is digitally authenticated and securely recorded.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-9" aria-expanded="false" aria-controls="faq-answer-9">
-                What insights do we receive?
-              </button>
-              <div class="faq-answer" id="faq-answer-9" role="region" aria-labelledby="faq-question-9">
-                <div class="faq-answer-content">
-                  Access detailed analytics including sentiment analysis, demographic data, and actionable insights. All data is AI-processed for meaningful trends.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-category" data-aos="fade-up">
-          <h2>Review Management</h2>
-          <div class="faq-grid">
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-10" aria-expanded="false" aria-controls="faq-answer-10">
-                How quickly can we receive reviews?
-              </button>
-              <div class="faq-answer" id="faq-answer-10" role="region" aria-labelledby="faq-question-10">
-                <div class="faq-answer-content">
-                  Most review requests are fulfilled within 24 hours. You'll receive notifications as reviews are submitted and verified.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-11" aria-expanded="false" aria-controls="faq-answer-11">
-                Can we specify reviewer demographics?
-              </button>
-              <div class="faq-answer" id="faq-answer-11" role="region" aria-labelledby="faq-question-11">
-                <div class="faq-answer-content">
-                  Yes, target specific demographics including age, location, and interests. Our platform matches your requirements with verified reviewers.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-category" data-aos="fade-up">
-          <h2>Data & Security</h2>
-          <div class="faq-grid">
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-12" aria-expanded="false" aria-controls="faq-answer-12">
-                How is our data protected?
-              </button>
-              <div class="faq-answer" id="faq-answer-12" role="region" aria-labelledby="faq-question-12">
-                <div class="faq-answer-content">
-                  All data is encrypted using bank-grade security. Access controls and audit logs ensure complete data privacy and compliance.
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question" type="button" id="faq-question-13" aria-expanded="false" aria-controls="faq-answer-13">
-                Can we export review data?
-              </button>
-              <div class="faq-answer" id="faq-answer-13" role="region" aria-labelledby="faq-question-13">
-                <div class="faq-answer-content">
-                  Yes, export data in multiple formats including CSV, JSON, and PDF. Custom API integrations are available for enterprise clients.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <FaqAccordion client:visible audience="reviewer" />
       </div>
+
+      <!-- Brand FAQs -->
+      <div id="brand-content" class="audience-section" data-audience="brand">
+        <FaqAccordion client:visible audience="brand" />
+      </div>
+    </div>
+  </section>
     </div>
   </section>
 
