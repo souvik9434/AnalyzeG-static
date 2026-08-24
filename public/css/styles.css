@@ -2486,17 +2486,15 @@ iframe {
   z-index: 2;
 }
 
-/* Accessibility + performance: predictable motion model */
+/* REDUCED MOTION — targeted accommodation, NOT a global kill switch.
+   The previous blanket rule (animation-duration: 0.01ms on * !important)
+   disabled every animation, transition and micro-interaction site-wide for
+   users with OS-level "animation effects" off, making the site feel broken.
+   Best practice: keep user-controlled (scroll-linked) motion and
+   micro-interactions; only calm large autonomous/ambient motion. */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 
+  /* Large ambient floating shapes are purely decorative — hide them */
   .particle,
   .bg-object,
   .animated-objects,
@@ -2504,13 +2502,17 @@ iframe {
     display: none !important;
   }
 
-  [data-aos],
-  .flow-node,
-  .flow-text,
-  .flow-arrows path {
+  /* AOS reveals: show content immediately, skip the motion */
+  [data-aos] {
     opacity: 1 !important;
     transform: none !important;
-    stroke-dashoffset: 0 !important;
+    transition: none !important;
+  }
+
+  /* Marquee: slow to a calm drift instead of freezing mid-frame */
+  .animate-marquee,
+  .animate-marquee-vertical {
+    animation-duration: 60s !important;
   }
 }
 

@@ -1,0 +1,30 @@
+{
+  "name": "AnalyzeG - Verified Video Review Platform",
+  "short_name": "AnalyzeG",
+  "description": "India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563EB",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/assets/optimized/favicon-search-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/optimized/favicon-search-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

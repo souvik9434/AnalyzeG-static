@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useId } from "react";
-import { motion, useMotionValue, useTransform, useSpring, useReducedMotion } from "framer-motion";
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const AnimatedTimeline = ({
@@ -10,14 +10,15 @@ export const AnimatedTimeline = ({
   className?: string;
 }) => {
   const [isMounted, setIsMounted] = useState(false);
-  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  // Fallback for SSR and Reduced Motion
-  if (!isMounted || shouldReduceMotion) {
+  // SSR fallback only. NOTE: we intentionally do NOT fall back to a static
+  // line under prefers-reduced-motion — the beam is scroll-LINKED (moves only
+  // when the user scrolls), which is user-controlled motion, not autonomous.
+  if (!isMounted) {
     return (
       <div className={cn("relative mx-auto w-full max-w-4xl", className)}>
         <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-slate-200/50" />
@@ -161,8 +162,18 @@ const TracingBeamCore = ({
             d={`M 10 0 V ${svgHeight}`}
             fill="none"
             stroke={`url(#${gradientId})`}
-            strokeWidth="3"
-            className="motion-reduce:hidden"
+            strokeWidth="4"
+            strokeLinecap="round"
+            style={{ filter: "drop-shadow(0 0 5px rgba(139,92,246,0.55))" }}
+          />
+          {/* Traveling orb: rides the gradient head (y2) down the line as the
+              user scrolls — the premium "energy pulse" cue */}
+          <motion.circle
+            cx="10"
+            cy={y2}
+            r="3.5"
+            fill="#a855f7"
+            style={{ filter: "drop-shadow(0 0 6px rgba(168,85,247,0.9))" }}
           />
           <defs>
             <motion.linearGradient
