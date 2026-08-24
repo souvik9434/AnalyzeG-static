@@ -1,14 +1,25 @@
 import React from "react";
 import { Marquee } from "@/components/ui/marquee";
 
-const chips = [
+const reviewerChips = [
+  "Earn Up to Rs 40 Instantly",
+  "50% Revenue Share When Sold",
+  "Payout Within 24 Hours",
+  "UPI & Bank Transfer",
+  "Smartphone-Only Setup",
+  "100% Free to Join",
+  "Real-Time Earnings Dashboard",
+  "Verified Review Guidelines",
+];
+
+const brandChips = [
   "100% Verified Reviewers",
   "30-Second In-Hand Videos",
   "Power BI Dashboards",
   "State + Age Filtering",
   "Raw Data Export (CSV/Excel)",
-  "50% Revenue Share",
   "Ad-Licensing for Brands",
+  "One-Time Purchase",
   "2-Minute Delivery",
 ];
 
@@ -31,7 +42,12 @@ const Chip = ({ label }: { label: string }) => (
   </div>
 );
 
-export function TrustMarquee() {
+export function TrustMarquee({
+  audience = "reviewer",
+}: {
+  audience?: "reviewer" | "brand";
+}) {
+  const chips = audience === "reviewer" ? reviewerChips : brandChips;
   return (
     <div className="relative w-full overflow-hidden border-y border-slate-200/60 bg-slate-50/80 py-4">
       <Marquee pauseOnHover className="[--duration:25s]">

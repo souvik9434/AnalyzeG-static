@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  // Selector strategy: dark: variants only apply with an explicit .dark
+  // ancestor class. The site is light-theme only — without this, components
+  // with dark:text-white etc. break for users whose OS is in dark mode
+  // (invisible white-on-white numbers in StatsRow).
+  darkMode: 'class',
   theme: {
     extend: {
       animation: {

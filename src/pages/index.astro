@@ -402,7 +402,13 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                 </div>
             </div>
         </section>
-        <TrustMarquee client:load />
+        <!-- Audience-specific trust marquees -->
+        <div class="audience-section active" data-audience="reviewer">
+            <TrustMarquee client:load audience="reviewer" />
+        </div>
+        <div class="audience-section" data-audience="brand">
+            <TrustMarquee client:load audience="brand" />
+        </div>
         <!-- How It Works Section (Modified to use the same toggle from hero section) -->
         <section
             class="how-it-works"
@@ -553,8 +559,11 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                                     stroke="currentColor"
                                     stroke-width="2"
                                 >
-                                    <path d="M6 3h12M6 8h12m-8 13V8M4 8h1m14 0h1"></path>
-                                    <path d="M8 8c0-2.761 1.239-5 4-5s4 2.239 4 5-1.239 5-4 5-4-2.239-4-5z"></path>
+                                    <path d="M6 3h12"></path>
+                                    <path d="M6 8h12"></path>
+                                    <path d="m6 13 8.5 8"></path>
+                                    <path d="M6 13h3"></path>
+                                    <path d="M9 13c6.667 0 6.667-10 0-10"></path>
                                 </svg>
                             </div>
                             <div class="step-content">
@@ -865,7 +874,12 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                 <h2 class="section-title" data-aos="fade-up">
                     Why Choose AnalyzeG?
                 </h2>
-                <StatsRow client:visible />
+                <div class="audience-section active" data-audience="reviewer">
+                    <StatsRow client:visible audience="reviewer" />
+                </div>
+                <div class="audience-section" data-audience="brand">
+                    <StatsRow client:visible audience="brand" />
+                </div>
                 <FeatureHoverGrid client:visible />
             </div>
         </section>

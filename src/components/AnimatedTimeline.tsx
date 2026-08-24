@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useTransform, useScroll, useSpring, useReducedMotion } from "framer-motion";
+import React, { useEffect, useRef, useState, useId } from "react";
+import { motion, useMotionValue, useTransform, useSpring, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const AnimatedTimeline = ({
@@ -39,11 +39,11 @@ const TracingBeamCore = ({
   const ref = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [svgHeight, setSvgHeight] = useState(0);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
+  // Unique gradient id per instance — duplicate SVG ids across the two
+  // mounted timelines (reviewer + brand) made url(#gradient) resolve to the
+  // wrong instance and broke the B2B beam.
+  const gradientId = useId().replace(/:/g, "");
+  const progress = useMotionValue(0);
 
   useEffect(() => {
     const updateHeight = () => {
@@ -51,38 +51,82 @@ const TracingBeamCore = ({
         setSvgHeight(contentRef.current.offsetHeight);
       }
     };
-    
-    // Initial update
+
     updateHeight();
-    
-    // Use ResizeObserver for more accurate height tracking
+
     const resizeObserver = new ResizeObserver(() => updateHeight());
     if (contentRef.current) {
       resizeObserver.observe(contentRef.current);
     }
 
-    // Re-measure when the section becomes visible. The audience toggle uses
-    // display:none, which reports height 0 and collapses the beam for the
-    // hidden timeline until this observer fires.
-    const visibilityObserver = new IntersectionObserver(() => updateHeight());
+    // Manual scroll progress — computed from getBoundingClientRect on every
+    // scroll frame. Unlike framer-motion's useScroll (which caches target
+    // offsets measured while the audience section was display:none, and only
+    // advances after the section top passes the viewport TOP — invisible on
+    // desktop), this works identically on desktop, mobile, and immediately
+    // after an audience toggle.
+    // Progress 0 when section top reaches 85% of viewport height,
+    // 1 when section bottom reaches 45% of viewport height.
+    let raf = 0;
+    const updateProgress = () => {
+      const el = ref.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh =
+        window.innerHeight || document.documentElement.clientHeight || 1;
+      const startLine = vh * 0.85;
+      const endLine = vh * 0.45;
+      const total = rect.height - (startLine - endLine);
+      if (total <= 0) {
+        progress.set(rect.top < startLine ? 1 : 0);
+        return;
+      }
+      const p = (startLine - rect.top) / total;
+      progress.set(Math.min(1, Math.max(0, p)));
+    };
+
+    const onScroll = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        updateProgress();
+      });
+    };
+
+    updateProgress();
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+
+    // Re-measure height + progress when toggled visible (display:none reports 0)
+    const visibilityObserver = new IntersectionObserver(() => {
+      updateHeight();
+      updateProgress();
+    });
     if (ref.current) {
       visibilityObserver.observe(ref.current);
     }
 
     return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (raf) cancelAnimationFrame(raf);
       resizeObserver.disconnect();
       visibilityObserver.disconnect();
     };
-  }, []);
+  }, [progress]);
 
+  const springConfig = { stiffness: 500, damping: 90 };
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
-    { stiffness: 500, damping: 90 }
+    useTransform(progress, [0, 0.8], [50, svgHeight]),
+    springConfig
   );
   const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
-    { stiffness: 500, damping: 90 }
+    useTransform(progress, [0, 1], [50, svgHeight - 200]),
+    springConfig
   );
+  const dotFill = useTransform(progress, (v) => (v > 0 ? "#ffffff" : "#3b82f6"));
+  const dotStroke = useTransform(progress, (v) => (v > 0 ? "#ffffff" : "#2563eb"));
 
   return (
     <motion.div
@@ -91,19 +135,12 @@ const TracingBeamCore = ({
     >
       <div className="absolute left-6 md:left-8 top-2 flex flex-col items-center">
         <motion.div
-          transition={{ duration: 0.2, delay: 0.5 }}
-          animate={{
-            boxShadow: scrollYProgress.get() > 0 ? "none" : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          }}
           className="flex h-4 w-4 items-center justify-center rounded-full border border-slate-200 bg-white shadow-sm z-10"
+          style={{ borderColor: dotStroke }}
         >
           <motion.div
-            transition={{ duration: 0.2, delay: 0.5 }}
-            animate={{
-              backgroundColor: scrollYProgress.get() > 0 ? "white" : "#3b82f6",
-              borderColor: scrollYProgress.get() > 0 ? "white" : "#2563eb",
-            }}
             className="h-2 w-2 rounded-full border border-slate-300 bg-white"
+            style={{ backgroundColor: dotFill, borderColor: dotStroke }}
           />
         </motion.div>
 
@@ -123,13 +160,13 @@ const TracingBeamCore = ({
           <motion.path
             d={`M 10 0 V ${svgHeight}`}
             fill="none"
-            stroke="url(#gradient)"
+            stroke={`url(#${gradientId})`}
             strokeWidth="3"
             className="motion-reduce:hidden"
           />
           <defs>
             <motion.linearGradient
-              id="gradient"
+              id={gradientId}
               gradientUnits="userSpaceOnUse"
               x1="0"
               x2="0"

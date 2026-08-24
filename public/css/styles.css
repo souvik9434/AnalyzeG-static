@@ -558,6 +558,19 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Jagged icon fix: step/feature icons were authored without round line caps,
+   making curved glyphs (especially the rupee ₹) render with harsh corners */
+.step-icon svg,
+.feature-item svg,
+.feature-icon svg {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.step-icon svg {
+  transition: transform 0.3s ease;
+}
+
 /* B2B hero value props: scannable checklist, not a paragraph wall */
 .hero-tagline-list {
   list-style: none;

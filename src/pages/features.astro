@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { AudienceSwitch } from '../components/AudienceSwitch';
 ---
 <BaseLayout>
   <Fragment slot="head">
@@ -125,11 +126,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <!-- Audience Toggle -->
   <div class="audience-toggle-container" data-aos="fade-up">
-    <div class="audience-toggle" role="tablist" aria-label="Choose Audience View">
-      <div id="reviewer-option" class="audience-toggle-option active" role="tab" aria-selected="true" tabindex="0" aria-controls="reviewer-content">For Reviewers</div>
-      <div id="brand-option" class="audience-toggle-option" role="tab" aria-selected="false" tabindex="0" aria-controls="brand-content">For Brands</div>
-      <div class="audience-toggle-slider"></div>
-    </div>
+    <AudienceSwitch client:load />
   </div>
 
   <!-- Features Content -->
