@@ -2,6 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { AudienceSwitch } from '../components/AudienceSwitch';
 import { AnimatedTimeline } from '../components/AnimatedTimeline';
+import { TrustMarquee } from '../components/TrustMarquee';
+import { StatsRow } from '../components/StatsRow';
+import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
 ---
 <BaseLayout>
   <Fragment slot="head">
@@ -399,6 +402,7 @@ import { AnimatedTimeline } from '../components/AnimatedTimeline';
                 </div>
             </div>
         </section>
+        <TrustMarquee client:load />
         <!-- How It Works Section (Modified to use the same toggle from hero section) -->
         <section
             class="how-it-works"
@@ -805,6 +809,10 @@ import { AnimatedTimeline } from '../components/AnimatedTimeline';
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ <strong>Video licensing</strong> (main brands can use as ads)</li>
                             <li style="padding: 0.75rem 0; font-size: 0.95rem;">✓ Delivery: 2 mins - 24 hours</li>
                         </ul>
+                        <a href="https://analyzeg.netlify.app/b2b-auth" data-app-href="/b2b-auth" rel="noopener"
+                           class="btn-primary" style="width:100%; display:flex; justify-content:center; margin-top:1.5rem;">
+                           Get 500 Reviews
+                        </a>
                         <p style="font-style: italic; color: #64748b; margin-top: 1.5rem; font-size: 0.9rem;">Ideal for: Product launches, market research</p>
                     </div>
 
@@ -857,54 +865,8 @@ import { AnimatedTimeline } from '../components/AnimatedTimeline';
                 <h2 class="section-title" data-aos="fade-up">
                     Why Choose AnalyzeG?
                 </h2>
-                <div class="feature-grid">
-                    <!-- Reviewer Features -->
-                    <div class="feature-item" data-aos="fade-up">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" aria-label="Secure Verification Icon">
-                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                          <path d="M9 12l2 2 4-4"/>
-                        </svg>
-                        <h3>AnalyzeG Secure Verification System</h3>
-                        <p>
-                            Every review on AnalyzeG is digitally authenticated and
-                            securely recorded for maximum trust.
-                        </p>
-                    </div>
-                    <div
-                        class="feature-item"
-                        data-aos="fade-up"
-                        data-aos-delay="100"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" aria-label="Instant Rewards Icon">
-                          <circle cx="12" cy="12" r="10"/>
-                          <path d="M16 8l-8 8"/>
-                          <path d="M8 8l8 8"/>
-                        </svg>
-                        <h3>Dual-Stage Payout</h3>
-                        <p>
-                            Limited-time flow: get up to Rs 40 after authentic
-                            verification, then get the remaining payout from
-                            your 50% share when your review is sold.
-                        </p>
-                    </div>
-
-                    <div
-                        class="feature-item"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" aria-label="AI Analytics Icon">
-                          <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-                          <polyline points="3.29 7 12 12 20.71 7"/>
-                          <line x1="12" y1="22" x2="12" y2="12"/>
-                        </svg>
-                        <h3>AI-Powered Analytics</h3>
-                        <p>
-                            Advanced insights and sentiment analysis for
-                            data-driven decisions.
-                        </p>
-                    </div>
-                </div>
+                <StatsRow client:visible />
+                <FeatureHoverGrid client:visible />
             </div>
         </section>
         <!-- Tech & Security -->
