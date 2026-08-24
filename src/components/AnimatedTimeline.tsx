@@ -20,8 +20,8 @@ export const AnimatedTimeline = ({
   if (!isMounted || shouldReduceMotion) {
     return (
       <div className={cn("relative mx-auto w-full max-w-4xl", className)}>
-        <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-slate-200/50" />
-        <div className="pl-12 md:pl-20">{children}</div>
+        <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-slate-200/50" />
+        <div className="pl-14 md:pl-20">{children}</div>
       </div>
     );
   }
@@ -61,7 +61,18 @@ const TracingBeamCore = ({
       resizeObserver.observe(contentRef.current);
     }
 
-    return () => resizeObserver.disconnect();
+    // Re-measure when the section becomes visible. The audience toggle uses
+    // display:none, which reports height 0 and collapses the beam for the
+    // hidden timeline until this observer fires.
+    const visibilityObserver = new IntersectionObserver(() => updateHeight());
+    if (ref.current) {
+      visibilityObserver.observe(ref.current);
+    }
+
+    return () => {
+      resizeObserver.disconnect();
+      visibilityObserver.disconnect();
+    };
   }, []);
 
   const y1 = useSpring(
@@ -78,7 +89,7 @@ const TracingBeamCore = ({
       ref={ref}
       className={cn("relative mx-auto w-full max-w-4xl h-full", className)}
     >
-      <div className="absolute left-4 md:left-8 top-3 flex flex-col items-center">
+      <div className="absolute left-6 md:left-8 top-2 flex flex-col items-center">
         <motion.div
           transition={{ duration: 0.2, delay: 0.5 }}
           animate={{
@@ -134,7 +145,7 @@ const TracingBeamCore = ({
         </svg>
       </div>
 
-      <div ref={contentRef} className="pl-12 md:pl-20 relative z-10">
+      <div ref={contentRef} className="pl-14 md:pl-20 relative z-10">
         {children}
       </div>
     </motion.div>

@@ -25,6 +25,15 @@ function syncAudienceSections(audience: string) {
     reviewerSections.forEach((el) => el.classList.remove("active"));
     brandSections.forEach((el) => el.classList.add("active"));
   }
+
+  // CRITICAL: AOS elements inside display:none sections are never registered.
+  // Refresh AOS after the newly-shown section is laid out so data-aos
+  // animations fire for the Brand timeline/pricing/CTA.
+  setTimeout(() => {
+    if (typeof (window as any).AOS !== "undefined") {
+      (window as any).AOS.refreshHard();
+    }
+  }, 100);
 }
 
 export function AudienceSwitch() {
