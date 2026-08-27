@@ -1,0 +1,43 @@
+# AnalyzeG — Verified Video Review Intelligence Platform
+
+> AnalyzeG is an AI-powered video review platform that connects brands with authentic consumer insights through verified video reviews. Reviewers earn money via a dual-stage payout model, and brands get real product video reviews with Power BI dashboards and AI analytics.
+
+## Key Facts
+- India's premier video review marketplace for verified consumer insights
+- Reviewers earn up to Rs 40 after verification + 50% revenue share when reviews are sold
+- Brands receive 30-second in-hand product videos, Power BI dashboards, and raw data exports
+- AI-powered sentiment analysis and competitor benchmarking built in
+- Delivery in 2 minutes to 24 hours for brand orders
+- Registered MSME (Udyam), West Bengal, India
+- Video licensing included: brands can use purchased videos as raw ad content
+
+## Core Pages
+- [Home](https://analyzeg.co.in/): Platform overview, pricing for brands, and reviewer earning model
+- [Features](https://analyzeg.co.in/features.html): Dual-stage rewards, AI-powered insights, custom reports, data export
+- [About](https://analyzeg.co.in/about.html): Mission, story, values, leadership team, and contact information
+- [Earn Money](https://analyzeg.co.in/earn-money-reviews.html): How to earn with authentic video reviews, step-by-step guide
+- [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Common questions about payouts, verification, and brand analytics
+- [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html): Guide to earning money from video reviews
+
+## Key Features for Reviewers
+- Dual-stage payout: up to Rs 40 after verification + remaining from 50% share when sold
+- No social media following required — earn based on review quality
+- Secure multi-factor verification system
+- Multiple payment options including UPI and bank transfer
+
+## Key Features for Brands
+- 30-second in-hand product video reviews from verified reviewers
+- State, age, and gender demographic filtering
+- Power BI integrated dashboards with custom templates
+- Complete raw data file (CSV/Excel) with video links
+- AI-powered sentiment analysis and trend detection
+- Video licensing for advertising use
+- One-time purchase — no subscription required
+- Pricing: 500 reviews at Rs 5,00,000 | 1,000 reviews at Rs 9,00,000 | 1,500 reviews at Rs 12,75,000
+
+## Contact
+- Email: support@analyzeg.co.in
+- Founder: Souvik Dey — LinkedIn: https://www.linkedin.com/in/souvikdey1/
+- App: https://analyzeg.netlify.app/
+
+For complete documentation and full content, see llms-full.txt

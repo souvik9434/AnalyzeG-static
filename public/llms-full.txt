@@ -1,0 +1,74 @@
+# AnalyzeG — Full Platform Documentation
+
+## What is AnalyzeG?
+AnalyzeG is a verified video review intelligence platform based in India. It connects brands with authentic consumer insights through verified video reviews. Reviewers record short videos of products they use, get paid through a dual-stage payout model, and brands receive AI-analyzed data including sentiment analysis, demographic breakdowns, and Power BI dashboards.
+
+Founded in 2025, AnalyzeG is a registered MSME (Udyam) based in West Bengal, India.
+
+## How AnalyzeG Works for Reviewers
+1. Sign up and complete profile verification on AnalyzeG
+2. Choose from available review opportunities matching your interests
+3. Record an authentic 2-5 minute video review of the product
+4. Submit for verification — our multi-factor system validates identity and authenticity
+5. Get paid in two stages: up to Rs 40 after verification, then remaining payout from your 50% share when the review is sold
+
+Payment options include UPI and bank transfer. No social media following is required — earnings are based on review quality and authenticity.
+
+## How AnalyzeG Works for Brands
+1. Register your brand on AnalyzeG
+2. Select your review package (500, 1000, or 1500 reviews)
+3. Specify target demographics: state, age, gender
+4. Receive 30-second in-hand product video reviews within 2 minutes to 24 hours
+5. Access your Power BI dashboard with AI-powered analytics
+6. Download raw data files (CSV/Excel) with video links for independent analysis
+7. Use purchased videos as advertising content (video licensing included)
+
+## AnalyzeG Pricing for Brands
+- Professional: 500 reviews at Rs 5,00,000 (Rs 1,000/review)
+- Enterprise: 1,000 reviews at Rs 9,00,000 (10% savings)
+- Market Leader: 1,500 reviews at Rs 12,75,000 (15% savings)
+- All packages include: Power BI dashboard, raw data export, video licensing, AI analytics, demographic filtering
+
+## AnalyzeG AI Analytics Features
+- Sentiment analysis from video content and survey responses
+- Keyword trend detection across review datasets
+- Competitive benchmarking — compare your brand against industry rivals
+- Demographic segmentation by state, age, and gender
+- Exportable reports for team sharing
+- Custom Power BI dashboard templates
+
+## AnalyzeG Technology
+- Multi-factor verification system ensures every review is authentic
+- AI-powered analysis extracts insights from video and structured data
+- Enterprise-grade security protects all review data and brand information
+- Platform processes reviews with delivery from 2 minutes to 24 hours
+
+## AnalyzeG FAQ
+Q: How much can reviewers earn?
+A: Limited-time model: up to Rs 40 after verification, plus remaining payout from 50% share when review is sold.
+
+Q: What equipment do reviewers need?
+A: A smartphone with a decent camera and stable internet connection. AnalyzeG provides guidelines for optimal video quality.
+
+Q: How does verification work?
+A: Multi-factor verification validates identity and review authenticity through multiple security checks.
+
+Q: How quickly do brands receive reviews?
+A: Most review requests are fulfilled within 2 minutes to 24 hours. Brands receive notifications as reviews are submitted and verified.
+
+Q: How is brand data protected?
+A: All data is encrypted with bank-grade security. Access controls and audit logs ensure complete data privacy and compliance.
+
+## AnalyzeG Values
+- Integrity: Every review is verified for authenticity
+- Innovation: AI-powered analysis transforms raw video into actionable insights
+- Fairness: Dual-stage payout model rewards reviewers fairly and transparently
+- Transparency: Clear rules, visible analytics, and open communication
+
+## Contact Information
+- Website: https://analyzeg.co.in/
+- App: https://analyzeg.netlify.app/
+- Email: support@analyzeg.co.in
+- Founder: Souvik Dey (Founder & CEO)
+- LinkedIn: https://www.linkedin.com/company/analyzeg
+- GitHub: https://github.com/souvik9434
