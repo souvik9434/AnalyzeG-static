@@ -4,72 +4,40 @@ import SiteFooter from '../components/SiteFooter.astro';
 ---
 <BaseLayout>
   <Fragment slot="head">
+  <title>About AnalyzeG — India's Verified Video Review Intelligence Platform</title>
+  <meta name="description" content="About AnalyzeG: India's verified video review platform connecting brands with authentic consumer insights. Founded in 2025 by Souvik Dey. Learn about our mission, values, and how we verify reviews." />
+  <meta name="keywords" content="about AnalyzeG, AnalyzeG team, Souvik Dey, video review platform India, verified reviews, consumer insights platform, market research India, review verification technology, AI review analytics, brand review intelligence, earn money video reviews India" />
+  <link rel="canonical" href="https://analyzeg.co.in/about.html" />
+  <link rel="alternate" hreflang="en" href="https://analyzeg.co.in/about.html" />
+  <link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/about.html" />
+  <link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/about.html" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; upgrade-insecure-requests;">  <title>About AnalyzeG - Live Verified Review Platform</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="About AnalyzeG: a live verified review platform where people share honest video reviews and earn through a dual-stage payout model.">
-  <meta name="keywords" content="about AnalyzeG, competitor review analysis, earn money reviews, video review platform, B2B B2C reviews">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="About AnalyzeG - Live Verified Review Platform">
-  <meta property="og:description" content="AnalyzeG helps brands get verified insights and helps reviewers earn with a clear dual-stage payout model.">
-  <meta property="og:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png">
-  <meta property="og:image:width" content="1600">
-  <meta property="og:image:height" content="1600">
-  <meta property="og:image:alt" content="AnalyzeG verified review platform logo">
-  <meta property="og:url" content="https://analyzeg.co.in/about.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="AnalyzeG">
-  <meta property="og:locale" content="en_IN">
-  
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About AnalyzeG - Building Trust Through Authentic Reviews">
-  <meta name="twitter:description" content="Learn about AnalyzeG's mission to revolutionize video reviews with advanced verification, user rewards, and data-driven insights.">
-  <meta name="twitter:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png">
-  <meta name="twitter:image:alt" content="AnalyzeG verified review platform logo">
-  <meta name="twitter:site" content="@AnalyzeG">
-  <meta name="twitter:creator" content="@AnalyzeG">
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://analyzeg.co.in/about.html">
-  
-  <!-- Preconnect to External Resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+  <!-- Open Graph -->
+  <meta property="og:title" content="About AnalyzeG — Verified Video Review Intelligence Platform" />
+  <meta property="og:description" content="India's verified video review platform. Learn about our mission, team, and how we connect brands with authentic consumer insights." />
+  <meta property="og:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1600" />
+  <meta property="og:image:alt" content="About AnalyzeG — Verified Video Review Platform" />
+  <meta property="og:url" content="https://analyzeg.co.in/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AnalyzeG" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About AnalyzeG — Building Trust Through Authentic Reviews" />
+  <meta name="twitter:description" content="Learn about AnalyzeG's mission to revolutionize video reviews with advanced verification and AI-powered insights." />
+  <meta name="twitter:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png" />
+  <meta name="twitter:image:alt" content="About AnalyzeG" />
+  <meta name="twitter:site" content="@AnalyzeG" />
+  <meta name="twitter:creator" content="@AnalyzeG" />
+
   <!-- Stylesheets -->
-  <!-- Non-blocking Google Fonts: onload swap prevents render-blocking; display=swap handles FOUT -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"></noscript>
-  <link is:inline rel="stylesheet" href="/css/styles.css">
-  <link is:inline rel="stylesheet" href="/css/mobile-enhancements.css">
-  <!-- AOS CSS (self-hosted) -->
-  <link is:inline rel="stylesheet" href="/css/aos.css">
-  
-  <!-- Favicon -->
-  
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="/assets/optimized/about-bg.jpg" as="image">
-
-        <!-- Mirror the app domain favicon pattern so crawlers see the same dedicated 192px PNG asset -->
-        <link rel="icon" type="image/png" sizes="512x512" href="/assets/optimized/favicon-search-512.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/optimized/favicon-search-512.png" />
-        <link rel="icon" type="image/svg+xml" href="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <!-- Brand identity meta tags for SEO and entity recognition -->
-        <meta name="application-name" content="AnalyzeG" />
-        <meta name="apple-mobile-web-app-title" content="AnalyzeG" />
-        <meta name="msapplication-TileColor" content="#2563EB" />
-        <meta name="msapplication-TileImage" content="https://analyzeg.co.in/assets/optimized/favicon-search-512.png" />
-    
+  <link is:inline rel="stylesheet" href="/css/styles.css" />
+  <link is:inline rel="stylesheet" href="/css/mobile-enhancements.css" />
+  <link is:inline rel="stylesheet" href="/css/aos.css" />
+  <link rel="preload" href="/assets/optimized/about-bg.jpg" as="image" />
   </Fragment>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -217,23 +185,76 @@ import SiteFooter from '../components/SiteFooter.astro';
   <script is:inline src="/js/aos.js"></script>
   <script is:inline src="/js/scripts.js"></script>
   
-  <!-- Schema Markup for SEO -->
+  <!-- Organization Schema (comprehensive) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://analyzeg.co.in/#organization",
     "name": "AnalyzeG",
     "url": "https://analyzeg.co.in",
-    "logo": "https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png",
-    "description": "AnalyzeG is a live verified review platform for trusted insights and dual-stage reviewer payouts.",
+    "logo": "https://analyzeg.co.in/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.png",
+    "description": "AnalyzeG is India's verified video review intelligence platform connecting brands with authentic consumer insights.",
     "foundingDate": "2025",
+    "founder": {
+      "@type": "Person",
+      "@id": "https://analyzeg.co.in/#founder",
+      "name": "Souvik Dey",
+      "jobTitle": "Founder & CEO",
+      "url": "https://www.linkedin.com/in/souvikdey1/",
+      "sameAs": [
+        "https://www.linkedin.com/in/souvikdey1/",
+        "https://github.com/souvik9434"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "@id": "https://analyzeg.co.in/#organization"
+      }
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/analyzeg",
+      "https://github.com/souvik9434"
+    ],
     "serviceType": [
-      "Data-Driven Video Review Platform",
-      "Authenticated Video Reviews",
-      "Review Rewards Program"
+      "Video Review Platform",
+      "Market Research",
+      "Consumer Insights",
+      "Review Monetization"
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@analyzeg.co.in",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+
+  <!-- Person Schema for Founder -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://analyzeg.co.in/#founder",
+    "name": "Souvik Dey",
+    "jobTitle": "Founder & CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://analyzeg.co.in/#organization",
+      "name": "AnalyzeG"
+    },
+    "url": "https://www.linkedin.com/in/souvikdey1/",
+    "sameAs": [
+      "https://www.linkedin.com/in/souvikdey1/",
+      "https://github.com/souvik9434"
     ]
   }
   </script>
+
+  <!-- BreadcrumbList Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -252,6 +273,30 @@ import SiteFooter from '../components/SiteFooter.astro';
         "item": "https://analyzeg.co.in/about.html"
       }
     ]
+  }
+  </script>
+
+  <!-- WebPage Schema with Speakable -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://analyzeg.co.in/about.html/#webpage",
+    "name": "About AnalyzeG — India's Verified Video Review Intelligence Platform",
+    "url": "https://analyzeg.co.in/about.html",
+    "description": "Learn about AnalyzeG's mission, team, values, and how we connect brands with authentic verified consumer video review insights.",
+    "datePublished": "2025-12-01",
+    "dateModified": "2026-08-27",
+    "isPartOf": {
+      "@id": "https://analyzeg.co.in/#website"
+    },
+    "about": {
+      "@id": "https://analyzeg.co.in/#organization"
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".about-content h2", ".about-content article p:first-of-type"]
+    }
   }
   </script>
 

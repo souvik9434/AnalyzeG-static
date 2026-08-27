@@ -1,13 +1,57 @@
 ---
 // src/layouts/BaseLayout.astro
+// Centralized base layout with common SEO head elements for AI crawl readiness
 import '../styles/globals.css';
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- AI Crawl Discovery: llms.txt for AI systems -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site summary" />
+
+    <!-- Geo & Language -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="language" content="English" />
+    <meta name="author" content="AnalyzeG Technologies" />
+    <meta name="publisher" content="AnalyzeG" />
+    <meta name="theme-color" content="#2563EB" />
+    <meta name="application-name" content="AnalyzeG" />
+    <meta name="apple-mobile-web-app-title" content="AnalyzeG" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-TileColor" content="#2563EB" />
+    <meta name="msapplication-TileImage" content="https://analyzeg.co.in/assets/optimized/favicon-search-512.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/optimized/favicon-search-512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/optimized/favicon-search-512.png" />
+    <link rel="icon" type="image/svg+xml" href="/assets/optimized/192X192_ONLYLOGO_BACKGROUNDLESS.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Preconnect to External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Non-blocking Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" /></noscript>
+
+    <!-- Page-specific head content -->
     <slot name="head" />
- </head>
+  </head>
   <body>
     <slot />
- </body>
+  </body>
 </html>

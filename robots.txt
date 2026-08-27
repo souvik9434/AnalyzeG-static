@@ -1,4 +1,79 @@
-# Robots.txt for AnalyzeG - Video Review Intelligence Platform
+# Robots.txt for AnalyzeG — Verified Video Review Intelligence Platform
+# Updated: 2026-08-27
+# https://analyzeg.co.in
+
+# ============================================================
+# Traditional Search Engine Crawlers
+# ============================================================
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# ============================================================
+# AI Retrieval Crawlers — ALLOW (powers AI search citations)
+# These crawlers fetch content to answer live user queries.
+# Blocking them means your site won't appear in AI answers.
+# ============================================================
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ============================================================
+# AI Training Crawlers — ALLOW (maximum visibility)
+# Allowing training = your content informs AI models = more mentions.
+# ============================================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ============================================================
+# Block Aggressive / Low-Value Scrapers
+# ============================================================
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# ============================================================
+# Default Rules for All Other Crawlers
+# ============================================================
 User-agent: *
 Allow: /
 Disallow: /.htaccess
@@ -6,22 +81,20 @@ Disallow: /generate-favicons.bat
 Disallow: /optimize-images.bat
 Disallow: /temp_outputs/
 Disallow: /resize_logo.bat
+Disallow: /test-toggle.html
 Disallow: /404.html
 Disallow: /500.html
-Disallow: /test-toggle.html
-
-# Allow Google to crawl everything for AnalyzeG brand recognition
-User-agent: Googlebot
-Allow: /
-
-# Optimize crawling rate
-Crawl-delay: 1
-
-# Sitemap location
-Sitemap: https://analyzeg.co.in/sitemap.xml
-
-# Block access to development/admin areas if they exist
 Disallow: /admin/
 Disallow: /dev/
 Disallow: /temp/
 Disallow: /test/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# ============================================================
+# Sitemaps & AI Resources
+# ============================================================
+Sitemap: https://analyzeg.co.in/sitemap.xml
+
+# Crawl-delay for polite bots (ignored by most major crawlers)
+Crawl-delay: 1
