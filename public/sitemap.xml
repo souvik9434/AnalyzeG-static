@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://analyzeg.co.in/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png</image:loc>
+      <image:title>AnalyzeG — Verified Video Review Intelligence Platform</image:title>
+      <image:caption>AnalyzeG connects brands with authentic video reviews and AI-powered analytics</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://analyzeg.co.in/assets/optimized/favicon-search-512.png</image:loc>
+      <image:title>AnalyzeG Platform Icon</image:title>
+      <image:caption>AnalyzeG verified review platform icon</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/"/>
+  </url>
+
+  <!-- Features Page -->
+  <url>
+    <loc>https://analyzeg.co.in/features.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png</image:loc>
+      <image:title>AnalyzeG Platform Features</image:title>
+      <image:caption>AI-powered insights, dual-stage rewards, custom reports, and data export</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/features.html"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/features.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/features.html"/>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://analyzeg.co.in/about.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png</image:loc>
+      <image:title>About AnalyzeG</image:title>
+      <image:caption>Learn about AnalyzeG's mission to revolutionize video reviews</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/about.html"/>
+  </url>
+
+  <!-- Earn Money Page -->
+  <url>
+    <loc>https://analyzeg.co.in/earn-money-reviews.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png</image:loc>
+      <image:title>Earn Money with AnalyzeG Video Reviews</image:title>
+      <image:caption>Get up to Rs 40 after verification plus 50% revenue share</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/earn-money-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/earn-money-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/earn-money-reviews.html"/>
+  </url>
+
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://analyzeg.co.in/analyzeg-faq.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/analyzeg-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/analyzeg-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/analyzeg-faq.html"/>
+  </url>
+
+  <!-- Blog: How to Earn from Video Reviews -->
+  <url>
+    <loc>https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://analyzeg.co.in/assets/blog-cover.jpg</image:loc>
+      <image:title>How to Earn Money from Video Reviews</image:title>
+      <image:caption>Practical guide to monetizing video reviews with AnalyzeG</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html"/>
+  </url>
+
+</urlset>
