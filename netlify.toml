@@ -60,22 +60,31 @@
   for = "/llms.txt"
   [headers.values]
     Cache-Control = "public, max-age=86400"
-    Content-Type = "text/plain"
+    Content-Type = "text/plain; charset=utf-8"
+    Vary = "Accept"
 
 [[headers]]
   for = "/llms-full.txt"
   [headers.values]
     Cache-Control = "public, max-age=86400"
-    Content-Type = "text/plain"
+    Content-Type = "text/plain; charset=utf-8"
+    Vary = "Accept"
 
 [[headers]]
   for = "/robots.txt"
   [headers.values]
     Cache-Control = "public, max-age=3600"
-    Content-Type = "text/plain"
+    Content-Type = "text/plain; charset=utf-8"
 
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
     Cache-Control = "public, max-age=3600"
-    Content-Type = "application/xml"
+    Content-Type = "application/xml; charset=utf-8"
+
+# Markdown negotiation: signal AI bots that markdown content is available
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Vary = "Accept"
+    Link = "</llms.txt>; rel=\"alternate\"; type=\"text/plain\""
