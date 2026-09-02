@@ -26,9 +26,9 @@ const items = [
     ),
   },
   {
-    title: "Dual-Stage Payout",
+    title: "Transparent Reviewer Compensation",
     description:
-      "Up to ₹40 after 5-point face-presence verification + remaining 50% share when sold. Clear T&C, no hidden thresholds.",
+      "Reviewers opt in and are compensated per verification with clear T&C. See how payouts work for the reviewer community.",
     link: "/for-reviewers/",
     icon: (
       <svg

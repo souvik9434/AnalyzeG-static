@@ -2,11 +2,11 @@
 > AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands buy 500-1500 face-presence verified 30-second in-hand product videos with Power BI dashboards and raw CSV. Reviewers are face-presence verified consumers compensated via revenue-share.
 
 ## For Brands
-- Packages: 500 (₹5,00,000), 1000 (₹9,00,000), 1500 (₹12,75,000). One-time. GST invoice, PO accepted, DPA on request. SLA 24h or 10% credit.
-- Deliverables: 30-second in-hand product videos, Power BI dashboard template, sentiment & keyword themes, competitor benchmarking, state/age/gender filters, raw CSV/Excel with video links, ad licensing for own-product videos.
-- Verification: 5-point (face-presence, device, geo, content, timestamp) + human moderation. Time-stamped with audit logs.
-- Security: AES-256 at rest, TLS 1.3 in transit, 180-day retention, DPDP Act 2023 compliant.
-- Delivery: 2 minutes to 24 hours. Procurement-ready.
+- Packages: 500 (₹5,00,000), 1000 (₹9,00,000), 1500 (₹12,75,000). One-time dataset licensing — repeat purchase available; GST invoice, PO workflow, DPA on request. SLA 24h or 10% credit for in-stock.
+- Deliverables: 30-second in-hand product videos, Power BI dashboard template, sentiment & keyword themes, competitor benchmarking, aggregated demographic filters (no PII), secure video access links with role-based controls + raw CSV/Excel, commercial licence for own-product videos where reviewer opts in.
+- Verification: 5-point screening (face-presence, device, geo, content, timestamp) + human moderation. Time-stamped with audit logs. See Trust Center for what it proves and does not prove.
+- Security: Consent controls, access restrictions, and data-protection practices designed to support DPDP Act 2023 obligations — DPA available.
+- Delivery: Buy in-stock marketplace inventory for near-instant delivery; custom quotas confirmed before collection. In-stock 2 min to 24h; custom per agreed SLA.
 
 ## For Reviewers
 - Eligibility: Record 30-second in-hand video, pass 5-point face-presence verification + human moderation, receive up to ₹40 advance. On each brand purchase, receive balance from 50% revenue-share per sale. Record once, earn per sale.
@@ -21,11 +21,12 @@
 - Video licensing: Main brand may use own-product videos as raw ad creative; competitor videos are data insights only — separate reviewer consent required.
 
 ## Core Pages
-- [Home](https://analyzeg.co.in/): Verified video review intelligence for brands — pricing, Power BI sample, case study
+- [Home](https://analyzeg.co.in/): Verified video review intelligence for brands — pricing, Power BI sample, illustrative dashboard scenario
 - [Platform](https://analyzeg.co.in/features.html): Power BI, sentiment, raw data export for brands
 - [For Reviewers](https://analyzeg.co.in/for-reviewers/): Your voice, heard by brands — how payouts work, bounty
 - [About](https://analyzeg.co.in/about.html): Mission, story, values, leadership
 - [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Payouts, verification, brand analytics, security
+- [Trust Center](https://analyzeg.co.in/trust.html): Verification, consent & licensing, data access, methodology, inventory & delivery, sample methodology
 - [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html): Guide to earning from video reviews
 - [How We Pay & Stay Authentic](https://analyzeg.co.in/for-reviewers/#payouts): Canonical payout disclosure
 
