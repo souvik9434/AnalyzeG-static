@@ -61,7 +61,7 @@ const reviewerFaqs: FaqItem[] = [
     category: "Review Process",
     question: "How does verification work?",
     answer:
-      "Our multi-factor verification system validates your identity and review authenticity through security checks to maintain platform trust and guarantee payout accuracy.",
+      "Every review passes 5-point verification — face-presence, device integrity, geo-consistency, content checklist, and timestamp validation — plus human moderation. Only verified reviews become eligible for the up to ₹40 advance and for brand purchase.",
   },
 ];
 
@@ -71,14 +71,14 @@ const brandFaqs: FaqItem[] = [
     category: "Platform Benefits",
     question: "How does AnalyzeG verify review authenticity?",
     answer:
-      "We use multi-factor verification to authenticate reviewer identity and product possession. Each review is digitally authenticated, time-stamped, and securely recorded.",
+      "Every review passes 5-point verification — face-presence, device integrity, geo-consistency, content checklist, and timestamp validation — plus human moderation. Each review is time-stamped, securely recorded, and retains audit logs.",
   },
   {
     id: "brand-2",
     category: "Platform Benefits",
     question: "What insights and deliverables do brands receive?",
     answer:
-      "You receive 30-second in-hand product videos, a custom Power BI dashboard template, full analyzed sentiment and demographic reports, plus raw CSV/Excel data files.",
+      "You receive 30-second in-hand product videos, a custom Power BI dashboard template, analyzed sentiment and keyword themes, demographic reports by state/age/gender, plus the complete raw CSV/Excel with video links for independent verification. Main-brand purchases include ad licensing for own-product videos.",
   },
   {
     id: "brand-3",
@@ -106,7 +106,7 @@ const brandFaqs: FaqItem[] = [
     category: "Data & Licensing",
     question: "How is our business data protected?",
     answer:
-      "All platform data is encrypted in transit and at rest. Access controls and audit logging ensure complete enterprise data privacy and security.",
+      "All data is encrypted with AES-256 at rest and TLS 1.3 in transit. Access controls, audit logs, and 180-day retention ensure enterprise-grade privacy and DPDP 2023 compliance.",
   },
 ];
 

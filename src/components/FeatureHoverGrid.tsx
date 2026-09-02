@@ -5,7 +5,7 @@ const items = [
   {
     title: "Secure Verification System",
     description:
-      "Every review on AnalyzeG is digitally authenticated and securely recorded for maximum trust.",
+      "Every review passes 5-point verification (face-presence, device, geo, content, timestamp) + human moderation for maximum trust.",
     link: "/features.html",
     icon: (
       <svg
@@ -28,8 +28,8 @@ const items = [
   {
     title: "Dual-Stage Payout",
     description:
-      "Up to ₹40 after 5-point verification + remaining 50% share when sold. Clear T&C, no hidden thresholds.",
-    link: "/earn-money-reviews.html",
+      "Up to ₹40 after 5-point face-presence verification + remaining 50% share when sold. Clear T&C, no hidden thresholds.",
+    link: "/for-reviewers/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

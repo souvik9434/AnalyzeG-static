@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteFooter from '../components/SiteFooter.astro';
-import { AudienceSwitch } from '../components/AudienceSwitch';
 import { TrustMarquee } from '../components/TrustMarquee';
 import { StatsRow } from '../components/StatsRow';
 import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
@@ -9,17 +8,17 @@ import HowItWorks from '../components/HowItWorks.astro';
 ---
 <BaseLayout>
   <Fragment slot="head">
-        <title>AnalyzeG — Verified Video Review Platform | Earn Money & Buy Reviews | India</title>
-        <meta name="description" content="AnalyzeG is India's verified video review platform. Reviewers earn up to ₹40 instant payout + 50% revenue share. Brands buy authentic 30-sec product videos with advanced analytics, Power BI dashboards, and competitor benchmarking." />
-        <meta name="keywords" content="AnalyzeG, video review platform India, earn money from video reviews, paid video reviews, product review platform, B2B market intelligence, competitor analysis tool, authentic video reviews, video testimonials, customer feedback platform, review monetization, market research India, consumer insights, video analytics, competitor review analysis, advanced review analytics, Power BI dashboard reviews, verified reviews India, earn from product reviews, video review earn money online, market research platform India, brand review analytics, sentiment analysis reviews, dual-stage payout reviews, review verification platform" />
+        <title>AnalyzeG — Verified Video Review Intelligence Platform for Brands | Power BI + Raw Data in 24h</title>
+        <meta name="description" content="AnalyzeG is India's verified video review intelligence platform for consumer brands. Get 500-1500 face-presence verified 30s in-hand videos, state/age/gender filters, Power BI dashboards + raw CSV with video links. Delivery 2 min to 24h. GST invoice, PO, DPA." />
+        <meta name="keywords" content="AnalyzeG, video review intelligence platform India, consumer insights platform India, verified video reviews, Power BI dashboard reviews, sentiment analysis reviews, competitor benchmarking, market research platform India, brand review analytics, consumer intelligence, in-hand video reviews, review verification platform, video review analytics India" />
         <link rel="canonical" href="https://analyzeg.co.in/" />
         <link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/" />
         <link rel="alternate" hreflang="en" href="https://analyzeg.co.in/" />
         <link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/" />
 
         <!-- Open Graph -->
-        <meta property="og:title" content="AnalyzeG — Verified Video Review Platform | Earn & Buy Reviews" />
-        <meta property="og:description" content="India's verified video review platform. Reviewers earn up to ₹40 + 50% revenue share. Brands get authentic product videos with advanced analytics." />
+        <meta property="og:title" content="AnalyzeG — Verified Video Review Intelligence for Brands" />
+        <meta property="og:description" content="India's verified video review intelligence for consumer brands. 500-1500 face-presence verified 30s videos, Power BI + raw CSV, ad licensing. Delivered 2 min to 24h. GST invoice, PO, DPA." />
         <meta property="og:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1600" />
@@ -32,8 +31,8 @@ import HowItWorks from '../components/HowItWorks.astro';
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AnalyzeG — Verified Video Review Platform" />
-        <meta name="twitter:description" content="India's verified video review platform. Reviewers earn up to ₹40 + 50% revenue share. Brands get authentic product videos with advanced analytics." />
+        <meta name="twitter:title" content="AnalyzeG — Verified Video Review Intelligence for Brands" />
+        <meta name="twitter:description" content="500-1500 verified 30s in-hand videos with Power BI + raw CSV. Face-presence verified, state/age/gender filters, ad licensing. 2 min to 24h delivery." />
         <meta name="twitter:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png" />
         <meta name="twitter:image:alt" content="AnalyzeG — Verified Video Review Intelligence Platform" />
         <meta name="twitter:site" content="@AnalyzeG" />
@@ -45,7 +44,7 @@ import HowItWorks from '../components/HowItWorks.astro';
         <link is:inline rel="stylesheet" href="/css/aos.css" />
         <link rel="preload" href="/assets/optimized/hero-bg.jpg" as="image" fetchpriority="high" />
 
-        <!-- Organization Schema (comprehensive, search-engine optimized) -->
+        <!-- Organization Schema (B2B-primary, DPDP-clean) -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -69,13 +68,13 @@ import HowItWorks from '../components/HowItWorks.astro';
                     "height": 512
                 },
                 "name": "AnalyzeG",
-                "legalName": "AnalyzeG Technologies",
-                "alternateName": ["AnalyzeG", "Analyze G", "AnalyzeG Platform", "AnalyzeG Video Reviews", "AnalyzeG Review Platform"],
+                "legalName": "AnalyzeG",
+                "alternateName": ["AnalyzeG"],
                 "brand": {
                     "@type": "Brand",
                     "name": "AnalyzeG"
                 },
-                "description": "AnalyzeG is India's verified video review intelligence platform. Reviewers earn up to ₹40 after verification plus 50% revenue share when reviews are sold. Brands receive authentic 30-second product videos with advanced analytics, Power BI dashboards, and competitor benchmarking.",
+                "description": "AnalyzeG is a verified video review intelligence platform for consumer brands in India. We source 30-second in-hand product videos from verified reviewers compensated via revenue-share, and deliver Power BI dashboards, sentiment analysis, and raw CSV/Excel with video links in 2 minutes to 24 hours.",
                 "url": "https://analyzeg.co.in",
                 "sameAs": [
                     "https://www.linkedin.com/company/analyzeg",
@@ -92,27 +91,26 @@ import HowItWorks from '../components/HowItWorks.astro';
                         "https://github.com/souvik9434"
                     ]
                 },
-                "foundingDate": "2025",
+                "foundingDate": "2024",
                 "areaServed": {
                     "@type": "Country",
                     "name": "India"
                 },
                 "serviceType": [
-                    "Video Review Platform",
+                    "Video Review Intelligence",
                     "Market Research",
                     "Consumer Insights",
-                    "Review Monetization",
-                    "Advanced Analytics"
+                    "Power BI Dashboards",
+                    "Sentiment Analysis"
                 ],
                 "knowsAbout": [
                     "Video Reviews",
                     "Market Research",
                     "Consumer Insights",
                     "Sentiment Analysis",
-                    "Competitor Analysis",
-                    "Review Monetization",
-                    "B2B Analytics",
-                    "B2C Review Earnings"
+                    "Competitor Benchmarking",
+                    "Power BI",
+                    "Verified Consumer Intelligence"
                 ],
                 "contactPoint": {
                     "@type": "ContactPoint",
@@ -129,10 +127,10 @@ import HowItWorks from '../components/HowItWorks.astro';
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "@id": "https://analyzeg.co.in/#website",
-                "name": "AnalyzeG — Verified Video Review Intelligence Platform",
+                "name": "AnalyzeG — Verified Video Review Intelligence Platform for Brands",
                 "alternateName": "AnalyzeG",
                 "url": "https://analyzeg.co.in",
-                "description": "AnalyzeG provides instant video review intelligence for businesses and revenue opportunities for authentic reviewers in India.",
+                "description": "AnalyzeG is a verified video review intelligence platform for consumer brands in India — 500 to 1500 face-presence verified 30s videos with Power BI + raw CSV in 2 minutes to 24 hours.",
                 "publisher": {
                     "@id": "https://analyzeg.co.in/#organization"
                 },
@@ -145,15 +143,15 @@ import HowItWorks from '../components/HowItWorks.astro';
             }
         </script>
 
-        <!-- SoftwareApplication Schema -->
+        <!-- SoftwareApplication Schema (no fake rating) -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "SoftwareApplication",
-                "name": "AnalyzeG — Video Review Platform",
+                "name": "AnalyzeG — Video Review Intelligence Platform",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web",
-                "description": "AnalyzeG is a verified review platform offering advanced video review analytics for brands and dual-stage earnings for reviewers.",
+                "description": "Verified video review intelligence for brands: 500-1500 face-presence verified 30s in-hand videos, Power BI dashboards, raw CSV/Excel with video links, ad licensing for own-product videos. Reviewers compensated via transparent revenue-share.",
                 "url": "https://analyzeg.co.in",
                 "downloadUrl": "https://app.analyzeg.co.in/",
                 "publisher": {
@@ -161,7 +159,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                 },
                 "offers": {
                     "@type": "AggregateOffer",
-                    "lowPrice": "0",
+                    "lowPrice": "500000",
                     "highPrice": "1275000",
                     "priceCurrency": "INR",
                     "offerCount": "3",
@@ -171,34 +169,28 @@ import HowItWorks from '../components/HowItWorks.astro';
                             "name": "Professional — 500 Reviews",
                             "price": "500000",
                             "priceCurrency": "INR",
-                            "description": "500 verified in-hand product video reviews with Power BI dashboard"
+                            "description": "500 face-presence verified 30s in-hand videos + Power BI dashboard + raw CSV + ad licensing"
                         },
                         {
                             "@type": "Offer",
                             "name": "Enterprise — 1000 Reviews",
                             "price": "900000",
                             "priceCurrency": "INR",
-                            "description": "1000 verified video reviews with multi-region demographic analysis"
+                            "description": "1000 verified videos + multi-region demographic analysis + competitor benchmarking"
                         },
                         {
                             "@type": "Offer",
                             "name": "Market Leader — 1500 Reviews",
                             "price": "1275000",
                             "priceCurrency": "INR",
-                            "description": "1500 verified video reviews with advanced sentiment analysis"
+                            "description": "1500 verified videos + advanced sentiment & trend analysis + premium support"
                         }
                     ]
-                },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.8",
-                    "bestRating": "5",
-                    "ratingCount": "150"
                 }
             }
         </script>
 
-        <!-- FAQPage Schema (homepage quick answers) -->
+        <!-- FAQPage Schema (B2B-first, GEO-optimized) -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -209,31 +201,31 @@ import HowItWorks from '../components/HowItWorks.astro';
                         "name": "What is AnalyzeG?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "AnalyzeG is India's verified video review intelligence platform. It connects brands with authentic consumer insights through verified video reviews. Reviewers earn money via a dual-stage payout model, and brands get real product videos with advanced analytics and Power BI dashboards."
+                            "text": "AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands purchase 500 to 1500 face-presence verified 30-second in-hand product videos, filtered by state, age and gender, and receive Power BI dashboards, sentiment & keyword analytics, and a complete raw CSV/Excel export with video links in 2 minutes to 24 hours. Reviewers are verified via 5-point checks and compensated via revenue-share."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "How much can I earn on AnalyzeG?",
+                        "name": "How does AnalyzeG verify video reviews?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Reviewers on AnalyzeG can get up to ₹40 after verification as an instant payout, plus receive the remaining amount from their 50% revenue share when the review is sold. No social media following is required."
+                            "text": "Every review passes 5-point verification — face-presence, device integrity, geo-consistency, content checklist, and timestamp validation — plus human moderation. Only verified reviews enter the sellable pool. Data is protected with AES-256 at rest, TLS 1.3 in transit, 180-day retention, and audit logs per Privacy v1.1_2026-09-02."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "How do brands buy video reviews on AnalyzeG?",
+                        "name": "Can brands use AnalyzeG videos as advertisements?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Brands can purchase verified video review packages starting at 500 reviews for ₹5,00,000. Each package includes 30-second in-hand product videos, a Power BI dashboard, raw data export, demographic filtering, and video licensing for advertising use."
+                            "text": "Yes. When the video shows your own product, purchase includes a license to use the raw 30-second video as organic or paid ad creative. Competitor videos provide data insights only; video ad licensing applies solely to the main brand to protect rights. Separate reviewer consent is required — see Terms v1.1_2026-09-02."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "What analytics does AnalyzeG provide to brands?",
+                        "name": "What do brands receive for ₹5,00,000?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "AnalyzeG provides data-driven sentiment analysis, keyword trend detection, competitive benchmarking, demographic segmentation by state/age/gender, custom Power BI dashboards, and exportable reports for brand teams."
+                            "text": "For ₹5,00,000 (₹1,000 per review, one-time, no subscription) you receive 500 face-presence verified 30-second videos, custom Power BI dashboard + template, analyzed metrics, raw CSV/Excel with video links, state/age/gender filtering, and video ad licensing for own-product videos. Delivery in 2 minutes to 24 hours with 50% advance via Razorpay/UPI and 50% on delivery. SLA: 24h or 10% credit."
                         }
                     }
                 ]
@@ -306,18 +298,19 @@ import HowItWorks from '../components/HowItWorks.astro';
                             >
                         </li>
                         <li role="none">
-                            <a href="features.html" role="menuitem">Features</a>
+                            <a href="features.html" role="menuitem">Platform</a>
+                        </li>
+                        <li role="none">
+                            <a href="/for-reviewers/" role="menuitem">For Reviewers</a>
                         </li>
                         <li role="none">
                             <a href="about.html" role="menuitem">About</a>
                         </li>
                         <li role="none">
-                            <a href="earn-money-reviews.html" role="menuitem"
-                                >Earn Money</a
-                            >
+                            <a href="analyzeg-faq.html" role="menuitem">FAQ</a>
                         </li>
                         <li role="none">
-                            <a href="analyzeg-faq.html" role="menuitem">FAQ</a>
+                            <a href="#b2b-pricing" role="menuitem">Pricing</a>
                         </li>
                         <li role="none">
                             <a href="https://app.analyzeg.co.in/" data-app-href="/" class="nav-cta" role="menuitem" rel="noopener">
@@ -334,97 +327,40 @@ import HowItWorks from '../components/HowItWorks.astro';
         <section class="hero" style="background-color: #1a1a2e;">
             <div class="hero-overlay" aria-hidden="true"></div>
             <div class="container">
-                <!-- Single JTBD hero: Reviewer primary (3.1% vs 1.4% mixed), brand secondary below -->
+                <!-- Single JTBD hero: B2B primary (brand intelligence), B2C secondary band -->
                 <div class="hero-content" data-aos="fade-up">
-                        <h1>Earn ₹40 Instantly per Verified Review</h1>
+                        <h1>Verified Video Review Intelligence for India's D2C &amp; Retail Brands</h1>
                         <p class="hero-tagline">
-                            Record 30-second in-hand video reviews. Get up to ₹40 after verification* + remaining 50% share when sold. No followers needed.
+                            500 face-presence verified 30-second in-hand videos + Power BI dashboards + raw CSV/Excel with video links. Delivered in 2 minutes to 24 hours. GST invoice, PO accepted, DPA on request.
                         </p>
-                        <p style="font-size:0.8rem; opacity:0.8; margin-top:0.5rem;">*After 5-point verification (face, device, geo, content, time-stamp). <a href="analyzeg-faq.html" style="color:#93c5fd; text-decoration:underline;">T&amp;C apply</a></p>
-                        <p style="font-size:1rem; color:#fde68a; margin-top:0.75rem; font-weight:600;">30 sec ka video banao, ₹40 UPI pe pao — no followers chahiye!</p>
+                        <p style="font-size:0.8rem; opacity:0.85; margin-top:0.5rem; color:rgba(255,255,255,0.85);">5-point verification: face-presence, device, geo, content, timestamp + human moderation. <a href="analyzeg-faq.html" style="color:#93c5fd; text-decoration:underline;">How verification works</a></p>
                         <div class="hero-cta">
-                            <a
-                                href="https://app.analyzeg.co.in/b2c-auth"
-                                data-app-href="/b2c-auth"
-                                class="btn-primary"
-                                rel="noopener"
-                                >Start Reviewing on AnalyzeG</a
-                            >
-                            <a href="earn-money-reviews.html" class="btn-secondary"
-                                >How It Works</a
-                            >
+                            <a href="#b2b-pricing" class="btn-primary">View Pricing &amp; Sample Data →</a>
+                            <a href="https://cal.com/analyzeg-demo" target="_blank" rel="noopener" class="btn-secondary">Book 15-min Demo</a>
                         </div>
-                        <!-- UPI proof strip — above-fold trust for 1Cr public -->
-                        <div style="margin-top:1.25rem; display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center; justify-content:center; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:9999px; padding:0.6rem 1rem; backdrop-filter: blur(8px);">
-                            <span style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.8rem; color:#fff; font-weight:600;"><span style="background:#fff; border-radius:4px; padding:2px 6px; color:#1e293b; font-size:0.75rem; font-weight:700;">UPI</span> <span style="background:#fff; border-radius:4px; padding:2px 6px; color:#4285f4;">GPay</span> <span style="background:#fff; border-radius:4px; padding:2px 6px; color:#5f259f;">PhonePe</span> <span style="background:#fff; border-radius:4px; padding:2px 6px; color:#00baf2;">Paytm</span></span>
-                            <span style="font-size:0.8rem; color:rgba(255,255,255,0.9);">✓ 1,200+ videos paid • 24h UPI</span>
-                            <a href="analyzeg-faq.html" style="font-size:0.8rem; color:#93c5fd; text-decoration:underline;">See how →</a>
+                        <!-- Reviewer secondary band — B2B primary, B2C secondary -->
+                        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.6rem; align-items:center; justify-content:center; background:rgba(255,255,255,0.09); border:1px solid rgba(255,255,255,0.14); border-radius:9999px; padding:0.7rem 1.1rem; backdrop-filter: blur(8px);">
+                            <span style="font-size:0.88rem; color:#fff; font-weight:600;">Are you a reviewer?</span>
+                            <span style="font-size:0.85rem; color:rgba(255,255,255,0.9);">Earn up to ₹40 after verification + 50% share per sale — UPI in 24h</span>
+                            <a href="/for-reviewers/" style="font-size:0.88rem; color:#fde68a; text-decoration:underline; font-weight:700;">Start Reviewing →</a>
                         </div>
-                        <div style="margin-top:1.25rem; padding-top:1.25rem; border-top:1px solid rgba(255,255,255,0.15);">
-                            <p style="font-size:0.9rem; color:rgba(255,255,255,0.9); margin-bottom:0.5rem;">Are you a brand? Get 500 verified videos + Power BI in 24h.</p>
-                            <a href="#b2b-pricing" style="color:#93c5fd; text-decoration:underline; font-weight:600; font-size:0.95rem;">View Brand Pricing →</a>
-                            <span style="color:rgba(255,255,255,0.6); margin:0 0.5rem;">|</span>
-                            <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" style="color:#fff; text-decoration:underline; font-weight:600; font-size:0.95rem;">Get Started as Brand →</a>
+                        <div style="margin-top:0.85rem; text-align:center;">
+                            <a href="/for-reviewers/" style="font-size:0.82rem; color:rgba(255,255,255,0.78); text-decoration:underline;">How payouts work • No followers needed • Free to join</a>
                         </div>
                     </div>
-                <div style="display:none">
-                <div
-                    id="brand-content"
-                    class="audience-section"
-                    data-audience="brand"
-                >
-                    <div class="hero-content" data-aos="fade-up">
-                        <h1 style="display:none">Brand Hero Hidden</h1>
-                        <ul class="hero-tagline-list" data-aos="fade-up" style="display:none">
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                30-second in-hand product videos
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                State &amp; age filtering
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Power BI dashboard + raw data included
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Licensed for advertising (main brands)
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Delivered in 2 min – 24 hrs
-                            </li>
-                        </ul>
-                        <div class="hero-cta">
-                            <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" rel="noopener"
-                                >Get Started as Brand</a
-                            >
-                            <a href="mailto:support@analyzeg.co.in?subject=Custom%20Pricing%20Inquiry%20—%20AnalyzeG&body=Hi%20AnalyzeG%20Team%0A%0AI%27m%20interested%20in%20purchasing%20video%20reviews%20for%20my%20brand.%20Please%20share%20custom%20pricing%20details.%0A%0ACompany%3A%0AIndustry%3A%0AReview%20Volume%3A%0A" class="btn-secondary"
-                                >Request Custom Quote</a
-                            >
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
-        <!-- Sticky mobile CTA — thumb-fixed for 1Cr public (like Meesho/Dream11) -->
+        <!-- Sticky mobile CTA — B2B primary (brand pricing) -->
         <div class="sticky-cta" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:999; background:#fff; border-top:1px solid #e2e8f0; box-shadow:0 -4px 20px rgba(0,0,0,0.08); padding:0.75rem 1rem; align-items:center; justify-content:space-between; gap:0.75rem;">
-            <div style="min-width:0;"><div style="font-size:0.95rem; font-weight:700; color:#1e293b; white-space:nowrap;">₹40 per video* </div><div style="font-size:0.75rem; color:#475569;">30 sec • UPI 24h</div></div>
-            <a href="https://app.analyzeg.co.in/b2c-auth" data-app-href="/b2c-auth" style="flex-shrink:0; background:#2563EB; color:#fff; padding:0.7rem 1.25rem; border-radius:9999px; font-weight:700; font-size:0.9rem; text-decoration:none;">Start Reviewing →</a>
+            <div style="min-width:0;"><div style="font-size:0.95rem; font-weight:700; color:#1e293b; white-space:nowrap;">500 Videos • Power BI • 24h</div><div style="font-size:0.75rem; color:#475569;">GST Invoice • From ₹5L</div></div>
+            <a href="#b2b-pricing" style="flex-shrink:0; background:#2563EB; color:#fff; padding:0.7rem 1.25rem; border-radius:9999px; font-weight:700; font-size:0.9rem; text-decoration:none;">View Pricing →</a>
         </div>
         <style>
             @media (max-width: 768px) { .sticky-cta { display:flex !important; } body { padding-bottom: 72px; } }
             @media (prefers-reduced-motion: no-preference) { .sticky-cta { animation: slideUp 0.4s ease-out; } @keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} } }
         </style>
-        <!-- Audience-specific trust marquees — client:visible per 2026 islands strategy -->
-        <div class="audience-section active" data-audience="reviewer">
-            <TrustMarquee client:visible audience="reviewer" />
-        </div>
-        <div class="audience-section" data-audience="brand">
-            <TrustMarquee client:visible audience="brand" />
-        </div>
+        <!-- Brand trust marquee — B2B primary -->
+        <TrustMarquee client:visible audience="brand" />
         <HowItWorks />
 
         <!-- B2B Pain Point Comparison: visible above fold per 2026 best practice -->
@@ -610,14 +546,10 @@ import HowItWorks from '../components/HowItWorks.astro';
         <section class="features-preview">
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">
-                    Why Choose AnalyzeG?
+                    Why Brands Trust AnalyzeG
                 </h2>
-                <div class="audience-section active" data-audience="reviewer">
-                    <StatsRow client:visible audience="reviewer" />
-                </div>
-                <div class="audience-section" data-audience="brand">
-                    <StatsRow client:visible audience="brand" />
-                </div>
+                <p style="text-align:center; max-width:700px; margin:0 auto 1rem; color:#475569; font-size:1.05rem;" data-aos="fade-up">Every review passes 5-point verification — face-presence, device, geo, content, timestamp — plus human moderation. Brands get Power BI + raw data to verify every insight themselves.</p>
+                <StatsRow client:visible audience="brand" />
                 <FeatureHoverGrid client:visible />
             </div>
         </section>
@@ -625,24 +557,21 @@ import HowItWorks from '../components/HowItWorks.astro';
         <section class="tech-security">
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">
-                    AnalyzeG Technology & Security
+                    AnalyzeG Technology &amp; Security
                 </h2>
                 <div class="tech-security-points" data-aos="fade-up" data-aos-delay="100">
-                    <h3>AnalyzeG Multi-Factor Verification</h3>
+                    <h3>AnalyzeG 5-Point Verification</h3>
                     <p>
-                        Every review on AnalyzeG is digitally authenticated and
-                        securely recorded.
+                        Every review passes face-presence, device, geo, content, and timestamp checks plus human moderation — time-stamped and securely recorded with audit logs.
                     </p>
                     <h3>AnalyzeG Advanced Analytics</h3>
                     <p>
-                        Statistical algorithms provide deep
-                        insights and trends.
+                        Sentiment, keyword themes, and demographic segmentation turn raw 30-second videos into decision-ready intelligence.
                     </p>
 
                     <h3>AnalyzeG Secure Platform</h3>
                     <p>
-                        Enterprise-grade security protects your data and
-                        privacy.
+                        AES-256 at rest, TLS 1.3 in transit, 180-day retention, and access controls. DPDP Act 2023 compliant.
                     </p>
                 </div>
             </div>
@@ -675,48 +604,18 @@ import HowItWorks from '../components/HowItWorks.astro';
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- CTA Section — B2B primary -->
         <section class="cta">
-            <div class="container">
-                <div
-                    id="reviewer-cta"
-                    class="audience-section active"
-                    data-audience="reviewer"
-                    data-aos="fade-up"
-                >
-                    <h2>Ready to Start Earning?</h2>
+            <div class="container" data-aos="fade-up">
+                    <h2>Get Your and Competitor's Verified Reviews in 24 Hours</h2>
                     <p>
-                        Join reviewers using our limited-time dual-stage payout:
-                        up to ₹40 after verification, then remaining payout
-                        from your 50% share when sold.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="https://app.analyzeg.co.in/b2c-auth" data-app-href="/b2c-auth" class="btn-primary" rel="noopener"
-                            >Sign Up &amp; Start Earning</a
-                        >
-                        <a href="analyzeg-faq.html" class="btn-secondary"
-                            >Learn More</a
-                        >
-                    </div>
-                </div>
-                <div
-                    id="brand-cta"
-                    class="audience-section"
-                    data-audience="brand"
-                    data-aos="fade-up"
-                >
-                    <h2>Get Your and Competitor Reviews with AnalyzeG Now</h2>
-                    <p>
-                        Access verified reviews and competitor insights
-                        instantly on AnalyzeG. Make smarter business decisions today.
+                        500 face-presence verified 30-second videos, Power BI dashboards, and raw CSV with video links — built for brand and insights teams.
                     </p>
                     <div class="cta-buttons">
                         <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" rel="noopener">Get Instant Access</a>
-                        <a href="features.html" class="btn-secondary"
-                            >View Features</a
-                        >
+                        <a href="features.html" class="btn-secondary">View Platform</a>
                     </div>
-                </div>
+                    <p style="margin-top:1.25rem; font-size:0.88rem; opacity:0.9;">Are you a reviewer? <a href="/for-reviewers/" style="color:#fff; text-decoration:underline;">Earn up to ₹40 after verification + 50% share →</a></p>
             </div>
         </section>
         </main>

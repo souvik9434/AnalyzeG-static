@@ -9,10 +9,10 @@ const reviewerStats = [
 ];
 
 const brandStats = [
-  { value: 100, suffix: "%", label: "Verified reviewers" },
+  { value: 5, suffix: "-point", label: "Verification per review" },
   { value: 30, suffix: "s", label: "In-hand product videos" },
-  { value: 50, suffix: "%", label: "Revenue share payout" },
   { value: 24, suffix: "h", label: "Max delivery window" },
+  { value: 500, suffix: "+", label: "Reviews per order" },
 ];
 
 export function StatsRow({

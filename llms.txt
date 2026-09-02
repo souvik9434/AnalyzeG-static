@@ -1,42 +1,38 @@
-# AnalyzeG — Verified Video Review Intelligence Platform
-> AnalyzeG is a verified video review platform that connects brands with authentic consumer insights through verified video reviews. Reviewers earn money via a dual-stage payout model, and brands get real product video reviews with Power BI dashboards and advanced analytics.
+# AnalyzeG — Verified Video Review Intelligence Platform for Brands
+> AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands buy 500-1500 face-presence verified 30-second in-hand product videos with Power BI dashboards and raw CSV. Reviewers are face-presence verified consumers compensated via revenue-share.
+
+## For Brands
+- Packages: 500 (₹5,00,000), 1000 (₹9,00,000), 1500 (₹12,75,000). One-time. GST invoice, PO accepted, DPA on request. SLA 24h or 10% credit.
+- Deliverables: 30-second in-hand product videos, Power BI dashboard template, sentiment & keyword themes, competitor benchmarking, state/age/gender filters, raw CSV/Excel with video links, ad licensing for own-product videos.
+- Verification: 5-point (face-presence, device, geo, content, timestamp) + human moderation. Time-stamped with audit logs.
+- Security: AES-256 at rest, TLS 1.3 in transit, 180-day retention, DPDP Act 2023 compliant.
+- Delivery: 2 minutes to 24 hours. Procurement-ready.
+
+## For Reviewers
+- Eligibility: Record 30-second in-hand video, pass 5-point face-presence verification + human moderation, receive up to ₹40 advance. On each brand purchase, receive balance from 50% revenue-share per sale. Record once, earn per sale.
+- Example: Brand price ₹1,000 → Your 50% share ₹500 → Minus ₹40 advance = ₹460 balance on that sale. Multiple brand purchases = multiple payouts.
+- Payout: UPI or bank within 24 hours of each sale event. T&C apply. No followers needed. No fee to join.
+- Bounty: Advance applies to categories with active brand demand — see Categories Needed Now in app.
 
 ## Key Facts
-- India's premier video review marketplace for verified consumer insights
-- Reviewers earn up to Rs 40 after verification + 50% revenue share when reviews are sold
-- Brands receive 30-second in-hand product videos, Power BI dashboards, and raw data exports
-- Data-driven sentiment analysis and competitor benchmarking built in
-- Delivery in 2 minutes to 24 hours for brand orders
-- Registered MSME (Udyam), West Bengal, India
-- Video licensing included: brands can use purchased videos as raw ad content
+- Brand owned and operated by Souvik Dey, Udyam MSME Registered, West Bengal, India. Data Fiduciary for DPDP 2023 purposes.
+- Grievance: grievance@analyzeg.co.in — Acknowledgment 48h, Resolution 90 days.
+- Document Versions: Terms v1.1_2026-09-02, Privacy v1.1_2026-09-02, Cookies v1.1_2026-09-02.
+- Video licensing: Main brand may use own-product videos as raw ad creative; competitor videos are data insights only — separate reviewer consent required.
 
 ## Core Pages
-- [Home](https://analyzeg.co.in/): Platform overview, pricing for brands, and reviewer earning model
-- [Features](https://analyzeg.co.in/features.html): Dual-stage rewards, advanced insights, custom reports, data export
-- [About](https://analyzeg.co.in/about.html): Mission, story, values, leadership team, and contact information
-- [Earn Money](https://analyzeg.co.in/earn-money-reviews.html): How to earn with authentic video reviews, step-by-step guide
-- [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Common questions about payouts, verification, and brand analytics
-- [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html): Guide to earning money from video reviews
-
-## Key Features for Reviewers
-- Dual-stage payout: up to Rs 40 after verification + remaining from 50% share when sold
-- No social media following required — earn based on review quality
-- Secure multi-factor verification system
-- Multiple payment options including UPI and bank transfer
-
-## Key Features for Brands
-- 30-second in-hand product video reviews from verified reviewers
-- State, age, and gender demographic filtering
-- Power BI integrated dashboards with custom templates
-- Complete raw data file (CSV/Excel) with video links
-- Data-driven sentiment analysis and trend detection
-- Video licensing for advertising use
-- One-time purchase — no subscription required
-- Pricing: 500 reviews at Rs 5,00,000 | 1,000 reviews at Rs 9,00,000 | 1,500 reviews at Rs 12,75,000
+- [Home](https://analyzeg.co.in/): Verified video review intelligence for brands — pricing, Power BI sample, case study
+- [Platform](https://analyzeg.co.in/features.html): Power BI, sentiment, raw data export for brands
+- [For Reviewers](https://analyzeg.co.in/for-reviewers/): Your voice, heard by brands — how payouts work, bounty
+- [About](https://analyzeg.co.in/about.html): Mission, story, values, leadership
+- [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Payouts, verification, brand analytics, security
+- [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html): Guide to earning from video reviews
+- [How We Pay & Stay Authentic](https://analyzeg.co.in/for-reviewers/#payouts): Canonical payout disclosure
 
 ## Contact
-- Email: support@analyzeg.co.in
+- Email: support@analyzeg.co.in, grievance@analyzeg.co.in
 - Founder: Souvik Dey — LinkedIn: https://www.linkedin.com/in/souvikdey1/
-- App: https://analyzeg.netlify.app/
+- App: https://app.analyzeg.co.in/
+- Demo: https://cal.com/analyzeg-demo
 
 For complete documentation and full content, see llms-full.txt

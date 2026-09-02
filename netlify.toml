@@ -88,3 +88,35 @@
   [headers.values]
     Vary = "Accept"
     Link = "</llms.txt>; rel=\"alternate\"; type=\"text/plain\""
+
+# Redirects — authority consolidation (subfolder wins)
+[[redirects]]
+  from = "/earn-money-reviews.html"
+  to = "/for-reviewers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/earn-money-reviews"
+  to = "/for-reviewers/"
+  status = 301
+  force = true
+
+# Pretty URL support for file-format build — serve .html at clean path
+[[redirects]]
+  from = "/for-reviewers/"
+  to = "/for-reviewers.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/for-reviewers"
+  to = "/for-reviewers.html"
+  status = 200
+  force = false
+
+# Legacy analyzeg.netlify.app references should use app.analyzeg.co.in (via JS resolver, but header as fallback)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "index"

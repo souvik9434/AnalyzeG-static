@@ -13,7 +13,7 @@ const reviewerChips = [
 ];
 
 const brandChips = [
-  "100% Verified Reviewers",
+  "5-Point Verified Reviews",
   "30-Second In-Hand Videos",
   "Power BI Dashboards",
   "State + Age Filtering",

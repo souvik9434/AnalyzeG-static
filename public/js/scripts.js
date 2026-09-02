@@ -1,14 +1,14 @@
 /**
  * AnalyzeG App URL Configuration
  * ─────────────────────────────────────────────────
- * CURRENT:  https://app.analyzeg.co.in  (Netlify free domain)
- * FUTURE:   https://analyzeg.netlify.app  (fallback)
+ * CURRENT:  https://app.analyzeg.co.in  (Custom domain — primary)
+ * FALLBACK: https://analyzeg.netlify.app (Netlify fallback, keep for redirect)
  *
- * When the subdomain is activated, change ONLY the line below.
+ * Change ONLY the line below if app domain changes.
  * All nav CTA, hero buttons, footer links, and CTA sections
  * reference this constant via data-app-href attributes.
  */
-const ANALYZEG_APP_BASE = "https://analyzeg.netlify.app";
+const ANALYZEG_APP_BASE = "https://app.analyzeg.co.in";
 
 // Global error handler for production
 window.addEventListener("error", function (event) {
