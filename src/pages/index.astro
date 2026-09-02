@@ -329,7 +329,7 @@ import HowItWorks from '../components/HowItWorks.astro';
             <div class="container">
                 <!-- Single JTBD hero: B2B primary (brand intelligence), B2C secondary band -->
                 <div class="hero-content" data-aos="fade-up">
-                        <h1>Verified Video Review Intelligence for India's D2C &amp; Retail Brands</h1>
+                        <h1 style="font-size:2.9rem; font-weight:800; line-height:1.15; letter-spacing:-0.02em; color:#fff; text-shadow:0 2px 16px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.4);" class="hero-title">Verified Video Review Intelligence for India's D2C &amp; Retail Brands</h1>
                         <p class="hero-tagline">
                             500 face-presence verified 30-second in-hand videos + Power BI dashboards + raw CSV/Excel with video links. Delivered in 2 minutes to 24 hours. GST invoice, PO accepted, DPA on request.
                         </p>
@@ -360,7 +360,7 @@ import HowItWorks from '../components/HowItWorks.astro';
             @media (prefers-reduced-motion: no-preference) { .sticky-cta { animation: slideUp 0.4s ease-out; } @keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} } }
         </style>
         <!-- Brand trust marquee — B2B primary -->
-        <TrustMarquee client:visible audience="brand" />
+        <TrustMarquee client:load audience="brand" />
         <HowItWorks />
 
         <!-- B2B Pain Point Comparison: visible above fold per 2026 best practice -->
@@ -549,8 +549,8 @@ import HowItWorks from '../components/HowItWorks.astro';
                     Why Brands Trust AnalyzeG
                 </h2>
                 <p style="text-align:center; max-width:700px; margin:0 auto 1rem; color:#475569; font-size:1.05rem;" data-aos="fade-up">Every review passes 5-point verification — face-presence, device, geo, content, timestamp — plus human moderation. Brands get Power BI + raw data to verify every insight themselves.</p>
-                <StatsRow client:visible audience="brand" />
-                <FeatureHoverGrid client:visible />
+                <StatsRow client:load audience="brand" />
+                <FeatureHoverGrid client:load />
             </div>
         </section>
         <!-- Tech & Security -->

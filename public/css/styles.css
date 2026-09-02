@@ -117,19 +117,22 @@ body {
 .navbar nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .navbar nav ul li a {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.92rem;
   transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 0.65rem;
   border-radius: 4px;
   position: relative;
   outline: none;
+  white-space: nowrap;
 }
 
 .navbar nav ul li a:hover,

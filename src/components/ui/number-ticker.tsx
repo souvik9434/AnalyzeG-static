@@ -54,7 +54,7 @@ export function NumberTicker({
       className={cn("inline-block tabular-nums tracking-tighter", className)}
       {...props}
     >
-      {startValue}
+      {value}
     </span>
   );
 }
