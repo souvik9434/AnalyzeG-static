@@ -1,0 +1,6 @@
+review_id,video_url,state,age,gender,sentiment,keywords,rating,verified_at
+AG-0001,https://app.analyzeg.co.in/video/AG-0001.mp4,Maharashtra,24,F,positive,"sound quality,bass",4,2026-08-20
+AG-0002,https://app.analyzeg.co.in/video/AG-0002.mp4,Karnataka,31,M,negative,"battery,heating",2,2026-08-20
+AG-0003,https://app.analyzeg.co.in/video/AG-0003.mp4,Delhi,28,F,positive,"comfort,design",5,2026-08-21
+AG-0004,https://app.analyzeg.co.in/video/AG-0004.mp4,Tamil Nadu,22,M,neutral,"price,value",3,2026-08-21
+AG-0005,https://app.analyzeg.co.in/video/AG-0005.mp4,Gujarat,35,F,positive,"camera clarity",5,2026-08-21

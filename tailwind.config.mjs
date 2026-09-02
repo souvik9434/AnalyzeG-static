@@ -8,6 +8,21 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        ag: {
+          primary: 'hsl(var(--ag-primary))',
+          'primary-dark': 'hsl(var(--ag-primary-dark))',
+          accent: 'hsl(var(--ag-accent))',
+          text: 'hsl(var(--ag-text))',
+          muted: 'hsl(var(--ag-text-muted))',
+        },
+      },
+      borderRadius: {
+        'ag-sm': 'var(--ag-radius-sm)',
+        'ag-md': 'var(--ag-radius-md)',
+        'ag-lg': 'var(--ag-radius-lg)',
+        'ag-xl': 'var(--ag-radius-xl)',
+      },
       animation: {
         marquee: 'marquee var(--duration, 40s) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration, 40s) linear infinite',

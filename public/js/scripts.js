@@ -1,8 +1,8 @@
 /**
  * AnalyzeG App URL Configuration
  * ─────────────────────────────────────────────────
- * CURRENT:  https://analyzeg.netlify.app  (Netlify free domain)
- * FUTURE:   https://app.analyzeg.co.in    (custom subdomain)
+ * CURRENT:  https://app.analyzeg.co.in  (Netlify free domain)
+ * FUTURE:   https://analyzeg.netlify.app  (fallback)
  *
  * When the subdomain is activated, change ONLY the line below.
  * All nav CTA, hero buttons, footer links, and CTA sections

@@ -644,7 +644,7 @@ body {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 2;
-  color: #64748b;
+  color: #475569;
   text-align: center;
   white-space: nowrap;
   user-select: none;
@@ -2682,8 +2682,10 @@ iframe {
   .particle,
   .bg-object,
   .animated-objects,
-  .light-rays {
+  .light-rays,
+  .bg-gradient-animated {
     display: none !important;
+    animation: none !important;
   }
 
   /* AOS reveals: show content immediately, skip the motion */

@@ -83,7 +83,7 @@ export function AudienceSwitch() {
             "relative z-10 flex items-center justify-center px-8 py-3 text-sm font-semibold transition-colors duration-300 outline-none sm:text-base rounded-full",
             active === option.id
               ? "text-blue-700"
-              : "text-slate-500 hover:text-slate-700"
+              : "text-slate-600 hover:text-slate-700"
           )}
           style={{ WebkitTapHighlightColor: "transparent" }}
           aria-selected={active === option.id}

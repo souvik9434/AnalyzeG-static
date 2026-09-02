@@ -2,7 +2,7 @@ import React from "react";
 import { Marquee } from "@/components/ui/marquee";
 
 const reviewerChips = [
-  "Earn Up to Rs 40 Instantly",
+  "Earn Up to ₹40 Instantly",
   "50% Revenue Share When Sold",
   "Payout Within 24 Hours",
   "UPI & Bank Transfer",

@@ -2,7 +2,7 @@ import React from "react";
 import { NumberTicker } from "@/components/ui/number-ticker";
 
 const reviewerStats = [
-  { value: 40, prefix: "Rs ", suffix: "", label: "Instant payout per review" },
+  { value: 40, prefix: "₹", suffix: "", label: "Instant payout per review" },
   { value: 50, suffix: "%", label: "Revenue share when sold" },
   { value: 24, suffix: "h", label: "Max payout window" },
   { value: 100, suffix: "%", label: "Free to join" },
@@ -30,7 +30,7 @@ export function StatsRow({
             <NumberTicker value={s.value} className="text-slate-900" />
             {s.suffix && <span className="text-blue-600">{s.suffix}</span>}
           </div>
-          <p className="mt-2 text-sm text-slate-500 font-medium">{s.label}</p>
+          <p className="mt-2 text-sm text-slate-600 font-medium">{s.label}</p>
         </div>
       ))}
     </div>

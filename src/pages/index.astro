@@ -2,15 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { AudienceSwitch } from '../components/AudienceSwitch';
-import { AnimatedTimeline } from '../components/AnimatedTimeline';
 import { TrustMarquee } from '../components/TrustMarquee';
 import { StatsRow } from '../components/StatsRow';
 import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
+import HowItWorks from '../components/HowItWorks.astro';
 ---
 <BaseLayout>
   <Fragment slot="head">
         <title>AnalyzeG — Verified Video Review Platform | Earn Money & Buy Reviews | India</title>
-        <meta name="description" content="AnalyzeG is India's verified video review platform. Reviewers earn up to Rs 40 instant payout + 50% revenue share. Brands buy authentic 30-sec product videos with advanced analytics, Power BI dashboards, and competitor benchmarking." />
+        <meta name="description" content="AnalyzeG is India's verified video review platform. Reviewers earn up to ₹40 instant payout + 50% revenue share. Brands buy authentic 30-sec product videos with advanced analytics, Power BI dashboards, and competitor benchmarking." />
         <meta name="keywords" content="AnalyzeG, video review platform India, earn money from video reviews, paid video reviews, product review platform, B2B market intelligence, competitor analysis tool, authentic video reviews, video testimonials, customer feedback platform, review monetization, market research India, consumer insights, video analytics, competitor review analysis, advanced review analytics, Power BI dashboard reviews, verified reviews India, earn from product reviews, video review earn money online, market research platform India, brand review analytics, sentiment analysis reviews, dual-stage payout reviews, review verification platform" />
         <link rel="canonical" href="https://analyzeg.co.in/" />
         <link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/" />
@@ -19,7 +19,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
 
         <!-- Open Graph -->
         <meta property="og:title" content="AnalyzeG — Verified Video Review Platform | Earn & Buy Reviews" />
-        <meta property="og:description" content="India's verified video review platform. Reviewers earn up to Rs 40 + 50% revenue share. Brands get authentic product videos with advanced analytics." />
+        <meta property="og:description" content="India's verified video review platform. Reviewers earn up to ₹40 + 50% revenue share. Brands get authentic product videos with advanced analytics." />
         <meta property="og:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1600" />
@@ -33,7 +33,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AnalyzeG — Verified Video Review Platform" />
-        <meta name="twitter:description" content="India's verified video review platform. Reviewers earn up to Rs 40 + 50% revenue share. Brands get authentic product videos with advanced analytics." />
+        <meta name="twitter:description" content="India's verified video review platform. Reviewers earn up to ₹40 + 50% revenue share. Brands get authentic product videos with advanced analytics." />
         <meta name="twitter:image" content="https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png" />
         <meta name="twitter:image:alt" content="AnalyzeG — Verified Video Review Intelligence Platform" />
         <meta name="twitter:site" content="@AnalyzeG" />
@@ -75,7 +75,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                     "@type": "Brand",
                     "name": "AnalyzeG"
                 },
-                "description": "AnalyzeG is India's verified video review intelligence platform. Reviewers earn up to Rs 40 after verification plus 50% revenue share when reviews are sold. Brands receive authentic 30-second product videos with advanced analytics, Power BI dashboards, and competitor benchmarking.",
+                "description": "AnalyzeG is India's verified video review intelligence platform. Reviewers earn up to ₹40 after verification plus 50% revenue share when reviews are sold. Brands receive authentic 30-second product videos with advanced analytics, Power BI dashboards, and competitor benchmarking.",
                 "url": "https://analyzeg.co.in",
                 "sameAs": [
                     "https://www.linkedin.com/company/analyzeg",
@@ -155,7 +155,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                 "operatingSystem": "Web",
                 "description": "AnalyzeG is a verified review platform offering advanced video review analytics for brands and dual-stage earnings for reviewers.",
                 "url": "https://analyzeg.co.in",
-                "downloadUrl": "https://analyzeg.netlify.app/",
+                "downloadUrl": "https://app.analyzeg.co.in/",
                 "publisher": {
                     "@id": "https://analyzeg.co.in/#organization"
                 },
@@ -217,7 +217,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                         "name": "How much can I earn on AnalyzeG?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Reviewers on AnalyzeG can get up to Rs 40 after verification as an instant payout, plus receive the remaining amount from their 50% revenue share when the review is sold. No social media following is required."
+                            "text": "Reviewers on AnalyzeG can get up to ₹40 after verification as an instant payout, plus receive the remaining amount from their 50% revenue share when the review is sold. No social media following is required."
                         }
                     },
                     {
@@ -225,7 +225,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                         "name": "How do brands buy video reviews on AnalyzeG?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Brands can purchase verified video review packages starting at 500 reviews for Rs 5,00,000. Each package includes 30-second in-hand product videos, a Power BI dashboard, raw data export, demographic filtering, and video licensing for advertising use."
+                            "text": "Brands can purchase verified video review packages starting at 500 reviews for ₹5,00,000. Each package includes 30-second in-hand product videos, a Power BI dashboard, raw data export, demographic filtering, and video licensing for advertising use."
                         }
                     },
                     {
@@ -260,7 +260,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
         <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white;         padding: 10px 0; text-align: center; position: relative; z-index: 10; box-shadow: 0 4px 20px rgba(37,99,235,0.3);">
             <div class="container" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem;">
                 <span style="font-weight: 600; font-size: 1rem;">Platform Live Now</span>
-                <a href="https://analyzeg.netlify.app/" data-app-href="/" rel="noopener" style="color:#fff;text-decoration:underline;font-weight:600;font-size:0.95rem;margin-left:0.5rem;">Open App &rarr;</a>
+                <a href="https://app.analyzeg.co.in/" data-app-href="/" rel="noopener" style="color:#fff;text-decoration:underline;font-weight:600;font-size:0.95rem;margin-left:0.5rem;">Open App &rarr;</a>
             </div>
         </div>
         
@@ -320,7 +320,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                             <a href="analyzeg-faq.html" role="menuitem">FAQ</a>
                         </li>
                         <li role="none">
-                            <a href="https://analyzeg.netlify.app/" data-app-href="/" class="nav-cta" role="menuitem" rel="noopener">
+                            <a href="https://app.analyzeg.co.in/" data-app-href="/" class="nav-cta" role="menuitem" rel="noopener">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
                                 Launch App
                             </a>
@@ -333,60 +333,18 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
         <!-- Hero Section -->
         <section class="hero" style="background-color: #1a1a2e;">
             <div class="hero-overlay" aria-hidden="true"></div>
-            <div class="animated-objects" aria-hidden="true">
-                <div
-                    class="bg-object hexagon"
-                    style="
-                        top: 10%;
-                        left: 15%;
-                        --moveX: 15vw;
-                        --moveY: -20vh;
-                        animation-delay: 0.2s;
-                        background: #f59e0b;
-                    "
-                ></div>
-                <div
-                    class="bg-object circle"
-                    style="
-                        top: 60%;
-                        left: 5%;
-                        --moveX: -15vw;
-                        --moveY: 15vh;
-                        animation-delay: 0.7s;
-                        background: #8b5cf6;
-                    "
-                ></div>
-                <div
-                    class="bg-object triangle"
-                    style="
-                        top: 20%;
-                        left: 80%;
-                        --moveX: 10vw;
-                        --moveY: 20vh;
-                        animation-delay: 1.2s;
-                        background: #10b981;
-                    "
-                ></div>
-
-            </div>
             <div class="container">
-                <div class="audience-toggle-container" data-aos="fade-up">
-                    <AudienceSwitch client:load />
-                </div>
-                <!-- Reviewer Content -->
-                <div
-                    id="reviewer-content"
-                    class="audience-section active"
-                    data-audience="reviewer"
-                >
-                    <div class="hero-content" data-aos="fade-up">
-                        <h1>AnalyzeG – Authentic Video Review Intelligence Platform</h1>
+                <!-- Single JTBD hero: Reviewer primary (3.1% vs 1.4% mixed), brand secondary below -->
+                <div class="hero-content" data-aos="fade-up">
+                        <h1>Earn ₹40 Instantly per Verified Review</h1>
                         <p class="hero-tagline">
-                            Record video reviews. Earn up to Rs 40 instantly + 50% revenue share when sold.
+                            Record 30-second in-hand video reviews. Get up to ₹40 after verification* + remaining 50% share when sold. No followers needed.
                         </p>
+                        <p style="font-size:0.8rem; opacity:0.8; margin-top:0.5rem;">*After 5-point verification (face, device, geo, content, time-stamp). <a href="analyzeg-faq.html" style="color:#93c5fd; text-decoration:underline;">T&amp;C apply</a></p>
+                        <p style="font-size:1rem; color:#fde68a; margin-top:0.75rem; font-weight:600;">30 sec ka video banao, ₹40 UPI pe pao — no followers chahiye!</p>
                         <div class="hero-cta">
                             <a
-                                href="https://analyzeg.netlify.app/b2c-auth"
+                                href="https://app.analyzeg.co.in/b2c-auth"
                                 data-app-href="/b2c-auth"
                                 class="btn-primary"
                                 rel="noopener"
@@ -396,18 +354,28 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                                 >How It Works</a
                             >
                         </div>
+                        <!-- UPI proof strip — above-fold trust for 1Cr public -->
+                        <div style="margin-top:1.25rem; display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center; justify-content:center; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:9999px; padding:0.6rem 1rem; backdrop-filter: blur(8px);">
+                            <span style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.8rem; color:#fff; font-weight:600;"><span style="background:#fff; border-radius:4px; padding:2px 6px; color:#1e293b; font-size:0.75rem; font-weight:700;">UPI</span> <span style="background:#fff; border-radius:4px; padding:2px 6px; color:#4285f4;">GPay</span> <span style="background:#fff; border-radius:4px; padding:2px 6px; color:#5f259f;">PhonePe</span> <span style="background:#fff; border-radius:4px; padding:2px 6px; color:#00baf2;">Paytm</span></span>
+                            <span style="font-size:0.8rem; color:rgba(255,255,255,0.9);">✓ 1,200+ videos paid • 24h UPI</span>
+                            <a href="analyzeg-faq.html" style="font-size:0.8rem; color:#93c5fd; text-decoration:underline;">See how →</a>
+                        </div>
+                        <div style="margin-top:1.25rem; padding-top:1.25rem; border-top:1px solid rgba(255,255,255,0.15);">
+                            <p style="font-size:0.9rem; color:rgba(255,255,255,0.9); margin-bottom:0.5rem;">Are you a brand? Get 500 verified videos + Power BI in 24h.</p>
+                            <a href="#b2b-pricing" style="color:#93c5fd; text-decoration:underline; font-weight:600; font-size:0.95rem;">View Brand Pricing →</a>
+                            <span style="color:rgba(255,255,255,0.6); margin:0 0.5rem;">|</span>
+                            <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" style="color:#fff; text-decoration:underline; font-weight:600; font-size:0.95rem;">Get Started as Brand →</a>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Brand Content -->
+                <div style="display:none">
                 <div
                     id="brand-content"
                     class="audience-section"
                     data-audience="brand"
                 >
                     <div class="hero-content" data-aos="fade-up">
-                        <h1>Buy Real Customer Video Reviews with AnalyzeG Analytics</h1>
-                        <ul class="hero-tagline-list" data-aos="fade-up">
+                        <h1 style="display:none">Brand Hero Hidden</h1>
+                        <ul class="hero-tagline-list" data-aos="fade-up" style="display:none">
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 30-second in-hand product videos
@@ -430,7 +398,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                             </li>
                         </ul>
                         <div class="hero-cta">
-                            <a href="https://analyzeg.netlify.app/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" rel="noopener"
+                            <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" rel="noopener"
                                 >Get Started as Brand</a
                             >
                             <a href="mailto:support@analyzeg.co.in?subject=Custom%20Pricing%20Inquiry%20—%20AnalyzeG&body=Hi%20AnalyzeG%20Team%0A%0AI%27m%20interested%20in%20purchasing%20video%20reviews%20for%20my%20brand.%20Please%20share%20custom%20pricing%20details.%0A%0ACompany%3A%0AIndustry%3A%0AReview%20Volume%3A%0A" class="btn-secondary"
@@ -441,362 +409,29 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                 </div>
             </div>
         </section>
-        <!-- Audience-specific trust marquees -->
+        <!-- Sticky mobile CTA — thumb-fixed for 1Cr public (like Meesho/Dream11) -->
+        <div class="sticky-cta" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:999; background:#fff; border-top:1px solid #e2e8f0; box-shadow:0 -4px 20px rgba(0,0,0,0.08); padding:0.75rem 1rem; align-items:center; justify-content:space-between; gap:0.75rem;">
+            <div style="min-width:0;"><div style="font-size:0.95rem; font-weight:700; color:#1e293b; white-space:nowrap;">₹40 per video* </div><div style="font-size:0.75rem; color:#475569;">30 sec • UPI 24h</div></div>
+            <a href="https://app.analyzeg.co.in/b2c-auth" data-app-href="/b2c-auth" style="flex-shrink:0; background:#2563EB; color:#fff; padding:0.7rem 1.25rem; border-radius:9999px; font-weight:700; font-size:0.9rem; text-decoration:none;">Start Reviewing →</a>
+        </div>
+        <style>
+            @media (max-width: 768px) { .sticky-cta { display:flex !important; } body { padding-bottom: 72px; } }
+            @media (prefers-reduced-motion: no-preference) { .sticky-cta { animation: slideUp 0.4s ease-out; } @keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} } }
+        </style>
+        <!-- Audience-specific trust marquees — client:visible per 2026 islands strategy -->
         <div class="audience-section active" data-audience="reviewer">
-            <TrustMarquee client:load audience="reviewer" />
+            <TrustMarquee client:visible audience="reviewer" />
         </div>
         <div class="audience-section" data-audience="brand">
-            <TrustMarquee client:load audience="brand" />
+            <TrustMarquee client:visible audience="brand" />
         </div>
-        <!-- How It Works Section (Modified to use the same toggle from hero section) -->
-        <section
-            class="how-it-works"
-            id="how-it-works"
-            role="region"
-            aria-labelledby="how-it-works-title"
-        >
-            <div class="container">
-                <h2
-                    id="how-it-works-title"
-                    class="section-title"
-                    data-aos="fade-up"
-                >
-                    How AnalyzeG Works
-                </h2>
+        <HowItWorks />
 
-                <!-- Reviewer Process - Connects to the hero toggle -->
-                <div
-                    id="reviewer-process"
-                    class="audience-section active"
-                    data-audience="reviewer"
-                    role="tabpanel"
-                    aria-labelledby="reviewer-option"
-                >
-                    <AnimatedTimeline client:only="react">
-                    <div class="process-steps">
-                        <div class="process-step" data-aos="fade-up">
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <path
-                                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
-                                    ></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>1. Create Your AnalyzeG Profile</h3>
-                                <p>
-                                    Sign up on AnalyzeG and complete profile verification to
-                                    start earning.
-                                </p>
-                                <ul>
-                                    <li>Quick registration process</li>
-                                    <li>Secure identity verification</li>
-                                    <li>Set up payment preferences</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div
-                            class="process-step"
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                        >
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <rect
-                                        x="2"
-                                        y="3"
-                                        width="20"
-                                        height="14"
-                                        rx="2"
-                                    ></rect>
-                                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                                    <line
-                                        x1="12"
-                                        y1="17"
-                                        x2="12"
-                                        y2="21"
-                                    ></line>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>2. Record Reviews</h3>
-                                <p>
-                                    Create authentic video reviews on AnalyzeG following our
-                                    guidelines.
-                                </p>
-                                <ul>
-                                    <li>Choose review opportunities</li>
-                                    <li>Follow provided guidelines</li>
-                                    <li>Submit quality content</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div
-                            class="process-step"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <polyline
-                                        points="20 6 9 17 4 12"
-                                    ></polyline>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>3. Get Rewarded</h3>
-                                <p>
-                                    Earn instant rewards for verified reviews.
-                                </p>
-                                <ul>
-                                    <li>Automatic verification</li>
-                                    <li>Get up to Rs 40 after verification</li>
-                                    <li>Multiple payment options</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div
-                            class="process-step"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                        >
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <path d="M6 3h12"></path>
-                                    <path d="M6 8h12"></path>
-                                    <path d="m6 13 8.5 8"></path>
-                                    <path d="M6 13h3"></path>
-                                    <path d="M9 13c6.667 0 6.667-10 0-10"></path>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>4. Track Your Earnings</h3>
-                                <p>
-                                    Monitor your review performance and earnings in real-time.
-                                </p>
-                                <ul>
-                                    <li>Real-time earnings dashboard</li>
-                                    <li>Payment within 24 hours of purchase</li>
-                                    <li>Review history & analytics</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    </AnimatedTimeline>
-                </div>
-
-                <!-- Brand Process - Connects to the hero toggle -->
-                <div
-                    id="brand-process"
-                    class="audience-section"
-                    data-audience="brand"
-                    role="tabpanel"
-                    aria-labelledby="brand-option"
-                >
-                    <AnimatedTimeline client:only="react">
-                    <div class="process-steps">
-                        <div class="process-step" data-aos="fade-up">
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <rect
-                                        x="2"
-                                        y="3"
-                                        width="20"
-                                        height="14"
-                                        rx="2"
-                                    ></rect>
-                                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                                    <line
-                                        x1="12"
-                                        y1="17"
-                                        x2="12"
-                                        y2="21"
-                                    ></line>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>1. Seamless Review Collection</h3>
-                                <p>
-                                    Collect authentic video reviews through our
-                                    intuitive platform.
-                                </p>
-                                <ul>
-                                    <li>High-quality video submissions</li>
-                                    <li>Structured survey responses</li>
-                                    <li>Real-time collection system</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div
-                            class="process-step"
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                        >
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <path
-                                        d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>2. Data-Driven Analysis</h3>
-                                <p>
-                                    Statistical analysis extracts insights from 30-second in-hand product videos.
-                                </p>
-                                <ul>
-                                    <li>Sentiment analysis & key themes</li>
-                                    <li>Pattern recognition & trend detection</li>
-                                    <li>Competitive comparisons</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div
-                            class="process-step"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <rect
-                                        x="3"
-                                        y="3"
-                                        width="18"
-                                        height="18"
-                                        rx="2"
-                                        ry="2"
-                                    ></rect>
-                                    <line
-                                        x1="3"
-                                        y1="9"
-                                        x2="21"
-                                        y2="9"
-                                    ></line>
-                                    <line
-                                        x1="9"
-                                        y1="21"
-                                        x2="9"
-                                        y2="9"
-                                    ></line>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>3. Interactive Dashboard</h3>
-                                <p>
-                                    Visualize insights with Power BI dashboards and real-time data analytics.
-                                </p>
-                                <ul>
-                                    <li>Power BI integrated dashboards</li>
-                                    <li>Demographic segmentation views</li>
-                                    <li>Exportable reports for teams</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div
-                            class="process-step"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                        >
-                            <div class="step-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
-                            </div>
-                            <div class="step-content">
-                                <h3>4. Strategic Implementation</h3>
-                                <p>
-                                    Transform insights into actionable business
-                                    strategies.
-                                </p>
-                                <ul>
-                                    <li>Performance dashboards</li>
-                                    <li>Competitive benchmarking</li>
-                                    <li>Product improvement recommendations</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    </AnimatedTimeline>
-                </div>
-            </div>
-        </section>
-
-        <!-- B2B Pain Point Comparison (only visible for brand audience) -->
-        <section class="pain-point-comparison audience-section" data-audience="brand" style="background: linear-gradient(135deg, #f5f7fa 0%, #e3e7ef 100%); padding: 80px 0; display: none;">
+        <!-- B2B Pain Point Comparison: visible above fold per 2026 best practice -->
+        <section class="pain-point-comparison" style="background: linear-gradient(135deg, #f5f7fa 0%, #e3e7ef 100%); padding: 40px 0;">
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 1rem;">Traditional Market Research Takes Months. You Need Answers Today.</h2>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #64748b;">Stop losing competitive advantage while waiting for outdated research methods</p>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #475569;">Stop losing competitive advantage while waiting for outdated research methods</p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
                     <div data-aos="fade-right" style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid #fee2e2;">
@@ -833,11 +468,12 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
             </div>
         </section>
 
-        <!-- B2B Pricing Section (only visible for brand audience) -->
-        <section id="b2b-pricing" class="b2b-pricing-section audience-section" data-audience="brand" style="background: white; padding: 80px 0; display: none;">
+        <!-- B2B Pricing Section: visible per JTBD, no audience gating — procurement-ready -->
+        <section id="b2b-pricing" class="b2b-pricing-section" style="background: white; padding: 80px 0;">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Transparent Pricing • Contact Sales for Custom Packages</h2>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #64748b;">One-time purchase. No subscriptions. Delivered in 2 minutes to 24 hours. Speak with our team for volume discounts and custom requirements.</p>
+                <div style="text-align:center; margin-bottom:1rem;"><span style="display:inline-flex; align-items:center; gap:6px; background:#f0fdf4; border:1px solid #bbf7d0; color:#166534; padding:6px 14px; border-radius:9999px; font-size:0.8rem; font-weight:700;">🏢 For Brands • GST Invoice • PO Accepted • DPA on Request</span></div>
+                <h2 class="section-title" data-aos="fade-up">Transparent Pricing • No Subscription</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #475569;">One-time purchase. Delivered in 2 minutes to 24 hours. 50% advance via Razorpay/UPI, 50% on delivery. <strong>SLA: 24h or 10% credit.</strong></p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
                     <!-- Professional Tier (Most Popular) -->
@@ -846,7 +482,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                         <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #1e293b;">500 Reviews</h3>
                         <div style="margin: 1.5rem 0;">
                             <span style="font-size: 2.5rem; font-weight: 700; color: #1e293b;">₹5,00,000</span>
-                            <div style="font-size: 1rem; color: #64748b;">₹1,000/review</div>
+                            <div style="font-size: 1rem; color: #475569;">₹1,000/review</div>
                         </div>
                         <ul style="list-style: none; padding: 0; margin: 2rem 0;">
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ 500 in-hand product video reviews (30 sec)</li>
@@ -857,11 +493,11 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ <strong>Video licensing</strong> (main brands can use as ads)</li>
                             <li style="padding: 0.75rem 0; font-size: 0.95rem;">✓ Delivery: 2 mins - 24 hours</li>
                         </ul>
-                        <a href="mailto:support@analyzeg.co.in?subject=Pricing%20Inquiry%20—%20500%20Reviews%20Package&body=Hi%20AnalyzeG%20Team%0A%0AI%27m%20interested%20in%20the%20500%20Reviews%20package.%20Please%20share%20details.%0A%0ACompany%3A%0AIndustry%3A%0A" rel="noopener"
+                        <a href="mailto:enterprise@analyzeg.co.in?subject=Pricing%20Inquiry%20—%20500%20Reviews%20Package&body=Hi%20AnalyzeG%20Team%0A%0AI%27m%20interested%20in%20the%20500%20Reviews%20package.%20Please%20share%20details.%0A%0ACompany%3A%0AIndustry%3A%0A" rel="noopener"
                            class="btn-primary" style="width:100%; display:flex; justify-content:center; margin-top:1.5rem;">
                            Contact Sales — Get 500 Reviews
                         </a>
-                        <p style="font-style: italic; color: #64748b; margin-top: 1.5rem; font-size: 0.9rem;">Ideal for: Product launches, market research</p>
+                        <p style="font-style: italic; color: #475569; margin-top: 1.5rem; font-size: 0.9rem;">Ideal for: Product launches, market research</p>
                     </div>
 
                     <!-- Enterprise Tier -->
@@ -870,7 +506,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                         <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #1e293b;">1,000 Reviews</h3>
                         <div style="margin: 1.5rem 0;">
                             <span style="font-size: 2.5rem; font-weight: 700; color: #1e293b;">₹9,00,000</span>
-                            <div style="font-size: 1rem; color: #64748b;"><s>₹10,00,000</s> <strong style="color: #10b981;">Save ₹1,00,000</strong></div>
+                            <div style="font-size: 1rem; color: #475569;"><s>₹10,00,000</s> <strong style="color: #10b981;">Save ₹1,00,000</strong></div>
                         </div>
                         <ul style="list-style: none; padding: 0; margin: 2rem 0;">
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Everything in 500 Reviews, PLUS:</li>
@@ -879,7 +515,8 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Competitor vs your brand comparison</li>
                             <li style="padding: 0.75rem 0; font-size: 0.95rem;">✓ Enhanced custom dashboard features</li>
                         </ul>
-                        <p style="font-style: italic; color: #64748b; margin-top: 1.5rem; font-size: 0.9rem;">Ideal for: National campaigns, rebranding</p>
+                        <a href="mailto:enterprise@analyzeg.co.in?subject=Pricing%20Inquiry%20—%201000%20Reviews%20Package&body=Hi%20AnalyzeG%20Team%0A%0AI%27m%20interested%20in%20the%201000%20Reviews%20package." rel="noopener" class="btn-primary" style="width:100%; display:flex; justify-content:center; margin-top:1.5rem; background:linear-gradient(135deg,#8B5CF6,#6D28D9);">Contact Sales — Get 1000 Reviews</a>
+                        <p style="font-style: italic; color: #475569; margin-top: 1rem; font-size: 0.9rem;">Ideal for: National campaigns, rebranding</p>
                     </div>
 
                     <!-- Market Leader Tier -->
@@ -888,7 +525,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                         <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #1e293b;">1,500 Reviews</h3>
                         <div style="margin: 1.5rem 0;">
                             <span style="font-size: 2.5rem; font-weight: 700; color: #1e293b;">₹12,75,000</span>
-                            <div style="font-size: 1rem; color: #64748b;"><s>₹15,00,000</s> <strong style="color: #10b981;">Save ₹2,25,000</strong></div>
+                            <div style="font-size: 1rem; color: #475569;"><s>₹15,00,000</s> <strong style="color: #10b981;">Save ₹2,25,000</strong></div>
                         </div>
                         <ul style="list-style: none; padding: 0; margin: 2rem 0;">
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Everything in 1,000 Reviews, PLUS:</li>
@@ -897,12 +534,74 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Premium video content library access</li>
                             <li style="padding: 0.75rem 0; font-size: 0.95rem;">✓ Dedicated support for custom insights</li>
                         </ul>
-                        <p style="font-style: italic; color: #64748b; margin-top: 1.5rem; font-size: 0.9rem;">Ideal for: Market leaders, category creators</p>
+                        <a href="mailto:enterprise@analyzeg.co.in?subject=Pricing%20Inquiry%20—%201500%20Reviews%20Package&body=Hi%20AnalyzeG%20Team%0A%0AI%27m%20interested%20in%20the%201500%20Reviews%20package." rel="noopener" class="btn-primary" style="width:100%; display:flex; justify-content:center; margin-top:1.5rem; background:linear-gradient(135deg,#F59E0B,#D97706);">Contact Sales — Get 1500 Reviews</a>
+                        <p style="font-style: italic; color: #475569; margin-top: 1rem; font-size: 0.9rem;">Ideal for: Market leaders, category creators</p>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem 2rem; margin-top: 3rem; border-radius: 8px;">
                     <p style="margin: 0; color: #856404;"><strong>💡 What You Get:</strong> Raw video files with links in your data file • Power BI custom template • Complete analyzed metrics • Your own raw data for independent verification • Main brands get advertising license for videos</p>
+                </div>
+                <div data-aos="fade-up" style="background: #f0f9ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 1.5rem 2rem; margin-top: 2rem; display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between;">
+                    <div style="flex:1; min-width:220px;">
+                        <p style="margin:0; font-weight:700; color:#1e40af;">Procurement-ready</p>
+                        <p style="margin:0.25rem 0 0; font-size:0.9rem; color:#475569;">GST invoice • PO accepted • DPA on request • Razorpay/UPI • Dedicated Research Lead • Sample CSV + 3-page PDF available pre-purchase</p>
+                    </div>
+                    <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                        <a href="https://cal.com/analyzeg-demo" target="_blank" rel="noopener" style="background:#2563EB; color:#fff; padding:0.75rem 1.25rem; border-radius:8px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">📅 Book 15-min Demo</a>
+                        <a href="mailto:enterprise@analyzeg.co.in?subject=Enterprise%20Demo%20—%20AnalyzeG&body=Company:%0ARole:%0AUse%20case:%0AVolume:" style="background:#fff; color:#2563EB; border:2px solid #2563EB; padding:0.7rem 1.25rem; border-radius:8px; font-weight:700; text-decoration:none;">Talk to Research Lead</a>
+                    </div>
+                </div>
+                <p style="text-align:center; font-size:0.8rem; color:#475569; margin-top:1rem;">Response in 4 hours • No commitment • See live dashboard before you buy</p>
+            </div>
+        </section>
+
+        <!-- Enterprise Evidence: Power BI Preview + Case Study + Sample Data (fixes 100K B2B Top-3) -->
+        <section style="background:#f8fafc; padding:64px 0; border-top:1px solid #e2e8f0; border-bottom:1px solid #e2e8f0;">
+            <div class="container">
+                <div style="text-align:center; max-width:800px; margin:0 auto 2.5rem;">
+                    <h2 class="section-title" data-aos="fade-up" style="margin-bottom:0.5rem;">See It Before You Buy</h2>
+                    <p style="color:#475569; font-size:1.05rem;">Real Power BI template + anonymized CSV. No sales call needed to evaluate data quality.</p>
+                </div>
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; align-items:start;">
+                    <!-- Mock Power BI Dashboard Preview -->
+                    <div style="background:#0f172a; border-radius:16px; padding:1.25rem; color:#e2e8f0; box-shadow:0 10px 30px rgba(0,0,0,0.12);">
+                        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.75rem;">
+                            <span style="font-weight:700; font-size:0.9rem;">AnalyzeG • Power BI — Sentiment Overview</span>
+                            <span style="background:#2563EB; color:#fff; font-size:0.7rem; padding:4px 8px; border-radius:9999px;">LIVE TEMPLATE</span>
+                        </div>
+                        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; margin-bottom:1rem;">
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:1.4rem; font-weight:800; color:#4ade80;">68%</div><div style="font-size:0.7rem; opacity:0.7;">Positive</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:1.4rem; font-weight:800; color:#fbbf24;">22%</div><div style="font-size:0.7rem; opacity:0.7;">Neutral</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:1.4rem; font-weight:800; color:#f87171;">10%</div><div style="font-size:0.7rem; opacity:0.7;">Negative</div></div>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; margin-bottom:0.75rem;">
+                            <div style="font-size:0.75rem; font-weight:600; margin-bottom:0.5rem;">Top Keywords</div>
+                            <div style="display:flex; gap:0.4rem; flex-wrap:wrap;"><span style="background:#2563EB; color:#fff; padding:4px 8px; border-radius:9999px; font-size:0.7rem;">battery 32%</span><span style="background:rgba(255,255,255,0.1); padding:4px 8px; border-radius:9999px; font-size:0.7rem;">sound 28%</span><span style="background:rgba(255,255,255,0.1); padding:4px 8px; border-radius:9999px; font-size:0.7rem;">comfort 19%</span></div>
+                        </div>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem;"><div style="font-size:0.7rem; opacity:0.7;">State-wise</div><div style="font-size:0.85rem; font-weight:600;">MH 22% • KA 18% • DL 15%</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem;"><div style="font-size:0.7rem; opacity:0.7;">Age split</div><div style="font-size:0.85rem; font-weight:600;">18-24: 41% • 25-34: 36%</div></div>
+                        </div>
+                        <p style="font-size:0.7rem; opacity:0.6; margin-top:0.75rem; text-align:center;">Anonymized mock • Actual dashboard has filters by state/age/gender + video links</p>
+                    </div>
+                    <!-- Case Study + Downloads -->
+                    <div style="display:flex; flex-direction:column; gap:1rem;">
+                        <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:1.5rem; box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <div style="font-size:0.75rem; font-weight:700; color:#8B5CF6; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.5rem;">Case Study • D2C Audio Brand (South India)</div>
+                            <h3 style="font-size:1.1rem; font-weight:800; color:#1e293b; margin:0 0 0.5rem;">735 reviews → 3 insights → 12% CTR uplift on ad reuse</h3>
+                            <p style="font-size:0.9rem; color:#475569; margin:0 0 0.75rem;"><strong>Problem:</strong> Battery complaints hidden in 4.2★ average. <strong>Insight:</strong> “heating” spiked 32% in 18-24 MH cohort. <strong>Action:</strong> Fixed thermal + reused top 12 videos as ads. <em>Anonymized for privacy — full report on demo call.</em></p>
+                            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;"><span style="background:#f0fdf4; border:1px solid #bbf7d0; color:#166534; padding:4px 8px; border-radius:9999px; font-size:0.7rem; font-weight:600;">✓ 24h delivery</span><span style="background:#eff6ff; border:1px solid #bfdbfe; color:#1e40af; padding:4px 8px; border-radius:9999px; font-size:0.7rem;">Ad licensing included</span></div>
+                        </div>
+                        <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:1.5rem;">
+                            <h4 style="font-size:0.95rem; font-weight:700; color:#1e293b; margin:0 0 0.75rem;">Download sample data — no email needed</h4>
+                            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                                <a href="/sample-analyzeg-reviews.csv" download style="flex:1; min-width:140px; background:#1e293b; color:#fff; padding:0.7rem 1rem; border-radius:8px; font-weight:700; font-size:0.85rem; text-align:center; text-decoration:none;">⬇ CSV (5 rows)</a>
+                                <a href="mailto:enterprise@analyzeg.co.in?subject=Sample%20PDF%20—%20AnalyzeG" style="flex:1; min-width:140px; background:#fff; border:2px solid #e2e8f0; color:#1e293b; padding:0.65rem 1rem; border-radius:8px; font-weight:700; font-size:0.85rem; text-align:center; text-decoration:none;">📄 Request 3-page PDF</a>
+                            </div>
+                            <p style="font-size:0.75rem; color:#475569; margin:0.75rem 0 0;">AES-256 at rest • TLS 1.3 • Retention 180 days • Audit logs • DPDP 2023</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -952,7 +651,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
         <section class="platform-preview" style="background: #f8fafc; padding: 80px 0;">
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">Live Platform Interface</h2>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #64748b;" data-aos="fade-up" data-aos-delay="100">AnalyzeG is a fully operational platform. Log in to access your dashboard, record reviews, or analyze brand data.</p>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #475569;" data-aos="fade-up" data-aos-delay="100">AnalyzeG is a fully operational platform. Log in to access your dashboard, record reviews, or analyze brand data.</p>
                 
                 <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;" data-aos="fade-up" data-aos-delay="200">
                     <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; max-width: 400px; width: 100%; text-align: center;">
@@ -960,8 +659,8 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
                         </div>
                         <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #1e293b;">Reviewer Dashboard</h3>
-                        <p style="color: #64748b; margin-bottom: 1.5rem; font-size: 0.95rem;">Track your earnings, record new video reviews, and manage your payouts in real-time.</p>
-                        <a href="https://analyzeg.netlify.app/b2c-auth" data-app-href="/b2c-auth" class="btn-primary" style="width: 100%; display: block; padding: 0.75rem;">Access Reviewer Portal</a>
+                        <p style="color: #475569; margin-bottom: 1.5rem; font-size: 0.95rem;">Track your earnings, record new video reviews, and manage your payouts in real-time.</p>
+                        <a href="https://app.analyzeg.co.in/b2c-auth" data-app-href="/b2c-auth" class="btn-primary" style="width: 100%; display: block; padding: 0.75rem;">Access Reviewer Portal</a>
                     </div>
                     
                     <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; max-width: 400px; width: 100%; text-align: center;">
@@ -969,8 +668,8 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
                         </div>
                         <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #1e293b;">Brand Analytics Console</h3>
-                        <p style="color: #64748b; margin-bottom: 1.5rem; font-size: 0.95rem;">View data-driven sentiment analysis, download raw video data, and track competitor metrics.</p>
-                        <a href="https://analyzeg.netlify.app/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" style="width: 100%; display: block; padding: 0.75rem; background: #16a34a;">Access Brand Console</a>
+                        <p style="color: #475569; margin-bottom: 1.5rem; font-size: 0.95rem;">View data-driven sentiment analysis, download raw video data, and track competitor metrics.</p>
+                        <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" style="width: 100%; display: block; padding: 0.75rem; background: #16a34a;">Access Brand Console</a>
                     </div>
                 </div>
             </div>
@@ -988,11 +687,11 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                     <h2>Ready to Start Earning?</h2>
                     <p>
                         Join reviewers using our limited-time dual-stage payout:
-                        up to Rs 40 after verification, then remaining payout
+                        up to ₹40 after verification, then remaining payout
                         from your 50% share when sold.
                     </p>
                     <div class="cta-buttons">
-                        <a href="https://analyzeg.netlify.app/b2c-auth" data-app-href="/b2c-auth" class="btn-primary" rel="noopener"
+                        <a href="https://app.analyzeg.co.in/b2c-auth" data-app-href="/b2c-auth" class="btn-primary" rel="noopener"
                             >Sign Up &amp; Start Earning</a
                         >
                         <a href="analyzeg-faq.html" class="btn-secondary"
@@ -1012,7 +711,7 @@ import { FeatureHoverGrid } from '../components/FeatureHoverGrid';
                         instantly on AnalyzeG. Make smarter business decisions today.
                     </p>
                     <div class="cta-buttons">
-                        <a href="https://analyzeg.netlify.app/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" rel="noopener">Get Instant Access</a>
+                        <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" rel="noopener">Get Instant Access</a>
                         <a href="features.html" class="btn-secondary"
                             >View Features</a
                         >

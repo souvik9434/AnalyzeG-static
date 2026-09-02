@@ -28,7 +28,7 @@ const items = [
   {
     title: "Dual-Stage Payout",
     description:
-      "Limited-time flow: get up to Rs 40 after authentic verification, then get the remaining payout from your 50% share when your review is sold.",
+      "Up to ₹40 after 5-point verification + remaining 50% share when sold. Clear T&C, no hidden thresholds.",
     link: "/earn-money-reviews.html",
     icon: (
       <svg
@@ -43,9 +43,15 @@ const items = [
         strokeLinejoin="round"
         aria-hidden="true"
       >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M16 8l-8 8" />
-        <path d="M8 8l8 8" />
+        <path d="M12 2v4" />
+        <path d="M12 18v4" />
+        <path d="M4.93 4.93l2.83 2.83" />
+        <path d="M16.24 16.24l2.83 2.83" />
+        <path d="M2 12h4" />
+        <path d="M18 12h4" />
+        <path d="M4.93 19.07l2.83-2.83" />
+        <path d="M16.24 7.76l2.83-2.83" />
+        <circle cx="12" cy="12" r="3" />
       </svg>
     ),
   },
