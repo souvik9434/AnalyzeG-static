@@ -1,7 +1,7 @@
 # AnalyzeG — Full Platform Documentation
 
 ## What is AnalyzeG?
-AnalyzeG is a verified video review intelligence platform based in India. It connects brands with authentic consumer insights through verified video reviews. Reviewers record short videos of products they use, get paid through a dual-stage payout model, and brands receive AI-analyzed data including sentiment analysis, demographic breakdowns, and Power BI dashboards.
+AnalyzeG is a verified video review intelligence platform based in India. It connects brands with authentic consumer insights through verified video reviews. Reviewers record short videos of products they use, get paid through a dual-stage payout model, and brands receive analyzed data including sentiment analysis, demographic breakdowns, and Power BI dashboards.
 
 Founded in 2025, AnalyzeG is a registered MSME (Udyam) based in West Bengal, India.
 
@@ -19,7 +19,7 @@ Payment options include UPI and bank transfer. No social media following is requ
 2. Select your review package (500, 1000, or 1500 reviews)
 3. Specify target demographics: state, age, gender
 4. Receive 30-second in-hand product video reviews within 2 minutes to 24 hours
-5. Access your Power BI dashboard with AI-powered analytics
+5. Access your Power BI dashboard with advanced analytics
 6. Download raw data files (CSV/Excel) with video links for independent analysis
 7. Use purchased videos as advertising content (video licensing included)
 
@@ -27,9 +27,9 @@ Payment options include UPI and bank transfer. No social media following is requ
 - Professional: 500 reviews at Rs 5,00,000 (Rs 1,000/review)
 - Enterprise: 1,000 reviews at Rs 9,00,000 (10% savings)
 - Market Leader: 1,500 reviews at Rs 12,75,000 (15% savings)
-- All packages include: Power BI dashboard, raw data export, video licensing, AI analytics, demographic filtering
+- All packages include: Power BI dashboard, raw data export, video licensing, advanced analytics, demographic filtering
 
-## AnalyzeG AI Analytics Features
+## AnalyzeG Analytics Features
 - Sentiment analysis from video content and survey responses
 - Keyword trend detection across review datasets
 - Competitive benchmarking — compare your brand against industry rivals
@@ -39,7 +39,7 @@ Payment options include UPI and bank transfer. No social media following is requ
 
 ## AnalyzeG Technology
 - Multi-factor verification system ensures every review is authentic
-- AI-powered analysis extracts insights from video and structured data
+- Advanced analytics extracts insights from video and structured data
 - Enterprise-grade security protects all review data and brand information
 - Platform processes reviews with delivery from 2 minutes to 24 hours
 
@@ -61,7 +61,7 @@ A: All data is encrypted with bank-grade security. Access controls and audit log
 
 ## AnalyzeG Values
 - Integrity: Every review is verified for authenticity
-- Innovation: AI-powered analysis transforms raw video into actionable insights
+- Innovation: Advanced analytics transforms raw video into actionable insights
 - Fairness: Dual-stage payout model rewards reviewers fairly and transparently
 - Transparency: Clear rules, visible analytics, and open communication
 

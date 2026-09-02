@@ -50,7 +50,7 @@ const items = [
     ),
   },
   {
-    title: "AI-Powered Analytics",
+    title: "Consumer Intelligence",
     description:
       "Advanced insights, key theme extraction, and sentiment analysis for data-driven decisions.",
     link: "/features.html",

@@ -1,19 +1,18 @@
 # AnalyzeG — Verified Video Review Intelligence Platform
-
-> AnalyzeG is an AI-powered video review platform that connects brands with authentic consumer insights through verified video reviews. Reviewers earn money via a dual-stage payout model, and brands get real product video reviews with Power BI dashboards and AI analytics.
+> AnalyzeG is a verified video review platform that connects brands with authentic consumer insights through verified video reviews. Reviewers earn money via a dual-stage payout model, and brands get real product video reviews with Power BI dashboards and advanced analytics.
 
 ## Key Facts
 - India's premier video review marketplace for verified consumer insights
 - Reviewers earn up to Rs 40 after verification + 50% revenue share when reviews are sold
 - Brands receive 30-second in-hand product videos, Power BI dashboards, and raw data exports
-- AI-powered sentiment analysis and competitor benchmarking built in
+- Data-driven sentiment analysis and competitor benchmarking built in
 - Delivery in 2 minutes to 24 hours for brand orders
 - Registered MSME (Udyam), West Bengal, India
 - Video licensing included: brands can use purchased videos as raw ad content
 
 ## Core Pages
 - [Home](https://analyzeg.co.in/): Platform overview, pricing for brands, and reviewer earning model
-- [Features](https://analyzeg.co.in/features.html): Dual-stage rewards, AI-powered insights, custom reports, data export
+- [Features](https://analyzeg.co.in/features.html): Dual-stage rewards, advanced insights, custom reports, data export
 - [About](https://analyzeg.co.in/about.html): Mission, story, values, leadership team, and contact information
 - [Earn Money](https://analyzeg.co.in/earn-money-reviews.html): How to earn with authentic video reviews, step-by-step guide
 - [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Common questions about payouts, verification, and brand analytics
@@ -30,7 +29,7 @@
 - State, age, and gender demographic filtering
 - Power BI integrated dashboards with custom templates
 - Complete raw data file (CSV/Excel) with video links
-- AI-powered sentiment analysis and trend detection
+- Data-driven sentiment analysis and trend detection
 - Video licensing for advertising use
 - One-time purchase — no subscription required
 - Pricing: 500 reviews at Rs 5,00,000 | 1,000 reviews at Rs 9,00,000 | 1,500 reviews at Rs 12,75,000
