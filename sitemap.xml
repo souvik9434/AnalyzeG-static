@@ -6,7 +6,7 @@
   <!-- Homepage — B2B primary -->
   <url>
     <loc>https://analyzeg.co.in/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,111 +14,265 @@
       <image:title>AnalyzeG — Verified Video Review Intelligence Platform for Brands</image:title>
       <image:caption>AnalyzeG helps brands with face-presence verified 30s videos, Power BI + raw CSV in 2 min to 24h</image:caption>
     </image:image>
-    <image:image>
-      <image:loc>https://analyzeg.co.in/assets/optimized/favicon-search-512.png</image:loc>
-      <image:title>AnalyzeG Platform Icon</image:title>
-      <image:caption>AnalyzeG verified review intelligence platform icon</image:caption>
-    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/"/>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/"/>
   </url>
 
-  <!-- Platform / Features — B2B -->
+  <!-- Platform / Features -->
   <url>
     <loc>https://analyzeg.co.in/features.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png</image:loc>
-      <image:title>AnalyzeG Platform for Brands — Power BI &amp; Sentiment</image:title>
-      <image:caption>Power BI dashboards, sentiment &amp; raw CSV with video links for brands</image:caption>
-    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/features.html"/>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/features.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/features.html"/>
   </url>
 
-  <!-- For Reviewers — B2C subfolder (inherits authority) -->
+  <!-- For Reviewers -->
   <url>
     <loc>https://analyzeg.co.in/for-reviewers/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png</image:loc>
-      <image:title>AnalyzeG For Reviewers — Your Voice, Heard by Brands</image:title>
-      <image:caption>Get up to ₹40 after 5-point verification + 50% share per sale, UPI in 24h</image:caption>
-    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/for-reviewers/"/>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/for-reviewers/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/for-reviewers/"/>
   </url>
 
   <!-- About -->
   <url>
     <loc>https://analyzeg.co.in/about.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://analyzeg.co.in/assets/optimized/logo_nontext_backgrounless.png</image:loc>
-      <image:title>About AnalyzeG</image:title>
-      <image:caption>Learn about AnalyzeG's mission — verified decisions, not fake reviews</image:caption>
-    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/about.html"/>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/about.html"/>
   </url>
 
   <!-- FAQ -->
   <url>
     <loc>https://analyzeg.co.in/analyzeg-faq.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/analyzeg-faq.html"/>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/analyzeg-faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/analyzeg-faq.html"/>
-  </url>
-
-  <!-- Legacy Earn Money — kept for backward compat, low priority, canonical to /for-reviewers/ -->
-  <url>
-    <loc>https://analyzeg.co.in/earn-money-reviews.html</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/earn-money-reviews.html"/>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/earn-money-reviews.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/earn-money-reviews.html"/>
   </url>
 
   <!-- Trust Center -->
   <url>
     <loc>https://analyzeg.co.in/trust.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/trust.html"/>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/trust.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/trust.html"/>
   </url>
+
+  <!-- Legacy Earn Money -->
+  <url>
+    <loc>https://analyzeg.co.in/earn-money-reviews.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ============ COMPARISON PAGES ============ -->
+
+  <!-- Bazaarvoice Alternative -->
+  <url>
+    <loc>https://analyzeg.co.in/compare/bazaarvoice-alternative</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/compare/bazaarvoice-alternative"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/compare/bazaarvoice-alternative"/>
+  </url>
+
+  <!-- Yotpo Alternative -->
+  <url>
+    <loc>https://analyzeg.co.in/compare/yotpo-alternative</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/compare/yotpo-alternative"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/compare/yotpo-alternative"/>
+  </url>
+
+  <!-- Trustpilot Alternative -->
+  <url>
+    <loc>https://analyzeg.co.in/compare/trustpilot-alternative</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/compare/trustpilot-alternative"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/compare/trustpilot-alternative"/>
+  </url>
+
+  <!-- PowerReviews Alternative -->
+  <url>
+    <loc>https://analyzeg.co.in/compare/powerreviews-alternative</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/compare/powerreviews-alternative"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/compare/powerreviews-alternative"/>
+  </url>
+
+  <!-- Reviews.io Alternative -->
+  <url>
+    <loc>https://analyzeg.co.in/compare/reviews-io-alternative</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/compare/reviews-io-alternative"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/compare/reviews-io-alternative"/>
+  </url>
+
+  <!-- ============ INDUSTRY PAGES ============ -->
+
+  <!-- D2C Brands -->
+  <url>
+    <loc>https://analyzeg.co.in/industry/d2c-brands</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/industry/d2c-brands"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/industry/d2c-brands"/>
+  </url>
+
+  <!-- Beauty & Skincare -->
+  <url>
+    <loc>https://analyzeg.co.in/industry/beauty-skincare</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/industry/beauty-skincare"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/industry/beauty-skincare"/>
+  </url>
+
+  <!-- FMCG -->
+  <url>
+    <loc>https://analyzeg.co.in/industry/fmcg</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/industry/fmcg"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/industry/fmcg"/>
+  </url>
+
+  <!-- ============ SOLUTION PAGES ============ -->
+
+  <!-- Fake Review Detection -->
+  <url>
+    <loc>https://analyzeg.co.in/solutions/fake-review-detection</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/solutions/fake-review-detection"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/solutions/fake-review-detection"/>
+  </url>
+
+  <!-- Ad Intelligence -->
+  <url>
+    <loc>https://analyzeg.co.in/solutions/ad-intelligence</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/solutions/ad-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/solutions/ad-intelligence"/>
+  </url>
+
+  <!-- Market Research -->
+  <url>
+    <loc>https://analyzeg.co.in/solutions/market-research</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/solutions/market-research"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/solutions/market-research"/>
+  </url>
+
+  <!-- Consumer Data -->
+  <url>
+    <loc>https://analyzeg.co.in/solutions/consumer-data</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/solutions/consumer-data"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/solutions/consumer-data"/>
+  </url>
+
+  <!-- ============ BLOG POSTS ============ -->
 
   <!-- Blog: How to Earn from Video Reviews -->
   <url>
     <loc>https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://analyzeg.co.in/assets/blog-cover.jpg</image:loc>
-      <image:title>How to Earn Money from Video Reviews</image:title>
-      <image:caption>Practical guide to monetizing video reviews with AnalyzeG</image:caption>
-    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html"/>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html"/>
+  </url>
+
+  <!-- Blog: Best Video Review Platforms India 2026 -->
+  <url>
+    <loc>https://analyzeg.co.in/blog/best-video-review-platforms-india-2026</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/best-video-review-platforms-india-2026"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/best-video-review-platforms-india-2026"/>
+  </url>
+
+  <!-- Blog: How to Get Verified Video Reviews -->
+  <url>
+    <loc>https://analyzeg.co.in/blog/how-to-get-verified-video-reviews</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/how-to-get-verified-video-reviews"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/how-to-get-verified-video-reviews"/>
+  </url>
+
+  <!-- Blog: Video Review Pricing India -->
+  <url>
+    <loc>https://analyzeg.co.in/blog/video-review-pricing-india</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/video-review-pricing-india"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/video-review-pricing-india"/>
+  </url>
+
+  <!-- Blog: Sentiment Analysis of Video Reviews -->
+  <url>
+    <loc>https://analyzeg.co.in/blog/sentiment-analysis-video-reviews</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/sentiment-analysis-video-reviews"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/sentiment-analysis-video-reviews"/>
+  </url>
+
+  <!-- Blog: Competitor Benchmarking with Video Reviews -->
+  <url>
+    <loc>https://analyzeg.co.in/blog/competitor-benchmarking-video-reviews</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/competitor-benchmarking-video-reviews"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/competitor-benchmarking-video-reviews"/>
+  </url>
+
+  <!-- Blog: Power BI Dashboard for Reviews -->
+  <url>
+    <loc>https://analyzeg.co.in/blog/power-bi-dashboard-reviews</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzeg.co.in/blog/power-bi-dashboard-reviews"/>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://analyzeg.co.in/blog/power-bi-dashboard-reviews"/>
   </url>
 
 </urlset>

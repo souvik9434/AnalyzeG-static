@@ -1,5 +1,5 @@
 # AnalyzeG — Verified Video Review Intelligence Platform for Brands
-> AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands buy 500-1500 face-presence verified 30-second in-hand product videos with Power BI dashboards and raw CSV. Reviewers are face-presence verified consumers compensated via revenue-share.
+> AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands buy 500-1500 face-presence verified 30-second in-hand videos with Power BI dashboards and raw CSV. Reviewers are face-presence verified consumers compensated via revenue-share.
 
 ## For Brands
 - Packages: 500 (₹5,00,000), 1000 (₹9,00,000), 1500 (₹12,75,000). One-time dataset licensing — repeat purchase available; GST invoice, PO workflow, DPA on request. SLA 24h or 10% credit for in-stock.
@@ -20,6 +20,32 @@
 - Document Versions: Terms v1.1_2026-09-02, Privacy v1.1_2026-09-02, Cookies v1.1_2026-09-02.
 - Video licensing: Main brand may use own-product videos as raw ad creative; competitor videos are data insights only — separate reviewer consent required.
 
+## Comparison Pages
+- [Bazaarvoice Alternative](https://analyzeg.co.in/compare/bazaarvoice-alternative): AnalyzeG vs Bazaarvoice — verified video reviews for Indian D2C brands vs enterprise retail syndication
+- [Yotpo Alternative](https://analyzeg.co.in/compare/yotpo-alternative): AnalyzeG vs Yotpo — video intelligence vs Shopify-native review collection
+- [Trustpilot Alternative](https://analyzeg.co.in/compare/trustpilot-alternative): Video reviews vs text reviews — verified video intelligence with Power BI
+- [PowerReviews Alternative](https://analyzeg.co.in/compare/powerreviews-alternative): Video intelligence vs retail syndication for Indian brands
+- [Reviews.io Alternative](https://analyzeg.co.in/compare/reviews-io-alternative): From photo reviews to verified video intelligence
+
+## Industry Pages
+- [D2C Brands](https://analyzeg.co.in/industry/d2c-brands): Video review intelligence for Indian D2C brands — Amazon, Nykaa, Flipkart, Shopify
+- [Beauty & Skincare](https://analyzeg.co.in/industry/beauty-skincare): See how products look on real skin — verified video reviews for beauty brands
+- [FMCG](https://analyzeg.co.in/industry/fmcg): Video reviews from real Indian households — FMCG consumer insights
+
+## Solutions
+- [Fake Review Detection](https://analyzeg.co.in/solutions/fake-review-detection): Prevent fakes at the source with 5-point verification — not detection after the fact
+- [Ad Creative Intelligence](https://analyzeg.co.in/solutions/ad-intelligence): Turn verified video reviews into raw ad creative for Meta, Google, TikTok
+- [Market Research](https://analyzeg.co.in/solutions/market-research): Video consumer insights delivered in 2 minutes to 24 hours
+- [Consumer Data Intelligence](https://analyzeg.co.in/solutions/consumer-data): Demographic-filtered video data with Power BI dashboards
+
+## Blog
+- [Best Video Review Platforms India 2026](https://analyzeg.co.in/blog/best-video-review-platforms-india-2026): Top 10 comparison — AnalyzeG, Bazaarvoice, Yotpo, Trustpilot, Reviews.io
+- [How to Get Verified Video Reviews](https://analyzeg.co.in/blog/how-to-get-verified-video-reviews): Step-by-step guide for Indian brands
+- [Video Review Pricing India 2026](https://analyzeg.co.in/blog/video-review-pricing-india): Complete pricing guide — what each platform costs
+- [Sentiment Analysis of Video Reviews](https://analyzeg.co.in/blog/sentiment-analysis-video-reviews): How AnalyzeG extracts sentiment from verified videos
+- [Competitor Benchmarking with Video Reviews](https://analyzeg.co.in/blog/competitor-benchmarking-video-reviews): Use video reviews to benchmark against competitors
+- [Power BI Dashboard for Reviews](https://analyzeg.co.in/blog/power-bi-dashboard-reviews): How AnalyzeG delivers review intelligence through Power BI
+
 ## Core Pages
 - [Home](https://analyzeg.co.in/): Verified video review intelligence for brands — pricing, Power BI sample, illustrative dashboard scenario
 - [Platform](https://analyzeg.co.in/features.html): Power BI, sentiment, raw data export for brands
@@ -28,7 +54,6 @@
 - [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Payouts, verification, brand analytics, security
 - [Trust Center](https://analyzeg.co.in/trust.html): Verification, consent & licensing, data access, methodology, inventory & delivery, sample methodology
 - [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html): Guide to earning from video reviews
-- [How We Pay & Stay Authentic](https://analyzeg.co.in/for-reviewers/#payouts): Canonical payout disclosure
 
 ## Contact
 - Email: support@analyzeg.co.in, grievance@analyzeg.co.in
