@@ -77,6 +77,8 @@ Disallow: /
 User-agent: *
 Allow: /
 Disallow: /.htaccess
+Disallow: /sample-analyzeg-reviews.csv
+Disallow: /sample/
 Disallow: /generate-favicons.bat
 Disallow: /optimize-images.bat
 Disallow: /temp_outputs/

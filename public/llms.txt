@@ -2,15 +2,14 @@
 > AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands buy 500-1500 face-presence verified 30-second in-hand product videos with Power BI dashboards and raw CSV. Reviewers are face-presence verified consumers compensated via revenue-share.
 
 ## For Brands
-- Packages: 500 (₹5,00,000), 1000 (₹9,00,000), 1500 (₹12,75,000). One-time dataset licensing — repeat purchase available; GST invoice, PO workflow, DPA on request. SLA 24h or 10% credit for in-stock.
+- Packages: Projects starting at ₹5L. One-time dataset licensing — repeat purchase available; GST invoice, PO workflow, DPA on request. Final quote after scoping call; in-stock vs custom confirmed in writing.
 - Deliverables: 30-second in-hand product videos, Power BI dashboard template, sentiment & keyword themes, competitor benchmarking, aggregated demographic filters (no PII), secure video access links with role-based controls + raw CSV/Excel, commercial licence for own-product videos where reviewer opts in.
 - Verification: 5-point screening (face-presence, device, geo, content, timestamp) + human moderation. Time-stamped with audit logs. See Trust Center for what it proves and does not prove.
 - Security: Consent controls, access restrictions, and data-protection practices designed to support DPDP Act 2023 obligations — DPA available.
-- Delivery: Buy in-stock marketplace inventory for near-instant delivery; custom quotas confirmed before collection. In-stock 2 min to 24h; custom per agreed SLA.
+- Delivery: Buy in-stock marketplace inventory for near-instant delivery; custom quotas confirmed in writing before collection, per agreed SLA.
 
 ## For Reviewers
-- Eligibility: Record 30-second in-hand video, pass 5-point face-presence verification + human moderation, receive up to ₹40 advance. On each brand purchase, receive balance from 50% revenue-share per sale. Record once, earn per sale.
-- Example: Brand price ₹1,000 → Your 50% share ₹500 → Minus ₹40 advance = ₹460 balance on that sale. Multiple brand purchases = multiple payouts.
+- Eligibility: Record 30-second in-hand video, pass 5-point face-presence verification + human moderation, receive paid advance in bounty categories. On each brand purchase, receive a revenue share per sale. Record once, earn per sale. Exact rates shown inside your reviewer account after login.
 - Payout: UPI or bank within 24 hours of each sale event. T&C apply. No followers needed. No fee to join.
 - Bounty: Advance applies to categories with active brand demand — see Categories Needed Now in app.
 

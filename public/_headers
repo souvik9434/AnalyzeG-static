@@ -1,0 +1,7 @@
+# Cloudflare Pages headers — gate sample data from indexing
+/sample-analyzeg-reviews.csv
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store
+
+/sample/*
+  X-Robots-Tag: noindex, nofollow, noarchive
