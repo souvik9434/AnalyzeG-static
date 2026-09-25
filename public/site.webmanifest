@@ -1,7 +1,7 @@
 {
   "name": "AnalyzeG - Verified Video Review Platform",
   "short_name": "AnalyzeG",
-  "description": "India's verified video review intelligence platform. Dual-stage payout for reviewers, AI-powered analytics for brands.",
+  "description": "Video review intelligence for Indian consumer brands, with screened in-hand videos, human moderation, Power BI analysis, and gated raw exports.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

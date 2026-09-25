@@ -4,6 +4,57 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   X-Frame-Options: SAMEORIGIN
 
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/favicon.ico
+  Cache-Control: public, max-age=86400
+
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/compare/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/industry/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/solutions/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/blog/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+/site.webmanifest
+  Cache-Control: public, max-age=86400
+
+/browserconfig.xml
+  Cache-Control: public, max-age=86400
+
+/llms.txt
+  Cache-Control: public, max-age=86400
+
+/llms-full.txt
+  Cache-Control: public, max-age=86400
+
 /sample-analyzeg-reviews.csv
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-store
