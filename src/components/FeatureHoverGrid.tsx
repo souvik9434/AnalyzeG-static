@@ -6,7 +6,7 @@ const items = [
     title: "Secure Verification System",
     description:
       "Every review passes 5-point verification (face-presence, device, geo, content, timestamp) + human moderation for maximum trust.",
-    link: "/features.html",
+    link: "/features",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const items = [
     title: "Consumer Intelligence",
     description:
       "Advanced insights, key theme extraction, and sentiment analysis for data-driven decisions.",
-    link: "/features.html",
+    link: "/features",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

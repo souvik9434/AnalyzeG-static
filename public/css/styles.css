@@ -2720,8 +2720,243 @@ iframe {
 
 /* Rupee glyph: guarantee a font stack with full ₹ coverage during font swap */
 [schema-pricing] span,
-.b2b-pricing-section span[style*="2.5rem"] {
+.deliverables-section span[style*="2.5rem"] {
   font-family: "Poppins", "Segoe UI", "Noto Sans", system-ui, sans-serif;
+}
+
+/* ============================================================
+   FOOTER V2 — structured 4-column layout (desktop / mobile)
+   Overrides legacy footer rules via higher specificity (.footer-v2)
+   ============================================================ */
+.footer-v2 .footer-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.25fr) minmax(140px, 0.85fr) minmax(170px, 1fr) minmax(220px, 1.1fr);
+  gap: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+.footer-v2 .footer-brand {
+  text-align: left;
+}
+
+.footer-v2 .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+}
+
+.footer-v2 .footer-logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.footer-v2 .footer-logo-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.footer-v2 .footer-tagline {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #9CA3AF;
+  margin: 0 0 1rem;
+  max-width: 300px;
+}
+
+.footer-v2 .footer-social {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-v2 .footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #374151;
+  color: #9CA3AF;
+  transition: all 0.2s ease;
+}
+
+.footer-v2 .footer-social a:hover {
+  background: rgba(96, 165, 250, 0.12);
+  color: #60A5FA;
+  border-color: #3B82F6;
+}
+
+.footer-v2 .footer-app-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 230px;
+}
+
+.footer-v2 .footer-app-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #4B5563;
+  color: #E5E7EB;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.footer-v2 .footer-app-btn:hover,
+.footer-v2 .footer-app-btn:focus {
+  background: rgba(96, 165, 250, 0.12);
+  border-color: #60A5FA;
+  color: #93C5FD;
+  transform: none;
+  box-shadow: none;
+}
+
+.footer-v2 .footer-app-btn--brand {
+  background: linear-gradient(135deg, #2563EB, #1E40AF);
+  border-color: transparent;
+  color: #fff;
+}
+
+.footer-v2 .footer-app-btn--brand:hover,
+.footer-v2 .footer-app-btn--brand:focus {
+  background: linear-gradient(135deg, #1E40AF, #1E3A8A);
+  color: #fff;
+}
+
+.footer-v2 .footer-links h4 {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-v2 .footer-links ul li {
+  margin-bottom: 0.55rem;
+}
+
+.footer-v2 .footer-links ul li a {
+  color: #9CA3AF;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-v2 .footer-links ul li a:hover,
+.footer-v2 .footer-links ul li a:focus {
+  color: #60A5FA;
+  text-decoration: none;
+}
+
+.footer-v2 .footer-grievance h4 {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-v2 .footer-grievance p {
+  margin: 0 0 0.5rem;
+  line-height: 1.55;
+  font-size: 0.85rem;
+  color: #9CA3AF;
+}
+
+.footer-v2 .footer-grievance strong {
+  color: #D1D5DB;
+}
+
+.footer-v2 .footer-grievance a {
+  color: #60A5FA;
+}
+
+.footer-v2 .grievance-meta {
+  font-size: 0.72rem;
+  color: #6B7280;
+  margin-top: 0.25rem;
+}
+
+.footer-v2 .footer-pay {
+  border-top: 1px solid #374151;
+  padding-top: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.footer-v2 .footer-bottom-flex {
+  border-top: 1px solid #374151;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+.footer-v2 .footer-bottom-flex p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6B7280;
+  text-align: left;
+  width: auto;
+}
+
+/* ---- Footer v2 responsive: tablet 2-col, mobile 1-col left-aligned ---- */
+@media (max-width: 1024px) {
+  .footer-v2 .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-v2 .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .footer-v2 .footer-tagline {
+    max-width: none;
+  }
+
+  .footer-v2 .footer-app-ctas {
+    max-width: 280px;
+  }
+
+  .footer-v2 .footer-links ul {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+
+  .footer-v2 .footer-pay,
+  .footer-v2 .footer-bottom-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-v2 .dpdp-badge {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-v2 .footer-links ul {
+    columns: 1;
+  }
 }
 
 

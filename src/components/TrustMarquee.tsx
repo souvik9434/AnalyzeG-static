@@ -3,24 +3,20 @@ import { Marquee } from "@/components/ui/marquee";
 
 const reviewerChips = [
   "Paid Category Opportunities",
-  "Rates Shown in Reviewer Account",
-  "Payouts Within 24 Hours of Eligible Sale",
+  "Payouts Within 24h of Eligible Sale",
   "UPI & Bank Transfer",
   "Smartphone-Only Setup",
-  "100% Free to Join",
-  "Earnings Dashboard",
-  "Verified Review Guidelines",
+  "Free to Join",
+  "Rates Visible Before You Submit",
 ];
 
 const brandChips = [
   "5-Point Verified Reviews",
   "30-Second In-Hand Videos",
   "Power BI Dashboards",
-  "State + Age Filtering",
-  "Raw Data Export (CSV/Excel)",
-  "Ad Licensing Where Reviewers Opt In",
+  "Raw CSV/Excel Export",
+  "State + Age + Gender Filters",
   "One-Time Dataset Licensing",
-  "In-Stock Delivery May Be Available in Minutes",
 ];
 
 const Chip = ({ label }: { label: string }) => (
@@ -43,7 +39,7 @@ const Chip = ({ label }: { label: string }) => (
 );
 
 export function TrustMarquee({
-  audience = "reviewer",
+  audience = "brand",
 }: {
   audience?: "reviewer" | "brand";
 }) {

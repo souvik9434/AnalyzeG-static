@@ -42,12 +42,7 @@ import { FaqAccordion } from '../components/FaqAccordion';
   </Fragment>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div style="background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%); color: white; padding: 10px 0; text-align: center; position: relative; z-index: 10;">
-    <div class="container">
-      <span style="font-weight: 600; font-size: 0.95rem;">Platform Live Now</span>
-    </div>
-  </div>
-
+  
   <!-- Navigation -->
   <header class="navbar" role="banner">
     <div class="container">
@@ -76,7 +71,7 @@ import { FaqAccordion } from '../components/FaqAccordion';
           <li role="none"><a href="/for-reviewers" role="menuitem">For Reviewers</a></li>
           <li role="none"><a href="about" role="menuitem">About</a></li>
           <li role="none"><a href="analyzeg-faq" class="active" role="menuitem" aria-current="page">FAQ</a></li>
-          <li role="none"><a href="/#b2b-pricing" role="menuitem">Pricing</a></li>
+          <li role="none"><a href="/trust" role="menuitem">Trust Center</a></li>
           <li role="none"><a href="https://app.analyzeg.co.in/" data-app-href="/" class="nav-cta" role="menuitem" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Launch App</a></li>
         </ul>
       </nav>
@@ -87,7 +82,7 @@ import { FaqAccordion } from '../components/FaqAccordion';
   <section class="page-header" data-aos="fade-in">
     <div class="bg-gradient-animated"></div>
     <div class="container">
-      <h1 data-aos="zoom-in">Payouts, Verification &amp; Data — Answered</h1>
+      <h1 data-aos="fade-up">Payouts, Verification &amp; Data — Answered</h1>
       <p data-aos="fade-up" data-aos-delay="200">When do I get paid? How do you catch fakes? What do brands get? Search below or contact support.</p>
     </div>
   </section>
@@ -101,16 +96,14 @@ import { FaqAccordion } from '../components/FaqAccordion';
   <section class="faq-content">
     <div class="container">
       <!-- Reviewer FAQs -->
-      <div id="reviewer-content" class="audience-section active" data-audience="reviewer">
+      <div id="reviewer-content" class="audience-section" data-audience="reviewer">
         <FaqAccordion client:visible audience="reviewer" />
       </div>
 
       <!-- Brand FAQs -->
-      <div id="brand-content" class="audience-section" data-audience="brand">
+      <div id="brand-content" class="audience-section active" data-audience="brand">
         <FaqAccordion client:visible audience="brand" />
       </div>
-    </div>
-  </section>
     </div>
   </section>
 
@@ -118,10 +111,10 @@ import { FaqAccordion } from '../components/FaqAccordion';
   <section class="contact-cta" data-aos="fade-up">
     <div class="container">
       <h2>Still Have Questions?</h2>
-      <p>Our support team is here to help. Contact us for personalized assistance.</p>
+      <p>Our research lead replies within 4 business hours.</p>
       <div class="cta-buttons">
-        <a href="https://app.analyzeg.co.in/" data-app-href="/" class="btn-primary" rel="noopener">Launch App</a>
-        <a href="about" class="btn-secondary">Learn More About Us</a>
+        <a href="https://cal.com/analyzeg-demo" target="_blank" rel="noopener" class="btn-primary">Book 15-min Demo</a>
+        <a href="https://app.analyzeg.co.in/" data-app-href="/" class="btn-secondary" rel="noopener">Launch App</a>
       </div>
     </div>
   </section>
@@ -200,10 +193,10 @@ import { FaqAccordion } from '../components/FaqAccordion';
       },
       {
         "@type": "Question",
-        "name": "How much does AnalyzeG cost for brands?",
+        "name": "How does AnalyzeG pricing work for brands?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Projects start at ₹5,00,000 (one-time dataset licensing, no subscription). Final quote depends on volume, categories, filters and timeline — confirmed in writing before collection. All projects include Power BI dashboards, raw data export, and video licensing where reviewers opt in. GST invoice, PO workflow, DPA on request."
+          "text": "One-time dataset licensing — no subscription. Final quote depends on volume, categories, filters and timeline, confirmed in writing before collection. All projects include Power BI dashboards, raw data export, and video licensing where reviewers opt in. GST invoice, PO workflow, DPA on request."
         }
       },
       {

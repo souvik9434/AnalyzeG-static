@@ -8,8 +8,8 @@ type Option = {
 };
 
 const options: Option[] = [
-  { id: "reviewer", label: "For Reviewers" },
   { id: "brand", label: "For Brands" },
+  { id: "reviewer", label: "For Reviewers" },
 ];
 
 const STORAGE_KEY = "selectedAudience";

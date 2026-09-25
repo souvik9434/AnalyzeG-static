@@ -108,6 +108,13 @@ const brandFaqs: FaqItem[] = [
     answer:
       "AnalyzeG uses role-based access controls, time-bound delivery links, licence controls, and audit logs. Buyers do not receive reviewer phone numbers, UPI handles, addresses, or other direct contact details. Current security and retention terms are provided in the Privacy Notice and DPA pack.",
   },
+  {
+    id: "brand-7",
+    category: "Commercials & Procurement",
+    question: "How does AnalyzeG pricing work for brands?",
+    answer:
+      "One-time dataset licensing — no subscription. Final quote depends on volume, categories, filters and timeline, confirmed in writing before collection begins. GST invoice, PO workflow, DPA on request. Book a 15-minute demo or join the brand waitlist for a scoped quote.",
+  },
 ];
 
 export function FaqAccordion({ audience = "reviewer" }: { audience?: "reviewer" | "brand" }) {
@@ -159,7 +166,7 @@ export function FaqAccordion({ audience = "reviewer" }: { audience?: "reviewer" 
                       <AccordionTrigger>{item.question}</AccordionTrigger>
                       <AccordionContent>
                         <p>{item.answer}</p>
-                        <p className="mt-3 text-xs text-slate-500">Still stuck? <a href="mailto:support@analyzeg.co.in" className="text-blue-600 underline hover:text-blue-700">Contact Support</a> — we reply within 48h.</p>
+                        <p className="mt-3 text-xs text-slate-500">Still stuck? <a href="mailto:support@analyzeg.co.in" className="text-blue-600 underline hover:text-blue-700">Contact Support</a> — we reply within 4 business hours.</p>
                       </AccordionContent>
                     </AccordionItem>
                   ))}
