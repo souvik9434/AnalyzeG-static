@@ -2,13 +2,13 @@ import React from "react";
 import { Marquee } from "@/components/ui/marquee";
 
 const reviewerChips = [
-  "Earn Up to ₹40 Instantly",
-  "50% Revenue Share When Sold",
-  "Payout Within 24 Hours",
+  "Paid Category Opportunities",
+  "Rates Shown in Reviewer Account",
+  "Payouts Within 24 Hours of Eligible Sale",
   "UPI & Bank Transfer",
   "Smartphone-Only Setup",
   "100% Free to Join",
-  "Real-Time Earnings Dashboard",
+  "Earnings Dashboard",
   "Verified Review Guidelines",
 ];
 
@@ -18,9 +18,9 @@ const brandChips = [
   "Power BI Dashboards",
   "State + Age Filtering",
   "Raw Data Export (CSV/Excel)",
-  "Ad-Licensing for Brands",
-  "One-Time Purchase",
-  "2-Minute Delivery",
+  "Ad Licensing Where Reviewers Opt In",
+  "One-Time Dataset Licensing",
+  "In-Stock Delivery May Be Available in Minutes",
 ];
 
 const Chip = ({ label }: { label: string }) => (

@@ -33,21 +33,21 @@ const reviewerFaqs: FaqItem[] = [
     category: "Earnings & Payments",
     question: "How much can I earn per review?",
     answer:
-      "Limited-time model: you can get up to ₹40 after authentic verification. When your review is sold, you receive the remaining payout from your 50% revenue share after subtracting that instant payout.",
+      "Eligible categories may offer a paid advance after screening and human moderation, plus revenue share when a review is licensed. Current category rates are shown inside your reviewer account before submission.",
   },
   {
     id: "rev-4",
     category: "Earnings & Payments",
     question: "When and how do I get paid?",
     answer:
-      "You receive up to ₹40 soon after verification. The remaining payout is processed within 24 hours of purchase when your review is sold. Payment options include UPI and bank transfer.",
+      "Eligible advances are credited after approval. Revenue share from an eligible licensed review is processed after the sale event, normally within 24 hours. Payment options and current rates are shown in your reviewer account.",
   },
   {
     id: "rev-5",
     category: "Earnings & Payments",
-    question: "Is there a minimum payout threshold?",
+    question: "Where can I see my payout eligibility and rate?",
     answer:
-      "No strict minimum threshold. The instant payout of up to ₹40 is paid after verification, and the rest is transferred automatically upon review sale.",
+      "Sign in to your reviewer account to see the current rate, advance eligibility, payment method, and category terms before you submit a review.",
   },
   {
     id: "rev-6",
@@ -61,7 +61,7 @@ const reviewerFaqs: FaqItem[] = [
     category: "Review Process",
     question: "How does verification work?",
     answer:
-      "Every review passes 5-point verification — face-presence, device integrity, geo-consistency, content checklist, and timestamp validation — plus human moderation. Only verified reviews become eligible for the up to ₹40 advance and for brand purchase.",
+      "Every review passes five screening checks — face-presence, device integrity, geo-consistency, content checklist, and timestamp validation — plus human moderation. These checks reduce risk but do not independently prove identity, ownership, or every product claim.",
   },
 ];
 
@@ -85,7 +85,7 @@ const brandFaqs: FaqItem[] = [
     category: "Review Management",
     question: "How quickly can we receive verified reviews?",
     answer:
-      "Review intelligence is delivered rapidly — from 2 minutes for pre-verified category data up to 24 hours for custom requested product campaigns.",
+      "Available in-stock datasets may be delivered in minutes, with a 24-hour delivery target and the agreed credit remedy for a missed in-stock SLA. Custom collection follows the scope, timeline, and SLA confirmed in writing before collection begins.",
   },
   {
     id: "brand-4",
@@ -106,7 +106,7 @@ const brandFaqs: FaqItem[] = [
     category: "Data & Licensing",
     question: "How is our business data protected?",
     answer:
-      "All data is encrypted with AES-256 at rest and TLS 1.3 in transit. Access controls, audit logs, and 180-day retention ensure enterprise-grade privacy and DPDP 2023 compliance.",
+      "AnalyzeG uses role-based access controls, time-bound delivery links, licence controls, and audit logs. Buyers do not receive reviewer phone numbers, UPI handles, addresses, or other direct contact details. Current security and retention terms are provided in the Privacy Notice and DPA pack.",
   },
 ];
 

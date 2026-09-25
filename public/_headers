@@ -1,7 +1,13 @@
-# Cloudflare Pages headers — gate sample data from indexing
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+
 /sample-analyzeg-reviews.csv
-  X-Robots-Tag: noindex, nofollow, noarchive
+  X-Robots-Tag: noindex, nofollow
   Cache-Control: no-store
 
 /sample/*
-  X-Robots-Tag: noindex, nofollow, noarchive
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store

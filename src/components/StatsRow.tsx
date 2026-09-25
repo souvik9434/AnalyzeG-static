@@ -1,18 +1,20 @@
 import React from "react";
 import { NumberTicker } from "@/components/ui/number-ticker";
 
-const reviewerStats = [
-  { value: 40, prefix: "₹", suffix: "", label: "Instant payout per review" },
-  { value: 50, suffix: "%", label: "Revenue share when sold" },
-  { value: 24, suffix: "h", label: "Max payout window" },
+type Stat = { value: number; prefix?: string; suffix: string; label: string };
+
+const reviewerStats: Stat[] = [
+  { value: 5, suffix: "-point", label: "Screening before moderation" },
+  { value: 30, suffix: "s", label: "Standard review format" },
+  { value: 24, suffix: "h", label: "Eligible-sale payout target" },
   { value: 100, suffix: "%", label: "Free to join" },
 ];
 
-const brandStats = [
-  { value: 5, suffix: "-point", label: "Verification per review" },
+const brandStats: Stat[] = [
+  { value: 5, suffix: "-point", label: "Screening per review" },
   { value: 30, suffix: "s", label: "In-hand product videos" },
-  { value: 24, suffix: "h", label: "Max delivery window" },
-  { value: 500, suffix: "+", label: "Reviews per order" },
+  { value: 24, suffix: "h", label: "In-stock delivery target" },
+  { value: 1, suffix: "-time", label: "Dataset licence model" },
 ];
 
 export function StatsRow({

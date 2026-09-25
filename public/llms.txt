@@ -1,5 +1,5 @@
 # AnalyzeG — Verified Video Review Intelligence Platform for Brands
-> AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands buy 500-1500 face-presence verified 30-second in-hand product videos with Power BI dashboards and raw CSV. Reviewers are face-presence verified consumers compensated via revenue-share.
+> AnalyzeG provides screened 30-second in-hand product videos for consumer brands in India, with human moderation, Power BI dashboards, competitor context, and gated raw CSV exports. Eligible reviewers receive compensation under the category terms shown in their account.
 
 ## For Brands
 - Packages: Projects starting at ₹5L. One-time dataset licensing — repeat purchase available; GST invoice, PO workflow, DPA on request. Final quote after scoping call; in-stock vs custom confirmed in writing.
@@ -9,7 +9,7 @@
 - Delivery: Buy in-stock marketplace inventory for near-instant delivery; custom quotas confirmed in writing before collection, per agreed SLA.
 
 ## For Reviewers
-- Eligibility: Record 30-second in-hand video, pass 5-point face-presence verification + human moderation, receive paid advance in bounty categories. On each brand purchase, receive a revenue share per sale. Record once, earn per sale. Exact rates shown inside your reviewer account after login.
+- Eligibility: Record a 30-second in-hand video and complete five screening checks plus human moderation. Eligible categories may include a paid advance and licensed-sale revenue share. Current rates and terms are shown inside the reviewer account before submission.
 - Payout: UPI or bank within 24 hours of each sale event. T&C apply. No followers needed. No fee to join.
 - Bounty: Advance applies to categories with active brand demand — see Categories Needed Now in app.
 
@@ -17,17 +17,17 @@
 - Brand owned and operated by Souvik Dey, Udyam MSME Registered, West Bengal, India. Data Fiduciary for DPDP 2023 purposes.
 - Grievance: grievance@analyzeg.co.in — Acknowledgment 48h, Resolution 90 days.
 - Document Versions: Terms v1.1_2026-09-02, Privacy v1.1_2026-09-02, Cookies v1.1_2026-09-02.
-- Video licensing: Main brand may use own-product videos as raw ad creative; competitor videos are data insights only — separate reviewer consent required.
+- Video licensing: A relevant product brand may licence an own-product video for defined marketing uses only when the reviewer has opted in; competitor videos are research evidence, not advertising assets.
 
 ## Core Pages
 - [Home](https://analyzeg.co.in/): Verified video review intelligence for brands — pricing, Power BI sample, illustrative dashboard scenario
 - [Platform](https://analyzeg.co.in/features.html): Power BI, sentiment, raw data export for brands
-- [For Reviewers](https://analyzeg.co.in/for-reviewers/): Your voice, heard by brands — how payouts work, bounty
+- [For Reviewers](https://analyzeg.co.in/for-reviewers): Your voice, heard by brands — how payouts work, bounty
 - [About](https://analyzeg.co.in/about.html): Mission, story, values, leadership
 - [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Payouts, verification, brand analytics, security
 - [Trust Center](https://analyzeg.co.in/trust.html): Verification, consent & licensing, data access, methodology, inventory & delivery, sample methodology
 - [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html): Guide to earning from video reviews
-- [How We Pay & Stay Authentic](https://analyzeg.co.in/for-reviewers/#payouts): Canonical payout disclosure
+- [How We Pay & Stay Authentic](https://analyzeg.co.in/for-reviewers#payouts): Canonical payout disclosure
 
 ## Contact
 - Email: support@analyzeg.co.in, grievance@analyzeg.co.in

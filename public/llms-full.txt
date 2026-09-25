@@ -1,7 +1,7 @@
 # AnalyzeG — Full Platform Documentation
 
 ## What is AnalyzeG?
-AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands buy 500 to 1500 face-presence verified 30-second in-hand product videos and receive Power BI dashboards, sentiment & keyword analytics, and raw CSV/Excel with video links. Reviewers are face-presence verified consumers compensated via revenue-share.
+AnalyzeG provides screened 30-second in-hand product videos for consumer brands in India, with human moderation, Power BI dashboards, competitor context, and gated raw CSV/Excel exports. Eligible reviewers receive compensation under the category terms shown in their account.
 
 Brand owned and operated by Souvik Dey, Udyam MSME Registered, West Bengal, India. Data Fiduciary for DPDP Act 2023 purposes. Grievance: grievance@analyzeg.co.in. Founded 2024.
 
@@ -12,11 +12,11 @@ Brand owned and operated by Souvik Dey, Udyam MSME Registered, West Bengal, Indi
 4. Receive 30-second in-hand product videos — face-presence verified via 5-point checks (face-presence, device, geo, content, timestamp) + human moderation, time-stamped with audit logs
 5. Access Power BI dashboard with sentiment & keyword themes, competitor benchmarking, state/age/gender filters
 6. Download raw CSV/Excel with video links for independent verification
-7. Use own-product videos as ad creative (licensing included for main brand; competitor videos are insights-only, separate reviewer consent required)
+7. Use an own-product video for defined marketing purposes only where the reviewer has opted in; competitor videos are research evidence, not advertising assets.
 Delivery: in-stock datasets in minutes; custom quotas per agreed SLA confirmed in writing before collection.
 
 ## How AnalyzeG Works for Reviewers
-1. Sign up via For Reviewers (analyzeg.co.in/for-reviewers/) and complete profile
+1. Sign up via For Reviewers (analyzeg.co.in/for-reviewers) and complete profile
 2. Choose categories with active brand demand (Categories Needed Now)
 3. Record authentic 30-second in-hand video per checklist (face in frame, product in hand, genuine voice)
 4. Submit for 5-point face-presence verification + human moderation
@@ -36,18 +36,18 @@ Payment: No fee to join, no followers needed. Separate consent for ad licensing 
 - Demographic segmentation by state, age, gender
 - Custom Power BI dashboard templates
 - Raw export (CSV/Excel) with video links
-- Audit logs, 180-day retention, AES-256 at rest, TLS 1.3 in transit
+- Role-based access, time-bound video links, licence controls, and audit logs
 
 ## Technology & Verification
-- 5-point face-presence verification: face-presence, device integrity, geo-consistency, content checklist, timestamp + human moderation
-- NOT biometric templates unless documented; called face-presence to stay DPDP-accurate
-- Securely recorded, time-stamped, audit logged
+- Five screening checks: face-presence, device integrity, geo-consistency, content checklist, and timestamp, followed by human moderation
+- Face-presence confirms that a face appears in the video; it does not independently prove identity or product ownership
+- Time-stamped review records and audit logs
 
 ## FAQ — Brands
 Q: How does verification work? A: 5-point face-presence + human moderation before sellable pool.
 Q: How quickly? A: In-stock datasets in minutes; custom quotas per agreed SLA.
 Q: Can we use videos as ads? A: Yes for own-product videos (license included, where reviewers opt in); competitor videos are insights-only.
-Q: Data protection? A: AES-256 at rest, TLS 1.3, access controls, audit logs, DPDP 2023.
+Q: Data protection? A: Role-based access, time-bound video links, licence controls, audit logs, and data-handling practices designed to support applicable data-protection requirements. Current terms are provided in the Privacy Notice and DPA pack.
 
 ## FAQ — Reviewers
 Q: How much can I earn? A: Paid advance after verification (bounty categories) + revenue share per brand sale, multiple sales = multiple payouts. Exact rates inside your reviewer account.
@@ -55,7 +55,7 @@ Q: When paid? A: Advance after verification (bounty categories). Balance within 
 Q: Equipment? A: Smartphone + stable internet.
 
 ## Values
-- Integrity: Every review passes 5-point verification
+- Integrity: Every review is screened and moderated, with limitations stated
 - Innovation: Analytics turns raw video into decision-ready intelligence
 - Fairness: Transparent dual-stage payout linked to quality, not rating
 - Transparency: Raw data to verify every insight
@@ -63,7 +63,7 @@ Q: Equipment? A: Smartphone + stable internet.
 ## Contact
 - Website: https://analyzeg.co.in/
 - Platform: https://analyzeg.co.in/features.html
-- For Reviewers: https://analyzeg.co.in/for-reviewers/
+- For Reviewers: https://analyzeg.co.in/for-reviewers
 - App: https://app.analyzeg.co.in/
 - Demo: https://cal.com/analyzeg-demo
 - Email: support@analyzeg.co.in, grievance@analyzeg.co.in, enterprise@analyzeg.co.in
@@ -71,4 +71,4 @@ Q: Equipment? A: Smartphone + stable internet.
 - LinkedIn: https://www.linkedin.com/company/analyzeg
 
 ## Legal
-Brand owned and operated by Souvik Dey, Udyam MSME Registered. Data Fiduciary for DPDP Act 2023. Grievance: grievance@analyzeg.co.in. Document Versions: Terms v1.1_2026-09-02, Privacy v1.1_2026-09-02, Cookies v1.1_2026-09-02. Retention 180 days. Ad licensing requires separate reviewer consent.
+Brand owned and operated by Souvik Dey, Udyam MSME Registered. Data Fiduciary for DPDP Act 2023. Grievance: grievance@analyzeg.co.in. Document Versions: Terms v1.1_2026-09-02, Privacy v1.1_2026-09-02, Cookies v1.1_2026-09-02. Current retention terms are provided in the Privacy Notice. Advertising use requires separate reviewer consent.

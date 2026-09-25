@@ -68,13 +68,12 @@ import HowItWorks from '../components/HowItWorks.astro';
                     "height": 512
                 },
                 "name": "AnalyzeG",
-                "legalName": "AnalyzeG",
                 "alternateName": ["AnalyzeG"],
                 "brand": {
                     "@type": "Brand",
                     "name": "AnalyzeG"
                 },
-                "description": "AnalyzeG is a verified video review intelligence platform for consumer brands in India. We source 30-second in-hand product videos from verified reviewers compensated via revenue-share, and deliver Power BI dashboards, sentiment analysis, and raw CSV/Excel with video links in 2 minutes to 24 hours.",
+                "description": "AnalyzeG provides consumer brands in India with screened 30-second in-hand product videos, human moderation, Power BI analysis, competitor benchmarking, and gated raw CSV/Excel exports.",
                 "sameAs": [
                     "https://www.linkedin.com/company/analyzeg",
                     "https://github.com/souvik9434"
@@ -83,7 +82,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                     "@type": "Person",
                     "@id": "https://analyzeg.co.in/#founder",
                     "name": "Souvik Dey",
-                    "jobTitle": "Founder & CEO",
+                    "jobTitle": "Founder",
                     "url": "https://www.linkedin.com/in/souvikdey1/",
                     "sameAs": [
                         "https://www.linkedin.com/in/souvikdey1/",
@@ -129,16 +128,11 @@ import HowItWorks from '../components/HowItWorks.astro';
                 "name": "AnalyzeG — Verified Video Review Intelligence Platform for Brands",
                 "alternateName": "AnalyzeG",
                 "url": "https://analyzeg.co.in",
-                "description": "AnalyzeG is a verified video review intelligence platform for consumer brands in India — 500 to 1500 face-presence verified 30s videos with Power BI + raw CSV in 2 minutes to 24 hours.",
+                "description": "AnalyzeG provides screened 30-second in-hand product videos, human moderation, Power BI analysis, competitor benchmarking, and gated raw CSV/Excel exports for consumer brands in India.",
                 "publisher": {
                     "@id": "https://analyzeg.co.in/#organization"
                 },
-                "inLanguage": "en-IN",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "https://analyzeg.co.in/search?q={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                }
+                "inLanguage": "en-IN"
             }
         </script>
 
@@ -160,6 +154,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                     "@type": "Offer",
                     "availability": "https://schema.org/InStock",
                     "priceCurrency": "INR",
+                    "url": "https://analyzeg.co.in/#b2b-pricing",
                     "description": "Projects starting at ₹5L. Final quote after scoping call — GST invoice, PO workflow, DPA on request."
                 }
             }
@@ -176,7 +171,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                         "name": "What is AnalyzeG?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "AnalyzeG is a verified video review intelligence platform for consumer brands in India. Brands purchase 500 to 1500 face-presence verified 30-second in-hand product videos, filtered by state, age and gender, and receive Power BI dashboards, sentiment & keyword analytics, and a complete raw CSV/Excel export with video links in 2 minutes to 24 hours. Reviewers are verified via 5-point checks and compensated via revenue-share."
+                            "text": "AnalyzeG provides screened 30-second in-hand product videos, human moderation, state/age/gender filters, Power BI dashboards, sentiment and keyword analysis, competitor benchmarking, and a gated raw CSV/Excel export with controlled video links for Indian consumer brands."
                         }
                     },
                     {
@@ -184,7 +179,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                         "name": "How does AnalyzeG verify video reviews?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Every review passes 5-point verification — face-presence, device integrity, geo-consistency, content checklist, and timestamp validation — plus human moderation. Only verified reviews enter the sellable pool. Data is protected with AES-256 at rest, TLS 1.3 in transit, 180-day retention, and audit logs per Privacy v1.1_2026-09-02."
+                            "text": "Each review receives five screening checks: face-presence, device integrity, geo-consistency, content checklist, and timestamp validation, followed by human moderation. These controls reduce risk but do not independently prove identity, product ownership, or the truth of every product claim. Buyers can inspect the original video and gated raw export."
                         }
                     },
                     {
@@ -276,7 +271,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                             <a href="features.html" role="menuitem">Platform</a>
                         </li>
                         <li role="none">
-                            <a href="/for-reviewers/" role="menuitem">For Reviewers</a>
+                            <a href="/for-reviewers" role="menuitem">For Reviewers</a>
                         </li>
                         <li role="none">
                             <a href="about.html" role="menuitem">About</a>
@@ -318,7 +313,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                         <!-- Reviewer bridge — single subtle link (B2B primary, no payout number) -->
                         <div style="margin-top:1.4rem; display:inline-flex; align-items:center; gap:0.5rem; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.13); border-radius:9999px; padding:0.55rem 1rem; backdrop-filter: blur(8px);">
                             <span style="font-size:0.82rem; color:rgba(255,255,255,0.85);">Have a product experience to share?</span>
-                            <a href="/for-reviewers/" style="font-size:0.82rem; color:#fde68a; text-decoration:underline; font-weight:600;">Join the AnalyzeG reviewer community →</a>
+                            <a href="/for-reviewers" style="font-size:0.82rem; color:#fde68a; text-decoration:underline; font-weight:600;">Join the AnalyzeG reviewer community →</a>
                         </div>
                     </div>
             </div>
@@ -339,21 +334,21 @@ import HowItWorks from '../components/HowItWorks.astro';
         <!-- B2B Pain Point Comparison: visible above fold per 2026 best practice -->
         <section class="pain-point-comparison" style="background: linear-gradient(135deg, #f5f7fa 0%, #e3e7ef 100%); padding: 40px 0;">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 1rem;">Traditional Market Research Takes Months. You Need Answers Today.</h2>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #475569;">Stop losing competitive advantage while waiting for outdated research methods</p>
+                <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 1rem;">Choose a Research Workflow That Fits the Decision</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #475569;">Compare timeline, evidence format, data access, and licensing before selecting a research partner.</p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
                     <div data-aos="fade-right" style="background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid #fee2e2;">
                         <div style="background: #fee2e2; color: #dc2626; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-bottom: 1.5rem;">❌ The Old Way</div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #1e293b;">Traditional Research Agencies</h3>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #1e293b;">Scope-Dependent Research</h3>
                         <ul style="list-style: none; padding: 0;">
-                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Timeline:</strong> 3-6 months for results</li>
-                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Cost:</strong> ₹10-25 lakhs minimum</li>
-                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Deliverables:</strong> 100-page PDF report</li>
-                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Video Access:</strong> Pay extra (₹2-5 lakhs)</li>
-                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Raw Data:</strong> Usually not provided</li>
-                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Flexibility:</strong> Locked into scope</li>
-                            <li style="padding: 0.75rem 0; color: #475569;"><strong style="color: #1e293b;">Speed to Decision:</strong> Months of waiting</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Timeline:</strong> Defined in the proposal and statement of work</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Cost:</strong> Custom quote based on method and sample</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Deliverables:</strong> Agreed in the project scope</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Video Access:</strong> Depends on package and licence</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Raw Data:</strong> Request the available fields and format</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; color: #475569;"><strong style="color: #1e293b;">Flexibility:</strong> Confirm revisions and exclusions in writing</li>
+                            <li style="padding: 0.75rem 0; color: #475569;"><strong style="color: #1e293b;">Decision Use:</strong> Match the method to the research question</li>
                         </ul>
                     </div>
                     
@@ -370,7 +365,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                             <li style="padding: 0.75rem 0; color: rgba(255,255,255,0.95);"><strong style="color: white;">Purchase:</strong> One-time dataset licensing — repeat purchase available</li>
                         </ul>
                         <div style="background: rgba(255,255,255,0.15); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; border-left: 4px solid #fbbf24;">
-                            <p style="color: white; margin: 0; font-weight: 500;">🎯 <strong>Dual Purpose:</strong> Get market insights AND ready-to-use video content for your marketing campaigns. <strong>Research + Advertising in one purchase.</strong></p>
+                            <p style="color: white; margin: 0; font-weight: 500;">🎯 <strong>Optional dual use:</strong> Combine research insights with licensed advertising use for relevant own-product videos where the reviewer has opted in.</p>
                         </div>
                     </div>
                 </div>
@@ -383,7 +378,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                 <div style="text-align:center; margin-bottom:1rem;"><span style="display:inline-flex; align-items:center; gap:6px; background:#f0fdf4; border:1px solid #bbf7d0; color:#166534; padding:6px 14px; border-radius:9999px; font-size:0.8rem; font-weight:700;">🏢 For Brands • GST Invoice • PO Workflow • DPA on Request</span></div>
                 <h2 class="section-title" data-aos="fade-up">Projects Starting at ₹5L • Final Quote After Scoping</h2>
                 <p style="text-align:center; max-width:720px; margin:0.4rem auto 0; font-size:0.88rem; color:#64748b;">One-time dataset licensing — in-stock delivery in minutes; custom quotas confirmed in writing before collection. <a href="/trust.html#inventory" style="color:#2563EB; text-decoration:underline;">Inventory &amp; delivery policy →</a></p>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #475569;">GST invoice • PO accepted • DPA on request • Razorpay/UPI • Dedicated Research Lead. Response in 4 hours.</p>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem; color: #475569;">GST invoice • PO accepted • DPA on request • Razorpay/UPI • Founder-led research support. Response target: 4 hours.</p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
                     <!-- Single anchor card: starting price only, full scope gated -->
@@ -395,7 +390,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                             <div style="font-size: 1rem; color: #475569;">one-time dataset licensing • final quote after scoping call</div>
                         </div>
                         <ul style="list-style: none; padding: 0; margin: 2rem 0;">
-                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Face-presence verified 30-sec in-hand videos</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Screened 30-sec in-hand videos with human moderation</li>
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Power BI dashboard + template</li>
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Sentiment, keywords, competitor benchmarking</li>
                             <li style="padding: 0.75rem 0; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem;">✓ Raw CSV/Excel with video links (gated access)</li>
@@ -419,14 +414,14 @@ import HowItWorks from '../components/HowItWorks.astro';
                 <div data-aos="fade-up" style="background: #f0f9ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 1.5rem 2rem; margin-top: 2rem; display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between;">
                     <div style="flex:1; min-width:220px;">
                         <p style="margin:0; font-weight:700; color:#1e40af;">Procurement-ready</p>
-                        <p style="margin:0.25rem 0 0; font-size:0.9rem; color:#475569;">GST invoice • PO accepted • DPA on request • Razorpay/UPI • Dedicated Research Lead • Gated sample available after work-email verification</p>
+                        <p style="margin:0.25rem 0 0; font-size:0.9rem; color:#475569;">GST invoice • PO accepted • DPA on request • Razorpay/UPI • Founder-led research support • Gated sample available after work-email verification</p>
                     </div>
                     <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
                         <a href="https://cal.com/analyzeg-demo" target="_blank" rel="noopener" style="background:#2563EB; color:#fff; padding:0.75rem 1.25rem; border-radius:8px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">📅 Book 15-min Demo</a>
                         <a href="mailto:enterprise@analyzeg.co.in?subject=Enterprise%20Demo%20—%20AnalyzeG&body=Company:%0ARole:%0AUse%20case:%0AVolume:" style="background:#fff; color:#2563EB; border:2px solid #2563EB; padding:0.7rem 1.25rem; border-radius:8px; font-weight:700; text-decoration:none;">Talk to Research Lead</a>
                     </div>
                 </div>
-                <p style="text-align:center; font-size:0.8rem; color:#475569; margin-top:1rem;">Response in 4 hours • No commitment • See live dashboard before you buy</p>
+                <p style="text-align:center; font-size:0.8rem; color:#475569; margin-top:1rem;">Response in 4 hours • No commitment • Request a sample walkthrough before purchase</p>
             </div>
         </section>
 
@@ -442,20 +437,20 @@ import HowItWorks from '../components/HowItWorks.astro';
                     <div style="background:#0f172a; border-radius:16px; padding:1.25rem; color:#e2e8f0; box-shadow:0 10px 30px rgba(0,0,0,0.12);">
                         <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.75rem;">
                             <span style="font-weight:700; font-size:0.9rem;">AnalyzeG • Power BI — Sentiment Overview</span>
-                            <span style="background:#2563EB; color:#fff; font-size:0.7rem; padding:4px 8px; border-radius:9999px;">LIVE TEMPLATE</span>
+                            <span style="background:#2563EB; color:#fff; font-size:0.7rem; padding:4px 8px; border-radius:9999px;">ILLUSTRATIVE MOCK</span>
                         </div>
                         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; margin-bottom:1rem;">
-                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:1.4rem; font-weight:800; color:#4ade80;">68%</div><div style="font-size:0.7rem; opacity:0.7;">Positive</div></div>
-                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:1.4rem; font-weight:800; color:#fbbf24;">22%</div><div style="font-size:0.7rem; opacity:0.7;">Neutral</div></div>
-                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:1.4rem; font-weight:800; color:#f87171;">10%</div><div style="font-size:0.7rem; opacity:0.7;">Negative</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:0.9rem; font-weight:800; color:#4ade80;">Illustrative</div><div style="font-size:0.7rem; opacity:0.7;">Positive</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:0.9rem; font-weight:800; color:#fbbf24;">Illustrative</div><div style="font-size:0.7rem; opacity:0.7;">Neutral</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; text-align:center;"><div style="font-size:0.9rem; font-weight:800; color:#f87171;">Illustrative</div><div style="font-size:0.7rem; opacity:0.7;">Negative</div></div>
                         </div>
                         <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem; margin-bottom:0.75rem;">
                             <div style="font-size:0.75rem; font-weight:600; margin-bottom:0.5rem;">Top Keywords</div>
-                            <div style="display:flex; gap:0.4rem; flex-wrap:wrap;"><span style="background:#2563EB; color:#fff; padding:4px 8px; border-radius:9999px; font-size:0.7rem;">battery 32%</span><span style="background:rgba(255,255,255,0.1); padding:4px 8px; border-radius:9999px; font-size:0.7rem;">sound 28%</span><span style="background:rgba(255,255,255,0.1); padding:4px 8px; border-radius:9999px; font-size:0.7rem;">comfort 19%</span></div>
+                            <div style="display:flex; gap:0.4rem; flex-wrap:wrap;"><span style="background:#2563EB; color:#fff; padding:4px 8px; border-radius:9999px; font-size:0.7rem;">Product theme</span><span style="background:rgba(255,255,255,0.1); padding:4px 8px; border-radius:9999px; font-size:0.7rem;">Usage theme</span><span style="background:rgba(255,255,255,0.1); padding:4px 8px; border-radius:9999px; font-size:0.7rem;">Experience theme</span></div>
                         </div>
                         <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
-                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem;"><div style="font-size:0.7rem; opacity:0.7;">State-wise</div><div style="font-size:0.85rem; font-weight:600;">MH 22% • KA 18% • DL 15%</div></div>
-                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem;"><div style="font-size:0.7rem; opacity:0.7;">Age split</div><div style="font-size:0.85rem; font-weight:600;">18-24: 41% • 25-34: 36%</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem;"><div style="font-size:0.7rem; opacity:0.7;">Geography filter</div><div style="font-size:0.85rem; font-weight:600;">State / region</div></div>
+                            <div style="background:rgba(255,255,255,0.06); border-radius:10px; padding:0.75rem;"><div style="font-size:0.7rem; opacity:0.7;">Audience filter</div><div style="font-size:0.85rem; font-weight:600;">Age band / gender</div></div>
                         </div>
                         <p style="font-size:0.7rem; opacity:0.6; margin-top:0.75rem; text-align:center;">Anonymized mock • Actual dashboard has filters by state/age/gender + video links</p>
                     </div>
@@ -464,7 +459,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                         <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:1.5rem; box-shadow:0 4px 20px rgba(0,0,0,0.06);">
                             <div style="font-size:0.75rem; font-weight:700; color:#64748b; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.5rem;">Illustrative Dashboard Scenario — Mock Data</div>
                             <h3 style="font-size:1.05rem; font-weight:800; color:#1e293b; margin:0 0 0.5rem;">Example: How hidden issues appear behind average ratings</h3>
-                            <p style="font-size:0.9rem; color:#475569; margin:0 0 0.75rem;">Battery complaints hidden in a 4.2★ average. In this illustrative view, “heating” mentions cluster in the 18–24 MH cohort — a pattern dashboard filters and keyword themes make visible before it becomes a returns issue. <em>Illustrative scenario using anonymized/mock data; not a client result. Results vary by product, audience, and campaign.</em></p>
+                            <p style="font-size:0.9rem; color:#475569; margin:0 0 0.75rem;">An average rating can hide recurring issue themes. In this illustrative view, dashboard filters and keyword themes show how a brand can inspect patterns by audience cohort and product context. <em>Illustrative scenario using synthetic data; not a client result. Results vary by product, audience, and campaign.</em></p>
                             <div style="display:flex; gap:0.5rem; flex-wrap:wrap;"><span style="background:#f0fdf4; border:1px solid #bbf7d0; color:#166534; padding:4px 8px; border-radius:9999px; font-size:0.7rem; font-weight:600;">✓ Filters by state/age/gender</span><span style="background:#eff6ff; border:1px solid #bfdbfe; color:#1e40af; padding:4px 8px; border-radius:9999px; font-size:0.7rem;">Raw data to verify</span></div>
                         </div>
                         <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:1.5rem;">
@@ -553,7 +548,7 @@ import HowItWorks from '../components/HowItWorks.astro';
                         <a href="https://app.analyzeg.co.in/b2b-auth" data-app-href="/b2b-auth" class="btn-primary" rel="noopener">Get Instant Access</a>
                         <a href="features.html" class="btn-secondary">View Platform</a>
                     </div>
-                    <p style="margin-top:1.25rem; font-size:0.88rem; opacity:0.9;">Have a product experience to share? <a href="/for-reviewers/" style="color:#fff; text-decoration:underline;">Join the AnalyzeG reviewer community →</a></p>
+                    <p style="margin-top:1.25rem; font-size:0.88rem; opacity:0.9;">Have a product experience to share? <a href="/for-reviewers" style="color:#fff; text-decoration:underline;">Join the AnalyzeG reviewer community →</a></p>
             </div>
         </section>
         </main>

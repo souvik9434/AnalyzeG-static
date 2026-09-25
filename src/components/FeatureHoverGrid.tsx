@@ -29,7 +29,7 @@ const items = [
     title: "Transparent Reviewer Compensation",
     description:
       "Reviewers opt in and are compensated per verification with clear T&C. See how payouts work for the reviewer community.",
-    link: "/for-reviewers/",
+    link: "/for-reviewers",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
