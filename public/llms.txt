@@ -21,12 +21,12 @@
 
 ## Core Pages
 - [Home](https://analyzeg.co.in/): Verified video review intelligence for brands — pricing, Power BI sample, illustrative dashboard scenario
-- [Platform](https://analyzeg.co.in/features.html): Power BI, sentiment, raw data export for brands
+- [Platform](https://analyzeg.co.in/features): Power BI, sentiment, raw data export for brands
 - [For Reviewers](https://analyzeg.co.in/for-reviewers): Your voice, heard by brands — how payouts work, bounty
-- [About](https://analyzeg.co.in/about.html): Mission, story, values, leadership
-- [FAQ](https://analyzeg.co.in/analyzeg-faq.html): Payouts, verification, brand analytics, security
-- [Trust Center](https://analyzeg.co.in/trust.html): Verification, consent & licensing, data access, methodology, inventory & delivery, sample methodology
-- [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews.html): Guide to earning from video reviews
+- [About](https://analyzeg.co.in/about): Mission, story, values, leadership
+- [FAQ](https://analyzeg.co.in/analyzeg-faq): Payouts, verification, brand analytics, security
+- [Trust Center](https://analyzeg.co.in/trust): Verification, consent & licensing, data access, methodology, inventory & delivery, sample methodology
+- [Blog](https://analyzeg.co.in/blog/how-to-earn-from-video-reviews): Guide to earning from video reviews
 - [How We Pay & Stay Authentic](https://analyzeg.co.in/for-reviewers#payouts): Canonical payout disclosure
 
 ## Contact

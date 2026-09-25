@@ -62,7 +62,7 @@ Q: Equipment? A: Smartphone + stable internet.
 
 ## Contact
 - Website: https://analyzeg.co.in/
-- Platform: https://analyzeg.co.in/features.html
+- Platform: https://analyzeg.co.in/features
 - For Reviewers: https://analyzeg.co.in/for-reviewers
 - App: https://app.analyzeg.co.in/
 - Demo: https://cal.com/analyzeg-demo
